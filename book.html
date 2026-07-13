@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book · Amber's Essential Touch · Pinole, CA</title>
+<meta name="description" content="Save your ritual. Pick the service that fits your skin this week — facials, waxing, acne care, manicures. New clients welcomed. By appointment in Pinole, CA.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Parisienne&family=Manrope:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="icon" type="image/png" href="img/logo-badge.png">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a class="nav__brand" href="index.html">
+      <img class="nav__logo" src="img/logo-badge.png" alt="Amber's Essential Touch — lotus monogram logo">
+      <span class="nav__name">
+        <span class="nav__name-main">Amber's Essential Touch</span>
+        <span class="nav__name-sub">PREMIUM BOTANICAL SKINCARE</span>
+      </span>
+    </a>
+    <div class="nav__links">
+      <a href="services.html">Services</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="rituals.html">Rituals</a>
+      <a href="contact.html">Contact</a>
+      <a class="btn btn--primary btn--sm" href="book.html">Book Now</a>
+    </div>
+    <div class="nav__mobile">
+      <a class="btn btn--primary btn--sm" href="book.html">Book</a>
+      <button class="nav__burger" aria-expanded="false" aria-label="Open menu">☰</button>
+    </div>
+  </nav>
+  <div class="nav-drawer">
+    <a href="services.html">Services</a>
+    <a href="shop.html">Shop</a>
+    <a href="about.html">About</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="rituals.html">Rituals</a>
+    <a href="donate.html">The Mission</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero__inner" style="padding-bottom: clamp(24px, 3vw, 40px)">
+      <div class="hero__copy" style="flex: 1 1 100%">
+        <p class="eyebrow eyebrow--rose">By Appointment Only</p>
+        <h1 style="font-size: clamp(42px, 5.5vw, 76px)">Save your <em class="em-rose">ritual</em>.</h1>
+        <p class="lede" style="margin-bottom: 0">Pick the service that fits your skin this week. New clients welcomed. Every visit begins with a short consultation.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top: clamp(28px, 4vw, 48px)">
+    <div class="wrap wrap--narrow">
+
+      <div class="booking-shell">
+        <ol class="booking-steps" aria-label="Booking progress">
+          <li>1 · SERVICE</li>
+          <li>2 · DAY &amp; TIME</li>
+          <li>3 · ABOUT YOU</li>
+          <li>4 · CONFIRM</li>
+        </ol>
+
+        <!-- STEP 1 · SERVICE -->
+        <div data-panel="1">
+          <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Choose your treatment.</h2>
+          <p class="small" style="margin: 0 0 22px">Prices vary by skin, not by card on file. Not sure? Start with a consultation.</p>
+          <div id="svc-list" style="display: flex; flex-direction: column; gap: 12px"></div>
+          <div class="booking-nav">
+            <span></span>
+            <button class="btn btn--primary" id="to-step-2" disabled>CHOOSE DAY &amp; TIME</button>
+          </div>
+        </div>
+
+        <!-- STEP 2 · DAY & TIME -->
+        <div data-panel="2" hidden>
+          <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Pick a day and time.</h2>
+          <p class="small" style="margin: 0 0 22px">Studio days: Wed–Fri 9:30a–7:30p · Sat 9:30a–5p · Sun 11a–2p. Requests need 24 hours' notice.</p>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px">
+            <div class="cal">
+              <div class="cal__head">
+                <button class="cal__nav" id="cal-prev" aria-label="Previous month">‹</button>
+                <span class="cal__title" id="cal-title"></span>
+                <button class="cal__nav" id="cal-next" aria-label="Next month">›</button>
+              </div>
+              <div class="cal__grid" id="cal-grid">
+                <span class="cal__dow">S</span><span class="cal__dow">M</span><span class="cal__dow">T</span><span class="cal__dow">W</span><span class="cal__dow">T</span><span class="cal__dow">F</span><span class="cal__dow">S</span>
+              </div>
+            </div>
+            <div>
+              <p class="small" id="slot-label" style="margin: 0 0 14px">Pick an open day to see times.</p>
+              <div class="slot-grid" id="slot-grid"></div>
+            </div>
+          </div>
+          <div class="booking-nav">
+            <button class="btn btn--ghost" id="back-1">BACK</button>
+            <button class="btn btn--primary" id="to-step-3" disabled>ADD YOUR DETAILS</button>
+          </div>
+        </div>
+
+        <!-- STEP 3 · INTAKE -->
+        <div data-panel="3" hidden>
+          <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Tell Amber about you.</h2>
+          <p class="small" style="margin: 0 0 22px">A short intake keeps the visit focused on your skin, not paperwork.</p>
+          <form id="intake-form" novalidate>
+            <div class="form-grid" style="margin-bottom: 16px">
+              <label class="field">Name *
+                <input type="text" name="name" required autocomplete="name">
+              </label>
+              <label class="field">Phone *
+                <input type="tel" name="phone" required autocomplete="tel">
+              </label>
+              <label class="field">Email *
+                <input type="email" name="email" required autocomplete="email">
+              </label>
+              <label class="field">Age bracket *
+                <select name="age" required>
+                  <option value="" selected disabled>Select…</option>
+                  <option>Under 18</option>
+                  <option>18–24</option>
+                  <option>25–44</option>
+                  <option>45–64</option>
+                  <option>65+</option>
+                </select>
+              </label>
+            </div>
+            <div class="form-grid" id="guardian-row" hidden style="margin-bottom: 16px">
+              <label class="field">Guardian name *
+                <input type="text" name="guardianName">
+              </label>
+              <label class="field">Guardian phone *
+                <input type="tel" name="guardianPhone">
+              </label>
+              <p class="small" style="grid-column: 1 / -1; margin: 0">A guardian must be present for a minor's first visit.</p>
+            </div>
+            <div class="form-grid" style="margin-bottom: 16px">
+              <label class="field">First visit? *
+                <select name="firstVisit" required>
+                  <option value="" selected disabled>Select…</option>
+                  <option>Yes</option>
+                  <option>No</option>
+                </select>
+              </label>
+              <label class="field">How did you hear of Amber?
+                <select name="heard">
+                  <option selected>Google</option>
+                  <option>Instagram</option>
+                  <option>Facebook</option>
+                  <option>Friend</option>
+                  <option>Flyer</option>
+                  <option>Other</option>
+                </select>
+              </label>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 16px; margin-bottom: 20px">
+              <label class="field">Skin goals (optional)
+                <textarea name="goals" placeholder="What would you like your skin to feel like?"></textarea>
+              </label>
+              <label class="field">Allergies · medications · recent procedures (optional)
+                <textarea name="health" placeholder="Anything Amber should know before treatment."></textarea>
+              </label>
+            </div>
+            <div style="display: flex; flex-direction: column; gap: 12px">
+              <label class="check"><input type="checkbox" name="smsOk" checked> Text me appointment reminders at the number above.</label>
+              <label class="check"><input type="checkbox" name="consult" required> I understand a consultation is part of the visit. *</label>
+              <label class="check"><input type="checkbox" name="skinNotes"> Send me Skin Notes — a short letter, once a month.</label>
+            </div>
+            <div class="booking-nav">
+              <button class="btn btn--ghost" type="button" id="back-2">BACK</button>
+              <button class="btn btn--primary" type="submit">REVIEW REQUEST</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- STEP 4 · REVIEW + CONFIRM -->
+        <div data-panel="4" hidden>
+          <div id="panel-review">
+            <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">One quiet look before it goes.</h2>
+            <p class="small" style="margin: 0 0 22px">This sends a request — Amber personally confirms every appointment by text or email.</p>
+            <div class="review-box" id="review-box"></div>
+            <div class="booking-nav">
+              <button class="btn btn--ghost" id="back-3">BACK</button>
+              <button class="btn btn--primary" id="send-request">SAVE YOUR SPOT</button>
+            </div>
+          </div>
+          <div id="panel-confirm" hidden>
+            <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Your request is saved.</h2>
+            <p style="margin: 0 0 8px; font-size: 16px"><strong id="confirm-when"></strong></p>
+            <p class="small" style="margin: 0 0 24px">Send it to Amber now — she confirms personally, usually within a day. Your spot is held once she replies.</p>
+            <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px">
+              <a class="btn btn--primary" id="send-sms" href="#">TEXT THE REQUEST TO AMBER</a>
+              <a class="btn btn--ghost" id="send-email" href="#">EMAIL IT INSTEAD</a>
+              <a class="btn btn--ghost" id="send-ics" href="#">ADD TO MY CALENDAR</a>
+            </div>
+            <p class="note-italic">Aftercare is part of the treatment. See you soon.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- POLICIES -->
+      <div style="margin-top: 40px" id="policies">
+        <h2 style="font-size: clamp(24px, 2.6vw, 34px); margin-bottom: 18px">Visit policies.</h2>
+        <details class="policy">
+          <summary>Cancellation</summary>
+          <p>24-hour notice, please. Life happens — a text is enough.</p>
+        </details>
+        <details class="policy">
+          <summary>Lateness</summary>
+          <p>15-minute grace, then we reschedule so your treatment never gets rushed.</p>
+        </details>
+        <details class="policy">
+          <summary>Patch test</summary>
+          <p>Required for first-time facial clients with sensitivity. It's a five-minute kindness to your skin.</p>
+        </details>
+        <details class="policy">
+          <summary>Payment</summary>
+          <p>Cash or card at your visit.</p>
+        </details>
+        <details class="policy">
+          <summary>Minors</summary>
+          <p>A guardian must be present for a minor's first visit.</p>
+        </details>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer__grid">
+    <div class="footer__brand">
+      <div class="footer__brand-row">
+        <img src="img/logo-badge.png" alt="Amber's Essential Touch lotus monogram">
+        <span>Amber's Essential Touch</span>
+      </div>
+      <p class="footer__tag">Professional skincare.<br>Intentional care.<br>Preserved brilliance.</p>
+      <p class="footer__loc">Pinole, CA · Black-woman owned and operated</p>
+      <div class="footer__lockup">
+        <img src="img/lotus-card.png" alt="Amber's Essential Touch — You'll FEEL the difference">
+      </div>
+    </div>
+    <nav class="footer__col" aria-label="Explore">
+      <h3>EXPLORE</h3>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rituals.html">Rituals</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="donate.html">The Mission</a></li>
+      </ul>
+    </nav>
+    <nav class="footer__col" aria-label="Support">
+      <h3>SUPPORT</h3>
+      <ul>
+        <li><a href="book.html">Book</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="book.html#policies">Policies</a></li>
+        <li><a href="donate.html">Donate</a></li>
+      </ul>
+    </nav>
+    <nav class="footer__col" aria-label="Connect">
+      <h3>CONNECT</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/aetouch/">Facebook</a></li>
+        <li><a href="mailto:ambersessentialtouch@gmail.com">Email</a></li>
+        <li><a href="tel:+15102286657">(510) 228-6657</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer__bar">
+    <div class="footer__bar-inner">
+      <p class="footer__motto">BE SEEN. BE CARED FOR. BE YOURSELF.</p>
+      <p class="footer__copy">© 2026 Amber's Essential Touch · Pinole, CA</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+<script src="js/booking.js"></script>
+</body>
+</html>
