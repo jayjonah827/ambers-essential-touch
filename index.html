@@ -3,72 +3,111 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Amber's Essential Touch · Pinole, CA</title>
-<meta name="description" content="Professional skincare sanctuary in Pinole, CA. Personalized treatments, real education — facials, waxing, acne care, and small-batch botanicals. Book your appointment.">
+<title>Esthetician in Pinole, CA | Facials, Acne Care &amp; Waxing | Amber's Essential Touch</title>
+<meta name="description" content="Licensed esthetician in Pinole, CA. Custom facials, acne treatment, hyperpigmentation care, and body waxing for every skin tone. Black-owned. Call or text (510) 228-6657 to book.">
+<!-- Canonical points at the live origin. Switch to https://ambersessentialtouch.com/
+     once that domain is registered and pointed at this service. -->
+<link rel="canonical" href="https://ambers-essential-touch.onrender.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Amber's Essential Touch — Esthetician in Pinole, CA">
+<meta property="og:description" content="Custom facials, acne care, hyperpigmentation treatment, and waxing in Pinole, California. Care for every skin tone, from a licensed esthetician with 18 years of practice.">
+<meta property="og:image" content="img/amber-studio.jpg">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="geo.placename" content="Pinole, California">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Parisienne&family=Manrope:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/styles.css">
-<link rel="icon" type="image/png" href="img/logo-badge.png">
+<link rel="stylesheet" href="css/home.css">
+<link rel="icon" type="image/png" href="img/logo-mark.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Amber's Essential Touch",
+  "description": "Licensed esthetician offering custom facials, acne treatment, hyperpigmentation care, body waxing, and botanical skincare in Pinole, California.",
+  "image": "img/amber-studio.jpg",
+  "logo": "img/logo-mark.png",
+  "telephone": "+1-510-228-6657",
+  "email": "ambersessentialtouch@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "1622 Michael Dr",
+    "addressLocality": "Pinole",
+    "addressRegion": "CA",
+    "postalCode": "94564",
+    "addressCountry": "US"
+  },
+  "sameAs": ["https://www.facebook.com/aetouch/"],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "25" },
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Consultation Facial" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acne-Focused Treatment" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Body Waxing and Brow Care" } }
+  ]
+}
+</script>
 </head>
-<body class="has-book-bar">
+<body class="aet-home">
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a href="#main" class="skip">Skip to content</a>
 
-<header class="site-header">
-  <nav class="nav" aria-label="Primary">
-    <a class="nav__brand" href="index.html">
-      <img class="nav__logo" src="img/logo-badge.png" alt="Amber's Essential Touch — lotus monogram logo">
-      <span class="nav__name">
-        <span class="nav__name-main">Amber's Essential Touch</span>
-        <span class="nav__name-sub">PREMIUM BOTANICAL SKINCARE</span>
+<header class="hdr" id="hdr">
+  <nav class="hdr__nav" aria-label="Primary">
+    <a href="#top" class="brand">
+      <img src="img/logo-mark.png" alt="Amber's Essential Touch — lotus and A brand mark" class="brand__mark" width="56" height="56">
+      <span class="brand__text">
+        <span class="brand__name">Amber's Essential Touch</span>
+        <span class="brand__meta">ESTHETICIAN · PINOLE, CA</span>
       </span>
     </a>
-    <div class="nav__links">
-      <a href="services.html">Services</a>
-      <a href="shop.html">Shop</a>
-      <a href="about.html">About</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="rituals.html">Rituals</a>
-      <a href="contact.html">Contact</a>
-      <a class="btn btn--primary btn--sm" href="book.html">Book Now</a>
+    <div class="nav__desktop">
+      <a href="#services" class="nav__link">Services</a>
+      <a href="#concerns" class="nav__link">Skin Concerns</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#results" class="nav__link">Results</a>
+      <a href="#journal" class="nav__link">Journal</a>
+      <a href="#shop" class="nav__link">Shop</a>
+      <a href="#book" class="nav__cta">Book Now</a>
     </div>
     <div class="nav__mobile">
-      <a class="btn btn--primary btn--sm" href="book.html">Book</a>
-      <button class="nav__burger" aria-expanded="false" aria-label="Open menu">☰</button>
+      <a href="tel:+15102286657" class="nav__call">Call</a>
+      <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Open menu">☰</button>
     </div>
   </nav>
-  <div class="nav-drawer">
-    <a href="services.html">Services</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
-    <a href="reviews.html">Reviews</a>
-    <a href="rituals.html">Rituals</a>
-    <a href="donate.html">The Mission</a>
-    <a href="contact.html">Contact</a>
+  <div class="nav__panel" id="navPanel" hidden>
+    <a href="#services">Services</a>
+    <a href="#concerns">Skin Concerns</a>
+    <a href="#about">About</a>
+    <a href="#results">Results</a>
+    <a href="#journal">Journal</a>
+    <a href="#shop">Shop</a>
+    <a href="#book" class="nav__panel-cta">BOOK YOUR APPOINTMENT</a>
   </div>
 </header>
 
 <main id="main">
 
   <!-- 1 · HERO -->
-  <section class="hero" id="top">
+  <section id="top" class="hero">
     <div class="hero__inner">
       <div class="hero__copy">
-        <p class="eyebrow eyebrow--rose">Professional Skincare Sanctuary</p>
-        <h1>Where your skin is <em class="em-rose">understood</em>, not just treated.</h1>
-        <p class="lede">Personalized treatments. Real education. A sanctuary for every tone, every age, and every skin story.</p>
-        <div class="hero__cta-row">
-          <a class="btn btn--primary" href="book.html">BOOK YOUR APPOINTMENT</a>
-          <a class="btn btn--ghost" href="#concerns">FIND YOUR TREATMENT</a>
+        <p class="hero__eyebrow">PROFESSIONAL SKINCARE SANCTUARY · PINOLE, CALIFORNIA</p>
+        <h1>Where your skin is <em>understood</em>, not just treated.</h1>
+        <p class="hero__sub">Personalized treatments. Real education. A sanctuary for every tone, every age, and every skin story.</p>
+        <p class="hero__detail">Custom facials, acne treatment, hyperpigmentation care, and body waxing — from a licensed esthetician with 18 years of practice in Pinole, California.</p>
+        <div class="hero__actions">
+          <a href="tel:+15102286657" class="btn btn--solid">BOOK YOUR APPOINTMENT</a>
+          <a href="#concerns" class="btn btn--ghost">FIND YOUR TREATMENT</a>
         </div>
-        <p class="hero__badges">Black-owned&nbsp;&nbsp;·&nbsp;&nbsp;Community-rooted&nbsp;&nbsp;·&nbsp;&nbsp;Results-focused</p>
+        <p class="hero__badges">Black-owned&nbsp;&nbsp;·&nbsp;&nbsp;Community-rooted&nbsp;&nbsp;·&nbsp;&nbsp;Results-focused&nbsp;&nbsp;·&nbsp;&nbsp;18 years licensed</p>
       </div>
       <div class="hero__media">
-        <div class="media-frame media-frame--fade">
-          <img src="img/amber-studio.jpg" alt="Amber, licensed esthetician, in her treatment studio in Pinole, CA" style="aspect-ratio: 4 / 3; object-fit: cover; object-position: 65% 20%; width: 100%">
+        <div class="hero__frame">
+          <img src="img/amber-studio.jpg" alt="Amber, licensed esthetician, in her treatment studio in Pinole, CA">
+          <div class="hero__scrim"></div>
         </div>
-        <figure class="quote-card">
+        <figure class="hero__quote">
           <blockquote>This is more than skincare. This is self-care, self-respect, and coming home to yourself.</blockquote>
           <figcaption>— Amber</figcaption>
         </figure>
@@ -76,402 +115,600 @@
     </div>
   </section>
 
-  <!-- 2 · BRAND PROMISE STRIP -->
-  <section aria-label="What the practice promises" style="border-bottom: 1px solid rgba(111,63,42,0.1)">
-    <div class="wrap" style="padding-top: clamp(40px,5vw,72px); padding-bottom: clamp(40px,5vw,72px); display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: clamp(20px,3vw,40px)">
-      <div class="promise">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#B8734A" stroke-width="1.4" aria-hidden="true"><path d="M17 28c0-7 -5-9 -5-15a5 5 0 0 1 10 0c0 6 -5 8 -5 15Z"></path><path d="M8 24c4 1 7 3 9 6 2-3 5-5 9-6"></path></svg>
-        <h3>A Place to Breathe</h3><p>A calm space to reset.</p>
-      </div>
-      <div class="promise">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#B8734A" stroke-width="1.4" aria-hidden="true"><circle cx="12" cy="13" r="5"></circle><circle cx="22" cy="13" r="5"></circle><path d="M5 27c1-5 4-7 7-7s6 2 7 7M15 27c1-5 4-7 7-7s6 2 7 7"></path></svg>
-        <h3>Inclusive Care</h3><p>Care for every tone and skin story.</p>
-      </div>
-      <div class="promise">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#B8734A" stroke-width="1.4" aria-hidden="true"><path d="M13 6h8v5l3 3v13a2 2 0 0 1-2 2H12a2 2 0 0 1-2-2V14l3-3V6Z"></path><path d="M10 20h14"></path></svg>
-        <h3>Clean, Conscious Products</h3><p>Thoughtful ingredients selected with intention.</p>
-      </div>
-      <div class="promise">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#B8734A" stroke-width="1.4" aria-hidden="true"><path d="M17 4l3.5 7 8 1.2-5.8 5.6 1.4 8-7.1-3.8-7.1 3.8 1.4-8L5.5 12.2l8-1.2Z"></path></svg>
-        <h3>Advanced Treatments</h3><p>Effective methods guided by expert judgment.</p>
-      </div>
-      <div class="promise">
-        <svg width="34" height="34" viewBox="0 0 34 34" fill="none" stroke="#B8734A" stroke-width="1.4" aria-hidden="true"><path d="M17 29s-11-6.5-11-14a6.3 6.3 0 0 1 11-4.2A6.3 6.3 0 0 1 28 15c0 7.5-11 14-11 14Z"></path></svg>
-        <h3>A Sanctuary for You</h3><p>Calm, safe, and personally considered.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3 · PRESERVATION STATEMENT -->
-  <section class="section--panel">
-    <div class="wrap wrap--mid split" style="padding-top: clamp(56px,7vw,110px); padding-bottom: clamp(56px,7vw,110px)">
-      <div class="split__main">
-        <p class="script" style="margin: 0 0 8px; font-size: clamp(34px,4vw,54px); line-height: 1.25">Essential, like water.</p>
-        <p class="script" style="margin: 0 0 32px; font-size: clamp(34px,4vw,54px); line-height: 1.25; color: var(--brown)">Preserved, like diamonds.</p>
-        <p style="margin: 0 0 20px; font-size: clamp(16px,1.4vw,19px); line-height: 1.7; max-width: 54ch">Your skin is the most valuable material you will ever live in. Its worth is not created by treatment. It is recognized through care.</p>
-        <p style="margin: 0 0 28px; font-size: clamp(16px,1.4vw,19px); line-height: 1.7; color: var(--muted); max-width: 54ch">Amber combines trained judgment, attentive upkeep, and treatment shaped around the skin in front of her.</p>
-        <p class="note-italic" style="font-size: clamp(19px,1.8vw,24px); line-height: 1.5">A best friend recognizes your worth.<br>A professional knows how to preserve it.</p>
-      </div>
-      <div class="split__side" style="display: flex; justify-content: center">
-        <div class="media-frame" style="width: min(100%, 460px)">
-          <img src="img/crystal-lotus.jpg" alt="Translucent crystal lotus catching prismatic light" style="aspect-ratio: 1; object-fit: cover">
+  <!-- 2 · BRAND PROMISE STREAM -->
+  <section class="promise" aria-label="What the practice promises">
+    <div class="promise__inner">
+      <h2>WHY CLIENTS STAY</h2>
+      <div class="marquee">
+        <div class="marquee__track">
+          <div class="marquee__group">
+            <div class="promise__card">
+              <div class="sprite" aria-hidden="true" style="background-size: 314px; background-position: -21px -232px"></div>
+              <h3>A Place to Breathe</h3>
+              <p>A calm space to reset.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" aria-hidden="true" style="background-size: 196px; background-position: -4px -184px"></div>
+              <h3>Inclusive Care</h3>
+              <p>Care for every tone and skin story.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" aria-hidden="true" style="background-size: 164px; background-position: -95px -83px"></div>
+              <h3>Clean, Conscious Products</h3>
+              <p>Thoughtful ingredients selected with intention.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" aria-hidden="true" style="background-size: 207px; background-position: -125px -58px"></div>
+              <h3>Advanced Treatments</h3>
+              <p>Effective methods guided by expert judgment.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" aria-hidden="true" style="background-size: 191px; background-position: -64px -1px"></div>
+              <h3>A Sanctuary for You</h3>
+              <p>Calm, safe, and personally considered.</p>
+            </div>
+          </div>
+          <div class="marquee__group" aria-hidden="true">
+            <div class="promise__card">
+              <div class="sprite" style="background-size: 314px; background-position: -21px -232px"></div>
+              <h3>A Place to Breathe</h3>
+              <p>A calm space to reset.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" style="background-size: 196px; background-position: -4px -184px"></div>
+              <h3>Inclusive Care</h3>
+              <p>Care for every tone and skin story.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" style="background-size: 164px; background-position: -95px -83px"></div>
+              <h3>Clean, Conscious Products</h3>
+              <p>Thoughtful ingredients selected with intention.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" style="background-size: 207px; background-position: -125px -58px"></div>
+              <h3>Advanced Treatments</h3>
+              <p>Effective methods guided by expert judgment.</p>
+            </div>
+            <div class="promise__card">
+              <div class="sprite" style="background-size: 191px; background-position: -64px -1px"></div>
+              <h3>A Sanctuary for You</h3>
+              <p>Calm, safe, and personally considered.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- 4 · FEATURED SERVICES -->
-  <section class="section" id="services">
+  <!-- 3 · PRESERVATION -->
+  <section class="preserve">
+    <div class="preserve__inner">
+      <div class="preserve__copy">
+        <p class="preserve__script">Essential, like water.</p>
+        <p class="preserve__script preserve__script--brown">Preserved, like diamonds.</p>
+        <p class="preserve__body">Your skin is the most valuable material you will ever live in. Its worth is not created by treatment. It is recognized through care.</p>
+        <p class="preserve__body preserve__body--muted">Amber combines trained judgment, attentive upkeep, and treatment shaped around the skin in front of her.</p>
+        <p class="preserve__pull">A best friend recognizes your worth.<br>A professional knows how to preserve it.</p>
+      </div>
+      <div class="preserve__media">
+        <div class="preserve__frame">
+          <img src="img/crystal-lotus.jpg" alt="Translucent crystal lotus catching prismatic light">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · SERVICES -->
+  <section id="services" class="services section">
     <div class="wrap">
-      <p class="eyebrow">Services</p>
-      <h2 style="max-width: 20ch">Care selected for the skin in front of us.</h2>
-      <p class="lede" style="margin-bottom: 44px; font-size: 16px; max-width: 60ch">All services begin with a short consultation. Prices vary by skin, not by card on file.</p>
-      <div class="grid grid--cards">
+      <p class="eyebrow">SERVICES</p>
+      <h2 class="h2" style="max-width: 20ch">Care selected for the skin in front of us.</h2>
+      <p class="lede" style="margin-bottom: 44px">Facials, acne treatment, hyperpigmentation care, waxing, and brow shaping in Pinole, California. Every service begins with a short consultation — prices vary by skin, not by card on file.</p>
+      <div class="grid-cards">
 
         <article class="card">
-          <div class="card__media"><img src="img/treat-facial.png" alt="Ornate mirror among deep botanical florals"></div>
+          <div class="card__media">
+            <div class="card__img" role="img" aria-label="Ornate mirror among deep botanical florals" style="background-image: url(img/treat-facial.png)"></div>
+            <div class="card__scrim"></div>
+          </div>
           <div class="card__body">
             <h3>Consultation Facial</h3>
-            <p class="card__desc">Consultation-based facials. Extractions, peels, enzyme work — shaped to your skin on the day.</p>
+            <p class="card__desc">Consultation-based facials for Pinole and the East Bay. Extractions, peels, and enzyme work — shaped to your skin on the day.</p>
             <p class="card__meta">60–90 MIN · FROM $95</p>
             <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="book.html?service=facial">BOOK THIS TREATMENT</a>
-              <a class="textlink" href="services.html#facial">Read more <span aria-hidden="true">→</span></a>
+              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
+              <a href="services.html#facial" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <div class="card__media"><img src="img/treat-acne.png" alt="Orchids and layered botanicals in soft light"></div>
+          <div class="card__media">
+            <div class="card__img" role="img" aria-label="Orchids and layered botanicals in soft light" style="background-image: url(img/treat-acne.png)"></div>
+            <div class="card__scrim"></div>
+          </div>
           <div class="card__body">
             <h3>Acne-Focused Treatment</h3>
-            <p class="card__desc">Protocol-based, multi-visit care that supports clearer skin. Aftercare included.</p>
+            <p class="card__desc">Protocol-based, multi-visit acne care that supports clearer skin. Aftercare included.</p>
             <p class="card__meta">60 MIN · FROM $110</p>
             <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="book.html?service=acne">BOOK THIS TREATMENT</a>
-              <a class="textlink" href="services.html#acne">Read more <span aria-hidden="true">→</span></a>
+              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
+              <a href="services.html#acne" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <div class="card__media"><img src="img/treat-wax.png" alt="Water pitcher and amber dropper bottle on the treatment table"></div>
+          <div class="card__media">
+            <div class="card__img" role="img" aria-label="Water pitcher and amber dropper bottle on the treatment table" style="background-image: url(img/treat-wax.png)"></div>
+            <div class="card__scrim"></div>
+          </div>
           <div class="card__body">
             <h3>Body Waxing &amp; Brow Care</h3>
-            <p class="card__desc">Over a decade of precision. Full body, all skin types, unhurried.</p>
+            <p class="card__desc">Over a decade of precision waxing. Full body, all skin types, unhurried.</p>
             <p class="card__meta">15–90 MIN · FROM $25</p>
             <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="book.html?service=wax">BOOK THIS TREATMENT</a>
-              <a class="textlink" href="services.html#wax">Read more <span aria-hidden="true">→</span></a>
+              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
+              <a href="services.html#wax" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <div class="card__media"><img src="img/treat-manicure.png" alt="Glass vessels and botanicals in still life"></div>
+          <div class="card__media">
+            <div class="card__img" role="img" aria-label="Glass vessels and botanicals in still life" style="background-image: url(img/treat-manicure.png)"></div>
+            <div class="card__scrim"></div>
+          </div>
           <div class="card__body">
             <h3>Manicure</h3>
             <p class="card__desc">Clean, unhurried, aftercare-forward hand care.</p>
             <p class="card__meta">45 MIN · FROM $45</p>
             <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="book.html?service=manicure">BOOK THIS TREATMENT</a>
-              <a class="textlink" href="services.html#manicure">Read more <span aria-hidden="true">→</span></a>
+              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
+              <a href="services.html#manicure" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <div class="card__media"><img src="img/treat-ritual.png" alt="Brass bowl of whipped cream beside amber glass and linen"></div>
+          <div class="card__media">
+            <div class="card__img" role="img" aria-label="Brass bowl of whipped cream beside amber glass and linen" style="background-image: url(img/treat-ritual.png)"></div>
+            <div class="card__scrim"></div>
+          </div>
           <div class="card__body">
             <h3>Monthly Ritual Plan</h3>
             <p class="card__desc">Build a regimen. Bi-monthly or quarterly visits, planned around your skin’s pace.</p>
             <p class="card__meta">CUSTOM · FROM $180/MO</p>
             <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="book.html?service=ritual">BOOK THIS TREATMENT</a>
-              <a class="textlink" href="services.html#ritual">Read more <span aria-hidden="true">→</span></a>
+              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
+              <a href="services.html#ritual" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
 
         <article class="card">
-          <div class="card__media"><img src="img/treat-consult.png" alt="Draped fabric and dried botanicals on wood"></div>
+          <div class="card__media">
+            <div class="card__img" role="img" aria-label="Draped fabric and dried botanicals on wood" style="background-image: url(img/treat-consult.png)"></div>
+            <div class="card__scrim"></div>
+          </div>
           <div class="card__body">
             <h3>Skin Consultation</h3>
             <p class="card__desc">Not sure where to begin? Start with a conversation and a plan.</p>
             <p class="card__meta">INCLUDED WITH EVERY VISIT</p>
             <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="book.html?service=consult">BOOK THIS TREATMENT</a>
-              <a class="textlink" href="services.html#consult">Read more <span aria-hidden="true">→</span></a>
+              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
+              <a href="services.html#consult" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
             </div>
           </div>
         </article>
 
       </div>
+      <p class="note"><strong>Pricing note.</strong> Starting prices come from the current service list. Prices vary by skin, not by card on file. Treatments without a confirmed price are marked <em>TBC</em> and must be verified before publishing.</p>
     </div>
   </section>
 
   <!-- 5 · TREATMENT FINDER -->
-  <section class="section section--sand" id="concerns">
-    <div class="wrap wrap--narrow">
-      <p class="eyebrow">Skin Concerns</p>
-      <h2 style="margin-bottom: 40px">What brings you in?</h2>
-      <div style="display: flex; flex-direction: column; gap: 12px">
-        <a class="tile" href="services.html#acne">
-          <span class="tile__dot" style="background: linear-gradient(150deg, #D89BAA, #A95870)"></span>
-          <span style="flex:1"><span class="tile__label">Breakouts and acne</span><span class="tile__sub">Protocol-based care, patience included</span></span>
-          <span class="tile__arrow" aria-hidden="true">→</span>
+  <section id="concerns" class="concerns section">
+    <div class="wrap wrap--tight">
+      <p class="eyebrow">SKIN CONCERNS</p>
+      <h2 class="h2">What brings you in?</h2>
+      <p class="lede" style="max-width: 60ch">Choose the concern that sounds like your skin — Amber matches the treatment.</p>
+      <div class="concerns__grid">
+
+        <a href="#services" class="concern">
+          <span class="concern__icon" aria-hidden="true" style="background-size: 218px; background-position: -58px -206px"></span>
+          <span class="concern__text">
+            <span class="concern__label">Breakouts and acne</span>
+            <span class="concern__sub">Protocol-based acne care, patience included</span>
+          </span>
+          <span class="concern__chev" aria-hidden="true">→</span>
         </a>
-        <a class="tile" href="services.html#facial">
-          <span class="tile__dot" style="background: linear-gradient(150deg, #B8734A, #6F3F2A)"></span>
-          <span style="flex:1"><span class="tile__label">Dark spots and uneven tone</span><span class="tile__sub">Care for every tone, melanin-aware</span></span>
-          <span class="tile__arrow" aria-hidden="true">→</span>
+
+        <a href="#services" class="concern">
+          <span class="concern__icon" aria-hidden="true" style="background-size: 140px; background-position: -5px 0px"></span>
+          <span class="concern__text">
+            <span class="concern__label">Dark spots and uneven tone</span>
+            <span class="concern__sub">Hyperpigmentation care for melanin-rich skin</span>
+          </span>
+          <span class="concern__chev" aria-hidden="true">→</span>
         </a>
-        <a class="tile" href="services.html#facial">
-          <span class="tile__dot" style="background: linear-gradient(150deg, #F7F1E8, #B8734A)"></span>
-          <span style="flex:1"><span class="tile__label">Dryness and dehydration</span><span class="tile__sub">Barrier-first hydration</span></span>
-          <span class="tile__arrow" aria-hidden="true">→</span>
+
+        <a href="#services" class="concern">
+          <span class="concern__icon" aria-hidden="true" style="background-size: 207px; background-position: -119px -4px"></span>
+          <span class="concern__text">
+            <span class="concern__label">Dryness and dehydration</span>
+            <span class="concern__sub">Barrier-first hydration facials</span>
+          </span>
+          <span class="concern__chev" aria-hidden="true">→</span>
         </a>
-        <a class="tile" href="services.html#facial">
-          <span class="tile__dot" style="background: linear-gradient(150deg, #D7C6E6, #A99BC6)"></span>
-          <span style="flex:1"><span class="tile__label">Sensitivity and redness</span><span class="tile__sub">Gentle, calming treatment</span></span>
-          <span class="tile__arrow" aria-hidden="true">→</span>
+
+        <a href="#services" class="concern">
+          <span class="concern__icon" aria-hidden="true" style="background-size: 187px; background-position: -62px -51px"></span>
+          <span class="concern__text">
+            <span class="concern__label">Sensitivity and redness</span>
+            <span class="concern__sub">Gentle, calming treatment</span>
+          </span>
+          <span class="concern__chev" aria-hidden="true">→</span>
         </a>
-        <a class="tile" href="services.html#ritual">
-          <span class="tile__dot" style="background: linear-gradient(150deg, #A9B8A6, #7E9179)"></span>
-          <span style="flex:1"><span class="tile__label">Fine lines and visible aging</span><span class="tile__sub">Preservation, not correction</span></span>
-          <span class="tile__arrow" aria-hidden="true">→</span>
+
+        <a href="#services" class="concern">
+          <span class="concern__icon" aria-hidden="true" style="background-size: 245px; background-position: -14px -87px"></span>
+          <span class="concern__text">
+            <span class="concern__label">Fine lines and visible aging</span>
+            <span class="concern__sub">Preservation, not correction</span>
+          </span>
+          <span class="concern__chev" aria-hidden="true">→</span>
         </a>
-        <a class="tile" href="book.html?service=consult">
-          <span class="tile__dot" style="background: linear-gradient(150deg, #FFF9F3, #D89BAA)"></span>
-          <span style="flex:1"><span class="tile__label">I am not sure</span><span class="tile__sub">Begin with a consultation — Amber will guide you</span></span>
-          <span class="tile__arrow" aria-hidden="true">→</span>
+
+        <a href="#book" class="concern">
+          <span class="concern__icon" aria-hidden="true" style="background-size: 238px; background-position: -15px -119px"></span>
+          <span class="concern__text">
+            <span class="concern__label">I am not sure</span>
+            <span class="concern__sub">Begin with a consultation — Amber will guide you</span>
+          </span>
+          <span class="concern__chev" aria-hidden="true">→</span>
         </a>
+
       </div>
     </div>
   </section>
 
   <!-- 6 · HOW CARE BEGINS -->
-  <section class="section">
-    <div class="wrap wrap--mid">
-      <p class="eyebrow">The Process</p>
-      <h2 style="margin-bottom: 44px">How care begins.</h2>
-      <div class="grid grid--steps">
-        <div class="step-card">
-          <p class="step-card__num">01</p>
+  <section class="process section">
+    <div class="wrap wrap--narrow">
+      <p class="eyebrow">THE PROCESS</p>
+      <h2 class="h2" style="margin-bottom: 44px">How care begins.</h2>
+      <div class="process__grid">
+        <div class="step step--1">
+          <p class="step__num">01</p>
           <h3>Consult</h3>
           <p>We listen, assess, and understand your skin, routine, and goals.</p>
         </div>
-        <div class="step-card" style="background: linear-gradient(160deg, #FFF9F3, #F3EFE6)">
-          <p class="step-card__num" style="color: rgba(169,88,112,0.4)">02</p>
+        <div class="step step--2">
+          <p class="step__num">02</p>
           <h3>Treat</h3>
           <p>Amber selects professional techniques and products according to what your skin needs now.</p>
         </div>
-        <div class="step-card" style="background: linear-gradient(160deg, #FFF9F3, #EEF0EA)">
-          <p class="step-card__num" style="color: rgba(169,184,166,0.7)">03</p>
+        <div class="step step--3">
+          <p class="step__num">03</p>
           <h3>Preserve</h3>
           <p>You leave with aftercare guidance and a plan for maintaining your results.</p>
         </div>
       </div>
-      <p class="note-italic" style="margin: 32px 0 0">Aftercare is part of the treatment.</p>
+      <p class="process__coda">Aftercare is part of the treatment.</p>
     </div>
   </section>
 
-  <!-- 7 · ABOUT AMBER -->
-  <section class="section section--about" id="about">
-    <div class="wrap wrap--mid split">
-      <div style="flex: 1 1 320px; min-width: 280px; max-width: 460px">
-        <div class="media-frame">
-          <img src="img/amber-portrait.jpg" alt="Amber, licensed esthetician, Pinole CA">
+  <!-- 7 · ABOUT -->
+  <section id="about" class="about">
+    <div class="about__inner">
+      <div class="about__media">
+        <div class="about__frame">
+          <img src="img/amber-portrait-3.jpg" alt="Amber, licensed esthetician and owner of Amber's Essential Touch in Pinole, California">
         </div>
       </div>
-      <div style="flex: 1 1 440px; min-width: 300px">
-        <p class="eyebrow eyebrow--rose">The Woman Behind the Touch</p>
-        <h2 style="margin-bottom: 22px">Expert care, made personal.</h2>
-        <p style="margin: 0 0 18px; font-size: 16px; line-height: 1.7">Amber's Essential Touch is rooted in the belief that every person deserves to understand their skin and receive care shaped around their actual needs.</p>
-        <p style="margin: 0 0 26px; font-size: 16px; line-height: 1.7; color: var(--muted)">Amber pairs professional technique with attentive, human care — creating a treatment experience where clients are seen, informed, and respected.</p>
-        <ul class="pill-list">
-          <li><strong>Licensed esthetician</strong> · 18 years</li>
+      <div class="about__copy">
+        <p class="eyebrow">THE WOMAN BEHIND THE TOUCH</p>
+        <h2 class="h2" style="margin-bottom: 22px">Expert care, made personal.</h2>
+        <p class="body">Amber's Essential Touch is rooted in the belief that every person deserves to understand their skin and receive care shaped around their actual needs.</p>
+        <p class="body body--muted">Amber pairs professional technique with attentive, human care — creating a treatment experience where clients are seen, informed, and respected.</p>
+        <ul class="creds">
+          <li><strong>Licensed esthetician</strong> · 18 years <span class="pending">(license № — to be supplied)</span></li>
           <li><strong>Waxing specialist</strong> · over a decade of precision</li>
           <li><strong>Pinole, CA</strong> · Black-woman owned and operated</li>
           <li><strong>Consultation-driven</strong> · aftercare-first practice</li>
+          <li><strong>CA Board of Barbering &amp; Cosmetology</strong> · licensed esthetician</li>
+          <li><strong>4.9 ★ across 25 reviews</strong> · 135+ five-star visits</li>
         </ul>
-        <a class="btn btn--ghost" href="about.html">MEET AMBER</a>
+        <a href="about.html" class="btn btn--ghost">MEET AMBER</a>
       </div>
     </div>
   </section>
 
-  <!-- 8 · TESTIMONIALS -->
-  <section class="section section--panel">
-    <div class="wrap wrap--mid">
-      <div style="display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 20px; margin-bottom: 40px">
+  <!-- 8 · RESULTS -->
+  <section id="results" class="results section">
+    <div class="wrap">
+      <p class="eyebrow">RESULTS</p>
+      <h2 class="h2">Real skin. Real care. Visible progress.</h2>
+      <p class="lede" style="font-size: 15px; max-width: 62ch">Every result shown here will be published with the client's written consent, the treatment sequence, and the time span. Individual results vary.</p>
+      <div class="grid-cards">
+
+        <article class="result">
+          <div class="result__pair">
+            <div class="result__slot result__slot--before"><span>BEFORE</span></div>
+            <div class="result__slot result__slot--after"><span>AFTER</span></div>
+          </div>
+          <div class="result__body">
+            <h3>Acne-focused series</h3>
+            <p>Structure ready for: treatment sequence, time span, and consent note.</p>
+            <p class="result__consent">Consented client images required before publishing.</p>
+          </div>
+        </article>
+
+        <article class="result">
+          <div class="result__pair">
+            <div class="result__slot result__slot--before"><span>BEFORE</span></div>
+            <div class="result__slot result__slot--after"><span>AFTER</span></div>
+          </div>
+          <div class="result__body">
+            <h3>Hyperpigmentation care</h3>
+            <p>Structure ready for: treatment sequence, time span, and consent note.</p>
+            <p class="result__consent">Consented client images required before publishing.</p>
+          </div>
+        </article>
+
+        <article class="result">
+          <div class="result__pair">
+            <div class="result__slot result__slot--before"><span>BEFORE</span></div>
+            <div class="result__slot result__slot--after"><span>AFTER</span></div>
+          </div>
+          <div class="result__body">
+            <h3>Texture and hydration</h3>
+            <p>Structure ready for: treatment sequence, time span, and consent note.</p>
+            <p class="result__consent">Consented client images required before publishing.</p>
+          </div>
+        </article>
+
+      </div>
+      <p class="note"><strong>Results disclaimer.</strong> Results vary by individual, skin condition, adherence to aftercare, and treatment sequence. No result shown here is guaranteed or typical. Client images are published only with written consent.</p>
+      <div style="margin-top: 24px">
+        <a href="reviews.html" class="link-arrow" style="font-size: 14px; padding: 12px 0">REQUEST CLIENT RESULTS <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · TESTIMONIALS -->
+  <section class="voices section">
+    <div class="wrap wrap--narrow">
+      <div class="voices__head">
         <div>
-          <p class="eyebrow">Client Voices</p>
-          <h2 style="margin: 0">Trusted by skin.</h2>
+          <p class="eyebrow">CLIENT VOICES</p>
+          <h2 class="h2" style="margin: 0">Trusted by skin.</h2>
         </div>
-        <p class="badge-pill">4.9 ★ · 25 reviews on Birdeye</p>
+        <p class="voices__rating">4.9 ★ · 25 reviews on Birdeye</p>
       </div>
-      <div class="grid grid--cards">
-        <blockquote class="testimonial">
+      <div class="grid-cards">
+
+        <blockquote class="quote">
           <p>"Amber transformed my skin and my self-confidence. I finally feel seen."</p>
-          <footer><cite>Cinthia Z.</cite><span class="meta">Client · from the approved brand board</span></footer>
+          <footer>
+            <span class="quote__stars" aria-label="Five out of five stars">★★★★★</span>
+            <cite>Cinthia Z.</cite>
+            <span class="quote__meta">Client · from the approved brand board</span>
+          </footer>
         </blockquote>
-        <blockquote class="testimonial">
+
+        <blockquote class="quote">
           <p>"Approved client testimonial required."</p>
-          <footer><cite>Client first name — pending</cite><span class="meta">Treatment · date · rating (from Birdeye, with consent)</span></footer>
+          <footer>
+            <cite>Client first name — pending</cite>
+            <span class="quote__meta">Treatment · date · rating (from Birdeye, with consent)</span>
+          </footer>
         </blockquote>
-        <blockquote class="testimonial">
+
+        <blockquote class="quote">
           <p>"Approved client testimonial required."</p>
-          <footer><cite>Client first name — pending</cite><span class="meta">Treatment · date · rating (from Birdeye, with consent)</span></footer>
+          <footer>
+            <cite>Client first name — pending</cite>
+            <span class="quote__meta">Treatment · date · rating (from Birdeye, with consent)</span>
+          </footer>
         </blockquote>
+
       </div>
-      <div style="margin-top: 32px">
-        <a class="textlink" href="reviews.html">READ ALL REVIEWS <span aria-hidden="true">→</span></a>
-      </div>
+      <p class="note">The aggregate rating of <strong>4.9 ★ across 25 reviews</strong> is verified. Individual quotes are pulled from Google or Birdeye with permission before publishing.</p>
     </div>
   </section>
 
-  <!-- 9 · JOURNAL / RITUALS -->
-  <section class="section" id="journal">
+  <!-- 10 · JOURNAL -->
+  <section id="journal" class="journal section">
     <div class="wrap">
-      <p class="eyebrow">The Rituals Journal</p>
-      <h2 style="margin-bottom: 44px; max-width: 22ch">Skin knowledge is part of the treatment.</h2>
-      <div class="grid grid--cards">
+      <p class="eyebrow">THE JOURNAL</p>
+      <h2 class="h2" style="margin-bottom: 44px; max-width: 22ch">Skin knowledge is part of the treatment.</h2>
+      <div class="grid-cards">
+
         <article class="card">
-          <div style="height: 160px; background: linear-gradient(150deg, #EFDFE3, #D89BAA)"></div>
-          <div class="card__body">
-            <p class="eyebrow eyebrow--rose" style="margin: 0; font-size: 11px; letter-spacing: 0.18em">MELANIN &amp; SKINCARE</p>
-            <h3 style="font-size: 26px; flex: 1">Melanin and Skincare: What Your Skin Really Needs</h3>
-            <p class="card__desc" style="flex: none">Draft in progress — education written for every tone.</p>
-            <a class="textlink" href="rituals.html" style="font-size: 13px">Read <span aria-hidden="true">→</span></a>
+          <div class="journal__media art-pending" role="img" aria-label="Article artwork pending"></div>
+          <div class="card__body journal__body">
+            <p class="journal__tag">MELANIN &amp; SKINCARE</p>
+            <h3>Melanin and Skincare: What Your Skin Really Needs</h3>
+            <p class="journal__excerpt">Draft in progress — education written for every tone.</p>
+            <span class="journal__state">In draft</span>
           </div>
         </article>
+
         <article class="card">
-          <div style="height: 160px; background: linear-gradient(150deg, #EEF0EA, #A9B8A6)"></div>
-          <div class="card__body">
-            <p class="eyebrow eyebrow--rose" style="margin: 0; font-size: 11px; letter-spacing: 0.18em">INGREDIENT EDUCATION</p>
-            <h3 style="font-size: 26px; flex: 1">Four Ingredients, Infinite Possibilities</h3>
-            <p class="card__desc" style="flex: none">Outline ready — what goes in the bottle, and why.</p>
-            <a class="textlink" href="rituals.html" style="font-size: 13px">Read <span aria-hidden="true">→</span></a>
+          <div class="journal__media art-pending art-pending--b" role="img" aria-label="Article artwork pending"></div>
+          <div class="card__body journal__body">
+            <p class="journal__tag">INGREDIENT EDUCATION</p>
+            <h3>Four Ingredients, Infinite Possibilities</h3>
+            <p class="journal__excerpt">Outline ready — what goes in the bottle, and why.</p>
+            <span class="journal__state">In draft</span>
           </div>
         </article>
+
         <article class="card">
-          <div style="height: 160px; background: linear-gradient(150deg, #EDE7F0, #D7C6E6)"></div>
-          <div class="card__body">
-            <p class="eyebrow eyebrow--rose" style="margin: 0; font-size: 11px; letter-spacing: 0.18em">AFTERCARE</p>
-            <h3 style="font-size: 26px; flex: 1">Aftercare Is Part of the Treatment</h3>
-            <p class="card__desc" style="flex: none">Outline ready — how the days after a visit shape results.</p>
-            <a class="textlink" href="rituals.html" style="font-size: 13px">Read <span aria-hidden="true">→</span></a>
+          <div class="journal__media art-pending art-pending--c" role="img" aria-label="Article artwork pending"></div>
+          <div class="card__body journal__body">
+            <p class="journal__tag">AFTERCARE</p>
+            <h3>Aftercare Is Part of the Treatment</h3>
+            <p class="journal__excerpt">Outline ready — how the days after a visit shape results.</p>
+            <span class="journal__state">In draft</span>
           </div>
         </article>
+
       </div>
       <div style="margin-top: 32px">
-        <a class="btn btn--ghost" href="rituals.html">VISIT THE JOURNAL</a>
+        <a href="mailto:ambersessentialtouch@gmail.com?subject=Send%20me%20skincare%20education" class="btn btn--ghost" style="font-size: 14px; padding: 15px 28px">GET THESE BY EMAIL</a>
       </div>
     </div>
   </section>
 
-  <!-- 10 · SHOP -->
-  <section class="section section--shop" id="shop">
+  <!-- 11 · SHOP -->
+  <section id="shop" class="shop section">
     <div class="wrap">
-      <p class="eyebrow">The Shop</p>
-      <h2>Care that continues at home.</h2>
-      <p class="lede" style="margin-bottom: 44px; font-size: 16px; max-width: 60ch">Small-batch botanicals, made by Amber. Orders are currently inquiry-based — message to reserve.</p>
-      <div class="grid grid--tight">
+      <p class="eyebrow">THE SHOP</p>
+      <h2 class="h2">Care that continues at home.</h2>
+      <p class="lede" style="margin-bottom: 44px; max-width: 60ch">Small-batch botanical skincare, made by Amber in Pinole. Orders are currently inquiry-based — message to reserve.</p>
+      <div class="grid-products">
+
         <article class="card">
-          <div class="gradient-media" style="aspect-ratio: 5/4; background: linear-gradient(150deg, #F7F1E8, #E8D9C8)"><span class="pending-tag">Product photo pending</span></div>
-          <div class="card__body" style="padding: 22px 24px 24px; gap: 8px">
-            <h3 style="font-size: 24px">Purely Essential Virgin Oil</h3>
-            <p class="card__desc" style="font-size: 14px">4 ingredients. Shaving, cleansing, healing. Unscented, Hibiscus, or Mango-Pomegranate.</p>
-            <p style="margin: 0 0 8px; font-size: 14px; font-weight: 700; color: var(--brown)">2 oz $18 · 8 oz $50</p>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="shop.html#virgin-oil">MESSAGE TO RESERVE</a>
+          <div class="product__media art-pending" role="img" aria-label="Product photograph pending">
+            <span class="product__variant">3 SCENTS</span>
+          </div>
+          <div class="product__body">
+            <div class="product__row">
+              <h3>Purely Essential Virgin Oil</h3>
+              <span class="product__from">From $18</span>
             </div>
+            <p class="product__desc">Four virgin oils, one for each layer of the skin. Shaving, cleansing, healing. Unscented, Hibiscus, or Mango-Pomegranate.</p>
+            <p class="product__price">2 oz $18 · 8 oz $50</p>
+            <a href="shop.html#virgin-oil" class="product__cta">MESSAGE TO RESERVE</a>
           </div>
         </article>
+
         <article class="card">
-          <div class="gradient-media" style="aspect-ratio: 5/4; background: linear-gradient(150deg, #F5EBE6, #EFDFE3)"><span class="pending-tag">Product photo pending</span></div>
-          <div class="card__body" style="padding: 22px 24px 24px; gap: 8px">
-            <h3 style="font-size: 24px">Whipped Body Butter</h3>
-            <p class="card__desc" style="font-size: 14px">Small-batch whipped butter for daily softness.</p>
-            <p style="margin: 0 0 8px; font-size: 14px; font-weight: 700; color: var(--brown)">4 oz $20 · 8 oz $40 · 12 oz $60</p>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="shop.html#body-butter">MESSAGE TO RESERVE</a>
+          <div class="product__media art-pending art-pending--b" role="img" aria-label="Product photograph pending">
+            <span class="product__variant">3 SIZES</span>
+          </div>
+          <div class="product__body">
+            <div class="product__row">
+              <h3>Whipped Body Butter</h3>
+              <span class="product__from">From $20</span>
             </div>
+            <p class="product__desc">Shea, mango, and kokum whipped with unscented oil. Dense moisture without weight.</p>
+            <p class="product__price">4 oz $20 · 8 oz $40 · 12 oz $60</p>
+            <a href="shop.html#body-butter" class="product__cta">MESSAGE TO RESERVE</a>
           </div>
         </article>
+
         <article class="card">
-          <div class="gradient-media" style="aspect-ratio: 5/4; background: linear-gradient(150deg, #EDE7F0, #D7C6E6)"><span class="pending-tag">Product photo pending</span></div>
-          <div class="card__body" style="padding: 22px 24px 24px; gap: 8px">
-            <h3 style="font-size: 24px">Crystal-Infused Blends</h3>
-            <p class="card__desc" style="font-size: 14px">Rose quartz, amethyst, pyrite, or peacock ore.</p>
-            <p style="margin: 0 0 8px; font-size: 14px; font-weight: 700; color: var(--brown)">$45</p>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="shop.html#crystal-blends">MESSAGE TO RESERVE</a>
+          <div class="product__media art-pending art-pending--c" role="img" aria-label="Product photograph pending">
+            <span class="product__variant">4 STONES</span>
+          </div>
+          <div class="product__body">
+            <div class="product__row">
+              <h3>Crystal-Infused Blends</h3>
+              <span class="product__from">$45</span>
             </div>
+            <p class="product__desc">Rose quartz, amethyst, pyrite, or peacock ore.</p>
+            <p class="product__price">Single size</p>
+            <a href="shop.html#crystal-blends" class="product__cta">MESSAGE TO RESERVE</a>
           </div>
         </article>
+
         <article class="card">
-          <div class="gradient-media" style="aspect-ratio: 5/4; background: linear-gradient(150deg, #EEF0EA, #CFDACB)"><span class="pending-tag">Product photo pending</span></div>
-          <div class="card__body" style="padding: 22px 24px 24px; gap: 8px">
-            <h3 style="font-size: 24px">Starter Ritual Kit</h3>
-            <p class="card__desc" style="font-size: 14px">2 oz oil, 4 oz butter, and one crystal blend. Save $8.</p>
-            <p style="margin: 0 0 8px; font-size: 14px; font-weight: 700; color: var(--brown)">$75</p>
-            <div class="card__actions">
-              <a class="btn btn--primary btn--sm" href="shop.html#starter-kit">MESSAGE TO RESERVE</a>
+          <div class="product__media art-pending art-pending--d" role="img" aria-label="Product photograph pending">
+            <span class="product__variant">SAVES $8</span>
+          </div>
+          <div class="product__body">
+            <div class="product__row">
+              <h3>Starter Ritual Kit</h3>
+              <span class="product__from">$75</span>
             </div>
+            <p class="product__desc">A 2 oz oil, a 4 oz butter, and one crystal-infused blend. The gentlest way to begin.</p>
+            <p class="product__price">Bundle of three</p>
+            <a href="shop.html#starter-kit" class="product__cta">MESSAGE TO RESERVE</a>
           </div>
         </article>
+
       </div>
-      <div style="margin-top: 32px">
-        <a class="btn btn--ghost" href="shop.html">SHOP ALL PRODUCTS</a>
-      </div>
+      <p class="note"><strong>Ordering.</strong> Online checkout is not live yet — <em>Message to reserve</em> opens an email to Amber and she confirms with an invoice. Full ingredient lists, allergen notes, and shelf life are added before publishing.</p>
     </div>
   </section>
 
-  <!-- 11 · BOOKING CTA -->
-  <section class="cta-band" id="book">
-    <div class="cta-band__inner">
-      <span class="script">You'll feel the difference.</span>
+  <!-- 12 · BOOKING CTA -->
+  <section id="book" class="book">
+    <div class="book__scrim"></div>
+    <div class="book__inner">
+      <p class="book__script">You'll feel the difference.</p>
       <h2>Ready to place your skin in expert hands?</h2>
-      <p class="sub">Choose your treatment or begin with a consultation.</p>
-      <div class="cta-band__btns">
-        <a class="btn btn--light" href="book.html">RESERVE YOUR APPOINTMENT</a>
-        <a class="btn btn--outline-light" href="book.html?service=consult">BOOK A CONSULTATION</a>
+      <p class="book__sub">Choose your treatment or begin with a consultation.</p>
+      <div class="book__actions">
+        <a href="tel:+15102286657" class="btn btn--light">CALL OR TEXT (510) 228-6657</a>
+        <a href="book.html?service=consult" class="btn btn--outline-light">BOOK A CONSULTATION</a>
       </div>
+      <p class="book__foot">Online booking provider (Square / Calendly / Acuity) to be confirmed — this panel adapts to the chosen system.</p>
     </div>
   </section>
 
-  <!-- 12 · VISIT & CONTACT -->
-  <section class="section" id="contact">
-    <div class="wrap wrap--mid" style="display: flex; flex-wrap: wrap; gap: clamp(32px,5vw,72px)">
-      <div style="flex: 1 1 380px; min-width: 300px">
-        <p class="eyebrow">Visit</p>
-        <h2 style="margin-bottom: 26px; font-size: clamp(34px,4.4vw,56px)">The studio.</h2>
-        <dl style="margin: 0; display: flex; flex-direction: column; gap: 16px; font-size: 15px; line-height: 1.6">
-          <div><dt style="font-weight:700;color:var(--brown);margin-bottom:2px">Address</dt><dd style="margin:0;color:var(--muted)">1622 Michael Dr, Pinole, CA 94564 · <a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564" style="color:var(--rose)">Directions</a></dd></div>
-          <div><dt style="font-weight:700;color:var(--brown);margin-bottom:2px">Phone</dt><dd style="margin:0;color:var(--muted)"><a href="tel:+15102286657" style="color:var(--rose)">(510) 228-6657</a></dd></div>
-          <div><dt style="font-weight:700;color:var(--brown);margin-bottom:2px">Email</dt><dd style="margin:0;color:var(--muted)"><a href="mailto:ambersessentialtouch@gmail.com" style="color:var(--rose)">ambersessentialtouch@gmail.com</a></dd></div>
-          <div><dt style="font-weight:700;color:var(--brown);margin-bottom:2px">Hours</dt><dd style="margin:0;color:var(--muted)">Wed–Fri 9:30a–7:30p · Sat 9:30a–5p · Sun 11a–2p · By appointment</dd></div>
-          <div><dt style="font-weight:700;color:var(--brown);margin-bottom:2px">Policies</dt><dd style="margin:0;color:var(--muted)"><a href="services.html#policies" style="color:var(--rose)">Cancellation &amp; visit policies</a></dd></div>
+  <!-- 13 · VISIT & 14 · EMAIL -->
+  <section id="contact" class="visit">
+    <div class="visit__inner">
+      <div class="visit__col">
+        <p class="eyebrow">VISIT</p>
+        <h2 class="h2" style="margin-bottom: 26px; font-size: clamp(34px, 4.4vw, 56px)">The studio in Pinole.</h2>
+        <dl>
+          <div>
+            <dt>Address</dt>
+            <dd>1622 Michael Dr, Pinole, CA 94564 · <a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564">Get directions</a></dd>
+          </div>
+          <div>
+            <dt>Phone</dt>
+            <dd><a href="tel:+15102286657">(510) 228-6657</a></dd>
+          </div>
+          <div>
+            <dt>Email</dt>
+            <dd><a href="mailto:ambersessentialtouch@gmail.com">ambersessentialtouch@gmail.com</a></dd>
+          </div>
+          <div>
+            <dt style="margin-bottom: 6px">Hours</dt>
+            <dd>
+              <div class="hours">
+                <span><span>Monday &amp; Tuesday</span><span class="closed">Closed</span></span>
+                <span><span>Wednesday – Friday</span><span>9:30 am – 7:30 pm</span></span>
+                <span><span>Saturday</span><span>9:30 am – 5:00 pm</span></span>
+                <span><span>Sunday</span><span>11:00 am – 2:00 pm</span></span>
+              </div>
+            </dd>
+          </div>
+          <div>
+            <dt>Access &amp; parking</dt>
+            <dd class="pending">Accessibility and parking notes to be verified before publishing.</dd>
+          </div>
+          <div>
+            <dt>Before your visit</dt>
+            <dd>A 24-hour cancellation notice is requested. First-time facial clients with sensitivity may need a patch test. A guardian must be present for a first visit by anyone under 18.</dd>
+          </div>
         </dl>
       </div>
-      <div style="flex: 1 1 380px; min-width: 300px; display: flex; flex-direction: column; gap: 24px">
-        <div class="gradient-media" style="flex: 1; min-height: 220px; border-radius: 24px; border: 1px solid var(--line); background: linear-gradient(150deg, #F7F1E8, #EEF0EA)">
-          <a class="textlink" href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564" style="font-family: var(--serif); font-style: italic; font-weight: 600; font-size: 17px">Open the map — Pinole, CA <span aria-hidden="true">→</span></a>
-        </div>
-        <div class="capture">
+      <div class="visit__col visit__col--right">
+        <a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564" class="map-card">
+          <span>Open the map · Pinole, CA →</span>
+        </a>
+        <div class="signup">
           <h3>Care continues between appointments.</h3>
-          <p>Skin Notes — monthly ritual, new drops, quiet reminders. No noise.</p>
-          <form data-capture>
-            <label class="field field--first">First name
+          <p>Receive skincare education, seasonal guidance, appointment updates, and product news from Amber.</p>
+          <form id="signupForm">
+            <label class="f-first">FIRST NAME
               <input type="text" name="first" autocomplete="given-name">
             </label>
-            <label class="field field--email">Email
+            <label class="f-email">EMAIL
               <input type="email" name="email" required autocomplete="email">
             </label>
-            <button class="btn btn--primary" type="submit" style="padding: 15px 26px; font-size: 14px">JOIN AMBER'S LIST</button>
+            <button type="submit">JOIN AMBER'S LIST</button>
           </form>
-          <p class="form-note">By joining you consent to receive email from Amber's Essential Touch. Unsubscribe anytime. Your email stays with Amber.</p>
+          <p class="signup__done" id="signupDone" role="status" hidden>Welcome. Take your time — your skin will.</p>
+          <p class="signup__fine">By joining you consent to receive email from Amber's Essential Touch. Unsubscribe anytime. Privacy policy to be published.</p>
         </div>
       </div>
     </div>
@@ -479,61 +716,63 @@
 
 </main>
 
-<!-- FOOTER -->
-<footer class="site-footer">
-  <div class="footer__grid">
-    <div class="footer__brand">
-      <div class="footer__brand-row">
-        <img src="img/logo-badge.png" alt="Amber's Essential Touch lotus monogram">
-        <span>Amber's Essential Touch</span>
+<!-- 15 · FOOTER -->
+<footer class="ftr">
+  <div class="ftr__inner">
+    <div class="ftr__brand">
+      <div class="ftr__lockup">
+        <img src="img/logo-glyph.png" alt="Amber's Essential Touch lotus monogram" class="ftr__glyph" width="60" height="60">
+        <span class="ftr__name">Amber's Essential Touch</span>
       </div>
-      <p class="footer__tag">Professional skincare.<br>Intentional care.<br>Preserved brilliance.</p>
-      <p class="footer__loc">Pinole, CA · Black-woman owned and operated</p>
-      <div class="footer__lockup">
-        <img src="img/lotus-card.png" alt="Amber's Essential Touch — You'll FEEL the difference">
-      </div>
+      <p class="ftr__motto">Professional skincare.<br>Intentional care.<br>Preserved brilliance.</p>
+      <p class="ftr__meta">Licensed esthetician · 1622 Michael Dr, Pinole, CA 94564 · Black-woman owned and operated</p>
     </div>
-    <nav class="footer__col" aria-label="Explore">
+    <nav aria-label="Explore">
       <h3>EXPLORE</h3>
       <ul>
         <li><a href="services.html">Services</a></li>
         <li><a href="shop.html">Shop</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="rituals.html">Rituals</a></li>
         <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="rituals.html">Rituals</a></li>
         <li><a href="donate.html">The Mission</a></li>
       </ul>
     </nav>
-    <nav class="footer__col" aria-label="Support">
+    <nav aria-label="Support">
       <h3>SUPPORT</h3>
       <ul>
-        <li><a href="book.html">Book</a></li>
+        <li><a href="book.html">Book an appointment</a></li>
+        <li><a href="tel:+15102286657">Book by phone</a></li>
         <li><a href="contact.html">Contact</a></li>
         <li><a href="services.html#policies">Policies</a></li>
-        <li><a href="donate.html">Donate</a></li>
+        <li><a href="mailto:ambersessentialtouch@gmail.com?subject=Accessibility%20at%20the%20studio">Accessibility</a></li>
       </ul>
     </nav>
-    <nav class="footer__col" aria-label="Connect">
+    <nav aria-label="Connect">
       <h3>CONNECT</h3>
       <ul>
         <li><a href="https://www.facebook.com/aetouch/">Facebook</a></li>
-        <li><a href="mailto:ambersessentialtouch@gmail.com">Email</a></li>
+        <li><a href="https://www.instagram.com/ambersessential/">Instagram</a></li>
+        <li><a href="mailto:ambersessentialtouch@gmail.com">Email Amber</a></li>
         <li><a href="tel:+15102286657">(510) 228-6657</a></li>
+        <li><a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564">Directions</a></li>
       </ul>
     </nav>
   </div>
-  <div class="footer__bar">
-    <div class="footer__bar-inner">
-      <p class="footer__motto">BE SEEN. BE CARED FOR. BE YOURSELF.</p>
-      <p class="footer__copy">© 2026 Amber's Essential Touch · Pinole, CA</p>
+  <div class="ftr__bar">
+    <div class="ftr__bar-inner">
+      <p class="ftr__tag">BE SEEN. BE CARED FOR. BE YOURSELF.</p>
+      <p class="ftr__copy">© 2026 Amber's Essential Touch · Pinole, CA</p>
     </div>
   </div>
 </footer>
 
-<div class="book-bar">
-  <a href="book.html">BOOK YOUR APPOINTMENT</a>
+<div class="bookbar__spacer" aria-hidden="true"></div>
+<div class="bookbar">
+  <a href="tel:+15102286657" class="bookbar__primary">CALL OR TEXT TO BOOK</a>
+  <a href="mailto:ambersessentialtouch@gmail.com?subject=Appointment%20request" class="bookbar__secondary" aria-label="Email Amber">EMAIL</a>
 </div>
 
-<script src="js/main.js"></script>
+<script src="js/home.js"></script>
 </body>
 </html>
