@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ambers-essential-touch.local/schemas/research-status.schema.json",
+  "title": "Amber's Essential Touch research status",
+  "type": "object",
+  "required": ["schema_version", "phase", "site_implementation_authorized", "research_complete", "counts", "gates"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "phase": { "const": "research_and_source_reconstruction" },
+    "site_implementation_authorized": { "const": false },
+    "research_complete": { "type": "boolean" },
+    "counts": { "type": "object", "additionalProperties": { "type": "integer", "minimum": 0 } },
+    "gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["gate", "status", "evidence"],
+        "properties": {
+          "gate": { "type": "string" },
+          "status": { "type": "string" },
+          "evidence": { "type": "string" }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "ambers-essential-touch-research": {
+      "command": "node",
+      "args": ["/absolute/path/to/ambers-essential-touch/mcp/server.mjs"]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ambers-essential-touch.local/schemas/project-context.schema.json",
+  "title": "Amber's Essential Touch project context",
+  "type": "object",
+  "required": ["schema_version", "project", "objective", "hard_boundaries", "primary_evidence"],
+  "properties": {
+    "schema_version": { "type": "string" },
+    "project": {
+      "type": "object",
+      "required": ["name", "phase", "research_complete", "site_implementation_authorized"],
+      "properties": {
+        "name": { "const": "Amber's Essential Touch" },
+        "phase": { "const": "research_and_source_reconstruction" },
+        "research_complete": { "type": "boolean" },
+        "site_implementation_authorized": { "type": "boolean" }
+      },
+      "additionalProperties": true
+    },
+    "objective": { "type": "string" },
+    "hard_boundaries": { "type": "array", "items": { "type": "string" }, "minItems": 1 },
+    "primary_evidence": { "type": "object", "additionalProperties": { "type": "string" } }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,348 @@
+/* ============================================================================
+   HEYER LIVIN' — colors_and_type.css
+   Foundational design tokens + semantic type styles.
+   Authored brand: Jair Valley / Heyer Livin' LLC (Oakland).
+   Source of truth: HEYERLIVIN.COM/design-system/tokens.json + SYSTEM.md
+   "Choice is not chance. The pattern is structural."
+   ----------------------------------------------------------------------------
+   Two expressions live here:
+   (A) CANONICAL / STRUCTURAL  — pure-black ground, white linework,
+       RED active-route + BLUE structural-reading accents. Brand palette is
+       black / white / red / blue (no lightened black). SHIPPED. DEFAULT.
+   (B) ARCHIVAL BROADSHEET      — aged-paper ground, indigo/ochre/teal, serif.
+       A documented warm alternate (DESIGN.md). Opt-in via [data-skin="paper"].
+   ============================================================================ */
+
+/* ---- Webfonts -------------------------------------------------------------
+   Helvetica Neue (body / UI / display) is a system font — no import needed.
+   No serif webfont: the editorial serif lives ONLY in the logo lockup image.
+   IBM Plex Mono = the data/measurement voice (named in DESIGN.md). ---------- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=IBM+Plex+Mono:ital,wght@0,400;0,500;0,600;1,400&display=swap');
+
+:root {
+  /* ===== (A) CANONICAL COLOR — brand tier · black / white / red / blue == */
+  --hl-ink:        #000000;   /* default ground. PURE black — no lightened variant */
+  --hl-ink-pure:   #000000;   /* true black (dashboard/print) */
+  --hl-paper:      #ffffff;   /* linework, marks, body type on dark */
+  --hl-red:        #E11D2E;   /* ACTIVE ROUTE. attention / evidence accent. dominant state */
+  --hl-blue:       #1B45E5;   /* measurement, motion, structural reading. subordinated state */
+  --hl-cobalt:     #0b1c3a;   /* deep blueprint / technical field (blue, darkened) */
+
+  /* near-ink steps for layering on dark (derived, not invented) */
+  --hl-ink-100:    #121212;
+  --hl-ink-200:    #1a1a1a;
+  --hl-ink-300:    #2a2a2a;
+  --hl-hairline:   rgba(255,255,255,0.16); /* faint divider on ink */
+  --hl-fg:         #ffffff;
+  --hl-fg-muted:   #e6e6e6;   /* body copy on ink */
+  --hl-fg-dim:     #9a9a9a;   /* captions / metadata on ink */
+
+  /* ===== STATE TIER (semantic proof colors) ============================= */
+  --hl-subordinated: #1B45E5; /* R < 0.33  — suppressed / compressed */
+  --hl-structural:   #ffffff; /* 0.33–0.50 — measured constraint zone */
+  --hl-dominant:     #E11D2E; /* R > 0.50  — default / over-weighted */
+  --hl-outer-field:  #555555; /* unscored — never measured */
+
+  /* ===== (B) ARCHIVAL BROADSHEET (warm alternate) ====================== */
+  --hl-archive-indigo: #1B2A4A; /* structural ink */
+  --hl-glyph-ochre:    #C97B3C; /* analog warmth, the human signal */
+  --hl-signal-teal:    #2E6E66; /* the structural reading / "the gap" */
+  --hl-aged-paper:     #F6F2E9; /* printed-not-rendered ground */
+  --hl-surface:        #FFFFFF; /* card / panel on paper */
+  --hl-slate-900:      #16181D;
+  --hl-slate-700:      #3A4046;
+  --hl-slate-500:      #6B7280;
+  --hl-slate-300:      #C9CBD1;
+  --hl-slate-100:      #E9E6DD;
+  --hl-error:          #B23A38;
+  --hl-info:           #3B6CA8;
+
+  /* ===== TYPOGRAPHY ===================================================== */
+  --hl-font-sans:    "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  /* Display = the SAME sans, set heavy + tight. NO serif in live type.
+     The high-contrast editorial serif exists ONLY baked into the logo
+     lockup image (assets/logo/), never as a webfont. */
+  --hl-font-display: "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  --hl-font-mono:    "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* weights */
+  --hl-w-regular: 400; /* @kind font */
+  --hl-w-medium: 500; /* @kind font */
+  --hl-w-semibold: 600; /* @kind font */
+  --hl-w-bold: 700; /* @kind font */
+
+  /* size scale (canonical) */
+  --hl-size-caption: 0.75rem;
+  --hl-size-small:   0.85rem;
+  --hl-size-body:    1rem;
+  --hl-size-lede:    1.25rem;
+  --hl-size-h3:      2rem;
+  --hl-size-h2:      clamp(2.5rem, 5vw, 4rem);
+  --hl-size-h1:      clamp(3rem, 7vw, 6rem);
+  --hl-size-display: clamp(3.5rem, 9vw, 8rem);
+
+  /* tracking */
+  --hl-track-tight:  -0.025em;  /* display / hero / H1 */
+  --hl-track-snug:   -0.015em;  /* H2 / H3 */
+  --hl-track-normal: 0; /* @kind font */
+  --hl-track-wide:   0.04em;    /* buttons / CTAs */
+  --hl-track-caps:   0.12em;    /* nav, UI uppercase labels */
+  --hl-track-label:  0.2em;     /* eyebrow labels: EVIDENCE / WORK / RESEARCH */
+
+  /* leading */
+  --hl-lead-display: 0.95; /* @kind font */
+  --hl-lead-tight:   1.05; /* @kind font */
+  --hl-lead-snug:    1.2; /* @kind font */
+  --hl-lead-body:    1.6; /* @kind font */
+  --hl-lead-loose:   1.75; /* @kind font */
+
+  /* ===== SPACING (multiplicative) ====================================== */
+  --hl-space-0: 0;
+  --hl-space-1: 0.25rem;
+  --hl-space-2: 0.5rem;
+  --hl-space-3: 0.75rem;
+  --hl-space-4: 1rem;
+  --hl-space-5: 1.5rem;
+  --hl-space-6: 2rem;
+  --hl-space-7: 3rem;
+  --hl-space-8: 5rem;
+  --hl-space-9: 8rem;
+
+  /* ===== STRUCTURAL RATIOS ============================================= */
+  --hl-ratio-attractor: 0.39; /* @kind other */   /* 39 / 61 split */
+  --hl-ratio-lower: 0.33; /* @kind other */
+  --hl-ratio-upper: 0.50; /* @kind other */
+  --hl-pi-eight: 0.3927; /* @kind other */        /* π/8 octant */
+
+  /* ===== BORDERS — RADIUS IS ZERO. The system is measured, not soft. === */
+  --hl-border-thin:   1px;
+  --hl-border-strong: 2px;
+  --hl-border-rule:   3px;
+  --hl-radius: 0;               /* canonical: NO rounded corners */
+  --hl-radius-paper: 4px;       /* archival-broadsheet skin only */
+
+  /* ===== MOTION ======================================================== */
+  --hl-motion-instant: 0ms; /* @kind other */
+  --hl-motion-fast: 120ms; /* @kind other */
+  --hl-motion-default: 200ms; /* @kind other */
+  --hl-motion-deliberate: 400ms; /* @kind other */
+  --hl-ease-out: cubic-bezier(0.2, 0.8, 0.2, 1); /* @kind other */
+  --hl-ease-inout: cubic-bezier(0.65, 0, 0.35, 1); /* @kind other */
+
+  /* archival-broadsheet shadows (NEVER pure black; background-derived) */
+  --hl-shadow-card: 0 8px 40px rgba(125,153,180,0.20), 0 4px 4px rgba(86,144,198,0.11);
+  --hl-shadow-panel: 0 12px 48px rgba(125,153,180,0.22);
+}
+
+/* ============================================================================
+   SEMANTIC TYPE STYLES — canonical (on ink ground)
+   ========================================================================== */
+.hl-display {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-display);
+  font-weight: var(--hl-w-bold);
+  letter-spacing: var(--hl-track-tight);
+  line-height: var(--hl-lead-display);
+}
+/* heavy display register — headlines, hero, the wordmark set in type */
+.hl-display-serif {
+  font-family: var(--hl-font-display);
+  font-weight: 700;
+  letter-spacing: var(--hl-track-tight);
+  line-height: var(--hl-lead-display);
+}
+.hl-h1 {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-h1);
+  font-weight: var(--hl-w-bold);
+  letter-spacing: var(--hl-track-tight);
+  line-height: var(--hl-lead-tight);
+}
+.hl-h2 {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-h2);
+  font-weight: var(--hl-w-semibold);
+  letter-spacing: var(--hl-track-snug);
+  line-height: var(--hl-lead-snug);
+}
+.hl-h3 {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-h3);
+  font-weight: var(--hl-w-semibold);
+  letter-spacing: var(--hl-track-snug);
+  line-height: var(--hl-lead-snug);
+}
+.hl-lede {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-lede);
+  font-weight: var(--hl-w-regular);
+  line-height: var(--hl-lead-body);
+}
+.hl-body {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-body);
+  font-weight: var(--hl-w-regular);
+  line-height: var(--hl-lead-body);
+}
+.hl-small {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-small);
+  line-height: var(--hl-lead-snug);
+}
+/* eyebrow / kicker label — EVIDENCE, WORK, RESEARCH */
+.hl-eyebrow {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-small);
+  font-weight: var(--hl-w-medium);
+  letter-spacing: var(--hl-track-label);
+  text-transform: uppercase;
+  color: var(--hl-red);
+}
+/* the data / measurement voice — ratios, dates, event records */
+.hl-mono {
+  font-family: var(--hl-font-mono);
+  font-size: var(--hl-size-small);
+  font-weight: var(--hl-w-medium);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+.hl-caption {
+  font-family: var(--hl-font-sans);
+  font-size: var(--hl-size-caption);
+  letter-spacing: var(--hl-track-caps);
+  text-transform: uppercase;
+  color: var(--hl-fg-dim);
+}
+
+/* tabular numerics always on for data surfaces */
+.hl-tabular { font-variant-numeric: tabular-nums; }
+
+/* ============================================================================
+   GLASS / HOLO SURFACE (moodboard layer)
+   Reeded glass + chromatic aberration + frosted panels, on brand:
+   pure black ground, sharp corners (radius 0), red/blue/white tier preserved.
+   Used as an OPTIONAL hero treatment — never replaces the canonical structure.
+   ========================================================================== */
+
+/* (1) Holographic ground — pastel field behind the reeded overlay.
+       Uses brand red + blue as the warm/cool poles, plus cyan/violet halos. */
+.hl-holo-bg {
+  position: relative;
+  background:
+    radial-gradient(80% 60% at 18% 20%, rgba(120, 200, 255, 0.45), transparent 60%),
+    radial-gradient(70% 55% at 82% 30%, rgba(190, 150, 255, 0.42), transparent 62%),
+    radial-gradient(60% 50% at 50% 90%, rgba(225, 29, 46, 0.18), transparent 65%),
+    radial-gradient(90% 80% at 70% 70%, rgba(27, 69, 229, 0.40), transparent 70%),
+    linear-gradient(180deg, #050813 0%, #000000 100%);
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* (2) Reeded-glass overlay — vertical refraction bars. Sits ABOVE the holo
+       field and BELOW content. Add as a direct child <div class="hl-reeded">. */
+.hl-reeded {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+  background:
+    repeating-linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.00) 0px,
+      rgba(255, 255, 255, 0.00) 6px,
+      rgba(255, 255, 255, 0.10) 7px,
+      rgba(255, 255, 255, 0.22) 9px,
+      rgba(255, 255, 255, 0.10) 11px,
+      rgba(255, 255, 255, 0.00) 12px,
+      rgba(255, 255, 255, 0.00) 18px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.00) 0px,
+      rgba(0, 0, 0, 0.00) 9px,
+      rgba(0, 0, 0, 0.22) 10px,
+      rgba(0, 0, 0, 0.00) 11px,
+      rgba(0, 0, 0, 0.00) 18px
+    );
+  mix-blend-mode: screen;
+  opacity: 0.85;
+}
+
+/* (3) Film-grain noise — keeps the holo ground from looking too clean.
+       SVG fractalNoise data-uri, applied as a low-opacity tile. */
+.hl-grain::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+  opacity: 0.18;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxODAnIGhlaWdodD0nMTgwJz48ZmlsdGVyIGlkPSduJz48ZmVUdXJidWxlbmNlIHR5cGU9J2ZyYWN0YWxOb2lzZScgYmFzZUZyZXF1ZW5jeT0nMC45JyBudW1PY3RhdmVzPScyJyBzdGl0Y2hUaWxlcz0nc3RpdGNoJy8+PGZlQ29sb3JNYXRyaXggdmFsdWVzPScwIDAgMCAwIDEgIDAgMCAwIDAgMSAgMCAwIDAgMCAxICAwIDAgMCAwLjY1IDAnLz48L2ZpbHRlcj48cmVjdCB3aWR0aD0nMTAwJScgaGVpZ2h0PScxMDAlJyBmaWx0ZXI9J3VybCglMjNuKScvPjwvc3ZnPg==")
+}
+
+/* (4) Frosted-glass card — content surface. Sharp corners stay (radius 0). */
+.hl-glass {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  backdrop-filter: blur(18px) saturate(140%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.25),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.06),
+    0 30px 60px -20px rgba(0, 0, 0, 0.6);
+}
+.hl-glass--dark {
+  background: rgba(8, 10, 18, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  -webkit-backdrop-filter: blur(22px) saturate(130%);
+  backdrop-filter: blur(22px) saturate(130%);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.10);
+}
+
+/* (5) Chromatic aberration — apply to display type over the glass field.
+       Uses the brand's red + blue tier as the RGB split poles. */
+.hl-chromatic {
+  text-shadow:
+    -0.018em 0 0 rgba(225, 29, 46, 0.85),
+     0.018em 0 0 rgba(27, 69, 229, 0.85),
+     0 0 0.04em rgba(255, 255, 255, 0.35);
+}
+
+/* (6) Prismatic rule — red → white → blue → red, 2px high, full-bleed in a row */
+.hl-prism-rule {
+  height: 2px;
+  width: 100%;
+  border: 0;
+  background: linear-gradient(
+    90deg,
+    var(--hl-red) 0%,
+    #ffffff 35%,
+    var(--hl-blue) 65%,
+    var(--hl-red) 100%
+  );
+  filter: saturate(140%);
+}
+
+/* (7) Light shaft — diagonal highlight band; lay over any glass surface */
+.hl-shaft {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    115deg,
+    transparent 0%,
+    transparent 40%,
+    rgba(255, 255, 255, 0.10) 50%,
+    transparent 60%,
+    transparent 100%
+  );
+  mix-blend-mode: screen;
+}
+
+/* structural divider — 2px white rule introduces a section */
+.hl-rule {
+  border: 0;
+  border-top: var(--hl-border-strong) solid var(--hl-paper);
+  margin: var(--hl-space-6) 0;
+}

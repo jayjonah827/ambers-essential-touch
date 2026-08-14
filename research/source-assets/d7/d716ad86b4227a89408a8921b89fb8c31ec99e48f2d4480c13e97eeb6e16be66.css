@@ -1,0 +1,6 @@
+/* ============================================================================
+   HEYER LIVIN' — styles.css
+   Root stylesheet for consuming projects. Import this single file to get
+   all design tokens, semantic type classes, and glass/holo utilities.
+   ============================================================================ */
+@import './colors_and_type.css';

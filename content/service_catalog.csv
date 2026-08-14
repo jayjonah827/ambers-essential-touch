@@ -1,0 +1,9 @@
+service_key,preferred_source_name,category,duration_min,duration_max,price_from_usd,price_basis,evidence_observations,evidence_consistency,approval_status,publication_rule
+body_waxing,Body Waxing & Brow Care,waxing,15,90,25,starting_price,3,consistent_across_reviewed_sources,owner_confirmation_pending,Do not publish as final until Amber confirms current menu and pricing.
+facial,Consultation Facial,facial,60,90,95,starting_price,3,consistent_across_reviewed_sources,owner_confirmation_pending,Do not publish as final until Amber confirms current menu and pricing.
+acne,Acne-Focused Treatment,facial,60,60,110,starting_price,3,consistent_across_reviewed_sources,owner_confirmation_pending,Use cosmetic supportive language; do not imply medical treatment.
+manicure,Manicure,hand_care,45,45,45,starting_price,3,consistent_across_reviewed_sources,owner_confirmation_pending,Do not publish as final until Amber confirms current menu and pricing.
+monthly_ritual,Monthly Ritual Plan,membership,,,180,monthly_starting_price,3,consistent_across_reviewed_sources,owner_confirmation_pending,Plan structure and billing cadence require confirmation.
+skin_consultation,Skin Consultation,consultation,30,30,0,included,2,price_consistent_duration_modeled,owner_confirmation_pending,Included language is source-backed; 30-minute duration is only in the repo model.
+senior_facial,Senior Facial,community_program,,,0,community_program,1,single_source,owner_confirmation_pending,Do not convert the donation-supported program into a permanent retail promise without confirmation.
+teen_facial,Teen Facial,community_program,,,0,community_program,1,single_source,owner_confirmation_pending,Do not convert the donation-supported program into a permanent retail promise without confirmation.

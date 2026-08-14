@@ -1,0 +1,14 @@
+copy_id,copy_text,source_id,source_locator,voice_status,claim_risk,usage_rule
+copy_001,You'll FEEL the difference.,voice_guide,07_VOICE_GUIDE.md:10,canonical,low,Preserve capitalization when used.
+copy_002,Where Skin Care Becomes Ritual.,voice_guide,07_VOICE_GUIDE.md:11,canonical,low,Approved reusable brand phrase in the guide.
+copy_003,Your Skin Has Memory.,voice_guide,07_VOICE_GUIDE.md:12,canonical,health_adjacent,Use as metaphor or campaign line; do not turn it into a medical assertion.
+copy_004,This Is Not Fast Beauty.,voice_guide,07_VOICE_GUIDE.md:13,canonical,low,Brand philosophy line.
+copy_005,Healing begins with how you're held.,voice_guide,07_VOICE_GUIDE.md:14,canonical,health_adjacent,Keep in emotional care context; avoid clinical promises.
+copy_006,Slow care lasts longer.,voice_guide,07_VOICE_GUIDE.md:15,canonical,low,Brand philosophy line.
+copy_007,Aftercare is part of the treatment.,voice_guide,07_VOICE_GUIDE.md:16,canonical,health_adjacent,Use for professional process; not a medical outcome.
+copy_008,4 Ingredients. Infinite Possibilities.,voice_guide,07_VOICE_GUIDE.md:17,canonical,formula_claim,Confirm exact formula before product publication.
+copy_009,Purely Essential.,voice_guide,07_VOICE_GUIDE.md:18,canonical,low,Product-family phrase.
+copy_010,Trusted by Skin.,voice_guide,07_VOICE_GUIDE.md:19,canonical,implied_endorsement,May be used as poetic copy; do not imply regulatory endorsement.
+copy_011,Skin Is Not a Trend.,voice_guide,07_VOICE_GUIDE.md:20,canonical,low,Brand philosophy line.
+copy_012,Intentional Touch Reduces Inflammation.,voice_guide,07_VOICE_GUIDE.md:21,canonical_but_restricted,medical_claim,Do not publish as an unqualified factual claim without substantiation and legal review.
+copy_013,Amber's product is her hands.,owner_direction,conversation 2026-08-14,strategic_direction,low,Use as the organizing creative strategy: training touch and practitioner identity are the differentiator.

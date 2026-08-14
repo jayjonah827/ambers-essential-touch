@@ -1,0 +1,37 @@
+menu_observation_id,section,service_name,qualifier,duration_raw,price_raw,price_min_usd,price_max_usd,price_basis,source_locator,currentness,approval_status,notes
+menu_001,Waxing Upper Body,"Hair line, sideburns",,,"$15-25",15,25,range,IMG_2510.PNG and IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Exact spelling preserved from source.
+menu_002,Waxing Upper Body,Brow Sculpting,,,$25,25,25,fixed,IMG_2510.PNG and IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_003,Waxing Upper Body,Brow Wax,,,$20,20,20,fixed,IMG_2510.PNG and IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_004,Waxing Upper Body,Lip Wax,,,$15,15,15,fixed,IMG_2510.PNG and IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_005,Waxing Upper Body,Chin Wax,,,"$15 & up",15,,starting_price,IMG_2510.PNG and IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_006,Waxing Upper Body,Chest Wax,men,,"$25 & up",25,,starting_price,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_007,Waxing Upper Body,Chest Wax,women,,$15,15,15,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_008,Waxing Upper Body,Shoulders,,,$15,15,15,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_009,Waxing Upper Body,Under Arms,,,$15,15,15,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_010,Waxing Upper Body,Full Arm Wax,includes hands,,$45,45,45,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_011,Waxing Upper Body,Half Arm Wax,,,$25,25,25,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_012,Waxing Upper Body,Hands Wax,,,$10,10,10,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_013,Waxing Upper Body,Abdomen,men,,"$20 & up",20,,starting_price,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_014,Waxing Upper Body,Abdomen,women,,$10,10,10,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_015,Waxing Upper Body,Back Wax,men,,"$40 & up",40,,starting_price,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_016,Waxing Upper Body,Back Wax,women,,$35,35,35,fixed,IMG_2511.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_017,Waxing Lower Body,Brazilian Wax,first time with Amber; men,,"$95 & up",95,,starting_price,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source wording says first time w/me.
+menu_018,Waxing Lower Body,Brazilian Wax,first time with Amber; women,,"$90 & up",90,,starting_price,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source wording says first time w/me.
+menu_019,Waxing Lower Body,Brazilian Maintenance Wax,men,,$75,75,75,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_020,Waxing Lower Body,Brazilian Maintenance Wax,women,,$65,65,65,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_021,Waxing Lower Body,Bikini Wax,men,,$55,55,55,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_022,Waxing Lower Body,Bikini Wax,women,,$45,45,45,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_023,Waxing Lower Body,V Line Wax,,,$60,60,60,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_024,Waxing Lower Body,Full Leg Wax,,,$65,65,65,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_025,Waxing Lower Body,Half Leg,includes knee or foot not both,,$35,35,35,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_026,Waxing Lower Body,Feet Wax,,,$10,10,10,fixed,IMG_2512.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_027,Facials,Basic Facial,,70 minutes,$85,85,85,fixed,IMG_2512.PNG and IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_028,Facials,Teen Facial,ages 9-19,,$65,65,65,fixed,IMG_2512.PNG and IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_029,Facials,Customized Facial,same as basic plus chemical peel or ultrasound or LED therapy,80-90 minutes,$150,150,150,fixed,IMG_2512.PNG and IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_030,Facials,LED Facial,"face cleanse, gel, LED mask with moisture",30 minutes,$50,50,50,fixed,IMG_2512.PNG and IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,
+menu_031,Wax Bundles,"Brazilian, Full Arm & Full Leg",,,$165,165,165,bundle,IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source states value $195; value statement requires confirmation.
+menu_032,Wax Bundles,"Bikini, Full Arm & Full Leg",,,$135,135,135,bundle,IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source states value $155; value statement requires confirmation.
+menu_033,Wax Bundles,"Back, Brazilian, Full Arm, Full Leg",,,$180,180,180,bundle,IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source states value $215; value statement requires confirmation.
+menu_034,Wax Bundles,Buy 6 Brazilian Waxes get 1 Free,,,$325,325,325,prepaid_bundle,IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source states value $390; free and value claims require confirmation.
+menu_035,Wax Bundles,Buy 6 Bikini Waxes get 1 Free,men,,$275,275,275,prepaid_bundle,IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source states value $330; free and value claims require confirmation.
+menu_036,Wax Bundles,Buy 6 Bikini Waxes get 1 Free,women,,$225,225,225,prepaid_bundle,IMG_2513.PNG,undated_uploaded_menu,current_menu_confirmation_pending,Source states value $270; free and value claims require confirmation.

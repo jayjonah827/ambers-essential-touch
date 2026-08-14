@@ -1,0 +1,76 @@
+{
+  "schema_version": "1.0",
+  "project": {
+    "name": "Amber's Essential Touch",
+    "owner": "Amber Johnson",
+    "repository": "jayjonah827/ambers-essential-touch",
+    "phase": "research_and_source_reconstruction",
+    "research_complete": false,
+    "site_implementation_authorized": false
+  },
+  "objective": "Preserve and extract every supplied source into an agent-readable evidence system before design or implementation.",
+  "hard_boundaries": [
+    "Do not build, redesign, deploy, schedule, sell, or connect external systems in the research phase.",
+    "Do not create placeholders for facts, services, prices, people, images, claims, or integrations.",
+    "Do not silently resolve conflicts or promote generated concepts to approvals.",
+    "Do not publish restricted formula ratios, production procedure, or batch costing.",
+    "Do not treat OCR as verified business evidence."
+  ],
+  "source_authority_order": [
+    "explicit current owner direction and owner-approved assets",
+    "first-party owner source documents and photographs",
+    "date-bound business snapshots and professional records",
+    "curated evidence tables",
+    "existing repository content models and pages",
+    "generated concepts, competitor references, and historical exports"
+  ],
+  "confirmed_source_findings": {
+    "approved_identity": "Owner-designated lotus monogram with A and droplet",
+    "owner_name": "Amber Johnson",
+    "practice_owner_start": "June 2010",
+    "phone_snapshot": "(510) 228-6657",
+    "email_snapshot": "ambersessentialtouch@gmail.com",
+    "scheduling_provider_direction": "Amber's Google Workspace, future implementation only",
+    "strategic_differentiator": "Amber's trained hands and attentive touch",
+    "site_visual_direction": "warm light pink, sunlight, flowers, moisture, gradients, no product in the hero",
+    "product_visual_direction": "separate future phase with round organic feminine forms, aluminum and art-glass research"
+  },
+  "decision_gates": [
+    "Identify the current detailed or grouped service menu and prices.",
+    "Approve oil sizes, prices, refill policy, formulas, labels, and claims.",
+    "Resolve 15+ years versus 18 years licensed.",
+    "Refresh address, hours, phone, email, review rating, and review count.",
+    "Confirm image rights and consent for Amber, clients, models, and social sources.",
+    "Approve confidentiality handling for product formula and costing sources.",
+    "Approve a real Amber hand source before any hand icon or airbrush asset is produced.",
+    "Issue explicit research signoff before implementation."
+  ],
+  "primary_evidence": {
+    "research_status": "content/research_status.json",
+    "conflicts": "content/conflict_register.csv",
+    "source_relocations": "content/relocation_map.csv",
+    "detailed_service_menu": "content/service_menu_observations.csv",
+    "grouped_service_prices": "content/service_price_evidence.csv",
+    "service_candidates": "content/service_catalog.csv",
+    "product_prices": "content/product_price_evidence.csv",
+    "product_research": "content/product_research_evidence.csv",
+    "business_facts": "content/business_fact_evidence.csv",
+    "copy_and_claims": "content/copy_evidence.csv",
+    "design_direction": "content/design_direction_evidence.csv",
+    "competitor_references": "content/competitor_reference_index.csv",
+    "topic_index": "content/research_topic_index.csv",
+    "source_assets": "data/research/source_asset_register.csv",
+    "visual_assets": "data/research/visual_asset_register.csv",
+    "archive_members": "data/research/archive_member_register.csv",
+    "pdf_pages": "data/research/pdf_page_register.csv",
+    "pdf_text": "data/research/pdf_page_text.jsonl",
+    "review_batches": "content/visual_review_batches.csv"
+  },
+  "safe_agent_behavior": {
+    "fact_response": "Return the observation, source locator, temporal status, approval status, and any conflict.",
+    "missing_source_response": "Report the original path and check relocation_map.csv before concluding it is unavailable.",
+    "price_response": "Return every relevant price version and ask for owner resolution if versions differ.",
+    "visual_response": "Return source hash, review batch, approval status, usage status, and identity sensitivity.",
+    "implementation_response": "Report that implementation is gated; do not create placeholders or code around the missing decision."
+  }
+}

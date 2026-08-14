@@ -1,0 +1,17 @@
+research_id,topic,source_value,source_locator,evidence_status,publication_risk,agent_rule
+prod_res_001,product_identity,AMBER’S Purely Essential Virgin Oil,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:19,owner_source_research,low,Retain as a candidate name until label and SKU approval.
+prod_res_002,audience,"all ages, all skins, all body parts",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:19,owner_source_research,claims_and_safety,Do not publish universal compatibility without substantiation.
+prod_res_003,variants,Unscented Hibiscus and Mango-Pomegranate,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20,owner_source_research,formula_and_allergen,Confirm current formulas fragrance materials INCI naming and allergen disclosures.
+prod_res_004,oil_components,black seed sunflower sesame and evening primrose oils,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20,owner_source_research,restricted_formula,Ingredient existence is research evidence; ratios costs and trade-secret details stay outside public artifacts.
+prod_res_005,butter_components,shea mango and kokum butters whipped with unscented oil,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20,owner_source_research,restricted_formula,Confirm exact formula and INCI list before label work.
+prod_res_006,patch_test,always,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20,owner_source_research,safety,Route to product safety and label review.
+prod_res_007,shelf_life,2-3 years,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20-21,unverified_source_claim,substantiation,Do not publish until stability and preservation evidence supports it.
+prod_res_008,allergen_notes,"nuts, sunflower",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:21,owner_source_research,safety,Require qualified formulation and labeling review.
+prod_res_009,crystal_variants,quartz ametrine pyrite and peacock rainbow ore references,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20-21,owner_source_research,claims_and_safety,Do not make antibacterial spiritual or therapeutic claims as product facts.
+prod_res_010,usage_scope,"skin, scalp, beard, locs, massage and head-to-toe",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:19-22,concept_research,safety,Confirm actual tested use instructions and exclusions.
+prod_res_011,edibility_claim,"100% natural, you could eat it",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:20,unverified_source_claim,high,Do not publish or imply ingestion safety.
+prod_res_012,animal_and_plant_use,possible leaf conditioner or after-bath fur application,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:22,speculative_concept,high,Do not publish or recommend without qualified safety evidence.
+prod_res_013,medical_language_boundary,"supports dry sensitive skin; reduce appearance of dryness; moisturizes compromised-feeling skin",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:23,generated_claim_guidance,regulated_claims,Use only after formula substantiation and claims review.
+prod_res_014,current_candidate_prices,"2 oz $18; 8 oz $50",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:21 and Home Print PDF:4,source_repeated,commercial,Currentness still requires Amber confirmation.
+prod_res_015,relaunch_price_concept,"2 oz $20; 4 oz $48; 4 oz refill $42",AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:30,generated_strategy_concept,commercial,Do not publish; preserve as an alternate pricing experiment.
+prod_res_016,confidentiality_boundary,The source discusses a trade-secret internal formula sheet,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:23,explicit_source_boundary,restricted_formula,Never expose ratios batch costing or production procedure in public agent outputs.

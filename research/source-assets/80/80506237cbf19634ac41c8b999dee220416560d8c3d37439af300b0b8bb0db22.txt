@@ -1,0 +1,6 @@
+Photographic background replacement and light integration only. Image 1 is the edit target. Keep the photographed woman exactly as she appears in Image 1: identical face, expression, skin texture, locs, seated pose, proportions, hands, clothing, jewelry, chair, crop, and camera angle. Images 2 and 3 are identity and edge references only; do not borrow their pose or clothing.
+
+Replace the original room behind the chair with a calm, realistic botanical skincare sanctuary: a rounded warm-brass mirror, natural orchids and leafy plants, and a subtle shallow reflective water surface in the lower background. Use warm directional late-afternoon sunlight, a restrained opalescent edge light around the locs and white blazer, and physically plausible reflected pink, green, and gold color from plants, water, and mirror. Preserve natural pores, fine lines, beauty marks, loc texture, and fabric texture. The final image should feel welcoming, experienced, grounded, and self-possessed.
+
+Do not retouch, smooth, beautify, reshape, slim, de-age, replace, or reinterpret the woman. Do not change makeup, eyes, face geometry, hair, expression, hands, clothing, jewelry, pose, chair, or crop. No fantasy elements, crown, fairies, added accessories, text, logo, watermark, or artificial glamour effects. Produce a believable high-end photographic composite.
+

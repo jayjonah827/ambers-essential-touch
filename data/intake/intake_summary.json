@@ -1,0 +1,46 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260814_research",
+  "generated_at": "2026-08-14T10:41:07+00:00",
+  "raw_events_path": "data/intake/events_raw/disc_intake_20260814_research.jsonl",
+  "source_register_path": "data/intake/source_register.csv",
+  "event_count": 1349,
+  "file_count": 1342,
+  "not_located_count": 2,
+  "unreadable_count": 2,
+  "duplicate_file_count": 990,
+  "source_counts": {
+    "repo_current": 1248,
+    "desktop_amber": 35,
+    "generated_brand": 18,
+    "sunlit": 5,
+    "product_mockups": 32,
+    "approved_logo": 1,
+    "visual_board": 1,
+    "dark_floral": 1,
+    "iridescent_lotus": 1,
+    "aeve_moodboard": 1,
+    "aeve_register": 1,
+    "aeve_storyboard": 1,
+    "essential_archive": 1,
+    "packaging_catalog": 1,
+    "missing_amb_zip": 1,
+    "missing_amb_png": 1
+  },
+  "status_counts": {
+    "observed": 1345,
+    "unreadable": 2,
+    "not_located": 2
+  },
+  "branch_counts": {
+    "root_metadata": 5,
+    "file_metadata": 3,
+    "text_source": 12,
+    "web_source": 13,
+    "image_metadata": 1300,
+    "pdf_metadata": 12,
+    "design_source": 1,
+    "archive_metadata": 1,
+    "absence": 2
+  }
+}

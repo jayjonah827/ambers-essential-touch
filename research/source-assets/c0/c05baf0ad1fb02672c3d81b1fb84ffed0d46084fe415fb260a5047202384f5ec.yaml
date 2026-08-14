@@ -1,0 +1,22 @@
+record_version: 1
+created: 2026-08-14
+use_case: identity-preserve-compositing
+status: candidate-awaiting-human-approval
+authoritative_edit_target:
+  file: reference/approved/amber-seated-authoritative.jpeg
+  sha256: ec0e2baef997f6f71bb41f6c884090d39b77bbee1532374fdba7403584cba87c
+supporting_references:
+  - file: reference/approved/amber-spa-identity-support.jpeg
+    role: facial-detail-skin-texture-and-loc-character-only
+    sha256: 0cf7da6ed775a0b26a8a07a57ffb80fe5fdb737046f6c4a535105af9c0c850c2
+  - file: reference/approved/amber-seated-edge-support.jpeg
+    role: silhouette-and-extraction-edge-only
+    sha256: 1bdf2850a55fb51d6c1db202ff3990c175d6832b8fde5f84f1525528a18a4ada
+prompt: prompts/botanical-mirror-v1.txt
+output:
+  file: outputs/amber-botanical-mirror-v1.png
+  sha256: 5338f302b42598f1b1a65d560b01475370433d23e606d5db0a16a2cc7314a821
+generation_path: built-in-image-editing
+publication_gate: human-approval-required
+training_claim: prohibited-without-separate-evidence-and-consent
+

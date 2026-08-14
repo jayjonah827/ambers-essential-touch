@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1400" height="9800" viewBox="0 0 1400 9800">
+<defs>
+  <style>
+    .serif{font-family:Georgia,'Times New Roman',serif;fill:#4d342d}.sans{font-family:Arial,Helvetica,sans-serif;fill:#4d342d}.white{fill:#fff7f0}.rose{fill:#c47c82}.small{font-size:18px;letter-spacing:5px;font-weight:bold}.body{font-size:28px}.label{font-size:16px;letter-spacing:4px;font-weight:bold}.line{stroke:#8d6c60;stroke-width:1}.num{font-size:18px;fill:#c47c82}.cardtitle{font-size:41px}.cardbody{font-size:21px;fill:#d9c5bd}
+  </style>
+  <clipPath id="heroClip"><rect x="760" y="160" width="550" height="810" rx="275"/></clipPath>
+  <clipPath id="square"><rect x="0" y="0" width="580" height="580"/></clipPath>
+  <filter id="shadow"><feDropShadow dx="0" dy="20" stdDeviation="25" flood-opacity=".18"/></filter>
+</defs>
+<rect width="1400" height="9800" fill="#fbf5ef"/>
+
+<!-- Cover -->
+<text x="70" y="80" class="sans small">JAIR VALLEY</text><text x="1330" y="80" text-anchor="end" class="sans small">CASE STUDY · 2026</text>
+<line x1="70" y1="115" x2="1330" y2="115" class="line"/>
+<text x="70" y="220" class="sans label rose">BRAND + DIGITAL EXPERIENCE</text>
+<text x="70" y="360" class="serif" font-size="116">Amber’s</text><text x="70" y="475" class="serif" font-size="108">Essential Touch</text>
+<text x="70" y="585" class="serif" font-size="40">A professional skincare sanctuary where</text><text x="70" y="635" class="serif" font-size="40">every client can feel understood—not simply treated.</text>
+<image x="760" y="160" width="550" height="810" xlink:href="assets/amber-studio.jpg" preserveAspectRatio="xMidYMid slice" clip-path="url(#heroClip)"/>
+<image x="1110" y="800" width="210" height="210" xlink:href="assets/logo-badge.png" filter="url(#shadow)"/>
+<text x="70" y="850" class="sans label">ROLE</text><text x="70" y="890" class="sans body">Strategy · Identity · Art Direction</text><text x="70" y="930" class="sans body">UX/UI · Copy · Development</text>
+
+<!-- Statement -->
+<rect y="1080" width="1400" height="1200" fill="#3a2926"/>
+<text x="700" y="1210" text-anchor="middle" class="sans label white">THE CENTRAL IDEA</text>
+<text x="700" y="1480" text-anchor="middle" class="serif white" font-size="110">Where your skin is</text><text x="700" y="1610" text-anchor="middle" class="serif rose" font-size="128" font-style="italic">understood,</text><text x="700" y="1740" text-anchor="middle" class="serif white" font-size="110">not just treated.</text>
+<text x="700" y="1960" text-anchor="middle" class="serif white" font-size="35">The experience translates technical expertise and personal care</text><text x="700" y="2010" text-anchor="middle" class="serif white" font-size="35">into immediate trust—giving clients language for what they are</text><text x="700" y="2060" text-anchor="middle" class="serif white" font-size="35">experiencing and a clear, considered place to begin.</text>
+
+<!-- Challenge -->
+<text x="70" y="2440" class="sans label rose">01 · THE CHALLENGE</text><text x="70" y="2600" class="serif" font-size="92">Make expertise</text><text x="70" y="2700" class="serif" font-size="92">feel human.</text>
+<text x="730" y="2480" class="serif" font-size="29">An esthetics practice can easily become a wall of</text><text x="730" y="2525" class="serif" font-size="29">treatments, ingredients, and prices. That structure</text><text x="730" y="2570" class="serif" font-size="29">assumes visitors already know what to ask for.</text>
+<text x="730" y="2700" class="serif" font-size="29">Amber’s clients often arrive with a concern—not a</text><text x="730" y="2745" class="serif" font-size="29">service name. The system resolves anxiety, honors</text><text x="730" y="2790" class="serif" font-size="29">every skin tone, and preserves personal care.</text>
+<line x1="70" y1="2900" x2="1330" y2="2900" class="line"/>
+
+<!-- Identity -->
+<rect y="2980" width="1400" height="1000" fill="#ead2c8"/>
+<text x="70" y="3100" class="sans label">02 · IDENTITY</text>
+<image x="150" y="3230" width="500" height="500" xlink:href="assets/logo-badge.png"/>
+<text x="730" y="3400" class="serif" font-size="80">Amber’s</text><text x="730" y="3485" class="serif" font-size="80">Essential Touch</text><text x="735" y="3550" class="sans label">PREMIUM BOTANICAL SKINCARE</text>
+<text x="730" y="3690" class="serif" font-size="31">A softened lotus emblem carries care, growth, touch,</text><text x="730" y="3735" class="serif" font-size="31">and ritual without losing the authority of a professional</text><text x="730" y="3780" class="serif" font-size="31">service brand.</text>
+
+<!-- System -->
+<text x="70" y="4140" class="sans label rose">03 · VISUAL SYSTEM</text><text x="70" y="4300" class="serif" font-size="95">Softness with structure.</text>
+<rect x="70" y="4410" width="315" height="250" fill="#f9f2ec"/><rect x="385" y="4410" width="315" height="250" fill="#d5a08c"/><rect x="700" y="4410" width="315" height="250" fill="#b66d75"/><rect x="1015" y="4410" width="315" height="250" fill="#563a31"/>
+<text x="90" y="4620" class="sans label">SANCTUARY</text><text x="405" y="4620" class="sans label">WARMTH</text><text x="720" y="4620" class="sans label white">RECOGNITION</text><text x="1035" y="4620" class="sans label white">GROUNDING</text>
+<text x="70" y="4860" class="serif" font-size="115">Care is <tspan font-style="italic" fill="#c47c82">preservation.</tspan></text>
+<text x="70" y="4970" class="sans label">EDITORIAL SERIF / EMOTIONAL LANGUAGE</text><text x="760" y="4970" class="sans label">CLEAR SANS / SYSTEM LANGUAGE</text>
+
+<!-- Editorial -->
+<image x="70" y="5150" width="600" height="600" xlink:href="assets/crystal-lotus.jpg" preserveAspectRatio="xMidYMid slice"/>
+<text x="760" y="5230" class="sans label rose">BRAND LANGUAGE</text><text x="760" y="5400" class="serif" font-size="78">Essential,</text><text x="760" y="5485" class="serif" font-size="78">like water.</text><text x="760" y="5650" class="serif" font-size="78">Preserved,</text><text x="760" y="5735" class="serif" font-size="78">like diamonds.</text><text x="760" y="5860" class="serif" font-size="28">Your skin’s value is not created by treatment.</text><text x="760" y="5900" class="serif" font-size="28">It is recognized through care.</text>
+
+<!-- Services -->
+<rect y="6020" width="1400" height="1900" fill="#3a2926"/>
+<text x="70" y="6150" class="sans label rose">04 · SERVICE DISCOVERY</text><text x="70" y="6310" class="serif white" font-size="90">Care selected for the</text><text x="70" y="6410" class="serif white" font-size="90">skin in front of us.</text>
+<text x="70" y="6510" class="sans body white">Outcomes, duration, price, and a clear next action reduce ambiguity.</text>
+<image x="70" y="6620" width="610" height="250" xlink:href="assets/treat-facial.png" preserveAspectRatio="xMidYMid slice"/><image x="720" y="6620" width="610" height="250" xlink:href="assets/treat-acne.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="70" y="2930"/>
+<text x="70" y="6930" class="sans num">01</text><text x="110" y="6935" class="serif white cardtitle">Consultation Facial</text><text x="110" y="6980" class="sans cardbody">Assessment-led treatment shaped to the skin that day.</text>
+<text x="720" y="6930" class="sans num">02</text><text x="760" y="6935" class="serif white cardtitle">Acne-Focused Care</text><text x="760" y="6980" class="sans cardbody">Protocol-based, multi-visit care with aftercare included.</text>
+<image x="70" y="7100" width="610" height="250" xlink:href="assets/treat-wax.png" preserveAspectRatio="xMidYMid slice"/><image x="720" y="7100" width="610" height="250" xlink:href="assets/treat-ritual.png" preserveAspectRatio="xMidYMid slice"/>
+<text x="70" y="7410" class="sans num">03</text><text x="110" y="7415" class="serif white cardtitle">Body + Brow Care</text><text x="110" y="7460" class="sans cardbody">Over a decade of precision for every skin type.</text>
+<text x="720" y="7410" class="sans num">04</text><text x="760" y="7415" class="serif white cardtitle">Monthly Ritual</text><text x="760" y="7460" class="sans cardbody">A regimen planned around the pace of the client’s skin.</text>
+
+<!-- UX + process -->
+<text x="70" y="8080" class="sans label rose">05 · UX STRATEGY</text><text x="70" y="8215" class="serif" font-size="78">Begin with what brings you in.</text>
+<g class="sans"><line x1="70" y1="8320" x2="1330" y2="8320" class="line"/><text x="70" y="8400" class="num">01</text><text x="150" y="8400" class="body">Breakouts and acne</text><text x="1000" y="8400" class="body">Protocol-based care</text><line x1="70" y1="8450" x2="1330" y2="8450" class="line"/><text x="70" y="8530" class="num">02</text><text x="150" y="8530" class="body">Dark spots and uneven tone</text><text x="1000" y="8530" class="body">Melanin-aware</text><line x1="70" y1="8580" x2="1330" y2="8580" class="line"/><text x="70" y="8660" class="num">03</text><text x="150" y="8660" class="body">Dryness and dehydration</text><text x="1000" y="8660" class="body">Barrier-first</text><line x1="70" y1="8710" x2="1330" y2="8710" class="line"/><text x="70" y="8790" class="num">04</text><text x="150" y="8790" class="body">I am not sure</text><text x="1000" y="8790" class="body">Begin with Amber</text><line x1="70" y1="8840" x2="1330" y2="8840" class="line"/></g>
+
+<!-- Result -->
+<rect y="8980" width="1400" height="820" fill="#3a2926"/>
+<image x="70" y="9090" width="520" height="560" xlink:href="assets/lotus-card.png" preserveAspectRatio="xMidYMid meet"/>
+<text x="700" y="9100" class="sans label rose">THE RESULT</text><text x="700" y="9260" class="serif white" font-size="88">Be seen.</text><text x="700" y="9350" class="serif white" font-size="88">Be cared for.</text><text x="700" y="9440" class="serif white" font-size="88">Be yourself.</text>
+<text x="700" y="9540" class="sans body white">A credible digital front door, an expandable editorial voice,</text><text x="700" y="9580" class="sans body white">and a concern-led pathway capable of holding both clinical</text><text x="700" y="9620" class="sans body white">knowledge and sanctuary.</text>
+<text x="70" y="9750" class="sans label white">AMBER’S ESSENTIAL TOUCH</text><text x="1330" y="9750" text-anchor="end" class="sans label white">CASE STUDY BY JAIR VALLEY</text>
+</svg>

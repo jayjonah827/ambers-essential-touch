@@ -1,0 +1,19 @@
+observation_id,product_key,raw_name,size_or_variant,price_raw,currency,source_id,source_locator,evidence_type,extraction_status,notes
+prod_obs_001,purely_essential_oil,Purely Essential Virgin Oil,2 oz,$18,USD,desktop_specification,03_SPECIFICATION.md:207,direct_text,extracted,Unscented Hibiscus or Mango-Pomegranate variants listed.
+prod_obs_002,purely_essential_oil,Purely Essential Virgin Oil,8 oz,$50,USD,desktop_specification,03_SPECIFICATION.md:207,direct_text,extracted,Unscented Hibiscus or Mango-Pomegranate variants listed.
+prod_obs_003,purely_essential_oil,Purely Essential Virgin Oil,2 oz,$18,USD,repo_content_model,js/data.js:76-81,direct_text,extracted,Exact current repo model.
+prod_obs_004,purely_essential_oil,Purely Essential Virgin Oil,8 oz,$50,USD,repo_content_model,js/data.js:76-81,direct_text,extracted,Exact current repo model.
+prod_obs_005,whipped_body_butter,Whipped Body Butter,4 oz,$20,USD,desktop_specification,03_SPECIFICATION.md:208,direct_text,extracted,Three sizes listed.
+prod_obs_006,whipped_body_butter,Whipped Body Butter,8 oz,$40,USD,desktop_specification,03_SPECIFICATION.md:208,direct_text,extracted,Three sizes listed.
+prod_obs_007,whipped_body_butter,Whipped Body Butter,12 oz,$60,USD,desktop_specification,03_SPECIFICATION.md:208,direct_text,extracted,Three sizes listed.
+prod_obs_008,whipped_body_butter,Whipped Body Butter,4 oz,$20,USD,repo_content_model,js/data.js:83-88,direct_text,extracted,Exact current repo model.
+prod_obs_009,whipped_body_butter,Whipped Body Butter,8 oz,$40,USD,repo_content_model,js/data.js:83-88,direct_text,extracted,Exact current repo model.
+prod_obs_010,whipped_body_butter,Whipped Body Butter,12 oz,$60,USD,repo_content_model,js/data.js:83-88,direct_text,extracted,Exact current repo model.
+prod_obs_011,crystal_blends,Crystal-Infused Blends,rose quartz amethyst pyrite or peacock ore,$45,USD,desktop_specification,03_SPECIFICATION.md:209,direct_text,extracted,Variant list preserved.
+prod_obs_012,crystal_blends,Crystal-Infused Blends,unspecified bottle,$45,USD,repo_content_model,js/data.js:90-95,direct_text,extracted,Current repo model.
+prod_obs_013,starter_ritual_kit,Starter Ritual Kit,2 oz oil + 4 oz butter + one crystal blend,$75,USD,desktop_specification,03_SPECIFICATION.md:210,direct_text,extracted,Specification claims save $8; arithmetic and current contents require confirmation.
+prod_obs_014,starter_ritual_kit,Starter Ritual Kit,2 oz oil + 4 oz butter + one crystal blend,$75,USD,repo_content_model,js/data.js:97-102,direct_text,extracted,Current repo model.
+prod_obs_015,grounding_blend,Grounding Blend,frankincense + myrrh,$30,USD,desktop_specification,03_SPECIFICATION.md:211,direct_text,extracted,Explicitly marked optional fifth SKU in source.
+prod_obs_016,purely_essential_oil,Purely Essential Virgin Oil,2 oz,$20,USD,relocated_structure_relaunch,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:30,direct_text,concept_only,Later relaunch recommendation; conflicts with the repeated owner project price of $18.
+prod_obs_017,purely_essential_oil,Purely Essential Virgin Oil,4 oz,$48,USD,relocated_structure_relaunch,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:30,direct_text,concept_only,Recommended hero size in a generated relaunch plan; not present in the current candidate catalog.
+prod_obs_018,purely_essential_oil,Purely Essential Virgin Oil,4 oz refill,$42,USD,relocated_structure_relaunch,AMBER’S ESSENTIAL OILS STRUCTURE. 2.pdf:30,direct_text,concept_only,Recommended refill price in a generated relaunch plan; not owner approved.

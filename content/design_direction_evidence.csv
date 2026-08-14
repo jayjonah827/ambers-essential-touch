@@ -1,0 +1,14 @@
+direction_id,scope,direction,source,priority,status,agent_rule
+dir_001,site_background,A much warmer cream is needed; use the lightest pink rather than white cream,owner direction 2026-08-14,highest,current_direction,Do not default the site system to white or cold ivory.
+dir_002,site_hero,"sunlight, flowers, moisture and gradients",owner direction 2026-08-13,highest,current_direction,Hero research must feel bright hydrated botanical and refractive.
+dir_003,site_hero,no products in the real site hero,owner direction 2026-08-13,highest,current_direction,Do not place product mockups into site hero assets.
+dir_004,site_hero,Earlier dark hero studies are too dark,owner direction 2026-08-13,highest,superseding_direction,Preserve dark studies as history but never treat them as current hero approval.
+dir_005,brand_strategy,Amber's hands and trained touch are the defining product,owner direction 2026-08-14,highest,current_strategy,Organize future service storytelling around practitioner touch rather than invented packaged goods.
+dir_006,hand_asset,Create an airbrush gradient or vector icon based on Amber's real hand and nails,owner direction 2026-08-14,high,research_requirement,Identity-preserving hand study requires an approved source photograph and owner signoff before production.
+dir_007,photography,"editorial, sensual but not sexual, comfortable, lived-in skin, diverse ages and melanated skin",owner art direction,high,current_direction,Require consent and avoid skin smoothing age erasure or fetishization.
+dir_008,materials,"water, droplets, prismatic glints, haze, pearls, shells and softened industrial texture",owner art direction,medium,shared_material_language,Use as supporting material grammar rather than product placement.
+dir_009,service_cards,Existing service images are text-free dark floral crops,current repo and amb.zip,medium,source_specific_not_final_tone,Track and preserve; future replacements follow the brighter site direction only after approval.
+dir_010,product_packaging,"round organic feminine shapes; aluminum jars and Tiffany Studios-inspired glass",owner product direction,high,future_product_research,Product phase only; do not back-propagate mockups into the service site.
+dir_011,product_campaign,"earthy and deep, no pastels",earlier product-only direction,medium,scope_limited,Applies to product campaign studies and does not override the later light-pink site background direction.
+dir_012,identity,Approved Amber lotus monogram with A and droplet,owner-approved logo file,highest,approved,Generated redraws and legacy celestial or black amb marks cannot replace it.
+dir_013,voice,"grounded, intentional, culturally aware, personal, ritual over transaction",voice guide,high,source_guidance,Unsupported medical claims and the 18-year claim remain gated despite appearing in the guide.

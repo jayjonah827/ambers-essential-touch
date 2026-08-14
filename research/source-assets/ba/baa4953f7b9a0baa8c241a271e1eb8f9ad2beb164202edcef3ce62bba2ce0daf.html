@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Parisienne&family=Manrope:wght@400;500;600;700&display=swap">
+  <style>
+    * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    * { animation-delay: -99s !important; animation-duration: .001s !important;
+        animation-iteration-count: 1 !important; animation-fill-mode: both !important;
+        animation-play-state: running !important; transition-duration: 0s !important; }
+    body { margin: 0; background: #EFE9E2; }
+    a { color: #6F3F2A; text-decoration: none; }
+    a:hover { color: #A95870; }
+  </style>
+</helmet>
+
+<x-import component-from-global-scope="doc-page" from="./doc-page.js" size="letter" orientation="portrait" margin="0.6in" hint-size="100%,100%">
+
+  <div style="font-family: 'Manrope', system-ui, sans-serif; color: #33231E" data-screen-label="Print document">
+
+    <div style="display: flex; align-items: center; gap: 14px; border-bottom: 1px solid rgba(111, 63, 42, 0.25); padding-bottom: 16px; margin-bottom: 26px; break-inside: avoid">
+      <img src="images/logo-lotus.png" alt="Amber's Essential Touch lotus monogram" style="width: 56px; height: 56px; object-fit: cover; border-radius: 50%; border: 1px solid rgba(111, 63, 42, 0.18); background: #F7F1E8">
+      <div>
+        <div style="font-family: 'Cormorant Garamond', serif; font-size: 24px; font-weight: 600; color: #6F3F2A">Amber's Essential Touch</div>
+        <div style="font-size: 10px; letter-spacing: 0.16em; color: #71655F; font-weight: 700">PREMIUM BOTANICAL SKINCARE · PINOLE, CA</div>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 22px; align-items: center; margin-bottom: 28px; break-inside: avoid">
+      <div>
+        <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">PROFESSIONAL SKINCARE SANCTUARY</p>
+        <h1 style="margin: 0 0 14px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 40px; line-height: 1.06; break-after: avoid">Where your skin is <em style="color: #A95870">understood</em>, not just treated.</h1>
+        <p style="margin: 0 0 14px; font-size: 13px; line-height: 1.6; color: #71655F">Personalized treatments. Real education. A sanctuary for every tone, every age, and every skin story.</p>
+        <p style="margin: 0 0 14px; font-size: 11px; font-weight: 700; color: #71655F">Black-owned · Community-rooted · Results-focused</p>
+        <p style="margin: 0; font-size: 12px"><span style="background: linear-gradient(135deg, #B8734A, #A95870); color: #FFF9F3; font-weight: 700; padding: 8px 16px; border-radius: 999px">BOOK: (510) 228-6657</span></p>
+      </div>
+      <div>
+        <img src="images/amber-studio.jpg" alt="Amber, licensed esthetician, in her treatment studio in Pinole, CA" style="display: block; width: 100%; aspect-ratio: 4 / 4.2; object-fit: cover; object-position: 65% 20%; border-radius: 16px; border: 1px solid rgba(111, 63, 42, 0.18)">
+        <p style="margin: 8px 0 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12.5px; line-height: 1.5">"This is more than skincare. This is self-care, self-respect, and coming home to yourself." <span style="font-family: 'Parisienne', cursive; font-size: 16px; color: #A95870">— Amber</span></p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-bottom: 28px; break-inside: avoid">
+      <sc-for list="{{ promises }}" as="pr" hint-placeholder-count="5">
+        <div style="border: 1px solid rgba(111, 63, 42, 0.18); border-radius: 14px; padding: 12px; background: #FFFFFF">
+          <div style="font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 600">{{ pr.title }}</div>
+          <div style="font-size: 10.5px; line-height: 1.45; color: #71655F">{{ pr.body }}</div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="background: linear-gradient(150deg, #F7F1E8, #EDE7F0); border-radius: 16px; padding: 22px 24px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; align-items: center; margin-bottom: 28px; break-inside: avoid">
+      <div>
+        <p style="margin: 0; font-family: 'Parisienne', cursive; font-size: 26px; color: #A95870">Essential, like water.</p>
+        <p style="margin: 0 0 12px; font-family: 'Parisienne', cursive; font-size: 26px; color: #6F3F2A">Preserved, like diamonds.</p>
+        <p style="margin: 0 0 8px; font-size: 12px; line-height: 1.6">Your skin is the most valuable material you will ever live in. Its worth is not created by treatment. It is recognized through care.</p>
+        <p style="margin: 0 0 10px; font-size: 12px; line-height: 1.6; color: #71655F">Amber combines trained judgment, attentive upkeep, and treatment shaped around the skin in front of her.</p>
+        <p style="margin: 0; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; color: #6F3F2A">A best friend recognizes your worth. A professional knows how to preserve it.</p>
+      </div>
+      <img src="images/crystal-lotus.jpg" alt="Translucent crystal lotus catching prismatic light" style="display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 14px; border: 1px solid rgba(111, 63, 42, 0.18)">
+    </div>
+
+    <div style="break-before: page">
+      <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">SERVICES</p>
+      <h2 style="margin: 0 0 12px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 30px; line-height: 1.1; break-after: avoid">Care selected for the skin in front of us.</h2>
+      <p style="margin: 0 0 16px; font-size: 12px; color: #71655F">All services begin with a short consultation. Prices vary by skin, not by card on file.</p>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 26px">
+        <sc-for list="{{ services }}" as="svc" hint-placeholder-count="6">
+          <div style="border: 1px solid rgba(111, 63, 42, 0.18); border-radius: 14px; overflow: hidden; background: #FFFFFF; break-inside: avoid">
+            <img src="{{ svc.img }}" alt="{{ svc.imgAlt }}" style="display: block; width: 100%; height: 90px; object-fit: cover">
+            <div style="padding: 12px 14px">
+              <div style="font-family: 'Cormorant Garamond', serif; font-size: 16px; font-weight: 600">{{ svc.name }}</div>
+              <div style="font-size: 11px; line-height: 1.5; color: #71655F">{{ svc.desc }}</div>
+              <div style="margin-top: 6px; font-size: 10px; font-weight: 700; letter-spacing: 0.06em; color: #B8734A">{{ svc.meta }}</div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 26px; break-inside: avoid">
+      <div>
+        <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">SKIN CONCERNS</p>
+        <h2 style="margin: 0 0 12px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 24px; line-height: 1.1; break-after: avoid">What brings you in?</h2>
+        <ul style="margin: 0; padding: 0 0 0 18px; font-size: 12px; line-height: 1.9">
+          <li>Breakouts and acne</li>
+          <li>Dark spots and uneven tone</li>
+          <li>Dryness and dehydration</li>
+          <li>Sensitivity and redness</li>
+          <li>Fine lines and visible aging</li>
+          <li>Not sure? Begin with a consultation — Amber will guide you.</li>
+        </ul>
+      </div>
+      <div>
+        <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">THE PROCESS</p>
+        <h2 style="margin: 0 0 12px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 24px; line-height: 1.1; break-after: avoid">How care begins.</h2>
+        <p style="margin: 0 0 8px; font-size: 12px; line-height: 1.6"><strong style="color: #6F3F2A">01 · Consult</strong> — We listen, assess, and understand your skin, routine, and goals.</p>
+        <p style="margin: 0 0 8px; font-size: 12px; line-height: 1.6"><strong style="color: #6F3F2A">02 · Treat</strong> — Amber selects professional techniques and products according to what your skin needs now.</p>
+        <p style="margin: 0; font-size: 12px; line-height: 1.6"><strong style="color: #6F3F2A">03 · Preserve</strong> — You leave with aftercare guidance and a plan for maintaining your results.</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 20px; align-items: center; background: linear-gradient(150deg, #F7F1E8, #F2EAEC); border-radius: 16px; padding: 20px 22px; margin-bottom: 26px; break-inside: avoid">
+      <img src="images/amber-portrait-2.jpg" alt="Amber, licensed esthetician, Pinole CA" style="display: block; width: 100%; object-fit: cover; border-radius: 14px; border: 1px solid rgba(111, 63, 42, 0.18)">
+      <div>
+        <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">THE WOMAN BEHIND THE TOUCH</p>
+        <h2 style="margin: 0 0 12px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 26px; line-height: 1.1; break-after: avoid">Expert care, made personal.</h2>
+        <p style="margin: 0 0 8px; font-size: 12px; line-height: 1.6">Amber's Essential Touch is rooted in the belief that every person deserves to understand their skin and receive care shaped around their actual needs.</p>
+        <p style="margin: 0 0 10px; font-size: 12px; line-height: 1.6; color: #71655F">Amber pairs professional technique with attentive, human care — creating a treatment experience where clients are seen, informed, and respected.</p>
+        <p style="margin: 0; font-size: 11px; line-height: 1.7; color: #6F3F2A"><strong>Licensed esthetician</strong> · 18 years <span style="color: #A95870">(license № to be supplied)</span> · Waxing specialist · Pinole, CA · Black-woman owned · Consultation-driven, aftercare-first</p>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 22px; margin-bottom: 26px; break-inside: avoid">
+      <div>
+        <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">CLIENT VOICES · 4.9 ★ · 25 REVIEWS ON BIRDEYE</p>
+        <blockquote style="margin: 0 0 6px; font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 16px; line-height: 1.55">"Amber transformed my skin and my self-confidence. I finally feel seen."</blockquote>
+        <p style="margin: 0; font-size: 11px; font-weight: 700; color: #6F3F2A">— Cinthia Z.</p>
+        <p style="margin: 6px 0 0; font-size: 10px; font-style: italic; color: #71655F">Additional approved client testimonials pending.</p>
+      </div>
+      <div>
+        <p style="margin: 0 0 8px; font-size: 10px; letter-spacing: 0.2em; font-weight: 700; color: #A95870">THE SHOP</p>
+        <h2 style="margin: 0 0 12px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 22px; line-height: 1.1; break-after: avoid">Care that continues at home.</h2>
+        <p style="margin: 0; font-size: 11.5px; line-height: 1.8; color: #71655F">
+          <strong style="color: #33231E">Purely Essential Virgin Oil</strong> — 2 oz $18 · 8 oz $50<br>
+          <strong style="color: #33231E">Whipped Body Butter</strong> — 4 oz $20 · 8 oz $40 · 12 oz $60<br>
+          <strong style="color: #33231E">Crystal-Infused Blends</strong> — $45<br>
+          <strong style="color: #33231E">Starter Ritual Kit</strong> — $75 (save $8)
+        </p>
+      </div>
+    </div>
+
+    <div style="background: linear-gradient(135deg, #6F3F2A, #A95870); border-radius: 16px; padding: 24px 26px; color: #FFF9F3; break-inside: avoid">
+      <p style="margin: 0 0 4px; font-family: 'Parisienne', cursive; font-size: 20px; color: rgba(255, 249, 243, 0.9)">You'll feel the difference.</p>
+      <h2 style="margin: 0 0 10px; font-family: 'Cormorant Garamond', serif; font-weight: 500; font-size: 26px; line-height: 1.1; color: #FFF9F3; break-after: avoid">Ready to place your skin in expert hands?</h2>
+      <p style="margin: 0 0 14px; font-size: 12px; color: rgba(255, 249, 243, 0.85)">Choose your treatment or begin with a consultation.</p>
+      <p style="margin: 0; font-size: 12px; line-height: 1.8"><strong>Visit</strong> — 1622 Michael Dr, Pinole, CA 94564 &nbsp;·&nbsp; <strong>Call/text</strong> — (510) 228-6657 &nbsp;·&nbsp; <strong>Email</strong> — ambersessentialtouch@gmail.com<br><span style="color: rgba(255, 249, 243, 0.75)">Hours by appointment (verified hours to be supplied) · Facebook: facebook.com/aetouch</span></p>
+      <p style="margin: 16px 0 0; font-size: 10px; letter-spacing: 0.16em; font-weight: 700; color: rgba(255, 249, 243, 0.85)">BE SEEN. BE CARED FOR. BE YOURSELF.</p>
+    </div>
+
+  </div>
+
+</x-import>
+
+<template id="__bundler_thumbnail">
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" fill="#F7F1E8"></rect>
+    <g transform="translate(50 52)" fill="none" stroke="#A95870" stroke-width="2.5" stroke-linecap="round">
+      <path d="M0 14 C -8 6 -8 -8 0 -16 C 8 -8 8 6 0 14 Z" fill="#D89BAA" stroke="#B8734A"></path>
+      <path d="M-16 10 C -20 0 -14 -8 -6 -10" stroke="#B8734A"></path>
+      <path d="M16 10 C 20 0 14 -8 6 -10" stroke="#B8734A"></path>
+    </g>
+  </svg>
+</template>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      promises: [
+        { title: 'A Place to Breathe', body: 'A calm space to reset.' },
+        { title: 'Inclusive Care', body: 'Care for every tone and skin story.' },
+        { title: 'Clean, Conscious Products', body: 'Thoughtful ingredients selected with intention.' },
+        { title: 'Advanced Treatments', body: 'Effective methods guided by expert judgment.' },
+        { title: 'A Sanctuary for You', body: 'Calm, safe, and personally considered.' },
+      ],
+      services: [
+        { name: 'Consultation Facial', desc: 'Extractions, peels, enzyme work — shaped to your skin on the day.', meta: '60–90 MIN · FROM $95', img: 'images/treat-facial.png', imgAlt: 'Ornate mirror among deep botanical florals' },
+        { name: 'Acne-Focused Treatment', desc: 'Protocol-based, multi-visit care that supports clearer skin. Aftercare included.', meta: '60 MIN · FROM $110', img: 'images/treat-acne.png', imgAlt: 'Orchids and layered botanicals in soft light' },
+        { name: 'Body Waxing & Brow Care', desc: 'Over a decade of precision. Full body, all skin types, unhurried.', meta: '15–90 MIN · FROM $25', img: 'images/treat-wax.png', imgAlt: 'Water pitcher and amber dropper bottle on the treatment table' },
+        { name: 'Manicure', desc: 'Clean, unhurried, aftercare-forward hand care.', meta: '45 MIN · FROM $45', img: 'images/treat-manicure.png', imgAlt: 'Glass vessels and botanicals in still life' },
+        { name: 'Monthly Ritual Plan', desc: 'Build a regimen. Bi-monthly or quarterly visits, planned around your skin\u2019s pace.', meta: 'CUSTOM · FROM $180/MO', img: 'images/treat-ritual.png', imgAlt: 'Brass bowl of whipped cream beside amber glass and linen' },
+        { name: 'Skin Consultation', desc: 'Not sure where to begin? Start with a conversation and a plan.', meta: 'INCLUDED WITH EVERY VISIT', img: 'images/treat-consult.png', imgAlt: 'Draped fabric and dried botanicals on wood' },
+      ],
+    };
+  }
+}
+</script>
+</body>
+</html>

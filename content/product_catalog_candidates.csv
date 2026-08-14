@@ -1,0 +1,6 @@
+product_key,preferred_name,category,variants,reviewed_price_range_usd,evidence_observations,evidence_consistency,development_status,approval_status,publication_rule
+purely_essential_oil,Purely Essential Virgin Oil,oil,2 oz|8 oz|Unscented|Hibiscus|Mango-Pomegranate,18-50,4,consistent_across_reviewed_sources,future_product_research,owner_confirmation_pending,No commerce or final label work until formula inventory claims and current prices are approved.
+whipped_body_butter,Whipped Body Butter,butter,4 oz|8 oz|12 oz,20-60,6,consistent_across_reviewed_sources,future_product_research,owner_confirmation_pending,No commerce or final label work until formula inventory claims and current prices are approved.
+crystal_blends,Crystal-Infused Blends,blend,rose quartz|amethyst|pyrite|peacock ore,45,2,consistent_price_variant_scope_differs,future_product_research,owner_confirmation_pending,Metaphysical language requires careful claims review.
+starter_ritual_kit,Starter Ritual Kit,kit,2 oz oil + 4 oz butter + one crystal blend,75,2,consistent_across_reviewed_sources,future_product_research,owner_confirmation_pending,Contents and savings statement require confirmation.
+grounding_blend,Grounding Blend,blend,frankincense + myrrh,30,1,single_optional_source,optional_candidate,owner_confirmation_pending,Do not treat as active SKU.

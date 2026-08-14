@@ -1,0 +1,27 @@
+{
+  "schema_version": "1.0",
+  "run_id": "20260814_relocated_amber_source",
+  "generated_at": "2026-08-14T10:54:02+00:00",
+  "raw_events_path": "data/intake/relocated_source/events_raw/disc_intake_20260814_relocated_amber_source.jsonl",
+  "source_register_path": "data/intake/relocated_source/source_register.csv",
+  "event_count": 42,
+  "file_count": 41,
+  "not_located_count": 0,
+  "unreadable_count": 3,
+  "duplicate_file_count": 0,
+  "source_counts": {
+    "relocated_amber_source": 42
+  },
+  "status_counts": {
+    "observed": 39,
+    "unreadable": 3
+  },
+  "branch_counts": {
+    "root_metadata": 1,
+    "pdf_metadata": 9,
+    "image_metadata": 24,
+    "web_source": 3,
+    "archive_metadata": 4,
+    "file_metadata": 1
+  }
+}

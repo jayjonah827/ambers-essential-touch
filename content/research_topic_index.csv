@@ -1,0 +1,16 @@
+topic_id,source,page_or_location_range,topic,content_status,agent_use
+topic_001,AMBER’S ESSENTIAL OILS STRUCTURE PDFs,1-18,Amber social site photography and service source captures,reviewed_visual_and_ocr,First-party historical context.
+topic_002,AMBER’S ESSENTIAL OILS STRUCTURE PDFs,19-22,Product intake formula costing safety and claims research,restricted,Use only through curated product_research_evidence.csv unless explicit restricted-source authority is granted.
+topic_003,AMBER’S ESSENTIAL OILS STRUCTURE PDFs,23-30,Product positioning marketing calendar relaunch and alternate pricing concepts,reviewed_text,Concept evidence only; not approved business policy.
+topic_004,AMBER’S ESSENTIAL OILS STRUCTURE PDFs,31-42,Stock photography social grid and Adobe sourcing suggestions,reviewed_text,Historical strategy research; current owner art direction has priority.
+topic_005,AMBER’S ESSENTIAL OILS STRUCTURE PDFs,43-end,Website tooling business workflow identity labels and implementation discussion,reviewed_text,Research history only; no site implementation authority.
+topic_006,IMG_1188.pdf,1-113,Competitor packaging identity typography layout and material references,reviewed_visual_and_ocr,Use competitor_reference_index.csv and page text; never copy trade dress.
+topic_007,IMG_1188.pdf,114-117,Mobile skincare education and social reference captures,reviewed_visual_and_ocr,Future content-system research with claims review.
+topic_008,IMG_1188.pdf,118-125,Amber first-party social posts services nails products and profile history,reviewed_visual_and_ocr,Dated first-party evidence; currentness must be confirmed.
+topic_009,Amber voice guide,1-4,Canonical phrases tone prohibited language rhythm CTA and content rotation,reviewed_text,Primary voice source with claim conflict gates.
+topic_010,Amber Johnson.pdf,1-6,Professional resume variants skills clinical support and business operations,reviewed_text,Professional-history evidence; placeholder contact fields are not facts.
+topic_011,Home Print PDF,1-4,Proposed home services process owner biography reviews products and contact,reviewed_text,Source-backed design proposal; not final publication approval.
+topic_012,Untitled August 13 PDF,1-10,Handwritten layout motion interaction and logo notes,reviewed_visual,Interpret as creative research not production specification.
+topic_013,æve moodboard PDF,1-42,Product packaging UI ads billboards social and campaign development conversation,reviewed_visual_and_ocr,Future product research only.
+topic_014,æve production register,1-7,Production register order and asset coverage,reviewed_visual_and_text,Source authority for future product correction order.
+topic_015,æve storyboard,1-14,Portfolio storyboard order,reviewed_visual_and_text,Source authority for future portfolio sequencing after product correction.
