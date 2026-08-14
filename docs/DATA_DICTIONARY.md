@@ -7,14 +7,14 @@
 - `conflict_register.csv`: contradictory or superseded observations and required resolution.
 - `copy_evidence.csv`: exact phrases, voice status, risk, and usage rule.
 - `design_direction_evidence.csv`: owner and source art direction separated by scope and priority.
-- `product_catalog_candidates.csv`: summarized product candidates, not approved SKUs.
-- `product_price_evidence.csv`: every extracted product-price observation, including concept-only alternatives.
+- `product_catalog_candidates.csv`: repeated existing working models separated from optional and generated concepts; it is not a production inventory system.
+- `product_price_evidence.csv`: every extracted product-price observation, with generated relaunch alternatives explicitly excluded from the usable candidate set.
 - `product_research_evidence.csv`: formula, usage, safety, claim, and confidentiality boundaries.
 - `relocation_map.csv`: original path to recovered path mapping.
 - `research_topic_index.csv`: source and page-range routing.
-- `service_catalog.csv`: summarized later service model, not a final menu.
-- `service_menu_observations.csv`: exact 36-line detailed uploaded menu.
-- `service_price_evidence.csv`: later grouped service observations.
+- `service_catalog.csv`: summarized later site/specification model with authority limitations; it cannot override the detailed menu.
+- `service_menu_observations.csv`: exact 36-line detailed uploaded menu and working canonical service-price source.
+- `service_price_evidence.csv`: later grouped site/specification observations retained as secondary concepts.
 - `source_files.csv`: individually named sources and original-path statuses.
 - `source_roots.csv`: recursively scanned source packages.
 - `visual_review_batches.csv`: contact-sheet evidence for human review.
@@ -31,8 +31,10 @@
 ## Status terms
 
 - `observed`: file or value was present in the reviewed source.
-- `owner_confirmation_pending`: not approved as current public information.
-- `concept_only`: generated or strategic alternative, not owner-approved policy.
+- `working_canonical_by_source_priority`: current working authority selected from the strongest available first-party operating evidence.
+- `secondary_site_specification_not_canonical`: repeated by planning or code but not allowed to override first-party operating evidence.
+- `excluded_generated_concept`: retained for provenance but not a usable business option.
+- `retained_from_prior_snapshot_source_now_missing`: exact bytes remain in the repository source pack even though the previously observed external path has disappeared.
 - `source_verified_as_snapshot`: accurate only for the captured date.
 - `restricted`: intentionally excluded from public text output.
 - `reviewed_unique_hash`: every instance is tracked; duplicate pixels were visually reviewed once per hash.

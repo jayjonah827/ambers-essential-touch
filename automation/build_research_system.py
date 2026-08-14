@@ -287,6 +287,8 @@ def classify_visual(source_id: str, path: str) -> tuple[str, str, str, str, str,
 def collect_sources() -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[dict[str, Any]]]:
     roots = read_csv(CONTENT / "source_roots.csv")
     explicit = read_csv(CONTENT / "source_files.csv")
+    prior_instances = read_csv(DATA / "source_asset_register.csv") if (DATA / "source_asset_register.csv").exists() else []
+    prior_visuals = read_csv(DATA / "visual_asset_register.csv") if (DATA / "visual_asset_register.csv").exists() else []
     instances: list[dict[str, Any]] = []
     visuals: list[dict[str, Any]] = []
     archive_members: list[dict[str, Any]] = []
@@ -401,6 +403,37 @@ def collect_sources() -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[
                 "bytes": "", "sha256": "", "mime_type": "", "repo_canonical_path": "", "duplicate_group": "",
                 "notes": f"{type(exc).__name__}: {exc}",
             })
+
+    # A live external source folder may be cleaned up after intake. Never let a
+    # later rebuild erase an already tracked source whose exact bytes are still
+    # present in the repository's content-addressed source pack.
+    current_source_keys = {(row["source_id"], row["source_path"]) for row in instances}
+    retained_source_ids: dict[tuple[str, str], str] = {}
+    for prior in prior_instances:
+        key = (prior.get("source_id", ""), prior.get("source_path", ""))
+        canonical = prior.get("repo_canonical_path", "")
+        if key in current_source_keys or not canonical or not (ROOT / canonical).exists():
+            continue
+        retained = dict(prior)
+        retained["instance_id"] = f"src_{len(instances)+1:06d}"
+        retained["status"] = "retained_from_prior_snapshot_source_now_missing"
+        retained["notes"] = "Exact bytes retained in the content-addressed source pack; the previously observed live source path is no longer present."
+        instances.append(retained)
+        retained_source_ids[key] = retained["instance_id"]
+        current_source_keys.add(key)
+
+    current_visual_keys = {(row["source_id"], row["source_path"]) for row in visuals}
+    for prior in prior_visuals:
+        key = (prior.get("source_id", ""), prior.get("source_path", ""))
+        canonical = prior.get("repo_canonical_path", "")
+        if key in current_visual_keys or key not in retained_source_ids or not canonical or not (ROOT / canonical).exists():
+            continue
+        retained = dict(prior)
+        retained["asset_instance_id"] = f"vis_{len(visuals)+1:06d}"
+        retained["source_instance_id"] = retained_source_ids[key]
+        retained["notes"] = "Exact visual retained from the prior snapshot; live source path is now missing."
+        visuals.append(retained)
+        current_visual_keys.add(key)
 
     counts = Counter(row["sha256"] for row in instances if row.get("sha256"))
     for row in instances:
@@ -556,7 +589,11 @@ def main() -> int:
             {"gate": "visual_tracking", "status": "complete", "evidence": "data/research/visual_asset_register.csv and research/review-sheets"},
             {"gate": "service_price_extraction", "status": "complete", "evidence": "content/service_price_evidence.csv"},
             {"gate": "product_price_extraction", "status": "complete", "evidence": "content/product_price_evidence.csv"},
-            {"gate": "owner_conflict_resolution", "status": "pending", "evidence": "content/conflict_register.csv"},
+            {
+                "gate": "owner_conflict_resolution",
+                "status": "complete" if unresolved_conflicts == 0 else "pending",
+                "evidence": "content/conflict_register.csv",
+            },
             {"gate": "source_rights_and_client_consent", "status": "pending", "evidence": "visual_asset_register identity_sensitivity fields"},
             {"gate": "research_signoff", "status": "pending", "evidence": "owner approval required"},
             {"gate": "site_build", "status": "blocked_by_research_gate", "evidence": "AGENTS.md"},

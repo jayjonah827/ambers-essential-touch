@@ -57,12 +57,12 @@ const TOOLS = [
   },
   {
     name: "list_services",
-    description: "Return the detailed uploaded menu, later grouped prices, candidate catalog, or all versions without resolving conflicts.",
+    description: "Return the detailed uploaded working menu, secondary grouped site/specification values, summarized authority statuses, or all observations.",
     inputSchema: { type: "object", properties: { mode: { type: "string", enum: ["detailed", "grouped", "catalog", "all"] } }, additionalProperties: false },
   },
   {
     name: "list_products",
-    description: "Return product price observations, product candidates, restricted research boundaries, or all versions.",
+    description: "Return repeated existing product-price evidence, excluded generated relaunch concepts, catalog status, or restricted research boundaries.",
     inputSchema: { type: "object", properties: { mode: { type: "string", enum: ["prices", "catalog", "research", "all"] } }, additionalProperties: false },
   },
   {
@@ -77,7 +77,7 @@ const TOOLS = [
   },
   {
     name: "list_conflicts",
-    description: "Return unresolved, resolved, superseded, and rejected conflicts. Never choose a side automatically.",
+    description: "Return unresolved, source-priority-resolved, superseded, rejected, and reference-only decisions. Follow resolutions in project context.",
     inputSchema: { type: "object", properties: { status: { type: "string" } }, additionalProperties: false },
   },
   {
@@ -231,7 +231,7 @@ async function handle(message) {
       protocolVersion: params.protocolVersion ?? "2024-11-05",
       capabilities: { tools: { listChanged: false }, resources: { subscribe: false, listChanged: false } },
       serverInfo: { name: "ambers-essential-touch-research", version: "1.0.0" },
-      instructions: "Read-only source evidence. Read project context and conflicts before answering. No site implementation is authorized.",
+      instructions: "Read-only source evidence. Read project context and conflicts before answering. Follow resolved source priorities; do not promote secondary site specifications or generated product concepts. No site implementation is authorized.",
     }
     else if (method === "ping") response = {}
     else if (method === "tools/list") response = { tools: TOOLS }

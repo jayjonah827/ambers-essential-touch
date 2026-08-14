@@ -32,7 +32,7 @@ Curated CSVs preserve raw wording, source locator, evidence type, currentness, c
 
 ## 7. Conflict preservation
 
-Conflicts are never “cleaned up” by preference. `content/conflict_register.csv` identifies both observations, both sources, status, and the owner decision required.
+Conflicts are never “cleaned up” by preference. `content/conflict_register.csv` identifies both observations, both sources, status, and the resolution basis. A conflict may be resolved by explicit owner direction or by documented source priority when one side is demonstrably a generated/site concept rather than operating evidence.
 
 ## 8. Phase gate
 

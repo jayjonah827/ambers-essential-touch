@@ -1,23 +1,23 @@
 {
   "schema_version": "1.0",
-  "generated_at": "2026-08-14T11:51:24+00:00",
+  "generated_at": "2026-08-14T13:12:13+00:00",
   "phase": "research_and_source_reconstruction",
   "site_implementation_authorized": false,
   "research_complete": false,
   "counts": {
-    "source_instances": 1392,
+    "source_instances": 1393,
     "visual_asset_instances": 2603,
     "visually_reviewed_instances": 2603,
     "archive_members": 1363,
     "pdf_pages": 323,
-    "raw_money_mentions": 131,
+    "raw_money_mentions": 133,
     "missing_named_sources": 12,
     "service_price_observations": 55,
     "detailed_service_menu_observations": 36,
     "product_price_observations": 18,
     "product_research_observations": 16,
     "relocated_source_matches": 13,
-    "unresolved_conflicts": 4
+    "unresolved_conflicts": 0
   },
   "gates": [
     {
@@ -47,7 +47,7 @@
     },
     {
       "gate": "owner_conflict_resolution",
-      "status": "pending",
+      "status": "complete",
       "evidence": "content/conflict_register.csv"
     },
     {

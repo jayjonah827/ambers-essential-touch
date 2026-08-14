@@ -13,7 +13,7 @@ The server uses only Node.js built-ins. It supports MCP initialization, tools, a
 
 ## Evidence behavior
 
-- Service and product tools return all price versions rather than selecting one.
+- Service and product tools preserve all observations while `content/project_context.json` supplies the resolved authority: detailed uploaded services are canonical; grouped site values are secondary; repeated existing product prices are working evidence; generated relaunch values are excluded concepts.
 - Search results identify the dataset.
 - OCR is labeled in `pdf_page_text.jsonl` and is not business-fact authority.
 - Restricted formula and costing text is not exposed.

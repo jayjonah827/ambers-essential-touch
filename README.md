@@ -20,14 +20,14 @@ The owner supplied specific images, archives, PDFs, service menus, prices, produ
 - every readable image instance, including duplicates, fragments, and rejection evidence;
 - every unique PDF page with full contact-sheet review;
 - page-complete embedded text or OCR with method labels;
-- 36 exact detailed service-menu observations plus later grouped service pricing;
-- current-candidate and concept-only product price versions;
+- 36 exact detailed service-menu observations as the working price authority, with later grouped site/specification values retained as secondary concepts;
+- repeated existing product price models separated from excluded generated relaunch concepts;
 - business facts, professional evidence, copy, design direction, competitor-reference analysis, claims risks, and conflicts;
 - a read-only MCP interface for agent access.
 
 ## Research boundary
 
-The extraction system is operational, but `research_complete` remains `false` until Amber resolves pricing versions, experience wording, current business details, rights and consent, product approval, and source confidentiality.
+The extraction system is operational. Experience wording, service-price authority, and the existing-versus-generated product-price distinction are resolved. `research_complete` remains `false` only because current business details, rights and consent, source confidentiality, hand-source approval, and explicit research signoff remain pending.
 
 No site, booking, commerce, deployment, or placeholder workflow was created by this research phase. The existing HTML and JavaScript predate this research system and remain a non-authoritative historical snapshot.
 

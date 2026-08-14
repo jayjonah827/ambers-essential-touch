@@ -6,7 +6,8 @@ biz_004,address,"1622 Michael Dr, Pinole, CA 94564",birdeye_capture,Birdeye PDF:
 biz_005,hours,Wed-Fri 9:30-7:30; Sat 9:30-5; Sun 11-2,birdeye_capture,Birdeye PDF:business profile,source_verified_as_snapshot,captured_2026-04-18,Refresh before public launch,Monday and Tuesday shown closed.
 biz_006,review_rating,4.9 from 25 reviews,birdeye_capture,Birdeye PDF:business profile,source_verified_as_snapshot,captured_2026-04-18,Always date the snapshot; never present as live without refresh,
 biz_007,practice_owner_start,June 2010,resume,Ambers resume.pdf:1,source_verified,historical,May be used as a dated career fact,
-biz_008,experience,15+ years,resume,Ambers resume.pdf:1,source_verified,currentness_unconfirmed,Prefer until Amber confirms a precise current number,Conflicts with 18 years licensed copy.
-biz_009,experience,18 years licensed,desktop_specification,03_SPECIFICATION.md:30 and 114-134,source_asserted,conflict,Do not publish until Amber resolves the conflict,The source repeats the figure but does not supply license verification.
+biz_008,experience,15+ years,resume,Ambers resume.pdf:1,source_verified,historical_numeric_evidence,Use only as supporting evidence; public brand wording is "nearly two decades",Owner resolved the public language without adopting a precise licensing count.
+biz_009,experience,18 years licensed,desktop_specification,03_SPECIFICATION.md:30 and 114-134,source_asserted,superseded_for_public_copy,Do not publish as a precise licensing claim without credential verification,The public wording is resolved separately as "nearly two decades".
 biz_010,practice_type,solo practitioner,voice_and_resume,07_VOICE_GUIDE.md:40 and resume,source_supported,stable,Use first-person singular voice,
 biz_011,scheduling_provider,Amber's Google Workspace,owner_direction,conversation 2026-08-13,owner_stated,future_configuration,Record as implementation requirement only; no booking workflow in research phase,
+biz_012,experience_brand_language,nearly two decades,owner_direction,conversation 2026-08-14,owner_approved,current,Use as the canonical public brand language,Avoid converting this phrase into an exact licensing-duration claim.

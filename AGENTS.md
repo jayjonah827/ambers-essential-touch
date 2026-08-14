@@ -17,7 +17,7 @@ This repository is in `research_and_source_reconstruction`. The existing HTML is
 - Do not build or revise the site while `site_implementation_authorized` is `false`.
 - Do not deploy, push Render changes, create scheduling flows, connect Google Workspace, add commerce, or change public forms.
 - Do not create placeholder services, prices, products, testimonials, images, claims, links, or integrations.
-- Do not choose between conflicting prices or experience claims. Report the conflict and its sources.
+- Follow resolved source-priority decisions in `content/project_context.json`: use "nearly two decades" as brand language; use the detailed uploaded service menu as the working price authority; and exclude generated product-relaunch prices and labels from the usable candidate set.
 - Do not publish owner formula ratios, batch costing, production procedure, or the restricted pages identified in the PDF registers.
 - Do not reuse a generated product label as an approved label.
 - Do not publish the explicitly rejected dark product-family group.
@@ -67,13 +67,11 @@ See `docs/SOURCE_AUTHORITY.md` for scope-specific rules.
 
 Research can be signed off only after Amber resolves:
 
-- the detailed menu versus later grouped service prices;
-- the oil size and price versions;
-- 15+ years versus 18 years licensed;
-- product label and SKU approval;
 - rights and consent for people shown;
 - current contact, address, hours, reviews, and scheduling policy;
 - confidentiality handling for formula and costing sources.
+
+Generated product labels, mockup SKUs, and relaunch prices are not pending owner options. They are excluded research references. A later product-production phase must begin with real inventory, formula, size, label, and compliance specifications.
 
 Until then, report `research_complete: false` accurately. A complete extraction system does not mean the business decisions are approved.
 
