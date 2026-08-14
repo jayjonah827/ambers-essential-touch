@@ -12,9 +12,9 @@
 - `product_research_evidence.csv`: formula, usage, safety, claim, and confidentiality boundaries.
 - `relocation_map.csv`: original path to recovered path mapping.
 - `research_topic_index.csv`: source and page-range routing.
-- `service_catalog.csv`: summarized later site/specification model with authority limitations; it cannot override the detailed menu.
+- `service_catalog.csv`: summarized grouped model from generated specifications and older-site snapshots; it cannot override the detailed menu or describe the current site.
 - `service_menu_observations.csv`: exact 36-line detailed uploaded menu and working canonical service-price source.
-- `service_price_evidence.csv`: later grouped site/specification observations retained as secondary concepts.
+- `service_price_evidence.csv`: grouped generated-specification and older-site observations retained as historical research.
 - `source_files.csv`: individually named sources and original-path statuses.
 - `source_roots.csv`: recursively scanned source packages.
 - `visual_review_batches.csv`: contact-sheet evidence for human review.
@@ -32,7 +32,8 @@
 
 - `observed`: file or value was present in the reviewed source.
 - `working_canonical_by_source_priority`: current working authority selected from the strongest available first-party operating evidence.
-- `secondary_site_specification_not_canonical`: repeated by planning or code but not allowed to override first-party operating evidence.
+- `generated_specification_not_canonical`: generated planning value retained as research, not operating evidence.
+- `older_site_snapshot_not_canonical`: value observed in a preexisting site snapshot, not evidence of the current site or current operating price.
 - `excluded_generated_concept`: retained for provenance but not a usable business option.
 - `retained_from_prior_snapshot_source_now_missing`: exact bytes remain in the repository source pack even though the previously observed external path has disappeared.
 - `source_verified_as_snapshot`: accurate only for the captured date.

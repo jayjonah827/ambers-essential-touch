@@ -38,7 +38,7 @@
   },
   "resolved_decisions": [
     "Use nearly two decades as public brand language; do not publish either precise licensing-duration claim without credential evidence.",
-    "Use the detailed 36-item uploaded menu as the working canonical service-price source. Treat grouped from-prices as secondary site/specification concepts, not operating-price authority.",
+    "Use the detailed 36-item uploaded menu as the working canonical service-price source. Treat grouped from-prices from generated specifications and older-site snapshots as historical research, not current-site or operating-price authority.",
     "Use the repeated existing product price model, including 2 oz oil at $18 and 8 oz at $50. Exclude generated relaunch prices from the usable candidate set.",
     "Treat generated product labels and mockup SKUs as visual research only, not finished product specifications or approval candidates."
   ],
@@ -73,7 +73,7 @@
   "safe_agent_behavior": {
     "fact_response": "Return the observation, source locator, temporal status, approval status, and any conflict.",
     "missing_source_response": "Report the original path and check relocation_map.csv before concluding it is unavailable.",
-    "price_response": "For services, return the detailed uploaded menu as the working canonical price source and label grouped site/specification values as secondary concepts. For products, return the repeated existing working prices and keep generated relaunch values excluded as concepts.",
+    "price_response": "For services, return the detailed uploaded menu as the working canonical price source and label grouped values as generated-specification or older-site historical research. Do not describe the older pages as a current site. For products, return the repeated existing working prices and keep generated relaunch values excluded as concepts.",
     "visual_response": "Return source hash, review batch, approval status, usage status, and identity sensitivity.",
     "implementation_response": "Report that implementation is gated; do not create placeholders or code around the missing decision."
   }

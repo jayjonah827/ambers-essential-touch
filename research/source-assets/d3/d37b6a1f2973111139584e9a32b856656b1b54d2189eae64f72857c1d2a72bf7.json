@@ -1,0 +1,1142 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/6yz7d7",
+    "id": "6yz7d7",
+    "slide": 10,
+    "layoutId": "4d30df70-62b6-478f-a679-f0789665d762",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "9d30df0f-1877-4a26-bbe8-f4dc61967eea",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#111111",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "4d30df70-62b6-478f-a679-f0789665d762",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "9d30df0f-1877-4a26-bbe8-f4dc61967eea",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "9d30df0f-1877-4a26-bbe8-f4dc61967eea",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fm983m5s",
+      "id": "1",
+      "bbox": [
+        50,
+        22,
+        500,
+        24
+      ],
+      "geometry": "rect",
+      "text": "AMBER'S ESSENTIAL TOUCH",
+      "textPreview": "AMBER'S ESSENTIAL TOUCH",
+      "resolvedFontSize": 14,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 14,
+        "typeface": "+mn-lt",
+        "color": "#F7F5F0",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "AMBER'S ESSENTIAL TOUCH"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "AMBER'S ESSENTIAL TOUCH",
+          "resolvedTextStyle": {
+            "fontSize": 14,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "AMBER'S ESSENTIAL TOUCH",
+              "fontSize": 14,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0nipwrmx",
+      "id": "2",
+      "bbox": [
+        900,
+        22,
+        270,
+        24
+      ],
+      "geometry": "rect",
+      "text": "REAL AD / MEN / ADULT CROSS-CUT",
+      "textPreview": "REAL AD / MEN / ADULT CROSS-CUT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#A7A7A7",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "REAL AD / MEN / ADULT CROSS-CUT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "REAL AD / MEN / ADULT CROSS-CUT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#A7A7A7",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "REAL AD / MEN / ADULT CROSS-CUT",
+              "fontSize": 12,
+              "color": "#A7A7A7",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1orq5wni",
+      "id": "3",
+      "bbox": [
+        50,
+        55,
+        1180,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#202020",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2p07y143",
+      "id": "4",
+      "bbox": [
+        1190,
+        675,
+        40,
+        20
+      ],
+      "geometry": "rect",
+      "text": "10",
+      "textPreview": "10",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#A7A7A7",
+        "bold": true,
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "10"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "10",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#A7A7A7",
+            "bold": true,
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "10",
+              "fontSize": 12,
+              "color": "#A7A7A7",
+              "bold": true,
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/na987m5o",
+      "id": "5",
+      "bbox": [
+        790,
+        86,
+        420,
+        34
+      ],
+      "geometry": "rect",
+      "text": "EXECUTIVE RESET",
+      "textPreview": "EXECUTIVE RESET",
+      "resolvedFontSize": 16,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 16,
+        "typeface": "+mn-lt",
+        "color": "#2F7BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EXECUTIVE RESET"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EXECUTIVE RESET",
+          "resolvedTextStyle": {
+            "fontSize": 16,
+            "color": "#2F7BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EXECUTIVE RESET",
+              "fontSize": 16,
+              "color": "#2F7BFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ob2p0rm9",
+      "id": "6",
+      "bbox": [
+        800,
+        130,
+        410,
+        130
+      ],
+      "geometry": "rect",
+      "text": "YOUR BARBER CANNOT FIX WHAT\nTHE RAZOR KEEPS PUTTING BACK.",
+      "textPreview": "YOUR BARBER CANNOT FIX WHAT | THE RAZOR KEEPS PUTTING BACK.",
+      "resolvedFontSize": 29,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 29,
+        "typeface": "+mn-lt",
+        "color": "#F7F5F0",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 4,
+        "lines": [
+          {
+            "index": 1,
+            "text": "YOUR BARBER CANNOT"
+          },
+          {
+            "index": 2,
+            "text": "FIX WHAT"
+          },
+          {
+            "index": 3,
+            "text": "THE RAZOR KEEPS"
+          },
+          {
+            "index": 4,
+            "text": "PUTTING BACK."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "YOUR BARBER CANNOT FIX WHAT",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "YOUR BARBER CANNOT FIX WHAT",
+              "fontSize": 29,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "THE RAZOR KEEPS PUTTING BACK.",
+          "resolvedTextStyle": {
+            "fontSize": 29,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "THE RAZOR KEEPS PUTTING BACK.",
+              "fontSize": 29,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pcbq9wnu",
+      "id": "7",
+      "bbox": [
+        790,
+        275,
+        390,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#2F7BFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/adk7214f",
+      "id": "8",
+      "bbox": [
+        800,
+        305,
+        390,
+        55
+      ],
+      "geometry": "rect",
+      "text": "Health-specific maintenance positioning",
+      "textPreview": "Health-specific maintenance positioning",
+      "resolvedFontSize": 20,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 20,
+        "typeface": "+mn-lt",
+        "color": "#F7F5F0",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Health-specific maintenance"
+          },
+          {
+            "index": 2,
+            "text": "positioning"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Health-specific maintenance positioning",
+          "resolvedTextStyle": {
+            "fontSize": 20,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Health-specific maintenance positioning",
+              "fontSize": 20,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bet8b6lk",
+      "id": "9",
+      "bbox": [
+        800,
+        395,
+        390,
+        30
+      ],
+      "geometry": "rect",
+      "text": "— direct contradiction",
+      "textPreview": "— direct contradiction",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#A7A7A7",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "— direct contradiction"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "— direct contradiction",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#A7A7A7",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "— direct contradiction",
+              "fontSize": 15,
+              "color": "#A7A7A7",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zel0361c",
+      "id": "10",
+      "bbox": [
+        800,
+        445,
+        390,
+        30
+      ],
+      "geometry": "rect",
+      "text": "— grooming norm discussion",
+      "textPreview": "— grooming norm discussion",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#A7A7A7",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "— grooming norm discussion"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "— grooming norm discussion",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#A7A7A7",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "— grooming norm discussion",
+              "fontSize": 15,
+              "color": "#A7A7A7",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ydcja1kr",
+      "id": "11",
+      "bbox": [
+        800,
+        495,
+        390,
+        30
+      ],
+      "geometry": "rect",
+      "text": "— recurring maintenance",
+      "textPreview": "— recurring maintenance",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#A7A7A7",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "— recurring maintenance"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "— recurring maintenance",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#A7A7A7",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "— recurring maintenance",
+              "fontSize": 15,
+              "color": "#A7A7A7",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lg3i5gji",
+      "id": "12",
+      "bbox": [
+        800,
+        585,
+        180,
+        22
+      ],
+      "geometry": "rect",
+      "text": "3-SECOND AUDIT",
+      "textPreview": "3-SECOND AUDIT",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#2F7BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "3-SECOND AUDIT"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "3-SECOND AUDIT",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#2F7BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "3-SECOND AUDIT",
+              "fontSize": 12,
+              "color": "#2F7BFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/0fu1wb2x",
+      "id": "13",
+      "bbox": [
+        800,
+        612,
+        390,
+        32
+      ],
+      "geometry": "rect",
+      "text": "Readable face • one tension • one action",
+      "textPreview": "Readable face • one tension • one action",
+      "resolvedFontSize": 17,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 17,
+        "typeface": "+mn-lt",
+        "color": "#F7F5F0",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Readable face • one tension • one action"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Readable face • one tension • one action",
+          "resolvedTextStyle": {
+            "fontSize": 17,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Readable face • one tension • one action",
+              "fontSize": 17,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/cvq1ofqt",
+      "id": "14",
+      "bbox": [
+        50,
+        82,
+        690,
+        406
+      ],
+      "geometry": "rect",
+      "alt": "EXECUTIVE RESET campaign visual",
+      "contentType": "image/png",
+      "imageFit": "cover",
+      "imageMask": {
+        "geometry": "rect"
+      },
+      "asset": {
+        "assetId": "0bc55018-3605-426f-96ad-fe8cb7da703f",
+        "contentType": "image/png",
+        "byteLength": 1899638
+      }
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qpsz61kv",
+      "id": "15",
+      "bbox": [
+        50,
+        488,
+        690,
+        172
+      ],
+      "geometry": "rect",
+      "fillColor": "#111111",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dc3i1wj6",
+      "id": "16",
+      "bbox": [
+        50,
+        488,
+        690,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#2F7BFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cbah8r2l",
+      "id": "17",
+      "bbox": [
+        75,
+        505,
+        640,
+        68
+      ],
+      "geometry": "rect",
+      "text": "YOUR BARBER CANNOT FIX WHAT\nTHE RAZOR KEEPS PUTTING BACK.",
+      "textPreview": "YOUR BARBER CANNOT FIX WHAT | THE RAZOR KEEPS PUTTING BACK.",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 26,
+        "typeface": "+mn-lt",
+        "color": "#F7F5F0",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "YOUR BARBER CANNOT FIX WHAT"
+          },
+          {
+            "index": 2,
+            "text": "THE RAZOR KEEPS PUTTING BACK."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "YOUR BARBER CANNOT FIX WHAT",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "YOUR BARBER CANNOT FIX WHAT",
+              "fontSize": 26,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        },
+        {
+          "index": 2,
+          "text": "THE RAZOR KEEPS PUTTING BACK.",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "color": "#F7F5F0",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "THE RAZOR KEEPS PUTTING BACK.",
+              "fontSize": 26,
+              "color": "#F7F5F0",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vm50bq1k",
+      "id": "18",
+      "bbox": [
+        75,
+        575,
+        640,
+        24
+      ],
+      "geometry": "rect",
+      "text": "EXECUTIVE RESET",
+      "textPreview": "EXECUTIVE RESET",
+      "resolvedFontSize": 15,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 15,
+        "typeface": "+mn-lt",
+        "color": "#2F7BFF",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "EXECUTIVE RESET"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "EXECUTIVE RESET",
+          "resolvedTextStyle": {
+            "fontSize": 15,
+            "color": "#2F7BFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "EXECUTIVE RESET",
+              "fontSize": 15,
+              "color": "#2F7BFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/alwj2lkz",
+      "id": "19",
+      "bbox": [
+        75,
+        618,
+        310,
+        32
+      ],
+      "geometry": "rect",
+      "fillColor": "#2F7BFF",
+      "lineWidth": 0
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/qd0vqt8j",
+      "id": "20",
+      "bbox": [
+        83,
+        618,
+        294,
+        32
+      ],
+      "geometry": "rect",
+      "text": "MONTHLY MAINTENANCE / PINOLE",
+      "textPreview": "MONTHLY MAINTENANCE / PINOLE",
+      "resolvedFontSize": 13,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 13,
+        "typeface": "+mn-lt",
+        "color": "#111111",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "MONTHLY MAINTENANCE / PINOLE"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "MONTHLY MAINTENANCE / PINOLE",
+          "resolvedTextStyle": {
+            "fontSize": 13,
+            "color": "#111111",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "MONTHLY MAINTENANCE / PINOLE",
+              "fontSize": 13,
+              "color": "#111111",
+              "bold": true,
+              "alignment": "center"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

@@ -57,7 +57,7 @@ const TOOLS = [
   },
   {
     name: "list_services",
-    description: "Return the detailed uploaded working menu, secondary grouped site/specification values, summarized authority statuses, or all observations.",
+    description: "Return the detailed uploaded working menu, grouped generated-specification and older-site historical values, summarized authority statuses, or all observations.",
     inputSchema: { type: "object", properties: { mode: { type: "string", enum: ["detailed", "grouped", "catalog", "all"] } }, additionalProperties: false },
   },
   {

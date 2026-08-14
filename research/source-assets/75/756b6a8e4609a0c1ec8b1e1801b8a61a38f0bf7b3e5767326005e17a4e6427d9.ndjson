@@ -1,0 +1,381 @@
+{"kind":"deck","id":"pr/aoq6k0","name":"Deck"}
+{"kind":"layout","layoutId":"9d30df0f-1877-4a26-bbe8-f4dc61967eea","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"4d30df70-62b6-478f-a679-f0789665d762","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/0u9842","slide":1,"title":"AMBER'S","textShapes":5}
+{"kind":"shape","id":"sh/qtkzixcr","slide":1,"bbox":[0,0,26,720]}
+{"kind":"shape","id":"sh/dgvydsvi","slide":1,"bbox":[26,0,12,720]}
+{"kind":"textbox","id":"sh/sfmhknux","slide":1,"text":"AMBER'S\nESSENTIAL TOUCH","textPreview":"AMBER'S | ESSENTIAL TOUCH","textChars":23,"textLines":2,"bbox":[74,65,900,138]}
+{"kind":"textbox","id":"sh/jqtg7idg","slide":1,"text":"AUDIENCE EXPANSION CAMPAIGN","textPreview":"AUDIENCE EXPANSION CAMPAIGN","textChars":27,"textLines":1,"bbox":[75,248,780,40]}
+{"kind":"textbox","id":"sh/ipkfedcv","slide":1,"text":"PINole + EAST BAY  /  2026","textPreview":"PINole + EAST BAY  /  2026","textChars":26,"textLines":1,"bbox":[75,300,600,32]}
+{"kind":"shape","id":"sh/5sby9svm","slide":1,"bbox":[75,402,1080,2]}
+{"kind":"textbox","id":"sh/4r2hgnu1","slide":1,"text":"CONTENT THAT EARNS ATTENTION.\nEXPERTISE THAT EARNS THE APPOINTMENT.","textPreview":"CONTENT THAT EARNS ATTENTION. | EXPERTISE THAT EARNS THE APPOINTMENT.","textChars":67,"textLines":2,"bbox":[75,430,1020,110]}
+{"kind":"textbox","id":"sh/nmdgj2dk","slide":1,"text":"STRATEGY • REAL ADS • MARKET VISUALIZATION • PRODUCTION SYSTEM","textPreview":"STRATEGY • REAL ADS • MARKET VISUALIZATION • PRODUCTION SYSTEM","textChars":62,"textLines":1,"bbox":[75,635,1000,28]}
+{"kind":"notes","id":"nt/0u9842","slide":1,"text":"[Sources]\n- User-provided Amber's Essential Touch campaign brief, 2026-08-14."}
+{"kind":"slide","id":"sl/zbbxxy","slide":2,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":27}
+{"kind":"textbox","id":"sh/hcjedkf2","slide":2,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/u9sv25gb","slide":2,"text":"CAMPAIGN HIERARCHY","textPreview":"CAMPAIGN HIERARCHY","textChars":18,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/va1wbaxw","slide":2,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/8nad0fy5","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/t8je90fq","slide":2,"text":"THE MAIN GOAL","textPreview":"THE MAIN GOAL","textChars":13,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/6l8vy5gf","slide":2,"text":"Turn local expertise into an expanding audience—and that audience into recurring value.","textPreview":"Turn local expertise into an expanding audience—and that audience into recurring value.","textChars":87,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/7mhw7axk","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[50,305,55,28]}
+{"kind":"shape","id":"sh/c3udczyp","slide":2,"bbox":[50,340,140,3]}
+{"kind":"textbox","id":"sh/d43el4fu","slide":2,"text":"AUDIENCE","textPreview":"AUDIENCE","textChars":8,"textLines":1,"bbox":[50,360,140,58]}
+{"kind":"textbox","id":"sh/94fq5czu","slide":2,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[192,350,28,40]}
+{"kind":"textbox","id":"sh/836pwri9","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[220,305,55,28]}
+{"kind":"shape","id":"sh/72x83mho","slide":2,"bbox":[220,340,140,3]}
+{"kind":"textbox","id":"sh/m1o7uh03","slide":2,"text":"ATTENTION","textPreview":"ATTENTION","textChars":9,"textLines":1,"bbox":[220,360,140,58]}
+{"kind":"textbox","id":"sh/l0fq1czy","slide":2,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[362,350,28,40]}
+{"kind":"textbox","id":"sh/kf6ps7id","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[390,305,55,28]}
+{"kind":"shape","id":"sh/zex8z2hs","slide":2,"bbox":[390,340,140,3]}
+{"kind":"textbox","id":"sh/yd47qx07","slide":2,"text":"TRUST","textPreview":"TRUST","textChars":5,"textLines":1,"bbox":[390,360,140,58]}
+{"kind":"textbox","id":"sh/5wzqxwz2","slide":2,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[532,350,28,40]}
+{"kind":"textbox","id":"sh/4bq94bih","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[560,305,55,28]}
+{"kind":"shape","id":"sh/ori1gzup","slide":2,"bbox":[560,340,140,3]}
+{"kind":"textbox","id":"sh/psr2p4ba","slide":2,"text":"LOCAL DEMAND","textPreview":"LOCAL DEMAND","textChars":12,"textLines":1,"bbox":[560,360,140,58]}
+{"kind":"textbox","id":"sh/2p0je9cz","slide":2,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[702,350,28,40]}
+{"kind":"textbox","id":"sh/3q9knetk","slide":2,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[730,305,55,28]}
+{"kind":"shape","id":"sh/gni1czut","slide":2,"bbox":[730,340,140,3]}
+{"kind":"textbox","id":"sh/1oril4be","slide":2,"text":"FIRST VISIT","textPreview":"FIRST VISIT","textChars":11,"textLines":1,"bbox":[730,360,140,58]}
+{"kind":"textbox","id":"sh/elgjapcn","slide":2,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[872,350,28,40]}
+{"kind":"textbox","id":"sh/fmp0jut8","slide":2,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[900,305,55,28]}
+{"kind":"shape","id":"sh/sjy18fux","slide":2,"bbox":[900,340,140,3]}
+{"kind":"textbox","id":"sh/tk7ihkb2","slide":2,"text":"RECURRING VALUE","textPreview":"RECURRING VALUE","textChars":15,"textLines":1,"bbox":[900,360,140,58]}
+{"kind":"textbox","id":"sh/vu5krax4","slide":2,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[1042,350,28,40]}
+{"kind":"textbox","id":"sh/utwjy5wj","slide":2,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1070,305,55,28]}
+{"kind":"shape","id":"sh/hw72tkva","slide":2,"bbox":[1070,340,140,3]}
+{"kind":"textbox","id":"sh/wve10fep","slide":2,"text":"PRODUCT + BRAND","textPreview":"PRODUCT + BRAND","textChars":15,"textLines":1,"bbox":[1070,360,140,58]}
+{"kind":"textbox","id":"sh/jipkvud0","slide":2,"text":"Inclusion is preserved across the portfolio—not compressed into every post.","textPreview":"Inclusion is preserved across the portfolio—not compressed into every post.","textChars":75,"textLines":1,"bbox":[50,536,1120,44]}
+{"kind":"textbox","id":"sh/ihg32pwv","slide":2,"text":"Situations, conflicts and comment triggers are executions underneath this accumulation hierarchy.","textPreview":"Situations, conflicts and comment triggers are executions underneath this accumulation hierarchy.","textChars":97,"textLines":1,"bbox":[50,590,1100,36]}
+{"kind":"notes","id":"nt/zbbxxy","slide":2,"text":"[Sources]\n- AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md, Main Goal and Campaign Accumulation Hierarchy."}
+{"kind":"slide","id":"sl/9zmnw2","slide":3,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":15}
+{"kind":"textbox","id":"sh/hk3udofq","slide":3,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/uhcb29wz","slide":3,"text":"REGIONAL OPPORTUNITY","textPreview":"REGIONAL OPPORTUNITY","textChars":20,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/vilcbexk","slide":3,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/8fut0ze9","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/tg3u94fu","slide":3,"text":"PINOLE MARKET FOUNDATION","textPreview":"PINOLE MARKET FOUNDATION","textChars":24,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/6tcbypw3","slide":3,"text":"A mature, high-income, culturally mixed local base with meaningful multilingual reach.","textPreview":"A mature, high-income, culturally mixed local base with meaningful multilingual reach.","textChars":86,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/7elc7uxo","slide":3,"text":"18,761","textPreview":"18,761","textChars":6,"textLines":1,"bbox":[50,302,235,58]}
+{"kind":"shape","id":"sh/sbedc3ed","slide":3,"bbox":[50,364,210,3]}
+{"kind":"textbox","id":"sh/dc7ul8fy","slide":3,"text":"POPULATION","textPreview":"POPULATION","textChars":10,"textLines":1,"bbox":[50,375,220,42]}
+{"kind":"textbox","id":"sh/5wbitsba","slide":3,"text":"$127,717","textPreview":"$127,717","textChars":8,"textLines":1,"bbox":[335,302,235,58]}
+{"kind":"shape","id":"sh/4v210nap","slide":3,"bbox":[335,364,210,3]}
+{"kind":"textbox","id":"sh/jut0r2t4","slide":3,"text":"MEDIAN HOUSEHOLD INCOME","textPreview":"MEDIAN HOUSEHOLD INCOME","textChars":23,"textLines":1,"bbox":[335,375,220,42]}
+{"kind":"textbox","id":"sh/itkjyxcj","slide":3,"text":"44.7","textPreview":"44.7","textChars":4,"textLines":1,"bbox":[620,302,235,58]}
+{"kind":"shape","id":"sh/hsbipsby","slide":3,"bbox":[620,364,210,3]}
+{"kind":"textbox","id":"sh/wr2hwnut","slide":3,"text":"MEDIAN AGE","textPreview":"MEDIAN AGE","textChars":10,"textLines":1,"bbox":[620,375,220,42]}
+{"kind":"textbox","id":"sh/v690nit8","slide":3,"text":"41.2%","textPreview":"41.2%","textChars":5,"textLines":1,"bbox":[905,302,235,58]}
+{"kind":"shape","id":"sh/u50zudcn","slide":3,"bbox":[905,364,210,3]}
+{"kind":"textbox","id":"sh/1ovi1cbi","slide":3,"text":"LANGUAGE OTHER THAN ENGLISH AT HOME","textPreview":"LANGUAGE OTHER THAN ENGLISH AT HOME","textChars":35,"textLines":1,"bbox":[905,375,220,42]}
+{"kind":"textbox","id":"sh/0nm187ax","slide":3,"text":"Implication","textPreview":"Implication","textChars":11,"textLines":1,"bbox":[50,515,180,24]}
+{"kind":"textbox","id":"sh/kjetkfm5","slide":3,"text":"Build for more than one life stage and more than one cultural beauty norm—then distribute those perspectives across enough posts to remain specific.","textPreview":"Build for more than one life stage and more than one cultural beauty norm—then distribute those perspectives across enough posts to remai...","textChars":148,"textLines":1,"bbox":[220,500,950,80]}
+{"kind":"notes","id":"nt/9zmnw2","slide":3,"text":"[Sources]\n- Census Reporter, Pinole city, California profile: https://censusreporter.org/profiles/16000US0657288-pinole-ca/\n- U.S. Census Bureau QuickFacts, Pinole city, California: https://www.census.gov/quickfacts/fact/table/pinolecitycalifornia/HSG495224"}
+{"kind":"slide","id":"sl/fkkshh","slide":4,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":16}
+{"kind":"textbox","id":"sh/p0r6lsn2","slide":4,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/2xgnqxob","slide":4,"text":"AGE TARGETS","textPreview":"AGE TARGETS","textChars":11,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/3ypoj25w","slide":4,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/gvy5on6l","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/hw76hsn6","slide":4,"text":"THREE AGE GROUPS—NOT ONE GENERIC BEAUTY AUDIENCE.","textPreview":"THREE AGE GROUPS—NOT ONE GENERIC BEAUTY AUDIENCE.","textChars":49,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/u9gnmdof","slide":4,"text":"Regional age composition informs media weight; campaign targets remain Teens 16–19, Adults 20s–30s, Mature 40s–50+.","textPreview":"Regional age composition informs media weight; campaign targets remain Teens 16–19, Adults 20s–30s, Mature 40s–50+.","textChars":115,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/fupofi50","slide":4,"text":"UNDER 18","textPreview":"UNDER 18","textChars":8,"textLines":1,"bbox":[50,302,140,34]}
+{"kind":"shape","id":"sh/s7y5k369","slide":4,"bbox":[200,305,800,30]}
+{"kind":"shape","id":"sh/t876d8nu","slide":4,"bbox":[200,305,204.57,30]}
+{"kind":"textbox","id":"sh/58fmpwv2","slide":4,"text":"17.9%","textPreview":"17.9%","textChars":5,"textLines":1,"bbox":[1020,302,90,34]}
+{"kind":"textbox","id":"sh/4765wbux","slide":4,"text":"TEENS 16–19","textPreview":"TEENS 16–19","textChars":11,"textLines":1,"bbox":[1110,302,120,34]}
+{"kind":"textbox","id":"sh/j6x4n6dc","slide":4,"text":"18–64","textPreview":"18–64","textChars":5,"textLines":1,"bbox":[50,407,140,34]}
+{"kind":"shape","id":"sh/i5onu1cr","slide":4,"bbox":[200,410,800,30]}
+{"kind":"shape","id":"sh/h4vmlwv6","slide":4,"bbox":[200,410,685.71,30]}
+{"kind":"textbox","id":"sh/w3m5srul","slide":4,"text":"60.0%","textPreview":"60.0%","textChars":5,"textLines":1,"bbox":[1020,407,90,34]}
+{"kind":"textbox","id":"sh/v2d4jmd0","slide":4,"text":"ADULTS 20s–30s","textPreview":"ADULTS 20s–30s","textChars":14,"textLines":1,"bbox":[1110,407,120,34]}
+{"kind":"textbox","id":"sh/u14nqhcf","slide":4,"text":"65+","textPreview":"65+","textChars":3,"textLines":1,"bbox":[50,512,140,34]}
+{"kind":"shape","id":"sh/90vmhcva","slide":4,"bbox":[200,515,800,30]}
+{"kind":"shape","id":"sh/8zm5o7up","slide":4,"bbox":[200,515,244.57,30]}
+{"kind":"textbox","id":"sh/0jq54r2l","slide":4,"text":"21.4%","textPreview":"21.4%","textChars":5,"textLines":1,"bbox":[1020,512,90,34]}
+{"kind":"textbox","id":"sh/1kzmxw3q","slide":4,"text":"MATURE 40s–50+","textPreview":"MATURE 40s–50+","textChars":14,"textLines":1,"bbox":[1110,512,120,34]}
+{"kind":"textbox","id":"sh/ehon2h4f","slide":4,"text":"MEN","textPreview":"MEN","textChars":3,"textLines":1,"bbox":[50,628,90,24]}
+{"kind":"textbox","id":"sh/zix4vml0","slide":4,"text":"Cross-cutting creative within all three age groups—not a fourth age category.","textPreview":"Cross-cutting creative within all three age groups—not a fourth age category.","textChars":77,"textLines":1,"bbox":[140,624,940,32]}
+{"kind":"notes","id":"nt/fkkshh","slide":4,"text":"[Sources]\n- U.S. Census Bureau QuickFacts, Pinole city, California: https://www.census.gov/quickfacts/fact/table/pinolecitycalifornia/HSG495224\n- User-provided campaign brief, Three Age-Group Targets."}
+{"kind":"slide","id":"sl/9yrc4c","slide":5,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":15}
+{"kind":"textbox","id":"sh/6lgf6p8n","slide":5,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/t8re1kry","slide":5,"text":"CULTURAL AUDIENCE","textPreview":"CULTURAL AUDIENCE","textChars":17,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/s7yx8fqt","slide":5,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/fa9w3u94","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/u90fap8j","slide":5,"text":"GEOGRAPHY SHAPES THE CREATIVE LANES.","textPreview":"GEOGRAPHY SHAPES THE CREATIVE LANES.","textChars":36,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/hcre54ra","slide":5,"text":"Approximate local shares show why audience specificity must be accumulated across the campaign.","textPreview":"Approximate local shares show why audience specificity must be accumulated across the campaign.","textChars":95,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/gbixczqp","slide":5,"text":"WHITE","textPreview":"WHITE","textChars":5,"textLines":1,"bbox":[50,284,220,34]}
+{"kind":"shape","id":"sh/ve5w7q90","slide":5,"bbox":[285,288,750,25]}
+{"kind":"shape","id":"sh/adwvy5sf","slide":5,"bbox":[285,288,664.29,25]}
+{"kind":"textbox","id":"sh/k7i987y1","slide":5,"text":"31%","textPreview":"31%","textChars":3,"textLines":1,"bbox":[1060,284,70,34]}
+{"kind":"textbox","id":"sh/58rahcz6","slide":5,"text":"HISPANIC / LATINO","textPreview":"HISPANIC / LATINO","textChars":17,"textLines":1,"bbox":[50,366,220,34]}
+{"kind":"shape","id":"sh/ilgr6xgv","slide":5,"bbox":[285,370,750,25]}
+{"kind":"shape","id":"sh/j69sf2hg","slide":5,"bbox":[285,370,621.43,25]}
+{"kind":"textbox","id":"sh/sbitc7yx","slide":5,"text":"29%","textPreview":"29%","textChars":3,"textLines":1,"bbox":[1060,366,70,34]}
+{"kind":"textbox","id":"sh/tcralczi","slide":5,"text":"ASIAN","textPreview":"ASIAN","textChars":5,"textLines":1,"bbox":[50,448,220,34]}
+{"kind":"shape","id":"sh/690rahgr","slide":5,"bbox":[285,452,750,25]}
+{"kind":"shape","id":"sh/7a9sjmhc","slide":5,"bbox":[285,452,600,25]}
+{"kind":"textbox","id":"sh/8fy90nyt","slide":5,"text":"28%","textPreview":"28%","textChars":3,"textLines":1,"bbox":[1060,448,70,34]}
+{"kind":"textbox","id":"sh/9g7a9sze","slide":5,"text":"BLACK","textPreview":"BLACK","textChars":5,"textLines":1,"bbox":[50,530,220,34]}
+{"kind":"shape","id":"sh/p0fyhknq","slide":5,"bbox":[285,534,750,25]}
+{"kind":"shape","id":"sh/4z6hof65","slide":5,"bbox":[285,534,214.29,25]}
+{"kind":"textbox","id":"sh/3yxgfa5k","slide":5,"text":"10%","textPreview":"10%","textChars":3,"textLines":1,"bbox":[1060,530,70,34]}
+{"kind":"textbox","id":"sh/2xozm5of","slide":5,"text":"CREATIVE LANES","textPreview":"CREATIVE LANES","textChars":14,"textLines":1,"bbox":[50,625,170,22]}
+{"kind":"textbox","id":"sh/dofylkn2","slide":5,"text":"African / Black diaspora  •  Latin American / Caribbean  •  East, Southeast + South Asian  •  European / Mediterranean / MENA","textPreview":"African / Black diaspora  •  Latin American / Caribbean  •  East, Southeast + South Asian  •  European / Mediterranean / MENA","textChars":125,"textLines":1,"bbox":[220,614,950,46]}
+{"kind":"notes","id":"nt/9yrc4c","slide":5,"text":"[Sources]\n- User-provided campaign brief, Pinole demographic composition; approximate shares and source labels preserved.\n- U.S. Census Bureau QuickFacts, Pinole city, California: https://www.census.gov/quickfacts/fact/table/pinolecitycalifornia/HSG495224"}
+{"kind":"slide","id":"sl/7qkjdh","slide":6,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":25}
+{"kind":"textbox","id":"sh/dwbi10nm","slide":6,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/qtkz6lov","slide":6,"text":"INCLUSION THROUGH QUANTITY","textPreview":"INCLUSION THROUGH QUANTITY","textChars":26,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/rut0zq5g","slide":6,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/4rih4v6p","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/5srix0na","slide":6,"text":"TWELVE AUDIENCE CELLS. ONE ACCUMULATED BRAND.","textPreview":"TWELVE AUDIENCE CELLS. ONE ACCUMULATED BRAND.","textChars":45,"textLines":1,"bbox":[50,72,1130,24]}
+{"kind":"textbox","id":"sh/ip0z2loz","slide":6,"text":"Each asset can be sharp, culturally specific and\nconversion-minded because the portfolio carries\nthe diversity.","textPreview":"Each asset can be sharp, culturally specific and | conversion-minded because the portfolio carries | the diversity.","textChars":111,"textLines":3,"bbox":[50,108,1130,136]}
+{"kind":"textbox","id":"sh/3q90vq54","slide":6,"text":"BLACK DIASPORA","textPreview":"BLACK DIASPORA","textChars":14,"textLines":1,"bbox":[245,260,205,35]}
+{"kind":"textbox","id":"sh/gnih0b6t","slide":6,"text":"LATIN / CARIBBEAN","textPreview":"LATIN / CARIBBEAN","textChars":17,"textLines":1,"bbox":[480,260,205,35]}
+{"kind":"textbox","id":"sh/horitg7e","slide":6,"text":"ASIAN REGIONS","textPreview":"ASIAN REGIONS","textChars":13,"textLines":1,"bbox":[715,260,205,35]}
+{"kind":"textbox","id":"sh/tov2h8nu","slide":6,"text":"MED / MENA / EUROPE","textPreview":"MED / MENA / EUROPE","textChars":19,"textLines":1,"bbox":[950,260,205,35]}
+{"kind":"textbox","id":"sh/snml8369","slide":6,"text":"TEENS 16–19","textPreview":"TEENS 16–19","textChars":11,"textLines":1,"bbox":[50,324,170,60]}
+{"kind":"shape","id":"sh/7mdkfy5o","slide":6,"bbox":[245,314,205,70]}
+{"kind":"textbox","id":"sh/6l436toj","slide":6,"text":"Texture + confidence","textPreview":"Texture + confidence","textChars":20,"textLines":1,"bbox":[258,326,179,42]}
+{"kind":"shape","id":"sh/50v2dony","slide":6,"bbox":[480,314,205,70]}
+{"kind":"textbox","id":"sh/kzm14j6d","slide":6,"text":"Ritual + visibility","textPreview":"Ritual + visibility","textChars":19,"textLines":1,"bbox":[493,326,179,42]}
+{"kind":"shape","id":"sh/jydkbe5s","slide":6,"bbox":[715,314,205,70]}
+{"kind":"textbox","id":"sh/ix4j29o7","slide":6,"text":"Technique + care","textPreview":"Technique + care","textChars":16,"textLines":1,"bbox":[728,326,179,42]}
+{"kind":"shape","id":"sh/xwb294nm","slide":6,"bbox":[950,314,205,70]}
+{"kind":"textbox","id":"sh/wv210j61","slide":6,"text":"Maintenance + health","textPreview":"Maintenance + health","textChars":20,"textLines":1,"bbox":[963,326,179,42]}
+{"kind":"textbox","id":"sh/of6lgjex","slide":6,"text":"ADULTS 20s–30s","textPreview":"ADULTS 20s–30s","textChars":14,"textLines":1,"bbox":[50,418,170,60]}
+{"kind":"shape","id":"sh/9gf2povi","slide":6,"bbox":[245,408,205,70]}
+{"kind":"textbox","id":"sh/mdo3e9w7","slide":6,"text":"Texture + confidence","textPreview":"Texture + confidence","textChars":20,"textLines":1,"bbox":[258,420,179,42]}
+{"kind":"shape","id":"sh/nexknedc","slide":6,"bbox":[480,408,205,70]}
+{"kind":"textbox","id":"sh/0b6lcze1","slide":6,"text":"Ritual + visibility","textPreview":"Ritual + visibility","textChars":19,"textLines":1,"bbox":[493,420,179,42]}
+{"kind":"shape","id":"sh/1cf2l4vm","slide":6,"bbox":[715,408,205,70]}
+{"kind":"textbox","id":"sh/e94ja9wv","slide":6,"text":"Technique + care","textPreview":"Technique + care","textChars":16,"textLines":1,"bbox":[728,420,179,42]}
+{"kind":"shape","id":"sh/zadkjudg","slide":6,"bbox":[950,408,205,70]}
+{"kind":"textbox","id":"sh/k7qlo3e5","slide":6,"text":"Maintenance + health","textPreview":"Maintenance + health","textChars":20,"textLines":1,"bbox":[963,420,179,42]}
+{"kind":"textbox","id":"sh/l8zmx8vq","slide":6,"text":"MATURE 40s–50+","textPreview":"MATURE 40s–50+","textChars":14,"textLines":1,"bbox":[50,512,170,60]}
+{"kind":"shape","id":"sh/felw3m14","slide":6,"bbox":[245,502,205,70]}
+{"kind":"textbox","id":"sh/edcfa1kj","slide":6,"text":"Texture + confidence","textPreview":"Texture + confidence","textChars":20,"textLines":1,"bbox":[258,514,179,42]}
+{"kind":"shape","id":"sh/1gne5wja","slide":6,"bbox":[480,502,205,70]}
+{"kind":"textbox","id":"sh/gfexcr2p","slide":6,"text":"Ritual + visibility","textPreview":"Ritual + visibility","textChars":19,"textLines":1,"bbox":[493,514,179,42]}
+{"kind":"shape","id":"sh/325w7610","slide":6,"bbox":[715,502,205,70]}
+{"kind":"textbox","id":"sh/2hwfe1kv","slide":6,"text":"Technique + care","textPreview":"Technique + care","textChars":16,"textLines":1,"bbox":[728,514,179,42]}
+{"kind":"shape","id":"sh/p4ne9gj6","slide":6,"bbox":[950,502,205,70]}
+{"kind":"textbox","id":"sh/o3exgb2l","slide":6,"text":"Maintenance + health","textPreview":"Maintenance + health","textChars":20,"textLines":1,"bbox":[963,514,179,42]}
+{"kind":"textbox","id":"sh/j61wv21w","slide":6,"text":"MEN APPEAR INSIDE EACH ROW WHERE THE SERVICE, skin concern and cultural context are real.","textPreview":"MEN APPEAR INSIDE EACH ROW WHERE THE SERVICE, skin concern and cultural context are real.","textChars":89,"textLines":1,"bbox":[50,624,1100,30]}
+{"kind":"notes","id":"nt/7qkjdh","slide":6,"text":"[Sources]\n- AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md, Geographic Skin-Type Audience System and Inclusion Through Quantity Matrix."}
+{"kind":"slide","id":"sl/nv7ofn","slide":7,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":30}
+{"kind":"textbox","id":"sh/sbu5kfad","slide":7,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/raloba9s","slide":7,"text":"OFFER ECONOMICS","textPreview":"OFFER ECONOMICS","textChars":15,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/q9cni5s7","slide":7,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/10n6h4ru","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/0ze5oza9","slide":7,"text":"CONTENT HAS A JOB AT EVERY STAGE.","textPreview":"CONTENT HAS A JOB AT EVERY STAGE.","textChars":33,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/fy5ofu94","slide":7,"text":"The first creative earns the pause. The system earns the repeat visit.","textPreview":"The first creative earns the pause. The system earns the repeat visit.","textChars":70,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/excnmpsj","slide":7,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[50,275,45,22]}
+{"kind":"shape","id":"sh/h4jm50bq","slide":7,"bbox":[50,305,200,3]}
+{"kind":"textbox","id":"sh/g3a5cva5","slide":7,"text":"STOP","textPreview":"STOP","textChars":4,"textLines":1,"bbox":[50,320,200,34]}
+{"kind":"textbox","id":"sh/a9ozel0n","slide":7,"text":"3-SECOND HOOK","textPreview":"3-SECOND HOOK","textChars":13,"textLines":1,"bbox":[50,360,200,42]}
+{"kind":"textbox","id":"sh/buxg7q18","slide":7,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[285,275,45,22]}
+{"kind":"shape","id":"sh/cv6hgvit","slide":7,"bbox":[285,305,200,3]}
+{"kind":"textbox","id":"sh/xwzy9gje","slide":7,"text":"ENGAGE","textPreview":"ENGAGE","textChars":6,"textLines":1,"bbox":[285,320,200,34]}
+{"kind":"textbox","id":"sh/yx8zil0j","slide":7,"text":"LIKE • COMMENT • SHARE","textPreview":"LIKE • COMMENT • SHARE","textChars":22,"textLines":1,"bbox":[285,360,200,42]}
+{"kind":"textbox","id":"sh/zyhgbq14","slide":7,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[520,275,45,22]}
+{"kind":"shape","id":"sh/kzqhkvip","slide":7,"bbox":[520,305,200,3]}
+{"kind":"textbox","id":"sh/l0zyd0za","slide":7,"text":"CONSIDER","textPreview":"CONSIDER","textChars":8,"textLines":1,"bbox":[520,320,200,34]}
+{"kind":"textbox","id":"sh/m18zm50v","slide":7,"text":"DM • PROFILE • OFFER","textPreview":"DM • PROFILE • OFFER","textChars":20,"textLines":1,"bbox":[520,360,200,42]}
+{"kind":"textbox","id":"sh/72hgfahg","slide":7,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[755,275,45,22]}
+{"kind":"shape","id":"sh/j61g3ax8","slide":7,"bbox":[755,305,200,3]}
+{"kind":"textbox","id":"sh/i5sfa5g3","slide":7,"text":"CONVERT","textPreview":"CONVERT","textChars":7,"textLines":1,"bbox":[755,320,200,34]}
+{"kind":"textbox","id":"sh/5sjy5kfe","slide":7,"text":"FIRST APPOINTMENT","textPreview":"FIRST APPOINTMENT","textChars":17,"textLines":1,"bbox":[755,360,200,42]}
+{"kind":"textbox","id":"sh/47axcfyt","slide":7,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[990,275,45,22]}
+{"kind":"shape","id":"sh/v2hgzqxc","slide":7,"bbox":[990,305,200,3]}
+{"kind":"textbox","id":"sh/u18f65gr","slide":7,"text":"RETAIN","textPreview":"RETAIN","textChars":6,"textLines":1,"bbox":[990,320,200,34]}
+{"kind":"textbox","id":"sh/h4jy10fi","slide":7,"text":"MEMBERSHIP • PRODUCT","textPreview":"MEMBERSHIP • PRODUCT","textChars":20,"textLines":1,"bbox":[990,360,200,42]}
+{"kind":"shape","id":"sh/w3ax8vyx","slide":7,"bbox":[50,445,1180,2]}
+{"kind":"textbox","id":"sh/7yhgvqxg","slide":7,"text":"$150","textPreview":"$150","textChars":4,"textLines":1,"bbox":[50,475,235,58]}
+{"kind":"shape","id":"sh/mx8f2lgv","slide":7,"bbox":[50,537,210,3]}
+{"kind":"textbox","id":"sh/c36dwred","slide":7,"text":"STATED GLASS SKIN VALUE","textPreview":"STATED GLASS SKIN VALUE","textChars":23,"textLines":1,"bbox":[50,548,220,42]}
+{"kind":"textbox","id":"sh/x4fu5wvy","slide":7,"text":"$69","textPreview":"$69","textChars":3,"textLines":1,"bbox":[335,475,235,58]}
+{"kind":"shape","id":"sh/ah4vuhwn","slide":7,"bbox":[335,537,210,3]}
+{"kind":"textbox","id":"sh/b2dc3md8","slide":7,"text":"FIRST-TIME PRICE","textPreview":"FIRST-TIME PRICE","textChars":16,"textLines":1,"bbox":[335,548,220,42]}
+{"kind":"textbox","id":"sh/k76d0rep","slide":7,"text":"$30","textPreview":"$30","textChars":3,"textLines":1,"bbox":[620,475,235,58]}
+{"kind":"shape","id":"sh/l8fu9wva","slide":7,"bbox":[620,537,210,3]}
+{"kind":"textbox","id":"sh/y5ovy1wj","slide":7,"text":"ILLUSTRATIVE COST / CUSTOMER","textPreview":"ILLUSTRATIVE COST / CUSTOMER","textChars":28,"textLines":1,"bbox":[620,548,220,42]}
+{"kind":"textbox","id":"sh/z6xc7md4","slide":7,"text":"$120/mo","textPreview":"$120/mo","textChars":7,"textLines":1,"bbox":[905,475,235,58]}
+{"kind":"shape","id":"sh/0b2do7el","slide":7,"bbox":[905,537,210,3]}
+{"kind":"textbox","id":"sh/1cvuxcvq","slide":7,"text":"ILLUSTRATIVE MEMBERSHIP","textPreview":"ILLUSTRATIVE MEMBERSHIP","textChars":23,"textLines":1,"bbox":[905,548,220,42]}
+{"kind":"textbox","id":"sh/t87mxcva","slide":7,"text":"MODEL INPUT","textPreview":"MODEL INPUT","textChars":11,"textLines":1,"bbox":[50,650,110,18]}
+{"kind":"textbox","id":"sh/87e547ep","slide":7,"text":"40% illustrative conversion—not measured campaign performance.","textPreview":"40% illustrative conversion—not measured campaign performance.","textChars":62,"textLines":1,"bbox":[165,646,710,26]}
+{"kind":"notes","id":"nt/nv7ofn","slide":7,"text":"[Sources]\n- User-provided campaign brief, Offer Economics; all dollar and conversion figures are campaign model inputs, not measured results."}
+{"kind":"slide","id":"sl/2jcjg5","slide":8,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":14}
+{"kind":"textbox","id":"sh/x87apsb2","slide":8,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/a5wbedcr","slide":8,"text":"REAL AD / TEENS 16–19","textPreview":"REAL AD / TEENS 16–19","textChars":21,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/v6psnitc","slide":8,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/83etc3ul","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/94nal8b6","slide":8,"text":"YEARBOOK CONFIDENCE","textPreview":"YEARBOOK CONFIDENCE","textChars":19,"textLines":1,"bbox":[790,86,420,34]}
+{"kind":"textbox","id":"sh/mhwbadcf","slide":8,"text":"MOST LIKELY TO STOP\nHIDING FROM FLASH.","textPreview":"MOST LIKELY TO STOP | HIDING FROM FLASH.","textChars":38,"textLines":2,"bbox":[800,130,410,130]}
+{"kind":"shape","id":"sh/ni5sjit0","slide":8,"bbox":[790,275,390,4]}
+{"kind":"textbox","id":"sh/szito7ap","slide":8,"text":"Portrait proof + identity language","textPreview":"Portrait proof + identity language","textChars":34,"textLines":1,"bbox":[800,305,390,55]}
+{"kind":"textbox","id":"sh/t0ruhcba","slide":8,"text":"— recognizable school ritual","textPreview":"— recognizable school ritual","textChars":28,"textLines":1,"bbox":[800,395,390,30]}
+{"kind":"textbox","id":"sh/do3qt4ni","slide":8,"text":"— tag or share with a friend","textPreview":"— tag or share with a friend","textChars":28,"textLines":1,"bbox":[800,445,390,30]}
+{"kind":"textbox","id":"sh/snu90zmx","slide":8,"text":"— clear-skin intake","textPreview":"— clear-skin intake","textChars":19,"textLines":1,"bbox":[800,495,390,30]}
+{"kind":"textbox","id":"sh/r2l8ru5c","slide":8,"text":"3-SECOND AUDIT","textPreview":"3-SECOND AUDIT","textChars":14,"textLines":1,"bbox":[800,585,180,22]}
+{"kind":"textbox","id":"sh/q1cry94r","slide":8,"text":"Readable face • one tension • one action","textPreview":"Readable face • one tension • one action","textChars":40,"textLines":1,"bbox":[800,612,390,32]}
+{"kind":"shape","id":"sh/4zupwzml","slide":8,"bbox":[50,488,690,172]}
+{"kind":"shape","id":"sh/3yl8nu5g","slide":8,"bbox":[50,488,690,4]}
+{"kind":"textbox","id":"sh/ixs7up4v","slide":8,"text":"MOST LIKELY TO STOP\nHIDING FROM FLASH.","textPreview":"MOST LIKELY TO STOP | HIDING FROM FLASH.","textChars":38,"textLines":2,"bbox":[75,505,640,68]}
+{"kind":"textbox","id":"sh/pwnq1o3q","slide":8,"text":"THE YEARBOOK / CONFIDENCE + BACK-TO-SCHOOL","textPreview":"THE YEARBOOK / CONFIDENCE + BACK-TO-SCHOOL","textChars":42,"textLines":1,"bbox":[75,575,640,24]}
+{"kind":"shape","id":"sh/ove98jm5","slide":8,"bbox":[75,618,310,32]}
+{"kind":"textbox","id":"sh/8zmt47u1","slide":8,"text":"CLEAR SKIN INTAKE / PINOLE","textPreview":"CLEAR SKIN INTAKE / PINOLE","textChars":26,"textLines":1,"bbox":[83,618,294,32]}
+{"kind":"image","id":"im/ypgn2tkv","slide":8,"name":"","geometry":"rect","alt":"YEARBOOK CONFIDENCE campaign visual","bbox":[50,82,690,406]}
+{"kind":"notes","id":"nt/2jcjg5","slide":8,"text":"[Sources]\n- OpenAI ImageGen, generated specifically for Amber's Essential Touch campaign, 2026-08-14.\n- User-provided campaign brief and AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md."}
+{"kind":"slide","id":"sl/6axv0a","slide":9,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":14}
+{"kind":"textbox","id":"sh/m10j2xwz","slide":9,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/94rixcfq","slide":9,"text":"REAL AD / ADULTS 20S–30S","textPreview":"REAL AD / ADULTS 20S–30S","textChars":24,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/83i147e5","slide":9,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/zep0rixo","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/edgjyxg3","slide":9,"text":"YELLOW POLKA DOT BIKINI","textPreview":"YELLOW POLKA DOT BIKINI","textChars":23,"textLines":1,"bbox":[790,86,420,34]}
+{"kind":"textbox","id":"sh/l0ritsfe","slide":9,"text":"THE POOL PARTY IS\nIN 6 HOURS.","textPreview":"THE POOL PARTY IS | IN 6 HOURS.","textChars":29,"textLines":2,"bbox":[800,130,410,130]}
+{"kind":"shape","id":"sh/0fi10ny9","slide":9,"bbox":[790,275,390,4]}
+{"kind":"textbox","id":"sh/jatk3mxs","slide":9,"text":"Urgency without generic beauty copy","textPreview":"Urgency without generic beauty copy","textChars":35,"textLines":1,"bbox":[800,305,390,55]}
+{"kind":"textbox","id":"sh/i9kjahw7","slide":9,"text":"— iconic color + time pressure","textPreview":"— iconic color + time pressure","textChars":30,"textLines":1,"bbox":[800,395,390,30]}
+{"kind":"textbox","id":"sh/ozq58n6h","slide":9,"text":"— razor-versus-wax debate","textPreview":"— razor-versus-wax debate","textChars":25,"textLines":1,"bbox":[800,445,390,30]}
+{"kind":"textbox","id":"sh/p0j61sn2","slide":9,"text":"— appointment-ready CTA","textPreview":"— appointment-ready CTA","textChars":23,"textLines":1,"bbox":[800,495,390,30]}
+{"kind":"textbox","id":"sh/2d8n6xor","slide":9,"text":"3-SECOND AUDIT","textPreview":"3-SECOND AUDIT","textChars":14,"textLines":1,"bbox":[800,585,180,22]}
+{"kind":"textbox","id":"sh/nehoz25c","slide":9,"text":"Readable face • one tension • one action","textPreview":"Readable face • one tension • one action","textChars":40,"textLines":1,"bbox":[800,612,390,32]}
+{"kind":"shape","id":"sh/1cz6xsn6","slide":9,"bbox":[50,488,690,172]}
+{"kind":"shape","id":"sh/e98n2dof","slide":9,"bbox":[50,488,690,4]}
+{"kind":"textbox","id":"sh/fahovi50","slide":9,"text":"THE POOL PARTY IS\nIN 6 HOURS.","textPreview":"THE POOL PARTY IS | IN 6 HOURS.","textChars":29,"textLines":2,"bbox":[75,505,640,68]}
+{"kind":"textbox","id":"sh/s765036p","slide":9,"text":"THROW AWAY THE RAZOR.","textPreview":"THROW AWAY THE RAZOR.","textChars":21,"textLines":1,"bbox":[75,575,640,24]}
+{"kind":"shape","id":"sh/d8fmt8nu","slide":9,"bbox":[75,618,310,32]}
+{"kind":"textbox","id":"sh/t47mx4fy","slide":9,"text":"BOOK AMBER / EAST BAY WAXING","textPreview":"BOOK AMBER / EAST BAY WAXING","textChars":28,"textLines":1,"bbox":[83,618,294,32]}
+{"kind":"image","id":"im/j25cjmx4","slide":9,"name":"","geometry":"rect","alt":"YELLOW POLKA DOT BIKINI campaign visual","bbox":[50,82,690,406]}
+{"kind":"notes","id":"nt/6axv0a","slide":9,"text":"[Sources]\n- OpenAI ImageGen, generated specifically for Amber's Essential Touch campaign, 2026-08-14.\n- User-provided campaign brief and AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md."}
+{"kind":"slide","id":"sl/6yz7d7","slide":10,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":14}
+{"kind":"textbox","id":"sh/fm983m5s","slide":10,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/0nipwrmx","slide":10,"text":"REAL AD / MEN / ADULT CROSS-CUT","textPreview":"REAL AD / MEN / ADULT CROSS-CUT","textChars":31,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/1orq5wni","slide":10,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/2p07y143","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/na987m5o","slide":10,"text":"EXECUTIVE RESET","textPreview":"EXECUTIVE RESET","textChars":15,"textLines":1,"bbox":[790,86,420,34]}
+{"kind":"textbox","id":"sh/ob2p0rm9","slide":10,"text":"YOUR BARBER CANNOT FIX WHAT\nTHE RAZOR KEEPS PUTTING BACK.","textPreview":"YOUR BARBER CANNOT FIX WHAT | THE RAZOR KEEPS PUTTING BACK.","textChars":57,"textLines":2,"bbox":[800,130,410,130]}
+{"kind":"shape","id":"sh/pcbq9wnu","slide":10,"bbox":[790,275,390,4]}
+{"kind":"textbox","id":"sh/adk7214f","slide":10,"text":"Health-specific maintenance positioning","textPreview":"Health-specific maintenance positioning","textChars":39,"textLines":1,"bbox":[800,305,390,55]}
+{"kind":"textbox","id":"sh/bet8b6lk","slide":10,"text":"— direct contradiction","textPreview":"— direct contradiction","textChars":22,"textLines":1,"bbox":[800,395,390,30]}
+{"kind":"textbox","id":"sh/zel0361c","slide":10,"text":"— grooming norm discussion","textPreview":"— grooming norm discussion","textChars":26,"textLines":1,"bbox":[800,445,390,30]}
+{"kind":"textbox","id":"sh/ydcja1kr","slide":10,"text":"— recurring maintenance","textPreview":"— recurring maintenance","textChars":23,"textLines":1,"bbox":[800,495,390,30]}
+{"kind":"textbox","id":"sh/lg3i5gji","slide":10,"text":"3-SECOND AUDIT","textPreview":"3-SECOND AUDIT","textChars":14,"textLines":1,"bbox":[800,585,180,22]}
+{"kind":"textbox","id":"sh/0fu1wb2x","slide":10,"text":"Readable face • one tension • one action","textPreview":"Readable face • one tension • one action","textChars":40,"textLines":1,"bbox":[800,612,390,32]}
+{"kind":"shape","id":"sh/qpsz61kv","slide":10,"bbox":[50,488,690,172]}
+{"kind":"shape","id":"sh/dc3i1wj6","slide":10,"bbox":[50,488,690,4]}
+{"kind":"textbox","id":"sh/cbah8r2l","slide":10,"text":"YOUR BARBER CANNOT FIX WHAT\nTHE RAZOR KEEPS PUTTING BACK.","textPreview":"YOUR BARBER CANNOT FIX WHAT | THE RAZOR KEEPS PUTTING BACK.","textChars":57,"textLines":2,"bbox":[75,505,640,68]}
+{"kind":"textbox","id":"sh/vm50bq1k","slide":10,"text":"EXECUTIVE RESET","textPreview":"EXECUTIVE RESET","textChars":15,"textLines":1,"bbox":[75,575,640,24]}
+{"kind":"shape","id":"sh/alwj2lkz","slide":10,"bbox":[75,618,310,32]}
+{"kind":"textbox","id":"sh/qd0vqt8j","slide":10,"text":"MONTHLY MAINTENANCE / PINOLE","textPreview":"MONTHLY MAINTENANCE / PINOLE","textChars":28,"textLines":1,"bbox":[83,618,294,32]}
+{"kind":"image","id":"im/cvq1ofqt","slide":10,"name":"","geometry":"rect","alt":"EXECUTIVE RESET campaign visual","bbox":[50,82,690,406]}
+{"kind":"notes","id":"nt/6yz7d7","slide":10,"text":"[Sources]\n- OpenAI ImageGen, generated specifically for Amber's Essential Touch campaign, 2026-08-14.\n- User-provided campaign brief and AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md."}
+{"kind":"slide","id":"sl/wcblo9","slide":11,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":14}
+{"kind":"textbox","id":"sh/qd8zupob","slide":11,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/dgzy547m","slide":11,"text":"REAL AD / MATURE 40S–50+","textPreview":"REAL AD / MATURE 40S–50+","textChars":24,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/cfqhwz6h","slide":11,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/zi1g7ups","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/yh8zypo7","slide":11,"text":"RE-ESTABLISH THE PRIME","textPreview":"RE-ESTABLISH THE PRIME","textChars":22,"textLines":1,"bbox":[790,86,420,34]}
+{"kind":"textbox","id":"sh/lkjy947y","slide":11,"text":"RE-ESTABLISH\nTHE PRIME.","textPreview":"RE-ESTABLISH | THE PRIME.","textChars":23,"textLines":2,"bbox":[800,130,410,130]}
+{"kind":"shape","id":"sh/0jah0z6d","slide":11,"bbox":[790,275,390,4]}
+{"kind":"textbox","id":"sh/fmxgvapo","slide":11,"text":"Presence, ritual and re-entry","textPreview":"Presence, ritual and re-entry","textChars":29,"textLines":1,"bbox":[800,305,390,55]}
+{"kind":"textbox","id":"sh/elofm5o3","slide":11,"text":"— elegant emotional reversal","textPreview":"— elegant emotional reversal","textChars":28,"textLines":1,"bbox":[800,395,390,30]}
+{"kind":"textbox","id":"sh/g7i1sjyd","slide":11,"text":"— confidence story","textPreview":"— confidence story","textChars":18,"textLines":1,"bbox":[800,445,390,30]}
+{"kind":"textbox","id":"sh/18r21ozy","slide":11,"text":"— consultation","textPreview":"— consultation","textChars":14,"textLines":1,"bbox":[800,495,390,30]}
+{"kind":"textbox","id":"sh/el0jq9gn","slide":11,"text":"3-SECOND AUDIT","textPreview":"3-SECOND AUDIT","textChars":14,"textLines":1,"bbox":[800,585,180,22]}
+{"kind":"textbox","id":"sh/f69kzehs","slide":11,"text":"Readable face • one tension • one action","textPreview":"Readable face • one tension • one action","textChars":40,"textLines":1,"bbox":[800,612,390,32]}
+{"kind":"shape","id":"sh/pcb25oza","slide":11,"bbox":[50,488,690,172]}
+{"kind":"shape","id":"sh/290jutgj","slide":11,"bbox":[50,488,690,4]}
+{"kind":"textbox","id":"sh/3atk3yh4","slide":11,"text":"RE-ESTABLISH\nTHE PRIME.","textPreview":"RE-ESTABLISH | THE PRIME.","textChars":23,"textLines":2,"bbox":[75,505,640,68]}
+{"kind":"textbox","id":"sh/4fy1kzi5","slide":11,"text":"THE ROOM DIDN'T CHANGE. HER RITUAL DID.","textPreview":"THE ROOM DIDN'T CHANGE. HER RITUAL DID.","textChars":39,"textLines":1,"bbox":[75,575,640,24]}
+{"kind":"shape","id":"sh/5g72t4zq","slide":11,"bbox":[75,618,310,32]}
+{"kind":"textbox","id":"sh/l0fq1wni","slide":11,"text":"BLUEPRINT CONSULTATION","textPreview":"BLUEPRINT CONSULTATION","textChars":22,"textLines":1,"bbox":[83,618,294,32]}
+{"kind":"image","id":"im/ji1o3y1s","slide":11,"name":"","geometry":"rect","alt":"RE-ESTABLISH THE PRIME campaign visual","bbox":[50,82,690,406]}
+{"kind":"notes","id":"nt/wcblo9","slide":11,"text":"[Sources]\n- OpenAI ImageGen, generated specifically for Amber's Essential Touch campaign, 2026-08-14.\n- User-provided campaign brief and AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md."}
+{"kind":"slide","id":"sl/kz5aoq","slide":12,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":18}
+{"kind":"textbox","id":"sh/jedkbalw","slide":12,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/4fml4vmh","slide":12,"text":"CONTENT SYSTEM","textPreview":"CONTENT SYSTEM","textChars":14,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/5gv2d032","slide":12,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/u9k3yl4f","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/vatk7qlk","slide":12,"text":"FIVE CONTENT PILLARS DISTRIBUTE THE CAMPAIGN'S INTELLIGENCE.","textPreview":"FIVE CONTENT PILLARS DISTRIBUTE THE CAMPAIGN'S INTELLIGENCE.","textChars":60,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/wb2l0vm5","slide":12,"text":"The audience grid decides who. The pillar decides what the post does.","textPreview":"The audience grid decides who. The pillar decides what the post does.","textChars":69,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/hcb2903q","slide":12,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[50,280,40,22]}
+{"kind":"shape","id":"sh/e543ap4j","slide":12,"bbox":[50,312,200,4]}
+{"kind":"textbox","id":"sh/f6x4jul4","slide":12,"text":"IDENTITY + CONFIDENCE","textPreview":"IDENTITY + CONFIDENCE","textChars":21,"textLines":1,"bbox":[50,330,200,72]}
+{"kind":"textbox","id":"sh/nqdgnapc","slide":12,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[285,280,40,22]}
+{"kind":"shape","id":"sh/mp4zu587","slide":12,"bbox":[285,312,200,4]}
+{"kind":"textbox","id":"sh/9sfypk7i","slide":12,"text":"SKIN + HAIR EDUCATION","textPreview":"SKIN + HAIR EDUCATION","textChars":21,"textLines":1,"bbox":[285,330,200,72]}
+{"kind":"textbox","id":"sh/or6hwfqx","slide":12,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[520,280,40,22]}
+{"kind":"shape","id":"sh/buxgrupo","slide":12,"bbox":[520,312,200,4]}
+{"kind":"textbox","id":"sh/atozyp83","slide":12,"text":"SERVICE PROOF","textPreview":"SERVICE PROOF","textChars":13,"textLines":1,"bbox":[520,330,200,72]}
+{"kind":"textbox","id":"sh/xgfytk7u","slide":12,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[755,280,40,22]}
+{"kind":"shape","id":"sh/wv6h0fq9","slide":12,"bbox":[755,312,200,4]}
+{"kind":"textbox","id":"sh/jihgvupk","slide":12,"text":"COMMUNITY ENGAGEMENT","textPreview":"COMMUNITY ENGAGEMENT","textChars":20,"textLines":1,"bbox":[755,330,200,72]}
+{"kind":"textbox","id":"sh/yhoz2p8f","slide":12,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[990,280,40,22]}
+{"kind":"shape","id":"sh/udsjutsn","slide":12,"bbox":[990,312,200,4]}
+{"kind":"textbox","id":"sh/ve1kny9s","slide":12,"text":"OFFER + RETENTION","textPreview":"OFFER + RETENTION","textChars":17,"textLines":1,"bbox":[990,330,200,72]}
+{"kind":"textbox","id":"sh/gfa1w3ad","slide":12,"text":"WEEKLY ACCUMULATION","textPreview":"WEEKLY ACCUMULATION","textChars":19,"textLines":1,"bbox":[50,492,220,22]}
+{"kind":"textbox","id":"sh/hgj2p8ry","slide":12,"text":"4 audience-specific posts  +  2 education/proof posts  +  1 offer post","textPreview":"4 audience-specific posts  +  2 education/proof posts  +  1 offer post","textChars":70,"textLines":1,"bbox":[50,525,1130,48]}
+{"kind":"textbox","id":"sh/698jqtsb","slide":12,"text":"The result is diversity in quantity, not diluted representation inside every execution.","textPreview":"The result is diversity in quantity, not diluted representation inside every execution.","textChars":87,"textLines":1,"bbox":[50,607,1100,36]}
+{"kind":"notes","id":"nt/kz5aoq","slide":12,"text":"[Sources]\n- AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md, Content Pillars and Production Accumulation Order."}
+{"kind":"slide","id":"sl/wcn2oe","slide":13,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":26}
+{"kind":"textbox","id":"sh/8j69kr29","slide":13,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/7ix8bmlo","slide":13,"text":"PRODUCTION ENGINE","textPreview":"PRODUCTION ENGINE","textChars":17,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/mxo7ihk3","slide":13,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/hozqhgjq","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/wnq9ob25","slide":13,"text":"A REPEATABLE ENGINE—NOT FOUR ISOLATED ADS.","textPreview":"A REPEATABLE ENGINE—NOT FOUR ISOLATED ADS.","textChars":42,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/vmh8f61k","slide":13,"text":"Create specificity at volume, learn from reaction, and amplify what earns attention.","textPreview":"Create specificity at volume, learn from reaction, and amplify what earns attention.","textChars":84,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"shape","id":"sh/ul8rm1kz","slide":13,"bbox":[50,285,200,200]}
+{"kind":"textbox","id":"sh/xsfq5c3m","slide":13,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[68,300,40,24]}
+{"kind":"textbox","id":"sh/crmpc721","slide":13,"text":"CAPTURE","textPreview":"CAPTURE","textChars":7,"textLines":1,"bbox":[68,340,165,32]}
+{"kind":"textbox","id":"sh/uhcfi1cb","slide":13,"text":"Client B-roll\ntexture • ritual • result","textPreview":"Client B-roll | texture • ritual • result","textChars":39,"textLines":2,"bbox":[68,390,165,70]}
+{"kind":"textbox","id":"sh/vilgb6dw","slide":13,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[253,365,30,40]}
+{"kind":"shape","id":"sh/gjuxkbuh","slide":13,"bbox":[285,285,200,200]}
+{"kind":"textbox","id":"sh/hk3ydgv2","slide":13,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[303,300,40,24]}
+{"kind":"textbox","id":"sh/2lczmlcn","slide":13,"text":"BATCH","textPreview":"BATCH","textChars":5,"textLines":1,"bbox":[303,340,165,32]}
+{"kind":"textbox","id":"sh/3mlgfqd8","slide":13,"text":"3-second hooks\nmultiple audience cells","textPreview":"3-second hooks | multiple audience cells","textChars":38,"textLines":2,"bbox":[303,390,165,70]}
+{"kind":"textbox","id":"sh/4nehobud","slide":13,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[488,365,30,40]}
+{"kind":"shape","id":"sh/ponyhgvy","slide":13,"bbox":[520,285,200,200]}
+{"kind":"textbox","id":"sh/q9wzqlcj","slide":13,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[538,300,40,24]}
+{"kind":"textbox","id":"sh/ra5gjqd4","slide":13,"text":"TEST","textPreview":"TEST","textChars":4,"textLines":1,"bbox":[538,340,165,32]}
+{"kind":"textbox","id":"sh/nepw7q9c","slide":13,"text":"Organic posts\ncomments • shares • saves","textPreview":"Organic posts | comments • shares • saves","textChars":39,"textLines":2,"bbox":[538,390,165,70]}
+{"kind":"textbox","id":"sh/mdwfelsr","slide":13,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[723,365,30,40]}
+{"kind":"shape","id":"sh/9g7y90ri","slide":13,"bbox":[755,285,200,200]}
+{"kind":"textbox","id":"sh/ofyxgvax","slide":13,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[773,300,40,24]}
+{"kind":"textbox","id":"sh/zq5w3q90","slide":13,"text":"AMPLIFY","textPreview":"AMPLIFY","textChars":7,"textLines":1,"bbox":[773,340,165,32]}
+{"kind":"textbox","id":"sh/epwfalsv","slide":13,"text":"Paid support\nfor proven winners","textPreview":"Paid support | for proven winners","textChars":31,"textLines":2,"bbox":[773,390,165,70]}
+{"kind":"textbox","id":"sh/1cne5gr6","slide":13,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[958,365,30,40]}
+{"kind":"shape","id":"sh/0bexcval","slide":13,"bbox":[990,285,200,200]}
+{"kind":"textbox","id":"sh/rm5wz6t4","slide":13,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1008,300,40,24]}
+{"kind":"textbox","id":"sh/qlcf61sj","slide":13,"text":"RETAIN","textPreview":"RETAIN","textChars":6,"textLines":1,"bbox":[1008,340,165,32]}
+{"kind":"textbox","id":"sh/gratg7qh","slide":13,"text":"Membership\nproducts • referrals","textPreview":"Membership | products • referrals","textChars":31,"textLines":2,"bbox":[1008,390,165,70]}
+{"kind":"textbox","id":"sh/hsju9c72","slide":13,"text":"FIRST PRODUCTION WAVE","textPreview":"FIRST PRODUCTION WAVE","textChars":21,"textLines":1,"bbox":[50,535,220,20]}
+{"kind":"textbox","id":"sh/upsbex8b","slide":13,"text":"Yearbook • Bikini urgency • Executive maintenance • Mature ritual • Group chat • DMs • Dating • Health education","textPreview":"Yearbook • Bikini urgency • Executive maintenance • Mature ritual • Group chat • DMs • Dating • Health education","textChars":112,"textLines":1,"bbox":[50,565,1130,68]}
+{"kind":"notes","id":"nt/wcn2oe","slide":13,"text":"[Sources]\n- Meta Reels ads guidance: https://www.facebook.com/business/ads/facebook-instagram-reels-ads\n- TikTok SMB Beauty Playbook: https://ads.tiktok.com/business/library/English_SMB_Beauty_META_Playbook_English_Final.pdf\n- AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md, Production Accumulation Order."}
+{"kind":"slide","id":"sl/e4935y","slide":14,"title":"AMBER'S ESSENTIAL TOUCH","textShapes":18}
+{"kind":"textbox","id":"sh/vmtc7mp4","slide":14,"text":"AMBER'S ESSENTIAL TOUCH","textPreview":"AMBER'S ESSENTIAL TOUCH","textChars":23,"textLines":1,"bbox":[50,22,500,24]}
+{"kind":"textbox","id":"sh/wn2t076p","slide":14,"text":"MEASUREMENT + NEXT WAVE","textPreview":"MEASUREMENT + NEXT WAVE","textChars":23,"textLines":1,"bbox":[900,22,270,24]}
+{"kind":"shape","id":"sh/xobu9cnu","slide":14,"bbox":[50,55,1180,1]}
+{"kind":"textbox","id":"sh/ipkb2hof","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1190,675,40,20]}
+{"kind":"textbox","id":"sh/jqtcbm50","slide":14,"text":"MEASURE EXPANSION BEFORE OPTIMIZING ONLY FOR PURCHASE.","textPreview":"MEASURE EXPANSION BEFORE OPTIMIZING ONLY FOR PURCHASE.","textChars":54,"textLines":1,"bbox":[50,78,1130,24]}
+{"kind":"textbox","id":"sh/kr2t4r6l","slide":14,"text":"The campaign has to grow the reachable audience while proving which specific promises create demand.","textPreview":"The campaign has to grow the reachable audience while proving which specific promises create demand.","textChars":100,"textLines":1,"bbox":[50,110,1130,92]}
+{"kind":"textbox","id":"sh/5svudwn6","slide":14,"text":"ATTENTION","textPreview":"ATTENTION","textChars":9,"textLines":1,"bbox":[50,275,200,30]}
+{"kind":"shape","id":"sh/yt0bqxob","slide":14,"bbox":[50,314,200,4]}
+{"kind":"textbox","id":"sh/zu9cz2pw","slide":14,"text":"3-sec hold\nthumb-stop rate","textPreview":"3-sec hold | thumb-stop rate","textChars":26,"textLines":2,"bbox":[50,340,200,76]}
+{"kind":"textbox","id":"sh/zi5gzydg","slide":14,"text":"ENGAGEMENT","textPreview":"ENGAGEMENT","textChars":10,"textLines":1,"bbox":[285,275,200,30]}
+{"kind":"shape","id":"sh/ehwf6dcv","slide":14,"bbox":[285,314,200,4]}
+{"kind":"textbox","id":"sh/1kny18vm","slide":14,"text":"Shares\ncomments • saves","textPreview":"Shares | comments • saves","textChars":23,"textLines":2,"bbox":[285,340,200,76]}
+{"kind":"textbox","id":"sh/0jex83u1","slide":14,"text":"AUDIENCE","textPreview":"AUDIENCE","textChars":8,"textLines":1,"bbox":[520,275,200,30]}
+{"kind":"shape","id":"sh/re5wvyd4","slide":14,"bbox":[520,314,200,4]}
+{"kind":"textbox","id":"sh/qdcf2tcz","slide":14,"text":"Profile visits\nfollows","textPreview":"Profile visits | follows","textChars":22,"textLines":2,"bbox":[520,340,200,76]}
+{"kind":"textbox","id":"sh/dgnex8va","slide":14,"text":"DEMAND","textPreview":"DEMAND","textChars":6,"textLines":1,"bbox":[755,275,200,30]}
+{"kind":"shape","id":"sh/cfex43up","slide":14,"bbox":[755,314,200,4]}
+{"kind":"textbox","id":"sh/3qlwred8","slide":14,"text":"DMs\nbookings","textPreview":"DMs | bookings","textChars":12,"textLines":2,"bbox":[755,340,200,76]}
+{"kind":"textbox","id":"sh/ipcfytcn","slide":14,"text":"VALUE","textPreview":"VALUE","textChars":5,"textLines":1,"bbox":[990,275,200,30]}
+{"kind":"shape","id":"sh/6lsfa9gf","slide":14,"bbox":[990,314,200,4]}
+{"kind":"textbox","id":"sh/7m1gjex0","slide":14,"text":"Repeat visits\nmembership","textPreview":"Repeat visits | membership","textChars":24,"textLines":2,"bbox":[990,340,200,76]}
+{"kind":"textbox","id":"sh/8nuxcjyl","slide":14,"text":"NEXT CREATIVE WAVE","textPreview":"NEXT CREATIVE WAVE","textChars":18,"textLines":1,"bbox":[50,493,260,24]}
+{"kind":"textbox","id":"sh/to3ylof6","slide":14,"text":"GROUP CHAT  /  DMs  /  DATING PROFILE  /  SUBURBAN LAWN  /  EDUCATIONAL MICRO-STORIES","textPreview":"GROUP CHAT  /  DMs  /  DATING PROFILE  /  SUBURBAN LAWN  /  EDUCATIONAL MICRO-STORIES","textChars":85,"textLines":1,"bbox":[50,532,1150,54]}
+{"kind":"shape","id":"sh/upczetwr","slide":14,"bbox":[50,622,1130,4]}
+{"kind":"textbox","id":"sh/valgnyxc","slide":14,"text":"BUILD AUDIENCE  →  LEARN DEMAND  →  EXPAND THE BRAND","textPreview":"BUILD AUDIENCE  →  LEARN DEMAND  →  EXPAND THE BRAND","textChars":52,"textLines":1,"bbox":[50,642,1130,34]}
+{"kind":"notes","id":"nt/e4935y","slide":14,"text":"[Sources]\n- AMBER_ESSENTIAL_TOUCH_SOURCE_BACKED_CAMPAIGN_BRIEFS.md, Measurement and Final Standard.\n- Meta tailored campaign guidance: https://www.facebook.com/business/ads/automation/tailored-campaigns"}

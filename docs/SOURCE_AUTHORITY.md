@@ -9,9 +9,9 @@ The approved lotus monogram supplied by the owner is the only approved identity 
 Two distinct menu systems are present, but they are not equal authorities:
 
 - an uploaded 36-line Squarespace-era menu with itemized waxing, facials, and bundles;
-- a later grouped specification with Body Waxing from $25, Facials from $95, Acne-Focused Treatment from $110, Manicure from $45, and Monthly Ritual Plan from $180 per month, repeated by the legacy services and booking implementation.
+- a later grouped specification with Body Waxing from $25, Facials from $95, Acne-Focused Treatment from $110, Manicure from $45, and Monthly Ritual Plan from $180 per month, repeated in older service-page and booking snapshots.
 
-The detailed 36-item uploaded menu is the working canonical service-price source because it is the narrowest first-party operating evidence. The grouped values are a secondary generated/site specification: they may describe categories or concepts but cannot override the itemized menu or drive scheduling. The legacy site currently uses both layers inconsistently: `index.html` uses detailed-menu prices, while `services.html` and the booking model use grouped values.
+The detailed 36-item uploaded menu is the working canonical service-price source because it is the narrowest first-party operating evidence. The grouped values are secondary historical research: they may describe prior categories or generated concepts but cannot override the itemized menu or drive scheduling. The repository HTML and JavaScript files are older-site snapshots created at different times; their differences do not describe a current site or establish a current-site inconsistency.
 
 ## Product prices
 

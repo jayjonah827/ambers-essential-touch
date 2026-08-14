@@ -20,7 +20,7 @@ The owner supplied specific images, archives, PDFs, service menus, prices, produ
 - every readable image instance, including duplicates, fragments, and rejection evidence;
 - every unique PDF page with full contact-sheet review;
 - page-complete embedded text or OCR with method labels;
-- 36 exact detailed service-menu observations as the working price authority, with later grouped site/specification values retained as secondary concepts;
+- 36 exact detailed service-menu observations as the working price authority, with grouped generated-specification and older-site values retained only as historical research;
 - repeated existing product price models separated from excluded generated relaunch concepts;
 - business facts, professional evidence, copy, design direction, competitor-reference analysis, claims risks, and conflicts;
 - a read-only MCP interface for agent access.
