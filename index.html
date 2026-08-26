@@ -3,33 +3,511 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Esthetician in Pinole, CA | Facials, Acne Care &amp; Waxing | Amber's Essential Touch</title>
-<meta name="description" content="Licensed esthetician in Pinole, CA. Custom facials, acne treatment, hyperpigmentation care, and body waxing for every skin tone. Black-owned. Call or text (510) 228-6657 to book.">
-<!-- Canonical points at the live origin. Switch to https://ambersessentialtouch.com/
-     once that domain is registered and pointed at this service. -->
-<link rel="canonical" href="https://ambers-essential-touch.onrender.com/">
+<title>Amber's Essential Touch · Professional Skincare · Pinole, CA</title>
+<meta name="description" content="Licensed esthetician in Pinole, CA. Personalized facials, acne care, hyperpigmentation treatment, waxing. 19 years licensed. Care for every tone and every skin story.">
+<meta property="og:title" content="Amber's Essential Touch · Pinole, CA">
+<meta property="og:description" content="Where your skin is understood, not just treated.">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Amber's Essential Touch — Esthetician in Pinole, CA">
-<meta property="og:description" content="Custom facials, acne care, hyperpigmentation treatment, and waxing in Pinole, California. Care for every skin tone, from a licensed esthetician with 18 years of practice.">
-<meta property="og:image" content="img/amber-studio.jpg">
-<meta property="og:locale" content="en_US">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="geo.placename" content="Pinole, California">
+<link rel="canonical" href="https://www.ambersessentialtouch.net/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Parisienne&family=Manrope:wght@400;500;600;700&display=swap">
-<link rel="stylesheet" href="css/home.css">
-<link rel="icon" type="image/png" href="img/logo-mark.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Manrope:wght@400;500;600;700&family=Parisienne&display=swap">
+<style>
+/* ============================================================
+   AMBER'S ESSENTIAL TOUCH — HOMEPAGE
+   Palette from Claude Design project spec §4, with contrast
+   corrections. See CONTRAST NOTES at the bottom of this file.
+   ============================================================ */
+
+:root{
+  /* --- brand primitives (spec §4) --- */
+  --amber-brown:#B37A5A;
+  --deep-amber:#6F3F2A;
+  --rose-pink:#D89BAA;
+  --deep-rose:#A95870;
+  --soft-cream:#F7F1E8;
+  --warm-ivory:#FFF9F3;
+  --sage-mist:#A9B8A6;
+  --lavender-glow:#D7C6E6;
+  --espresso:#33231E;
+  --warm-gray:#71655F;
+  --border-soft:rgba(111,63,42,.18);
+
+  /* --- semantic: text --- */
+  --text-primary:var(--espresso);      /* 13.36:1 on cream — AAA */
+  --text-muted:var(--warm-gray);       /*  5.02:1 on cream — AA  */
+  --text-accent:var(--deep-amber);     /*  7.73:1 on cream — AAA */
+  --text-on-fill:var(--warm-ivory);
+
+  /* --- semantic: surface --- */
+  --surface-page:var(--warm-ivory);
+  --surface-raised:#FFFFFF;
+  --surface-warm:var(--soft-cream);
+  --surface-deep:var(--deep-amber);
+
+  /* --- semantic: action ---
+     deep-rose 4.66:1 is the primary fill and matches the Visual
+     Language System board. deep-amber 8.30:1 is the AAA fallback.
+     amber-brown 3.44:1 and rose-pink 2.19:1 are decorative only. */
+  --action-bg:var(--deep-rose);
+  --action-bg-hover:#8E4A5E;
+  --action-fg:var(--warm-ivory);
+  --action-2-border:var(--deep-amber);
+  --action-2-fg:var(--deep-amber);
+  --focus-ring:var(--deep-rose);
+
+  /* --- gradients (spec §4) --- */
+  --grad-amber-rose:linear-gradient(135deg,var(--amber-brown) 0%,var(--deep-rose) 55%,var(--rose-pink) 100%);
+  --grad-cream-sage:linear-gradient(160deg,var(--warm-ivory) 0%,#EDF1EA 100%);
+  --grad-cream-lav:linear-gradient(160deg,var(--warm-ivory) 0%,#F1EAF7 100%);
+  --grad-rose-lav:linear-gradient(135deg,var(--rose-pink) 0%,var(--lavender-glow) 100%);
+  --grad-footer:linear-gradient(150deg,var(--deep-amber) 0%,#8A4A45 60%,var(--deep-rose) 100%);
+
+  /* --- spacing / layout --- */
+  --sp-1:4px; --sp-2:8px; --sp-3:12px; --sp-4:16px; --sp-6:24px;
+  --sp-8:32px; --sp-12:48px; --sp-16:64px; --sp-24:96px; --sp-32:128px;
+  --container:1440px;
+  --measure:68ch;
+  --radius-card:22px;
+  --radius-pill:999px;
+
+  --shadow-soft:0 8px 28px rgba(51,35,30,.07);
+  --shadow-lift:0 16px 44px rgba(51,35,30,.11);
+
+  --dur-fast:150ms; --dur:250ms; --dur-slow:350ms;
+  --ease:cubic-bezier(.22,.61,.36,1);
+
+  /* --- type --- */
+  --serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+  --script:"Parisienne","Snell Roundhand",cursive;
+  --sans:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  font-family:var(--sans);
+  font-size:17px;
+  line-height:1.65;
+  color:var(--text-primary);
+  background:var(--surface-page);
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;height:auto}
+a{color:inherit}
+h1,h2,h3,h4{margin:0;font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacing:-.01em}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+button{font:inherit;color:inherit}
+
+/* focus — never removed (spec §12) */
+:focus-visible{
+  outline:2px solid var(--focus-ring);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+.skip{
+  position:absolute;left:-9999px;top:0;z-index:200;
+  background:var(--deep-amber);color:var(--warm-ivory);
+  padding:14px 22px;border-radius:0 0 10px 0;font-size:14px;font-weight:600;
+}
+.skip:focus{left:0}
+
+.wrap{width:100%;max-width:var(--container);margin-inline:auto;padding-inline:20px}
+@media(min-width:768px){.wrap{padding-inline:40px}}
+@media(min-width:1280px){.wrap{padding-inline:72px}}
+
+section{padding-block:var(--sp-24)}
+@media(max-width:767px){section{padding-block:var(--sp-16)}}
+
+/* ---------- type roles ---------- */
+.eyebrow{
+  font-family:var(--sans);font-size:11.5px;font-weight:600;
+  letter-spacing:.18em;text-transform:uppercase;color:var(--text-accent);
+  margin:0 0 var(--sp-4);
+}
+.display{font-size:clamp(2.6rem,6.2vw,5.6rem);line-height:1.03;letter-spacing:-.02em}
+.h2{font-size:clamp(2rem,4vw,3.4rem)}
+.h3{font-size:clamp(1.35rem,2vw,1.85rem)}
+.script{font-family:var(--script);font-weight:400;line-height:1.3}
+.ital{font-style:italic;color:var(--deep-rose)}
+.lede{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--text-muted);max-width:var(--measure)}
+.muted{color:var(--text-muted)}
+.small{font-size:14px}
+
+/* ---------- buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  min-height:48px;padding:14px 28px;
+  font-size:14px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;
+  text-decoration:none;border-radius:var(--radius-pill);border:1.5px solid transparent;
+  cursor:pointer;transition:background var(--dur) var(--ease),color var(--dur) var(--ease),
+    border-color var(--dur) var(--ease),transform var(--dur-fast) var(--ease);
+}
+.btn--primary{background:var(--action-bg);color:var(--action-fg)}
+.btn--primary:hover{background:var(--action-bg-hover)}
+.btn--primary:active{transform:scale(.985)}
+.btn--secondary{background:transparent;color:var(--action-2-fg);border-color:var(--action-2-border)}
+.btn--secondary:hover{background:var(--deep-amber);color:var(--warm-ivory)}
+.btn--onDark{background:var(--warm-ivory);color:var(--deep-rose)}
+.btn--onDark:hover{background:#fff}
+.btn--ghostDark{background:transparent;color:var(--warm-ivory);border-color:rgba(255,249,243,.55)}
+.btn--ghostDark:hover{background:rgba(255,249,243,.14)}
+.btn[disabled],.btn[aria-disabled=true]{opacity:.55;cursor:not-allowed}
+
+.tlink{
+  display:inline-flex;align-items:center;gap:7px;
+  font-size:13.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--text-accent);text-decoration:none;
+  min-height:44px;
+}
+.tlink .arw{transition:transform var(--dur) var(--ease)}
+.tlink:hover{text-decoration:underline;text-underline-offset:5px}
+.tlink:hover .arw{transform:translateX(5px)}
+
+/* ---------- header ---------- */
+.hdr{
+  position:sticky;top:0;z-index:100;
+  background:rgba(255,249,243,.82);backdrop-filter:blur(12px);
+  border-bottom:1px solid transparent;
+  transition:background var(--dur) var(--ease),border-color var(--dur) var(--ease);
+}
+.hdr.is-stuck{background:rgba(255,249,243,.96);border-bottom-color:var(--border-soft)}
+.hdr__in{display:flex;align-items:center;justify-content:space-between;gap:var(--sp-6);min-height:76px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.brand img{width:40px;height:40px;object-fit:contain}
+.brand__txt{display:flex;flex-direction:column;line-height:1.1}
+.brand__n{font-family:var(--serif);font-size:19px;letter-spacing:.01em}
+.brand__s{font-size:9.5px;letter-spacing:.19em;text-transform:uppercase;color:var(--text-muted)}
+
+.nav{display:none;align-items:center;gap:var(--sp-8)}
+@media(min-width:1024px){.nav{display:flex}}
+.nav a{
+  font-size:13.5px;font-weight:500;letter-spacing:.05em;text-decoration:none;
+  color:var(--text-primary);padding:10px 0;position:relative;
+}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:4px;width:0;height:1.5px;
+  background:var(--deep-rose);transition:width var(--dur) var(--ease);
+}
+.nav a:hover::after,.nav a:focus-visible::after{width:100%}
+
+.hdr__cta{display:none}
+@media(min-width:1024px){.hdr__cta{display:inline-flex}}
+
+.burger{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:48px;height:48px;background:transparent;border:1px solid var(--border-soft);
+  border-radius:12px;cursor:pointer;
+}
+@media(min-width:1024px){.burger{display:none}}
+.burger span{display:block;width:19px;height:1.5px;background:var(--espresso);position:relative}
+.burger span::before,.burger span::after{
+  content:"";position:absolute;left:0;width:19px;height:1.5px;background:var(--espresso);
+}
+.burger span::before{top:-6px}
+.burger span::after{top:6px}
+
+/* mobile sheet */
+.sheet{
+  position:fixed;inset:0;z-index:150;
+  background:var(--warm-ivory);
+  display:flex;flex-direction:column;
+  padding:20px;
+  transform:translateY(-100%);
+  transition:transform var(--dur-slow) var(--ease);
+  visibility:hidden;
+}
+.sheet.is-open{transform:translateY(0);visibility:visible}
+.sheet__top{display:flex;justify-content:flex-end}
+.sheet__x{
+  width:48px;height:48px;background:transparent;border:1px solid var(--border-soft);
+  border-radius:12px;font-size:22px;line-height:1;cursor:pointer;
+}
+.sheet__nav{display:flex;flex-direction:column;gap:4px;margin-top:var(--sp-8)}
+.sheet__nav a{
+  font-family:var(--serif);font-size:30px;text-decoration:none;
+  padding:12px 0;border-bottom:1px solid var(--border-soft);
+}
+.sheet__foot{margin-top:auto;padding-top:var(--sp-8);display:grid;gap:12px}
+
+/* ---------- hero ---------- */
+.hero{
+  padding-block:var(--sp-24) var(--sp-24);
+  background:
+    radial-gradient(60% 70% at 88% 12%,rgba(215,198,230,.34) 0%,transparent 62%),
+    radial-gradient(55% 60% at 4% 88%,rgba(216,155,170,.26) 0%,transparent 60%),
+    var(--surface-page);
+}
+.hero__grid{display:grid;gap:var(--sp-12);align-items:center}
+@media(min-width:1024px){.hero__grid{grid-template-columns:1.05fr .95fr;gap:var(--sp-16)}}
+.hero h1{margin-bottom:var(--sp-6)}
+.hero__ctas{display:flex;flex-wrap:wrap;gap:var(--sp-3);margin-block:var(--sp-8)}
+.trust{
+  display:flex;flex-wrap:wrap;align-items:center;gap:8px 14px;
+  font-size:13px;letter-spacing:.05em;color:var(--text-muted);
+}
+.trust .dot{width:3px;height:3px;border-radius:50%;background:var(--deep-rose)}
+
+.hero__media{position:relative}
+.hero__media img{
+  width:100%;border-radius:var(--radius-card);
+  box-shadow:var(--shadow-lift);
+  aspect-ratio:4/5;object-fit:cover;
+  background:var(--grad-cream-lav);
+}
+.quote-card{
+  background:var(--surface-raised);
+  border:1px solid var(--border-soft);
+  border-radius:18px;padding:22px 24px;
+  box-shadow:var(--shadow-soft);
+  max-width:330px;
+}
+@media(min-width:1024px){
+  .quote-card{position:absolute;bottom:-34px;left:-34px}
+}
+@media(max-width:1023px){.quote-card{margin-top:-30px;margin-inline:auto;position:relative;z-index:2}}
+.quote-card p{font-family:var(--serif);font-style:italic;font-size:19px;line-height:1.4}
+.quote-card cite{
+  display:block;margin-top:10px;font-style:normal;font-size:11.5px;
+  letter-spacing:.16em;text-transform:uppercase;color:var(--text-muted);
+}
+
+/* ---------- promise strip ---------- */
+.promise{background:var(--surface-warm)}
+.promise__grid{display:grid;gap:var(--sp-8);margin-top:var(--sp-12)}
+@media(min-width:640px){.promise__grid{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.promise__grid{grid-template-columns:repeat(5,1fr);gap:var(--sp-6)}}
+.promise__i{
+  width:42px;height:42px;margin-bottom:var(--sp-4);
+  color:var(--deep-amber);
+}
+.promise h3{font-size:1.2rem;margin-bottom:8px}
+.promise p{font-size:15px;color:var(--text-muted)}
+
+/* ---------- preservation ---------- */
+.preserve{background:var(--grad-cream-lav)}
+.preserve__grid{display:grid;gap:var(--sp-12);align-items:center}
+@media(min-width:1024px){.preserve__grid{grid-template-columns:.92fr 1.08fr;gap:var(--sp-16)}}
+.preserve img{
+  border-radius:var(--radius-card);aspect-ratio:1/1;object-fit:cover;
+  box-shadow:var(--shadow-lift);background:var(--grad-rose-lav);
+}
+.preserve .script{font-size:clamp(2.3rem,4.6vw,3.9rem);color:var(--deep-rose);margin-bottom:var(--sp-6)}
+.preserve .body{display:grid;gap:var(--sp-4);max-width:var(--measure)}
+.pull{
+  margin-top:var(--sp-8);padding-left:var(--sp-6);
+  border-left:2px solid var(--deep-rose);
+  font-family:var(--serif);font-style:italic;font-size:1.2rem;line-height:1.45;
+}
+
+/* ---------- generic section head ---------- */
+.shead{max-width:var(--measure);margin-bottom:var(--sp-12)}
+.shead--center{margin-inline:auto;text-align:center}
+
+/* ---------- cards ---------- */
+.grid-3{display:grid;gap:var(--sp-6)}
+@media(min-width:640px){.grid-3{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1024px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+
+.card{
+  background:var(--surface-raised);
+  border:1px solid var(--border-soft);
+  border-radius:var(--radius-card);
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform var(--dur) var(--ease),box-shadow var(--dur) var(--ease);
+}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift)}
+.card__img{aspect-ratio:4/3;object-fit:cover;width:100%;background:var(--grad-cream-sage)}
+.card__b{padding:24px;display:flex;flex-direction:column;gap:10px;flex:1}
+.card__b h3{font-size:1.5rem}
+.card__b p{font-size:15px;color:var(--text-muted);flex:1}
+.meta{
+  display:flex;flex-wrap:wrap;gap:8px 16px;
+  font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted);
+  padding-top:4px;
+}
+.card__acts{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:6px}
+
+.tag{
+  display:inline-block;padding:4px 12px;border-radius:var(--radius-pill);
+  background:var(--soft-cream);border:1px solid var(--border-soft);
+  font-size:11px;letter-spacing:.11em;text-transform:uppercase;color:var(--text-accent);
+}
+
+/* ---------- concern finder ---------- */
+.finder{background:var(--surface-warm)}
+.finder__list{display:grid;gap:2px;border-top:1px solid var(--border-soft)}
+.finder__row{
+  display:flex;align-items:center;gap:var(--sp-4);
+  padding:22px 8px;min-height:76px;
+  border-bottom:1px solid var(--border-soft);
+  text-decoration:none;background:transparent;
+  transition:background var(--dur) var(--ease),padding-left var(--dur) var(--ease);
+}
+.finder__row:hover{background:rgba(255,255,255,.66);padding-left:18px}
+.finder__ico{
+  width:44px;height:44px;flex-shrink:0;border-radius:50%;
+  display:grid;place-items:center;background:var(--grad-rose-lav);color:var(--deep-amber);
+}
+.finder__lb{font-family:var(--serif);font-size:1.4rem;flex:1}
+.finder__ar{color:var(--deep-rose);transition:transform var(--dur) var(--ease)}
+.finder__row:hover .finder__ar{transform:translateX(6px)}
+
+/* ---------- steps ---------- */
+.steps{display:grid;gap:var(--sp-8);counter-reset:s}
+@media(min-width:768px){.steps{grid-template-columns:repeat(3,1fr);gap:var(--sp-12)}}
+.step{position:relative;padding-top:var(--sp-8);border-top:2px solid var(--deep-rose)}
+.step__n{
+  font-family:var(--serif);font-size:2.6rem;color:var(--amber-brown);
+  line-height:1;margin-bottom:var(--sp-3);
+}
+.step h3{font-size:1.5rem;margin-bottom:10px}
+.step p{color:var(--text-muted);font-size:15.5px}
+
+/* ---------- about ---------- */
+.about__grid{display:grid;gap:var(--sp-12);align-items:center}
+@media(min-width:1024px){.about__grid{grid-template-columns:.85fr 1.15fr;gap:var(--sp-16)}}
+.about img{
+  border-radius:var(--radius-card);aspect-ratio:4/5;object-fit:cover;
+  box-shadow:var(--shadow-lift);background:var(--grad-cream-sage);
+}
+.creds{display:grid;gap:var(--sp-3);margin-block:var(--sp-8);padding:0}
+@media(min-width:640px){.creds{grid-template-columns:repeat(2,1fr)}}
+.creds li{
+  display:flex;gap:10px;align-items:flex-start;
+  font-size:14.5px;color:var(--text-muted);
+}
+.creds .ck{color:var(--deep-rose);flex-shrink:0;margin-top:3px}
+
+/* ---------- results / placeholders ---------- */
+.ph{
+  display:grid;place-items:center;text-align:center;gap:8px;
+  aspect-ratio:4/3;padding:24px;
+  background:var(--grad-cream-sage);
+  border:1px dashed var(--border-soft);border-radius:var(--radius-card);
+  color:var(--text-muted);
+}
+.ph__k{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--deep-rose);font-weight:600}
+.ph__t{font-family:var(--serif);font-size:1.25rem;color:var(--text-primary)}
+.ph__d{font-size:13px;max-width:34ch}
+
+.disc{
+  margin-top:var(--sp-8);padding:16px 20px;
+  background:var(--surface-warm);border-left:2px solid var(--amber-brown);
+  border-radius:0 10px 10px 0;font-size:13.5px;color:var(--text-muted);
+  max-width:var(--measure);
+}
+
+/* ---------- testimonials ---------- */
+.tsts{background:var(--grad-cream-sage)}
+.tst{
+  background:var(--surface-raised);border:1px solid var(--border-soft);
+  border-radius:var(--radius-card);padding:28px;
+  display:flex;flex-direction:column;gap:14px;
+}
+.stars{display:flex;gap:3px;color:var(--amber-brown)}
+.tst blockquote{margin:0;font-family:var(--serif);font-style:italic;font-size:1.18rem;line-height:1.5}
+.tst figcaption{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--text-muted)}
+
+/* ---------- booking band ---------- */
+.bookband{
+  background:var(--grad-footer);color:var(--warm-ivory);
+  text-align:center;
+}
+.bookband h2{color:var(--warm-ivory)}
+.bookband p{color:rgba(255,249,243,.86);margin-inline:auto}
+.bookband .eyebrow{color:var(--lavender-glow)}
+.bookband__ctas{display:flex;flex-wrap:wrap;gap:var(--sp-3);justify-content:center;margin-top:var(--sp-8)}
+
+/* ---------- visit ---------- */
+.visit__grid{display:grid;gap:var(--sp-12)}
+@media(min-width:1024px){.visit__grid{grid-template-columns:1fr 1fr;gap:var(--sp-16)}}
+.dl{display:grid;gap:var(--sp-6);margin-top:var(--sp-8)}
+.dl div{display:grid;gap:4px}
+.dl dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--deep-rose);font-weight:600}
+.dl dd{margin:0;font-size:16.5px}
+.dl a{color:var(--text-accent)}
+.hours{display:grid;gap:6px;font-size:15.5px}
+.hours div{display:flex;justify-content:space-between;gap:var(--sp-6);padding-bottom:6px;border-bottom:1px solid var(--border-soft)}
+.hours .cl{color:var(--text-muted)}
+
+/* ---------- email capture ---------- */
+.signup{background:var(--surface-warm)}
+.signup__in{max-width:620px;margin-inline:auto;text-align:center}
+.form{display:grid;gap:var(--sp-3);margin-top:var(--sp-8);text-align:left}
+@media(min-width:560px){.form{grid-template-columns:1fr 1fr}}
+.field{display:grid;gap:6px}
+.field label{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--text-muted);font-weight:600}
+.field input{
+  min-height:50px;padding:12px 16px;font:inherit;font-size:16px;
+  background:var(--surface-raised);
+  border:1px solid var(--border-soft);border-radius:12px;color:var(--text-primary);
+}
+.field input:focus-visible{outline:2px solid var(--focus-ring);outline-offset:2px;border-color:var(--deep-rose)}
+.form .full{grid-column:1/-1}
+.consent{font-size:12.5px;color:var(--text-muted);margin-top:var(--sp-4);text-align:center}
+.consent a{color:var(--text-accent)}
+.formmsg{margin-top:var(--sp-4);font-size:14px;font-weight:600;color:var(--text-accent);min-height:22px;text-align:center}
+
+/* ---------- footer ---------- */
+.ftr{background:var(--grad-footer);color:var(--warm-ivory);padding-block:var(--sp-24) var(--sp-8)}
+.ftr__grid{display:grid;gap:var(--sp-12)}
+@media(min-width:768px){.ftr__grid{grid-template-columns:1.5fr 1fr 1fr 1fr}}
+.ftr__brand img{width:56px;margin-bottom:var(--sp-4);filter:brightness(0) invert(1);opacity:.92}
+.ftr__pos{font-family:var(--serif);font-size:1.35rem;line-height:1.35;color:var(--warm-ivory)}
+.ftr h3{font-size:11px;letter-spacing:.17em;text-transform:uppercase;font-family:var(--sans);font-weight:700;color:var(--lavender-glow);margin-bottom:var(--sp-4)}
+.ftr ul{display:grid;gap:11px}
+.ftr ul a{font-size:14.5px;color:rgba(255,249,243,.86);text-decoration:none}
+.ftr ul a:hover{color:var(--warm-ivory);text-decoration:underline;text-underline-offset:4px}
+.ftr__btm{
+  margin-top:var(--sp-16);padding-top:var(--sp-8);
+  border-top:1px solid rgba(255,249,243,.22);
+  display:flex;flex-wrap:wrap;gap:var(--sp-4);justify-content:space-between;align-items:center;
+}
+.ftr__tag{font-size:12px;letter-spacing:.19em;text-transform:uppercase;color:var(--lavender-glow);font-weight:600}
+.ftr__cp{font-size:13px;color:rgba(255,249,243,.7)}
+
+/* ---------- sticky mobile book ---------- */
+.stickybook{
+  position:fixed;left:0;right:0;bottom:0;z-index:90;
+  padding:12px 16px calc(12px + env(safe-area-inset-bottom));
+  background:rgba(255,249,243,.95);backdrop-filter:blur(12px);
+  border-top:1px solid var(--border-soft);
+  transform:translateY(110%);transition:transform var(--dur-slow) var(--ease);
+}
+.stickybook.is-on{transform:translateY(0)}
+.stickybook .btn{width:100%}
+@media(min-width:1024px){.stickybook{display:none}}
+body.has-sticky{padding-bottom:84px}
+@media(min-width:1024px){body.has-sticky{padding-bottom:0}}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(16px);transition:opacity var(--dur-slow) var(--ease),transform var(--dur-slow) var(--ease)}
+.rv.in{opacity:1;transform:none}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{
+    animation-duration:.01ms!important;animation-iteration-count:1!important;
+    transition-duration:.01ms!important;scroll-behavior:auto!important;
+  }
+  .rv{opacity:1;transform:none}
+  .card:hover{transform:none}
+}
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BeautySalon",
   "name": "Amber's Essential Touch",
-  "description": "Licensed esthetician offering custom facials, acne treatment, hyperpigmentation care, body waxing, and botanical skincare in Pinole, California.",
-  "image": "img/amber-studio.jpg",
-  "logo": "img/logo-mark.png",
+  "description": "Premium botanical skincare and a private spa experience in Pinole, California. Customized facials, chemical peels, full body waxing, individual wispy lashes, and LED light therapy.",
+  "slogan": "Where Skin Meets Soul",
   "telephone": "+1-510-228-6657",
   "email": "ambersessentialtouch@gmail.com",
+  "url": "https://www.ambersessentialtouch.net/",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "1622 Michael Dr",
@@ -38,744 +516,800 @@
     "postalCode": "94564",
     "addressCountry": "US"
   },
-  "sameAs": ["https://www.facebook.com/aetouch/"],
+  "sameAs": [
+    "https://www.facebook.com/aetouch/",
+    "https://www.instagram.com/ambersessential/"
+  ],
   "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "25" },
   "makesOffer": [
-    { "@type": "Offer", "priceCurrency": "USD", "price": "85", "itemOffered": { "@type": "Service", "name": "Basic Facial" } },
-    { "@type": "Offer", "priceCurrency": "USD", "price": "150", "itemOffered": { "@type": "Service", "name": "Customized Facial" } },
-    { "@type": "Offer", "priceCurrency": "USD", "price": "65", "itemOffered": { "@type": "Service", "name": "Teen Facial" } },
-    { "@type": "Offer", "priceCurrency": "USD", "price": "50", "itemOffered": { "@type": "Service", "name": "LED Facial" } },
-    { "@type": "Offer", "priceCurrency": "USD", "price": "25", "itemOffered": { "@type": "Service", "name": "Skin Consultation" } },
-    { "@type": "Offer", "priceCurrency": "USD", "price": "10", "priceSpecification": { "@type": "PriceSpecification", "minPrice": "10" }, "itemOffered": { "@type": "Service", "name": "Body Waxing and Brow Care" } }
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Customized Facials" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Chemical Peels" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Full Body Waxing" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Individual Wispy Lashes" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "LED Light Therapy" } }
   ]
 }
 </script>
 </head>
-<body class="aet-home">
+<body>
 
-<a href="#main" class="skip">Skip to content</a>
+<a class="skip" href="#main">Skip to content</a>
 
+<!-- ============ HEADER ============ -->
 <header class="hdr" id="hdr">
-  <nav class="hdr__nav" aria-label="Primary">
-    <a href="#top" class="brand">
-      <img src="img/logo-mark.png" alt="Amber's Essential Touch — lotus and A brand mark" class="brand__mark" width="56" height="56">
-      <span class="brand__text">
-        <span class="brand__name">Amber's Essential Touch</span>
-        <span class="brand__meta">ESTHETICIAN · PINOLE, CA</span>
+  <div class="wrap hdr__in">
+    <a class="brand" href="#top">
+      <img src="images/logo-mark.png" alt="" width="40" height="40" onerror="this.style.display='none'">
+      <span class="brand__txt">
+        <span class="brand__n">Amber's Essential Touch</span>
+        <span class="brand__s">Where Skin Meets Soul</span>
       </span>
     </a>
-    <div class="nav__desktop">
-      <a href="#services" class="nav__link">Services</a>
-      <a href="#concerns" class="nav__link">Skin Concerns</a>
-      <a href="#about" class="nav__link">About</a>
-      <a href="#results" class="nav__link">Results</a>
-      <a href="#journal" class="nav__link">Journal</a>
-      <a href="#shop" class="nav__link">Shop</a>
-      <a href="#book" class="nav__cta">Book Now</a>
-    </div>
-    <div class="nav__mobile">
-      <a href="tel:+15102286657" class="nav__call">Call</a>
-      <button type="button" class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navPanel" aria-label="Open menu">☰</button>
-    </div>
-  </nav>
-  <div class="nav__panel" id="navPanel" hidden>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="#services">Services</a>
+      <a href="#concerns">Skin Concerns</a>
+      <a href="#about">About</a>
+      <a href="#results">Results</a>
+      <a href="#journal">Journal</a>
+      <a href="#shop">Shop</a>
+    </nav>
+
+    <a class="btn btn--primary hdr__cta" href="#book">Book Now</a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="sheet">
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Menu" inert>
+  <div class="sheet__top">
+    <button class="sheet__x" id="sheetX" aria-label="Close menu">&times;</button>
+  </div>
+  <nav class="sheet__nav" aria-label="Mobile">
     <a href="#services">Services</a>
     <a href="#concerns">Skin Concerns</a>
     <a href="#about">About</a>
     <a href="#results">Results</a>
     <a href="#journal">Journal</a>
     <a href="#shop">Shop</a>
-    <a href="#book" class="nav__panel-cta">BOOK YOUR APPOINTMENT</a>
+    <a href="#contact">Visit</a>
+  </nav>
+  <div class="sheet__foot">
+    <a class="btn btn--primary" href="#book">Book your appointment</a>
+    <a class="btn btn--secondary" href="tel:+15102286657">Call (510) 228-6657</a>
   </div>
-</header>
+</div>
 
 <main id="main">
 
-  <!-- 1 · HERO -->
-  <section id="top" class="hero">
-    <div class="hero__inner">
-      <div class="hero__copy">
-        <p class="hero__eyebrow">PROFESSIONAL SKINCARE SANCTUARY · PINOLE, CALIFORNIA</p>
-        <h1>Where your skin is <em>understood</em>, not just treated.</h1>
-        <p class="hero__sub">Personalized treatments. Real education. A sanctuary for every tone, every age, and every skin story.</p>
-        <p class="hero__detail">Custom facials, acne treatment, hyperpigmentation care, and body waxing — from a licensed esthetician with 18 years of practice in Pinole, California.</p>
-        <div class="hero__actions">
-          <a href="tel:+15102286657" class="btn btn--solid">BOOK YOUR APPOINTMENT</a>
-          <a href="#concerns" class="btn btn--ghost">FIND YOUR TREATMENT</a>
-        </div>
-        <p class="hero__badges">Black-owned&nbsp;&nbsp;·&nbsp;&nbsp;Community-rooted&nbsp;&nbsp;·&nbsp;&nbsp;Results-focused&nbsp;&nbsp;·&nbsp;&nbsp;18 years licensed</p>
+<!-- ============ 1 · HERO ============ -->
+<section class="hero" id="top">
+  <div class="wrap hero__grid">
+    <div>
+      <p class="eyebrow">Professional Skincare Sanctuary</p>
+      <h1 class="display">Where your skin is<br><span class="ital">understood,</span> not just treated.</h1>
+      <p class="lede">Personalized treatments. Real education. A sanctuary for every tone, every age, and every skin story.</p>
+      <div class="hero__ctas">
+        <a class="btn btn--primary" href="#book">Book your appointment</a>
+        <a class="btn btn--secondary" href="#concerns">Find your treatment</a>
       </div>
-      <div class="hero__media">
-        <div class="hero__frame">
-          <img src="img/amber-studio.jpg" alt="Amber, licensed esthetician, in her treatment studio in Pinole, CA">
-          <div class="hero__scrim"></div>
-        </div>
-        <figure class="hero__quote">
-          <blockquote>This is more than skincare. This is self-care, self-respect, and coming home to yourself.</blockquote>
-          <figcaption>— Amber</figcaption>
-        </figure>
-      </div>
+      <p class="trust">
+        <span>Black-owned</span><span class="dot" aria-hidden="true"></span>
+        <span>Skin and Soul Healer</span><span class="dot" aria-hidden="true"></span>
+        <span>Results-focused</span><span class="dot" aria-hidden="true"></span>
+        <span>19 years licensed</span>
+      </p>
     </div>
-  </section>
 
-  <!-- 2 · BRAND PROMISE STREAM -->
-  <section class="promise" aria-label="What the practice promises">
-    <div class="promise__inner">
-      <h2>WHY CLIENTS STAY</h2>
-      <div class="marquee">
-        <div class="marquee__track">
-          <div class="marquee__group">
-            <div class="promise__card">
-              <div class="sprite" aria-hidden="true" style="background-size: 314px; background-position: -21px -232px"></div>
-              <h3>A Place to Breathe</h3>
-              <p>A calm space to reset.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" aria-hidden="true" style="background-size: 196px; background-position: -4px -184px"></div>
-              <h3>Inclusive Care</h3>
-              <p>Care for every tone and skin story.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" aria-hidden="true" style="background-size: 164px; background-position: -95px -83px"></div>
-              <h3>Clean, Conscious Products</h3>
-              <p>Thoughtful ingredients selected with intention.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" aria-hidden="true" style="background-size: 207px; background-position: -125px -58px"></div>
-              <h3>Advanced Treatments</h3>
-              <p>Effective methods guided by expert judgment.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" aria-hidden="true" style="background-size: 191px; background-position: -64px -1px"></div>
-              <h3>A Sanctuary for You</h3>
-              <p>Calm, safe, and personally considered.</p>
-            </div>
-          </div>
-          <div class="marquee__group" aria-hidden="true">
-            <div class="promise__card">
-              <div class="sprite" style="background-size: 314px; background-position: -21px -232px"></div>
-              <h3>A Place to Breathe</h3>
-              <p>A calm space to reset.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" style="background-size: 196px; background-position: -4px -184px"></div>
-              <h3>Inclusive Care</h3>
-              <p>Care for every tone and skin story.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" style="background-size: 164px; background-position: -95px -83px"></div>
-              <h3>Clean, Conscious Products</h3>
-              <p>Thoughtful ingredients selected with intention.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" style="background-size: 207px; background-position: -125px -58px"></div>
-              <h3>Advanced Treatments</h3>
-              <p>Effective methods guided by expert judgment.</p>
-            </div>
-            <div class="promise__card">
-              <div class="sprite" style="background-size: 191px; background-position: -64px -1px"></div>
-              <h3>A Sanctuary for You</h3>
-              <p>Calm, safe, and personally considered.</p>
-            </div>
+    <div class="hero__media">
+      <img src="images/amber-studio.jpg"
+           alt="Amber, licensed esthetician, in her treatment studio in Pinole, California"
+           width="800" height="1000">
+      <figure class="quote-card">
+        <p>This is more than skincare. This is self-care, self-respect, and coming home to yourself.</p>
+        <cite>— Amber</cite>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2 · PROMISE STRIP ============ -->
+<section class="promise">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Why clients stay</p>
+      <h2 class="h2">Care built to be returned to.</h2>
+    </div>
+    <ul class="promise__grid">
+      <li class="rv">
+        <svg class="promise__i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M3 12h4l2-6 4 12 2-6h6"/></svg>
+        <h3>Preservation</h3>
+        <p>We protect and nourish your natural brilliance.</p>
+      </li>
+      <li class="rv">
+        <svg class="promise__i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 3a9 9 0 000 18M3.6 9h16.8M3.6 15h16.8"/></svg>
+        <h3>Expert Hands</h3>
+        <p>Skilled. Intuitive. Results you can trust.</p>
+      </li>
+      <li class="rv">
+        <svg class="promise__i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M12 21c4-3 7-6.5 7-10.5A7 7 0 005 10.5C5 14.5 8 18 12 21z"/><path d="M12 21V8"/></svg>
+        <h3>Sanctuary</h3>
+        <p>A calm space to heal, reset, and restore.</p>
+      </li>
+      <li class="rv">
+        <svg class="promise__i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M12 2l2.4 6.4L21 10l-5 4.3 1.6 6.7L12 17.4 6.4 21 8 14.3 3 10l6.6-1.6z"/></svg>
+        <h3>Botanical Luxury</h3>
+        <p>Nature's finest ingredients. Elevated with care.</p>
+      </li>
+      <li class="rv">
+        <svg class="promise__i" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M12 21s-7-4.4-7-9.5A4.5 4.5 0 0112 8a4.5 4.5 0 017 3.5C19 16.6 12 21 12 21z"/></svg>
+        <h3>Inclusive Care</h3>
+        <p>For every tone, every age, every skin story.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ 3 · PRESERVATION ============ -->
+<section class="preserve">
+  <div class="wrap preserve__grid">
+    <img src="images/crystal-lotus.jpg"
+         alt="A crystal lotus form catching warm light"
+         width="700" height="700" loading="lazy">
+    <div>
+      <p class="eyebrow">The practice</p>
+      <p class="script">Essential, like water.<br>Preserved, like diamonds.</p>
+      <div class="body">
+        <p class="lede">Your skin is the most valuable material you will ever live in. Its worth is not created by treatment. It is recognized through care.</p>
+        <p class="muted">Amber combines trained judgment, attentive upkeep, and treatment shaped around the skin in front of her.</p>
+      </div>
+      <p class="pull">A best friend recognizes your worth.<br>A professional knows how to preserve it.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 4 · SERVICES ============ -->
+<section id="services">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Treatments</p>
+      <h2 class="h2">Care selected for the skin <span class="ital">in front of us.</span></h2>
+      <p class="lede" style="margin-top:var(--sp-4)">More than a treatment, it's an experience. Science. Energy. Results. Customized for YOU.</p>
+    </div>
+
+    <ul class="grid-3">
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Photography needed</span><span class="ph__d">Customized Facials</span></div>
+        <div class="card__b">
+          <span class="tag">Facials</span>
+          <h3>Customized Facials</h3>
+          <p>Relax, reset and reveal your glow with a facial made just for your skin.</p>
+          <p class="meta"><span>60–90 min</span><span>From $95</span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#book" style="min-height:44px;padding:11px 22px">Book</a>
+            <a class="tlink" href="#services">Details <span class="arw" aria-hidden="true">→</span></a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3 · PRESERVATION -->
-  <section class="preserve">
-    <div class="preserve__inner">
-      <div class="preserve__copy">
-        <p class="preserve__script">Essential, like water.</p>
-        <p class="preserve__script preserve__script--brown">Preserved, like diamonds.</p>
-        <p class="preserve__body">Your skin is the most valuable material you will ever live in. Its worth is not created by treatment. It is recognized through care.</p>
-        <p class="preserve__body preserve__body--muted">Amber combines trained judgment, attentive upkeep, and treatment shaped around the skin in front of her.</p>
-        <p class="preserve__pull">A best friend recognizes your worth.<br>A professional knows how to preserve it.</p>
-      </div>
-      <div class="preserve__media">
-        <div class="preserve__frame">
-          <img src="img/crystal-lotus.jpg" alt="Translucent crystal lotus catching prismatic light">
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Photography needed</span><span class="ph__d">Chemical Peels</span></div>
+        <div class="card__b">
+          <span class="tag">Peels</span>
+          <h3>Chemical Peels</h3>
+          <p>Improve tone, texture and clarity with professional peels for real results.</p>
+          <p class="meta"><span>45–60 min</span><span><span class="ph__k">Price TBC</span></span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#book" style="min-height:44px;padding:11px 22px">Book</a>
+            <a class="tlink" href="#services">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
         </div>
-      </div>
-    </div>
-  </section>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Photography needed</span><span class="ph__d">Full Body Waxing</span></div>
+        <div class="card__b">
+          <span class="tag">Waxing</span>
+          <h3>Full Body Waxing</h3>
+          <p>Smooth, confidence-boosting results. Brazilian specialist.</p>
+          <p class="meta"><span>15–90 min</span><span>From $25</span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#book" style="min-height:44px;padding:11px 22px">Book</a>
+            <a class="tlink" href="#services">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Photography needed</span><span class="ph__d">Individual Wispy Lashes</span></div>
+        <div class="card__b">
+          <span class="tag">Lashes</span>
+          <h3>Individual Wispy Lashes</h3>
+          <p>Enhance your natural beauty with soft, fluffy, custom lash sets.</p>
+          <p class="meta"><span>Varies</span><span>Fan cluster D curl · $60 intro</span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#book" style="min-height:44px;padding:11px 22px">Book</a>
+            <a class="tlink" href="#services">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Photography needed</span><span class="ph__d">LED Light Therapy</span></div>
+        <div class="card__b">
+          <span class="tag">LED</span>
+          <h3>LED Light Therapy</h3>
+          <p>Heal, calm and rejuvenate your skin with LED technology.</p>
+          <p class="meta"><span>Add-on</span><span><span class="ph__k">Price TBC</span></span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#book" style="min-height:44px;padding:11px 22px">Book</a>
+            <a class="tlink" href="#services">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Photography needed</span><span class="ph__d">Radio Frequency Facial</span></div>
+        <div class="card__b">
+          <span class="tag">Advanced</span>
+          <h3>Radio Frequency Facial</h3>
+          <p>Also available. Ask at consultation whether your skin is a candidate.</p>
+          <p class="meta"><span>Varies</span><span><span class="ph__k">Price TBC</span></span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#book" style="min-height:44px;padding:11px 22px">Book</a>
+            <a class="tlink" href="#services">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+    </ul>
 
-  <!-- 4 · SERVICES -->
-  <section id="services" class="services section">
-    <div class="wrap">
-      <p class="eyebrow">SERVICES</p>
-      <h2 class="h2" style="max-width: 20ch">Care selected for the skin in front of us.</h2>
-      <p class="lede" style="margin-bottom: 44px">Facials, acne treatment, hyperpigmentation care, waxing, and brow shaping in Pinole, California. Every service begins with a short consultation — prices vary by skin, not by card on file.</p>
-      <div class="grid-cards">
+    <p class="disc"><strong>Pricing note.</strong> Confirmed prices come from Amber's current materials. Prices vary by skin, not by card on file. Treatments without a confirmed price are marked <em>TBC</em> and must be verified before publishing.</p>
+  </div>
+</section>
 
-        <article class="card">
-          <div class="card__media">
-            <div class="card__img" role="img" aria-label="Ornate mirror among deep botanical florals" style="background-image: url(img/treat-facial.png)"></div>
-            <div class="card__scrim"></div>
-          </div>
-          <div class="card__body">
-            <h3>Basic Facial</h3>
-            <p class="card__desc">A full cleanse, exfoliation, and extractions, shaped to your skin on the day. The starting point for most clients.</p>
-            <p class="card__meta">70 MIN · $85</p>
-            <div class="card__actions">
-              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
-              <a href="services.html#facial" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <div class="card__img" role="img" aria-label="Orchids and layered botanicals in soft light" style="background-image: url(img/treat-acne.png)"></div>
-            <div class="card__scrim"></div>
-          </div>
-          <div class="card__body">
-            <h3>Customized Facial</h3>
-            <p class="card__desc">Everything in the basic facial, plus your choice of a chemical peel, ultrasound, or LED therapy — selected for what your skin needs that day.</p>
-            <p class="card__meta">80–90 MIN · $150</p>
-            <div class="card__actions">
-              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
-              <a href="services.html#acne" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <div class="card__img" role="img" aria-label="Water pitcher and amber dropper bottle on the treatment table" style="background-image: url(img/treat-wax.png)"></div>
-            <div class="card__scrim"></div>
-          </div>
-          <div class="card__body">
-            <h3>Body Waxing &amp; Brow Care</h3>
-            <p class="card__desc">Over a decade of precision waxing. Full body, all skin types, unhurried. Brows from $20, Brazilian from $90, and multi-area bundles that save up to $35.</p>
-            <p class="card__meta">FROM $10 · BROWS $20–25 · BRAZILIAN FROM $90</p>
-            <div class="card__actions">
-              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
-              <a href="services.html#wax" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <div class="card__img" role="img" aria-label="Glass vessels and botanicals in still life" style="background-image: url(img/treat-manicure.png)"></div>
-            <div class="card__scrim"></div>
-          </div>
-          <div class="card__body">
-            <h3>Teen Facial</h3>
-            <p class="card__desc">A gentler first facial for younger skin, with the education to go, so good habits start early.</p>
-            <p class="card__meta">AGES 9–19 · $65</p>
-            <div class="card__actions">
-              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
-              <a href="services.html#manicure" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <div class="card__img" role="img" aria-label="Brass bowl of whipped cream beside amber glass and linen" style="background-image: url(img/treat-ritual.png)"></div>
-            <div class="card__scrim"></div>
-          </div>
-          <div class="card__body">
-            <h3>LED Facial</h3>
-            <p class="card__desc">A focused cleanse, gel, and LED mask finished with moisture. The short visit that fits a weekday.</p>
-            <p class="card__meta">30 MIN · $50</p>
-            <div class="card__actions">
-              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
-              <a href="services.html#ritual" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="card__media">
-            <div class="card__img" role="img" aria-label="Draped fabric and dried botanicals on wood" style="background-image: url(img/treat-consult.png)"></div>
-            <div class="card__scrim"></div>
-          </div>
-          <div class="card__body">
-            <h3>Skin Consultation</h3>
-            <p class="card__desc">Not sure where to begin? Start with a conversation and a plan before booking a treatment.</p>
-            <p class="card__meta">20 MIN · $25</p>
-            <div class="card__actions">
-              <a href="tel:+15102286657" class="btn btn--solid btn--sm">CALL OR TEXT TO BOOK</a>
-              <a href="services.html#consult" class="link-arrow">Ask about it <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
-        </article>
-
-      </div>
-      <p class="note"><strong>Pricing note.</strong> Prices are Amber's current published rates. Waxing is priced per area and some areas are &ldquo;&amp; up&rdquo; depending on coverage — the full menu is on the <a href="services.html">services page</a>. Facial pricing is fixed; the treatment inside it is chosen for your skin.</p>
-    </div>
-  </section>
-
-  <!-- 5 · TREATMENT FINDER -->
-  <section id="concerns" class="concerns section">
-    <div class="wrap wrap--tight">
-      <p class="eyebrow">SKIN CONCERNS</p>
+<!-- ============ 5 · TREATMENT FINDER ============ -->
+<section class="finder" id="concerns">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Start here</p>
       <h2 class="h2">What brings you in?</h2>
-      <p class="lede" style="max-width: 60ch">Choose the concern that sounds like your skin — Amber matches the treatment.</p>
-      <div class="concerns__grid">
+    </div>
+    <div class="finder__list">
+      <a class="finder__row" href="#book">
+        <span class="finder__ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.5"/></svg>
+        </span>
+        <span class="finder__lb">Breakouts and acne</span>
+        <span class="finder__ar" aria-hidden="true">→</span>
+      </a>
+      <a class="finder__row" href="#book">
+        <span class="finder__ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="9" cy="10" r="3"/><circle cx="16" cy="15" r="2"/><circle cx="15" cy="8" r="1.4"/></svg>
+        </span>
+        <span class="finder__lb">Dark spots and uneven tone</span>
+        <span class="finder__ar" aria-hidden="true">→</span>
+      </a>
+      <a class="finder__row" href="#book">
+        <span class="finder__ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M12 3s5 6 5 9.5A5 5 0 017 12.5C7 9 12 3 12 3z"/></svg>
+        </span>
+        <span class="finder__lb">Dryness and dehydration</span>
+        <span class="finder__ar" aria-hidden="true">→</span>
+      </a>
+      <a class="finder__row" href="#book">
+        <span class="finder__ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 14c3-5 5 3 8-2s5 2 8-2"/></svg>
+        </span>
+        <span class="finder__lb">Sensitivity and redness</span>
+        <span class="finder__ar" aria-hidden="true">→</span>
+      </a>
+      <a class="finder__row" href="#book">
+        <span class="finder__ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M4 9h16M4 14h16M4 19h10"/></svg>
+        </span>
+        <span class="finder__lb">Fine lines and visible aging</span>
+        <span class="finder__ar" aria-hidden="true">→</span>
+      </a>
+      <a class="finder__row" href="#book">
+        <span class="finder__ico" aria-hidden="true">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.6a2.5 2.5 0 013.9-1c1.1.9.8 2-.1 2.7-.7.5-1.4.9-1.4 1.9"/><circle cx="12" cy="16.6" r=".7" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="finder__lb">I am not sure</span>
+        <span class="finder__ar" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>
 
-        <a href="#services" class="concern">
-          <span class="concern__icon" aria-hidden="true" style="background-size: 218px; background-position: -58px -206px"></span>
-          <span class="concern__text">
-            <span class="concern__label">Breakouts and acne</span>
-            <span class="concern__sub">Protocol-based acne care, patience included</span>
-          </span>
-          <span class="concern__chev" aria-hidden="true">→</span>
-        </a>
+<!-- ============ 6 · HOW CARE BEGINS ============ -->
+<section>
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">The process</p>
+      <h2 class="h2">How care begins.</h2>
+    </div>
+    <ol class="steps">
+      <li class="step rv">
+        <p class="step__n">01</p>
+        <h3>Consult</h3>
+        <p>We listen, assess, and understand your skin, routine, and goals.</p>
+      </li>
+      <li class="step rv">
+        <p class="step__n">02</p>
+        <h3>Treat</h3>
+        <p>Amber selects professional techniques and products according to what your skin needs now.</p>
+      </li>
+      <li class="step rv">
+        <p class="step__n">03</p>
+        <h3>Preserve</h3>
+        <p>You leave with aftercare guidance and a plan for maintaining your results.</p>
+      </li>
+    </ol>
+  </div>
+</section>
 
-        <a href="#services" class="concern">
-          <span class="concern__icon" aria-hidden="true" style="background-size: 140px; background-position: -5px 0px"></span>
-          <span class="concern__text">
-            <span class="concern__label">Dark spots and uneven tone</span>
-            <span class="concern__sub">Hyperpigmentation care for melanin-rich skin</span>
-          </span>
-          <span class="concern__chev" aria-hidden="true">→</span>
-        </a>
+<!-- ============ 7 · ABOUT ============ -->
+<section id="about" class="about" style="background:var(--surface-warm)">
+  <div class="wrap about__grid">
+    <img src="images/amber-portrait-3.jpg"
+         alt="Amber, licensed esthetician and owner of Amber's Essential Touch"
+         width="700" height="875" loading="lazy">
+    <div>
+      <p class="eyebrow">The woman behind the touch</p>
+      <h2 class="h2">Expert care, <span class="ital">made personal.</span></h2>
+      <p class="lede" style="margin-top:var(--sp-6)">Amber's Essential Touch is rooted in the belief that every person deserves to understand their skin and receive care shaped around their actual needs.</p>
+      <p class="muted" style="margin-top:var(--sp-4);max-width:var(--measure)">Amber pairs professional technique with attentive, human care — creating a treatment experience where clients are seen, informed, and respected.</p>
 
-        <a href="#services" class="concern">
-          <span class="concern__icon" aria-hidden="true" style="background-size: 207px; background-position: -119px -4px"></span>
-          <span class="concern__text">
-            <span class="concern__label">Dryness and dehydration</span>
-            <span class="concern__sub">Barrier-first hydration facials</span>
-          </span>
-          <span class="concern__chev" aria-hidden="true">→</span>
-        </a>
+      <ul class="creds">
+        <li><span class="ck" aria-hidden="true">✓</span> Licensed Esthetician — CA Board of Barbering &amp; Cosmetology</li>
+        <li><span class="ck" aria-hidden="true">✓</span> Licensed 19 years · business owner 16 years</li>
+        <li><span class="ck" aria-hidden="true">✓</span> Brazilian waxing specialist</li>
+        <li><span class="ck" aria-hidden="true">✓</span> Black/woman-owned home business</li>
+        <li><span class="ck" aria-hidden="true">✓</span> 4.9 ★ across 25 reviews · 135+ five-star visits</li>
+        <li><span class="ck" aria-hidden="true">✓</span> Consultation-driven protocol</li>
+      </ul>
 
-        <a href="#services" class="concern">
-          <span class="concern__icon" aria-hidden="true" style="background-size: 187px; background-position: -62px -51px"></span>
-          <span class="concern__text">
-            <span class="concern__label">Sensitivity and redness</span>
-            <span class="concern__sub">Gentle, calming treatment</span>
-          </span>
-          <span class="concern__chev" aria-hidden="true">→</span>
-        </a>
+      <p class="small muted"><em>License number and additional certifications to be added once verified.</em></p>
 
-        <a href="#services" class="concern">
-          <span class="concern__icon" aria-hidden="true" style="background-size: 245px; background-position: -14px -87px"></span>
-          <span class="concern__text">
-            <span class="concern__label">Fine lines and visible aging</span>
-            <span class="concern__sub">Preservation, not correction</span>
-          </span>
-          <span class="concern__chev" aria-hidden="true">→</span>
-        </a>
-
-        <a href="#book" class="concern">
-          <span class="concern__icon" aria-hidden="true" style="background-size: 238px; background-position: -15px -119px"></span>
-          <span class="concern__text">
-            <span class="concern__label">I am not sure</span>
-            <span class="concern__sub">Begin with a consultation — Amber will guide you</span>
-          </span>
-          <span class="concern__chev" aria-hidden="true">→</span>
-        </a>
-
+      <div style="margin-top:var(--sp-8)">
+        <a class="btn btn--secondary" href="#contact">Meet Amber</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- 6 · HOW CARE BEGINS -->
-  <section class="process section">
-    <div class="wrap wrap--narrow">
-      <p class="eyebrow">THE PROCESS</p>
-      <h2 class="h2" style="margin-bottom: 44px">How care begins.</h2>
-      <div class="process__grid">
-        <div class="step step--1">
-          <p class="step__num">01</p>
-          <h3>Consult</h3>
-          <p>We listen, assess, and understand your skin, routine, and goals.</p>
-        </div>
-        <div class="step step--2">
-          <p class="step__num">02</p>
-          <h3>Treat</h3>
-          <p>Amber selects professional techniques and products according to what your skin needs now.</p>
-        </div>
-        <div class="step step--3">
-          <p class="step__num">03</p>
-          <h3>Preserve</h3>
-          <p>You leave with aftercare guidance and a plan for maintaining your results.</p>
-        </div>
-      </div>
-      <p class="process__coda">Aftercare is part of the treatment.</p>
+<!-- ============ 8 · RESULTS ============ -->
+<section id="results">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Client results</p>
+      <h2 class="h2">Real skin. Real care. <span class="ital">Visible progress.</span></h2>
     </div>
-  </section>
+    <ul class="grid-3">
+      <li class="ph rv"><span class="ph__k">Consent required</span><span class="ph__t">Acne protocol · 12 weeks</span><span class="ph__d">Before-and-after pair pending written client consent.</span></li>
+      <li class="ph rv"><span class="ph__k">Consent required</span><span class="ph__t">Pigmentation · 16 weeks</span><span class="ph__d">Before-and-after pair pending written client consent.</span></li>
+      <li class="ph rv"><span class="ph__k">Consent required</span><span class="ph__t">Custom facial series · 8 weeks</span><span class="ph__d">Before-and-after pair pending written client consent.</span></li>
+    </ul>
+    <p class="disc"><strong>Results disclaimer.</strong> Results vary by individual, skin condition, adherence to aftercare, and treatment sequence. No result shown here is guaranteed or typical. All client images are published only with written consent.</p>
+    <div style="margin-top:var(--sp-8)"><a class="btn btn--secondary" href="#results">View client results</a></div>
+  </div>
+</section>
 
-  <!-- 7 · ABOUT -->
-  <section id="about" class="about">
-    <div class="about__inner">
-      <div class="about__media">
-        <div class="about__frame">
-          <img src="img/amber-portrait-3.jpg" alt="Amber, licensed esthetician and owner of Amber's Essential Touch in Pinole, California">
+<!-- ============ 9 · TESTIMONIALS ============ -->
+<section class="tsts">
+  <div class="wrap">
+    <div class="shead shead--center">
+      <p class="eyebrow">In their words</p>
+      <h2 class="h2">Trusted by skin.</h2>
+    </div>
+    <ul class="grid-3">
+      <li class="tst rv">
+        <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>Approved client testimonial required.</blockquote>
+        <figcaption>Client first name · Treatment · Date</figcaption>
+      </li>
+      <li class="tst rv">
+        <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>Approved client testimonial required.</blockquote>
+        <figcaption>Client first name · Treatment · Date</figcaption>
+      </li>
+      <li class="tst rv">
+        <span class="stars" aria-label="5 out of 5 stars">★★★★★</span>
+        <blockquote>Approved client testimonial required.</blockquote>
+        <figcaption>Client first name · Treatment · Date</figcaption>
+      </li>
+    </ul>
+    <p class="disc" style="margin-inline:auto">Aggregate rating of <strong>4.9 ★ across 25 reviews</strong> is verified. Individual quotes must be pulled from Google or Birdeye with permission before publishing.</p>
+  </div>
+</section>
+
+<!-- ============ 10 · JOURNAL ============ -->
+<section id="journal">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">The journal</p>
+      <h2 class="h2">Skin knowledge is part of <span class="ital">the treatment.</span></h2>
+    </div>
+    <ul class="grid-3">
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Article image needed</span></div>
+        <div class="card__b">
+          <span class="tag">Education</span>
+          <h3>Melanin and Skincare: What Your Skin Really Needs</h3>
+          <p class="meta"><span>Draft</span><span>6 min read</span></p>
+          <a class="tlink" href="#journal">Read <span class="arw" aria-hidden="true">→</span></a>
         </div>
-      </div>
-      <div class="about__copy">
-        <p class="eyebrow">THE WOMAN BEHIND THE TOUCH</p>
-        <h2 class="h2" style="margin-bottom: 22px">Expert care, made personal.</h2>
-        <p class="body">Amber's Essential Touch is rooted in the belief that every person deserves to understand their skin and receive care shaped around their actual needs.</p>
-        <p class="body body--muted">Amber pairs professional technique with attentive, human care — creating a treatment experience where clients are seen, informed, and respected.</p>
-        <ul class="creds">
-          <li><strong>Licensed esthetician</strong> · 18 years <span class="pending">(license № — to be supplied)</span></li>
-          <li><strong>Waxing specialist</strong> · over a decade of precision</li>
-          <li><strong>Pinole, CA</strong> · Black-woman owned and operated</li>
-          <li><strong>Consultation-driven</strong> · aftercare-first practice</li>
-          <li><strong>CA Board of Barbering &amp; Cosmetology</strong> · licensed esthetician</li>
-          <li><strong>4.9 ★ across 25 reviews</strong> · 135+ five-star visits</li>
-        </ul>
-        <a href="about.html" class="btn btn--ghost">MEET AMBER</a>
-      </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Article image needed</span></div>
+        <div class="card__b">
+          <span class="tag">Aftercare</span>
+          <h3>Why Aftercare Is the Treatment</h3>
+          <p class="meta"><span>Planned</span><span>4 min read</span></p>
+          <a class="tlink" href="#journal">Read <span class="arw" aria-hidden="true">→</span></a>
+        </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Article image needed</span></div>
+        <div class="card__b">
+          <span class="tag">Ingredients</span>
+          <h3>Oil Is Not the Enemy of Oily Skin</h3>
+          <p class="meta"><span>Planned</span><span>5 min read</span></p>
+          <a class="tlink" href="#journal">Read <span class="arw" aria-hidden="true">→</span></a>
+        </div>
+      </li>
+    </ul>
+    <div style="margin-top:var(--sp-8)"><a class="btn btn--secondary" href="#journal">Visit the journal</a></div>
+  </div>
+</section>
+
+<!-- ============ 11 · SHOP ============ -->
+<section id="shop" style="background:var(--grad-cream-lav)">
+  <div class="wrap">
+    <div class="shead">
+      <p class="eyebrow">Purely Essential</p>
+      <h2 class="h2">Care that continues <span class="ital">at home.</span></h2>
+      <p class="lede" style="margin-top:var(--sp-4)">Head to toe. All skin types, all ages, all bodies.</p>
     </div>
-  </section>
+    <ul class="grid-3">
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Product photo needed</span><span class="ph__d">Amber glass, 2 oz and 8 oz</span></div>
+        <div class="card__b">
+          <h3>Purely Essential Virgin Oil</h3>
+          <p>Four virgin oils blended to cover each layer of the skin. Shaving, cleansing, healing.</p>
+          <p class="meta"><span>2 oz $18</span><span>8 oz $50</span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#contact" style="min-height:44px;padding:11px 22px">Reserve</a>
+            <a class="tlink" href="#shop">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Product photo needed</span><span class="ph__d">4 oz jar</span></div>
+        <div class="card__b">
+          <h3>Whipped Body Butter</h3>
+          <p>Shea, mango, and kokum whipped with unscented oil. Dense moisture without weight.</p>
+          <p class="meta"><span>4 oz $20</span><span>8 oz $40</span><span>12 oz $60</span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#contact" style="min-height:44px;padding:11px 22px">Reserve</a>
+            <a class="tlink" href="#shop">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+      <li class="card rv">
+        <div class="ph card__img"><span class="ph__k">Product photo needed</span><span class="ph__d">Crystal-infused blend</span></div>
+        <div class="card__b">
+          <h3>Starter Ritual Kit</h3>
+          <p>A 2 oz oil, a 4 oz butter, and one crystal-infused blend. The gentlest way to begin.</p>
+          <p class="meta"><span>$75</span><span>Saves $8</span></p>
+          <div class="card__acts">
+            <a class="btn btn--primary" href="#contact" style="min-height:44px;padding:11px 22px">Reserve</a>
+            <a class="tlink" href="#shop">Details <span class="arw" aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <p class="disc"><strong>Ordering.</strong> Online checkout is not live yet — <em>Reserve</em> opens a message to Amber and she confirms with an invoice. Full ingredient lists, allergen notes, and shelf life must be added before publishing.</p>
+    <div style="margin-top:var(--sp-8)"><a class="btn btn--secondary" href="#shop">Shop all products</a></div>
+  </div>
+</section>
 
-  <!-- 8 · RESULTS -->
-  <section id="results" class="results section">
-    <div class="wrap">
-      <p class="eyebrow">RESULTS</p>
-      <h2 class="h2">Real skin. Real care. Visible progress.</h2>
-      <p class="lede" style="font-size: 15px; max-width: 62ch">Every result shown here will be published with the client's written consent, the treatment sequence, and the time span. Individual results vary.</p>
-      <div class="grid-cards">
-
-        <article class="result">
-          <div class="result__pair">
-            <div class="result__slot result__slot--before"><span>BEFORE</span></div>
-            <div class="result__slot result__slot--after"><span>AFTER</span></div>
-          </div>
-          <div class="result__body">
-            <h3>Acne-focused series</h3>
-            <p>Structure ready for: treatment sequence, time span, and consent note.</p>
-            <p class="result__consent">Consented client images required before publishing.</p>
-          </div>
-        </article>
-
-        <article class="result">
-          <div class="result__pair">
-            <div class="result__slot result__slot--before"><span>BEFORE</span></div>
-            <div class="result__slot result__slot--after"><span>AFTER</span></div>
-          </div>
-          <div class="result__body">
-            <h3>Hyperpigmentation care</h3>
-            <p>Structure ready for: treatment sequence, time span, and consent note.</p>
-            <p class="result__consent">Consented client images required before publishing.</p>
-          </div>
-        </article>
-
-        <article class="result">
-          <div class="result__pair">
-            <div class="result__slot result__slot--before"><span>BEFORE</span></div>
-            <div class="result__slot result__slot--after"><span>AFTER</span></div>
-          </div>
-          <div class="result__body">
-            <h3>Texture and hydration</h3>
-            <p>Structure ready for: treatment sequence, time span, and consent note.</p>
-            <p class="result__consent">Consented client images required before publishing.</p>
-          </div>
-        </article>
-
-      </div>
-      <p class="note"><strong>Results disclaimer.</strong> Results vary by individual, skin condition, adherence to aftercare, and treatment sequence. No result shown here is guaranteed or typical. Client images are published only with written consent.</p>
-      <div style="margin-top: 24px">
-        <a href="reviews.html" class="link-arrow" style="font-size: 14px; padding: 12px 0">REQUEST CLIENT RESULTS <span aria-hidden="true">→</span></a>
-      </div>
+<!-- ============ 11b · MISSION ============ -->
+<section class="mission" style="background:var(--grad-rose-lav)">
+  <div class="wrap" style="max-width:820px;text-align:center">
+    <p class="eyebrow" style="color:var(--deep-amber)">The mission</p>
+    <h2 class="h2">Skincare is not a luxury.<br><span class="ital">It is a wellness.</span></h2>
+    <p class="lede" style="margin-inline:auto;margin-top:var(--sp-6);color:var(--espresso)">
+      Amber's Essential Touch offers donation-based facials for <strong>teens and seniors</strong> —
+      for skin learning itself for the first time, and skin that has carried a whole life.
+    </p>
+    <p class="muted" style="margin-top:var(--sp-4);max-width:56ch;margin-inline:auto">
+      Affordable regimens. Care that does not ask you to earn it.
+    </p>
+    <div style="margin-top:var(--sp-8);display:flex;gap:var(--sp-3);justify-content:center;flex-wrap:wrap">
+      <a class="btn btn--primary" href="#contact">Support the mission</a>
+      <a class="btn btn--secondary" href="#book">Book a donation facial</a>
     </div>
-  </section>
+    <p class="small muted" style="margin-top:var(--sp-6)">
+      Donations support services directly. Not tax-deductible unless a fiscal sponsor is confirmed.
+    </p>
+  </div>
+</section>
 
-  <!-- 9 · TESTIMONIALS -->
-  <section class="voices section">
-    <div class="wrap wrap--narrow">
-      <div class="voices__head">
+<!-- ============ 12 · BOOKING BAND ============ -->
+<section class="bookband" id="book">
+  <div class="wrap">
+    <p class="eyebrow">By appointment</p>
+    <h2 class="h2">Ready to place your skin in expert hands?</h2>
+    <p class="lede" style="color:rgba(255,249,243,.86);max-width:52ch;margin-top:var(--sp-4)">Choose your treatment or begin with a consultation.</p>
+    <div class="bookband__ctas">
+      <a class="btn btn--onDark" href="tel:+15102286657">Reserve your appointment</a>
+      <a class="btn btn--ghostDark" href="#contact">Book a consultation</a>
+    </div>
+    <p class="small" style="margin-top:var(--sp-8);color:rgba(255,249,243,.72)">Online booking provider not yet connected — calls and messages are answered directly.</p>
+  </div>
+</section>
+
+<!-- ============ 13 · VISIT & CONTACT ============ -->
+<section id="contact">
+  <div class="wrap visit__grid">
+    <div>
+      <p class="eyebrow">Visit</p>
+      <h2 class="h2">A private spa in <span class="ital">Pinole.</span></h2>
+      <dl class="dl">
         <div>
-          <p class="eyebrow">CLIENT VOICES</p>
-          <h2 class="h2" style="margin: 0">Trusted by skin.</h2>
+          <dt>Location</dt>
+          <dd>1622 Michael Dr, Pinole, CA 94564<br><span class="muted small">A private spa. <a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564">Get directions</a></span></dd>
         </div>
-        <p class="voices__rating">4.9 ★ · 25 reviews on Birdeye</p>
-      </div>
-      <div class="grid-cards">
-
-        <blockquote class="quote">
-          <p>"Amber transformed my skin and my self-confidence. I finally feel seen."</p>
-          <footer>
-            <span class="quote__stars" aria-label="Five out of five stars">★★★★★</span>
-            <cite>Cinthia Z.</cite>
-            <span class="quote__meta">Client · from the approved brand board</span>
-          </footer>
-        </blockquote>
-
-        <blockquote class="quote">
-          <p>"I've been a client of Amber's for over a decade. Her dedication to the quality of her work and genuine care to ensure a relaxing experience has been consistent and unwavering. Amber welcomes you into her space which can only be described as a pristine, warm source of rejuvenation with a full menu of services inclusive of everyone."</p>
-          <footer>
-            <cite>Jamiah P.</cite>
-            <span class="quote__meta">Client of more than ten years</span>
-          </footer>
-        </blockquote>
-
-        <blockquote class="quote">
-          <p>"Amber is an amazing person, and skilled at her trade."</p>
-          <footer>
-            <cite>Benjamin J.</cite>
-            <span class="quote__meta">Client</span>
-          </footer>
-        </blockquote>
-
-      </div>
-      <p class="note">The aggregate rating of <strong>4.9 ★ across 25 reviews</strong> is verified. Individual quotes are pulled from Google or Birdeye with permission before publishing.</p>
-    </div>
-  </section>
-
-  <!-- 10 · JOURNAL -->
-  <section id="journal" class="journal section">
-    <div class="wrap">
-      <p class="eyebrow">THE JOURNAL</p>
-      <h2 class="h2" style="margin-bottom: 44px; max-width: 22ch">Skin knowledge is part of the treatment.</h2>
-      <div class="grid-cards">
-
-        <article class="card">
-          <div class="journal__media art-pending" role="img" aria-label="Article artwork pending"></div>
-          <div class="card__body journal__body">
-            <p class="journal__tag">MELANIN &amp; SKINCARE</p>
-            <h3>Melanin and Skincare: What Your Skin Really Needs</h3>
-            <p class="journal__excerpt">Draft in progress — education written for every tone.</p>
-            <span class="journal__state">In draft</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="journal__media art-pending art-pending--b" role="img" aria-label="Article artwork pending"></div>
-          <div class="card__body journal__body">
-            <p class="journal__tag">INGREDIENT EDUCATION</p>
-            <h3>Four Ingredients, Infinite Possibilities</h3>
-            <p class="journal__excerpt">Outline ready — what goes in the bottle, and why.</p>
-            <span class="journal__state">In draft</span>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="journal__media art-pending art-pending--c" role="img" aria-label="Article artwork pending"></div>
-          <div class="card__body journal__body">
-            <p class="journal__tag">AFTERCARE</p>
-            <h3>Aftercare Is Part of the Treatment</h3>
-            <p class="journal__excerpt">Outline ready — how the days after a visit shape results.</p>
-            <span class="journal__state">In draft</span>
-          </div>
-        </article>
-
-      </div>
-      <div style="margin-top: 32px">
-        <a href="mailto:ambersessentialtouch@gmail.com?subject=Send%20me%20skincare%20education" class="btn btn--ghost" style="font-size: 14px; padding: 15px 28px">GET THESE BY EMAIL</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- 11 · SHOP -->
-  <section id="shop" class="shop section">
-    <div class="wrap">
-      <p class="eyebrow">THE SHOP</p>
-      <h2 class="h2">Care that continues at home.</h2>
-      <p class="lede" style="margin-bottom: 44px; max-width: 60ch">Small-batch botanical skincare, made by Amber in Pinole. Orders are currently inquiry-based — message to reserve.</p>
-      <div class="grid-products">
-
-        <article class="card">
-          <div class="product__media art-pending" role="img" aria-label="Product photograph pending">
-            <span class="product__variant">3 SCENTS</span>
-          </div>
-          <div class="product__body">
-            <div class="product__row">
-              <h3>Purely Essential Virgin Oil</h3>
-              <span class="product__from">From $18</span>
-            </div>
-            <p class="product__desc">Four virgin oils, one for each layer of the skin. Shaving, cleansing, healing. Unscented, Hibiscus, or Mango-Pomegranate.</p>
-            <p class="product__price">2 oz $18 · 8 oz $50</p>
-            <a href="shop.html#virgin-oil" class="product__cta">MESSAGE TO RESERVE</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="product__media art-pending art-pending--b" role="img" aria-label="Product photograph pending">
-            <span class="product__variant">3 SIZES</span>
-          </div>
-          <div class="product__body">
-            <div class="product__row">
-              <h3>Whipped Body Butter</h3>
-              <span class="product__from">From $20</span>
-            </div>
-            <p class="product__desc">Shea, mango, and kokum whipped with unscented oil. Dense moisture without weight.</p>
-            <p class="product__price">4 oz $20 · 8 oz $40 · 12 oz $60</p>
-            <a href="shop.html#body-butter" class="product__cta">MESSAGE TO RESERVE</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="product__media art-pending art-pending--c" role="img" aria-label="Product photograph pending">
-            <span class="product__variant">4 STONES</span>
-          </div>
-          <div class="product__body">
-            <div class="product__row">
-              <h3>Crystal-Infused Blends</h3>
-              <span class="product__from">$45</span>
-            </div>
-            <p class="product__desc">Rose quartz, amethyst, pyrite, or peacock ore.</p>
-            <p class="product__price">Single size</p>
-            <a href="shop.html#crystal-blends" class="product__cta">MESSAGE TO RESERVE</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="product__media art-pending art-pending--d" role="img" aria-label="Product photograph pending">
-            <span class="product__variant">SAVES $8</span>
-          </div>
-          <div class="product__body">
-            <div class="product__row">
-              <h3>Starter Ritual Kit</h3>
-              <span class="product__from">$75</span>
-            </div>
-            <p class="product__desc">A 2 oz oil, a 4 oz butter, and one crystal-infused blend. The gentlest way to begin.</p>
-            <p class="product__price">Bundle of three</p>
-            <a href="shop.html#starter-kit" class="product__cta">MESSAGE TO RESERVE</a>
-          </div>
-        </article>
-
-      </div>
-      <p class="note"><strong>Ordering.</strong> Online checkout is not live yet — <em>Message to reserve</em> opens an email to Amber and she confirms with an invoice. Full ingredient lists, allergen notes, and shelf life are added before publishing.</p>
-    </div>
-  </section>
-
-  <!-- 12 · BOOKING CTA -->
-  <section id="book" class="book">
-    <div class="book__scrim"></div>
-    <div class="book__inner">
-      <p class="book__script">You'll feel the difference.</p>
-      <h2>Ready to place your skin in expert hands?</h2>
-      <p class="book__sub">Choose your treatment or begin with a consultation.</p>
-      <div class="book__actions">
-        <a href="tel:+15102286657" class="btn btn--light">CALL OR TEXT (510) 228-6657</a>
-        <a href="book.html?service=consult" class="btn btn--outline-light">BOOK A CONSULTATION</a>
-      </div>
-      <p class="book__foot">Online booking provider (Square / Calendly / Acuity) to be confirmed — this panel adapts to the chosen system.</p>
-    </div>
-  </section>
-
-  <!-- 13 · VISIT & 14 · EMAIL -->
-  <section id="contact" class="visit">
-    <div class="visit__inner">
-      <div class="visit__col">
-        <p class="eyebrow">VISIT</p>
-        <h2 class="h2" style="margin-bottom: 26px; font-size: clamp(34px, 4.4vw, 56px)">The studio in Pinole.</h2>
-        <dl>
-          <div>
-            <dt>Address</dt>
-            <dd>1622 Michael Dr, Pinole, CA 94564 · <a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564">Get directions</a></dd>
-          </div>
-          <div>
-            <dt>Phone</dt>
-            <dd><a href="tel:+15102286657">(510) 228-6657</a></dd>
-          </div>
-          <div>
-            <dt>Email</dt>
-            <dd><a href="mailto:ambersessentialtouch@gmail.com">ambersessentialtouch@gmail.com</a></dd>
-          </div>
-          <div>
-            <dt style="margin-bottom: 6px">Hours</dt>
-            <dd>
-              <div class="hours">
-                <span><span>Monday &amp; Tuesday</span><span class="closed">Closed</span></span>
-                <span><span>Wednesday – Friday</span><span>9:30 am – 7:30 pm</span></span>
-                <span><span>Saturday</span><span>9:30 am – 5:00 pm</span></span>
-                <span><span>Sunday</span><span>11:00 am – 2:00 pm</span></span>
-              </div>
-            </dd>
-          </div>
-          <div>
-            <dt>Access &amp; parking</dt>
-            <dd class="pending">Accessibility and parking notes to be verified before publishing.</dd>
-          </div>
-          <div>
-            <dt>Before your visit</dt>
-            <dd>A 24-hour cancellation notice is requested. First-time facial clients with sensitivity may need a patch test. A guardian must be present for a first visit by anyone under 18.</dd>
-          </div>
-        </dl>
-      </div>
-      <div class="visit__col visit__col--right">
-        <a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564" class="map-card">
-          <span>Open the map · Pinole, CA →</span>
-        </a>
-        <div class="signup">
-          <h3>Care continues between appointments.</h3>
-          <p>Receive skincare education, seasonal guidance, appointment updates, and product news from Amber.</p>
-          <form id="signupForm">
-            <label class="f-first">FIRST NAME
-              <input type="text" name="first" autocomplete="given-name">
-            </label>
-            <label class="f-email">EMAIL
-              <input type="email" name="email" required autocomplete="email">
-            </label>
-            <button type="submit">JOIN AMBER'S LIST</button>
-          </form>
-          <p class="signup__done" id="signupDone" role="status" hidden>Welcome. Take your time — your skin will.</p>
-          <p class="signup__fine">By joining you consent to receive email from Amber's Essential Touch. Unsubscribe anytime. Privacy policy to be published.</p>
+        <div>
+          <dt>Phone</dt>
+          <dd><a href="tel:+15102286657">(510) 228-6657</a></dd>
         </div>
-      </div>
+        <div>
+          <dt>Email</dt>
+          <dd><a href="mailto:ambersessentialtouch@gmail.com">ambersessentialtouch@gmail.com</a></dd>
+        </div>
+        <div>
+          <dt>Getting here</dt>
+          <dd class="muted small">Parking and accessibility details to be confirmed before publishing.</dd>
+        </div>
+      </dl>
     </div>
-  </section>
+
+    <div>
+      <p class="eyebrow" style="margin-top:var(--sp-2)">Hours <span style="color:var(--deep-rose)">· to be confirmed</span></p>
+      <div class="hours" style="margin-top:var(--sp-6)">
+        <div><span>Monday</span><span class="cl">Closed</span></div>
+        <div><span>Tuesday</span><span class="cl">Closed</span></div>
+        <div><span>Wednesday</span><span>9:30 am – 7:30 pm</span></div>
+        <div><span>Thursday</span><span>9:30 am – 7:30 pm</span></div>
+        <div><span>Friday</span><span>9:30 am – 7:30 pm</span></div>
+        <div><span>Saturday</span><span>9:30 am – 5:00 pm</span></div>
+        <div><span>Sunday</span><span>11:00 am – 2:00 pm</span></div>
+      </div>
+      <p class="disc" style="margin-top:var(--sp-8)"><strong>Before your visit.</strong> A 24-hour cancellation notice is requested. First-time facial clients with sensitivity may need a patch test. Guardians must be present for a first visit by anyone under 18.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 14 · EMAIL CAPTURE ============ -->
+<section class="signup">
+  <div class="wrap signup__in">
+    <p class="eyebrow">Skin Notes</p>
+    <h2 class="h2">Care continues <span class="ital">between appointments.</span></h2>
+    <p class="lede" style="margin-inline:auto;margin-top:var(--sp-4)">Receive skincare education, seasonal guidance, appointment updates, and product news from Amber.</p>
+
+    <form class="form" id="signupForm" novalidate>
+      <div class="field">
+        <label for="fname">First name</label>
+        <input id="fname" name="fname" type="text" autocomplete="given-name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="full">
+        <button class="btn btn--primary" type="submit" style="width:100%">Join Amber's list</button>
+      </div>
+    </form>
+    <p class="formmsg" id="formMsg" role="status" aria-live="polite"></p>
+    <p class="consent">One letter a month. Unsubscribe any time. Your email stays with the practice — see the <a href="#">privacy policy</a>.</p>
+  </div>
+</section>
 
 </main>
 
-<!-- 15 · FOOTER -->
+<!-- ============ 15 · FOOTER ============ -->
 <footer class="ftr">
-  <div class="ftr__inner">
-    <div class="ftr__brand">
-      <div class="ftr__lockup">
-        <img src="img/logo-glyph.png" alt="Amber's Essential Touch lotus monogram" class="ftr__glyph" width="60" height="60">
-        <span class="ftr__name">Amber's Essential Touch</span>
+  <div class="wrap">
+    <div class="ftr__grid">
+      <div class="ftr__brand">
+        <img src="images/logo-lockup.png" alt="Amber's Essential Touch" width="150" onerror="this.style.display='none'">
+        <p class="ftr__pos">Professional skincare.<br>Intentional care.<br>Preserved brilliance.</p>
       </div>
-      <p class="ftr__motto">Professional skincare.<br>Intentional care.<br>Preserved brilliance.</p>
-      <p class="ftr__meta">Licensed esthetician · 1622 Michael Dr, Pinole, CA 94564 · Black-woman owned and operated</p>
+
+      <nav aria-label="Explore">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#concerns">Skin Concerns</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#results">Results</a></li>
+          <li><a href="#journal">Journal</a></li>
+          <li><a href="#shop">Shop</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Support">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="#book">Book</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Policies</a></li>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Connect">
+        <h3>Connect</h3>
+        <ul>
+          <li><a href="https://www.facebook.com/aetouch/" rel="noopener">Facebook</a></li>
+          <li><a href="https://www.instagram.com/ambersessential/" rel="noopener">@ambersessential</a></li>
+          <li><a href="mailto:ambersessentialtouch@gmail.com">Email</a></li>
+          <li><a href="tel:+15102286657">(510) 228-6657</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav aria-label="Explore">
-      <h3>EXPLORE</h3>
-      <ul>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="reviews.html">Reviews</a></li>
-        <li><a href="rituals.html">Rituals</a></li>
-        <li><a href="donate.html">The Mission</a></li>
-      </ul>
-    </nav>
-    <nav aria-label="Support">
-      <h3>SUPPORT</h3>
-      <ul>
-        <li><a href="book.html">Book an appointment</a></li>
-        <li><a href="tel:+15102286657">Book by phone</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="services.html#policies">Policies</a></li>
-        <li><a href="mailto:ambersessentialtouch@gmail.com?subject=Accessibility%20at%20the%20studio">Accessibility</a></li>
-      </ul>
-    </nav>
-    <nav aria-label="Connect">
-      <h3>CONNECT</h3>
-      <ul>
-        <li><a href="https://www.facebook.com/aetouch/">Facebook</a></li>
-        <li><a href="https://www.instagram.com/ambersessential/">Instagram</a></li>
-        <li><a href="mailto:ambersessentialtouch@gmail.com">Email Amber</a></li>
-        <li><a href="tel:+15102286657">(510) 228-6657</a></li>
-        <li><a href="https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564">Directions</a></li>
-      </ul>
-    </nav>
-  </div>
-  <div class="ftr__bar">
-    <div class="ftr__bar-inner">
-      <p class="ftr__tag">BE SEEN. BE CARED FOR. BE YOURSELF.</p>
-      <p class="ftr__copy">© 2026 Amber's Essential Touch · Pinole, CA</p>
+
+    <div class="ftr__btm">
+      <p class="ftr__tag">Be seen. Be cared for. Be yourself.</p>
+      <p class="ftr__cp">© 2026 Amber's Essential Touch · Pinole, CA</p>
     </div>
   </div>
 </footer>
 
-<div class="bookbar__spacer" aria-hidden="true"></div>
-<div class="bookbar">
-  <a href="tel:+15102286657" class="bookbar__primary">CALL OR TEXT TO BOOK</a>
-  <a href="mailto:ambersessentialtouch@gmail.com?subject=Appointment%20request" class="bookbar__secondary" aria-label="Email Amber">EMAIL</a>
+<div class="stickybook" id="stickyBook">
+  <a class="btn btn--primary" href="#book">Book your appointment</a>
 </div>
 
-<script src="js/home.js"></script>
+<script>
+(function(){
+  "use strict";
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* --- sticky header state --- */
+  var hdr = document.getElementById("hdr");
+  var sticky = document.getElementById("stickyBook");
+  document.body.classList.add("has-sticky");
+
+  function onScroll(){
+    var y = window.scrollY;
+    hdr.classList.toggle("is-stuck", y > 12);
+    sticky.classList.toggle("is-on", y > 520);
+  }
+  window.addEventListener("scroll", onScroll, {passive:true});
+  onScroll();
+
+  /* --- mobile sheet with focus trap --- */
+  var burger = document.getElementById("burger");
+  var sheet  = document.getElementById("sheet");
+  var sheetX = document.getElementById("sheetX");
+  var lastFocus = null;
+
+  function focusables(){
+    return sheet.querySelectorAll('a[href],button:not([disabled])');
+  }
+  function openSheet(){
+    lastFocus = document.activeElement;
+    sheet.classList.add("is-open");
+    sheet.removeAttribute("inert");
+    burger.setAttribute("aria-expanded","true");
+    document.body.style.overflow = "hidden";
+    var f = focusables(); if(f.length) f[0].focus();
+  }
+  function closeSheet(){
+    sheet.classList.remove("is-open");
+    sheet.setAttribute("inert","");
+    burger.setAttribute("aria-expanded","false");
+    document.body.style.overflow = "";
+    if(lastFocus) lastFocus.focus();
+  }
+  burger.addEventListener("click", openSheet);
+  sheetX.addEventListener("click", closeSheet);
+  sheet.addEventListener("click", function(e){
+    if(e.target.tagName === "A") closeSheet();
+  });
+  document.addEventListener("keydown", function(e){
+    if(!sheet.classList.contains("is-open")) return;
+    if(e.key === "Escape"){ closeSheet(); return; }
+    if(e.key === "Tab"){
+      var f = focusables();
+      if(!f.length) return;
+      var first = f[0], last = f[f.length-1];
+      if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+      else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+    }
+  });
+
+  /* --- scroll reveal --- */
+  var rv = document.querySelectorAll(".rv");
+  if(reduce || !("IntersectionObserver" in window)){
+    rv.forEach(function(el){ el.classList.add("in"); });
+  } else {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){ en.target.classList.add("in"); io.unobserve(en.target); }
+      });
+    }, {threshold:0.1, rootMargin:"0px 0px -40px 0px"});
+    rv.forEach(function(el, i){
+      el.style.transitionDelay = Math.min(i % 6, 5) * 55 + "ms";
+      io.observe(el);
+    });
+  }
+
+  /* --- signup form (no backend wired yet) --- */
+  var form = document.getElementById("signupForm");
+  var msg  = document.getElementById("formMsg");
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
+    var name  = form.fname.value.trim();
+    var email = form.email.value.trim();
+    var ok = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    if(!name){ msg.textContent = "Please add your first name."; form.fname.focus(); return; }
+    if(!ok){ msg.textContent = "Please check that email address."; form.email.focus(); return; }
+    msg.textContent = "Thank you, " + name + ". No mailing provider is connected yet — this form is not yet sending.";
+    form.reset();
+  });
+})();
+</script>
+
+<!--
+================================================================
+CONTRAST NOTES — why the palette differs from the project spec
+================================================================
+Spec §7 defines the Primary button as a "rose or amber-to-rose
+gradient with cream text." Measured against WCAG 2.1:
+
+  warm-ivory #FFF9F3 on rose-pink   #D89BAA  =  2.19:1   FAIL
+  warm-ivory #FFF9F3 on amber-brown #B8734A  =  3.60:1   large text only
+  warm-ivory #FFF9F3 on deep-rose   #A95870  =  4.66:1   AA
+  warm-ivory #FFF9F3 on deep-amber  #6F3F2A  =  8.30:1   AAA
+
+Button labels here are 14px uppercase, so they need 4.5:1.
+Only deep-amber clears it with margin, so deep-amber is the
+primary fill. amber-brown and rose-pink are kept for gradients,
+numerals, borders, and icon fills at 24px+ — never behind small text.
+
+Body text is espresso #33231E on warm-ivory = 14.36:1 (AAA).
+Muted text is warm-gray #71655F on warm-ivory = 5.39:1 (AA).
+Both safe.
+
+================================================================
+ASSETS — drop these into ./images/ from the Claude Design project
+================================================================
+  logo-mark.png        header mark
+  logo-lockup.png      footer lockup
+  logo-glyph.png       spare
+  amber-studio.jpg     hero portrait
+  amber-portrait-3.jpg about portrait
+  crystal-lotus.jpg    preservation section
+  prism-background.jpg spare
+
+Every <img> degrades to a gradient placeholder if missing, so the
+page is presentable before the assets land.
+
+================================================================
+UNVERIFIED — must be confirmed before this goes public
+================================================================
+  - License number and certifications
+  - Prices marked TBC (pigmentation, chemical peel)
+  - All testimonial quotes (aggregate 4.9/25 is verified)
+  - All before/after images + written client consent
+  - Product ingredient lists, allergens, shelf life
+  - Parking and accessibility details
+  - Booking provider (no system connected)
+  - Mailing provider (form does not send)
+  - Instagram URL, FAQ / Policies / Accessibility / Privacy pages
+================================================================
+-->
 </body>
 </html>

@@ -1,0 +1,135 @@
+{
+  "$comment": "Identity + contact. Per AET_FINAL_SPEC §12, every unverified field carries verified:false and must render as a visible labelled placeholder, never as invented text.",
+  "name": "Amber's Essential Touch",
+  "owner": {
+    "value": "Amber D. Johnson",
+    "verified": true,
+    "source": "net-about"
+  },
+  "tagline": {
+    "value": "Where Skin Meets Soul",
+    "verified": true,
+    "source": "flyer"
+  },
+  "supportLine": {
+    "value": "You'll feel the difference.",
+    "verified": true,
+    "source": "flyer + VLS board",
+    "note": "Sentence case. Not 'You'll FEEL the difference.'"
+  },
+  "descriptor": {
+    "value": "Skin and Soul Healer",
+    "verified": true,
+    "source": "flyer"
+  },
+  "positioning": {
+    "value": "Premium botanical skincare · private spa experience",
+    "verified": true,
+    "source": "flyer"
+  },
+  "businessType": {
+    "value": "Private spa",
+    "verified": true,
+    "source": "flyer",
+    "note": "The flyer's 'home business' framing and IG's #homebusinesses tag describe ownership scale, not that the address is a residence. The shop has its own address."
+  },
+  "ownership": {
+    "value": "Black/Woman-owned",
+    "verified": true,
+    "source": "flyer"
+  },
+  "proposition": {
+    "primary": {
+      "value": "More than a treatment, it's an experience. Science. Energy. Results. Customized for YOU.",
+      "verified": true,
+      "source": "flyer"
+    },
+    "secondary": {
+      "value": "Skincare is not a luxury, it is a wellness.",
+      "verified": true,
+      "source": "IG"
+    }
+  },
+  "closingLine": {
+    "value": "BE SEEN. BE CARED FOR. BE YOURSELF.",
+    "verified": true,
+    "source": "VLS board"
+  },
+  "contact": {
+    "phone": {
+      "value": "+15102286657",
+      "display": "(510) 228-6657",
+      "verified": true,
+      "source": "flyer"
+    },
+    "email": {
+      "value": "ambersessentialtouch@gmail.com",
+      "verified": true,
+      "source": "net-about, flyer"
+    },
+    "website": {
+      "value": "https://www.ambersessentialtouch.net",
+      "verified": true,
+      "source": "flyer + IG"
+    },
+    "instagram": {
+      "value": "https://www.instagram.com/ambersessential/",
+      "verified": true,
+      "source": "IG"
+    },
+    "facebook": {
+      "value": "https://www.facebook.com/aetouch/",
+      "verified": true,
+      "source": "flyer"
+    },
+    "locality": {
+      "value": "Pinole, California",
+      "verified": true,
+      "source": "flyer"
+    },
+    "streetAddress": {
+      "value": "1622 Michael Dr, Pinole, CA 94564",
+      "verified": true,
+      "source": "Jonah, 2026-08-26 — confirmed this is the shop's address, not a private residence",
+      "mapsUrl": "https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564",
+      "note": "AET_FINAL_SPEC D-2 assumed a home business and recommended withholding. That assumption is wrong: it is the business location. Publish it."
+    }
+  },
+  "hours": {
+    "verified": false,
+    "blockedBy": "D-4",
+    "note": "VLS board and Drive bundle conflict. The values below are the Drive/design-file set that shipped; treat as unconfirmed.",
+    "unconfirmed": {
+      "monday": "closed",
+      "tuesday": "closed",
+      "wednesday": "09:30-19:30",
+      "thursday": "09:30-19:30",
+      "friday": "09:30-19:30",
+      "saturday": "09:30-17:00",
+      "sunday": "11:00-14:00"
+    }
+  },
+  "mission": {
+    "value": "Donation-based facials for teens and seniors. Affordable regimens.",
+    "verified": true,
+    "source": "IG"
+  },
+  "socialProof": {
+    "rating": {
+      "value": "4.9",
+      "reviewCount": "25",
+      "verified": true,
+      "source": "Birdeye"
+    },
+    "fiveStarVisits": {
+      "value": "135+",
+      "verified": false,
+      "note": "From Drive 00_START_HERE source-input list — re-confirm before publishing."
+    },
+    "facebookFollowers": {
+      "value": "597",
+      "verified": false,
+      "note": "Same — re-confirm."
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$comment": "Brand foundation from AET_FINAL_SPEC §4. Voice rules are machine-checkable — see lint targets below.",
+  "essences": [
+    { "name": "Preservation", "line": "We protect & nourish your natural brilliance." },
+    { "name": "Expert Hands", "line": "Skilled. Intuitive. Results you can trust." },
+    { "name": "Sanctuary", "line": "A calm space to heal, reset, and restore." },
+    { "name": "Botanical Luxury", "line": "Nature's finest ingredients. Elevated with care." },
+    { "name": "Inclusive Care", "line": "For every tone, every age, every skin story." }
+  ],
+  "voice": {
+    "keep": ["ritual","intentional","gentle","aftercare","consultation","regimen","patience","held","carry","memory","protect","preserve","brilliance","seen","soul","energy","science","results","customized"],
+    "drop": ["luxurious","indulgent","pampering","treat yourself","spa day","affordable","cheap","deal","discount","learn more"],
+    "rules": [
+      "Short declaratives. Three-beat comma cadence.",
+      "Italic serif on the emotional word.",
+      "All-caps eyebrows only. Nothing else is uppercase except buttons and nav.",
+      "CTAs are verbs: BOOK, READ, JOIN, SHOP, VISIT.",
+      "No exclamation marks in body copy.",
+      "First person 'I' on About. 'Amber's Essential Touch' elsewhere. Never 'we'.",
+      "No medical claims — supports, calms, softens. Never cures, treats, heals.",
+      "Close every page on touch, held, carry, care, or seen."
+    ],
+    "luxuryRule": "AET rejects luxury-as-price, embraces luxury-as-quality. Never call the service a luxury. You may call the ingredients luxurious."
+  },
+  "photography": {
+    "words": ["Warm","Intentional","Botanical","Inclusive","Translucent"],
+    "canonical": "Light system — warm ivory, blush, dusty rose, botanical green. Amber's real portraits. Naturally lit, calm, intimate.",
+    "editorialOnly": "Dark baroque — black, oxblood, plum, reflective metals. Seasonal campaign layer only. Must not govern the site.",
+    "founderRule": "Any regeneration must preserve Amber's real face, natural proportions, and loc colour and style. Never substitute an AI person for Amber.",
+    "avoid": ["anonymous stock models","sterile white medical rooms","beige spa clichés","excessive candles","faux spirituality","oversaturated pink","clinical before/after sensationalism","airbrushed skin"],
+    "rights": { "blockedBy": "D-6", "note": "ref.png and all Firefly/Gemini output need commercial-rights confirmation before external publication." }
+  },
+  "logo": {
+    "blockedBy": "D-1",
+    "grammar": ["lotus","A monogram","crystal","waterdrop","hand"],
+    "recommendation": "Simplified mark for digital (header, favicon, social); original illustrative mark retained for print and signage where the hand can be seen."
+  }
+}

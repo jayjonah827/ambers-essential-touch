@@ -1,0 +1,215 @@
+/* ==========================================================================
+   AMBER'S ESSENTIAL TOUCH — DESIGN TOKENS
+   v1.0.0 · 2026-08-26 · generated from AET_FINAL_SPEC.md §5
+
+   Layer rule (enforced by review, not by build):
+     component CSS  reads  Layer 3 only
+     Layer 3        reads  Layer 2 only
+     Layer 2        reads  Layer 1 only
+     Layer 1        references nothing
+
+   Every contrast figure below was measured, not estimated.
+   ========================================================================== */
+
+:root{
+
+/* ---------------------------------------------------------------------------
+   LAYER 1 — PRIMITIVES
+   --------------------------------------------------------------------------- */
+
+/* Core five — Visual Language System board, authoritative */
+--amber-brown:#B37A5A;      /* brand signature · DECORATIVE ONLY · 3.44 on ivory */
+--rose-pink:#D89BAA;        /* accent, gradient stop · NEVER text · 2.19 */
+--soft-cream:#F7F1E8;       /* warm section surface */
+--sage-mist:#A9B8A6;        /* editorial / journal surface · NEVER text · 1.99 */
+--lavender-glow:#D7C6E6;    /* atmospheric gradient, mission surface · NEVER text · 1.53 */
+
+/* Supporting five — fills the board's gaps */
+--deep-rose:#A95870;        /* PRIMARY ACTION · 4.66 on ivory · AA */
+--deep-amber:#6F3F2A;       /* secondary action, accent text · 8.30 · AAA */
+--warm-ivory:#FFF9F3;       /* page background */
+--espresso:#33231E;         /* body text · 14.36 · AAA */
+--warm-gray:#71655F;        /* muted text · 5.39 · AA */
+
+--white:#FFFFFF;
+--border-soft:rgba(111,63,42,.18);
+--scrim:rgba(51,35,30,.55);
+
+/* Retired — kept only so old references fail loudly rather than silently.
+   --amber-500:#B87D4B;   Drive 04_FIGMA_BRIEF
+   --amber-brown-old:#B8734A;  Claude Design spec §4                        */
+
+/* Spacing — 8pt grid */
+--sp-1:4px;   --sp-2:8px;   --sp-3:12px;  --sp-4:16px;  --sp-6:24px;
+--sp-8:32px;  --sp-12:48px; --sp-16:64px; --sp-24:96px; --sp-32:128px;
+
+/* Dimension */
+--radius-sm:2px;
+--radius-card:22px;
+--radius-pill:999px;
+--tap-min:44px;
+--container:1440px;
+--measure:68ch;
+--hero-measure:680px;
+
+/* Elevation */
+--shadow-none:none;
+--shadow-soft:0 8px 28px rgba(51,35,30,.07);
+--shadow-lift:0 16px 44px rgba(51,35,30,.11);
+
+/* Motion */
+--dur-press:80ms;
+--dur-fast:150ms;
+--dur:250ms;
+--dur-slow:350ms;
+--ease:cubic-bezier(.22,.61,.36,1);
+
+/* Type families */
+--font-serif:"Cormorant Garamond",Georgia,"Times New Roman",serif;
+--font-script:"Parisienne","Snell Roundhand",cursive;
+--font-sans:"Manrope",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+
+/* Type scale */
+--size-display:clamp(2.6rem,6.2vw,5.6rem);
+--size-h2:clamp(2rem,4vw,3.4rem);
+--size-h3:clamp(1.35rem,2vw,1.85rem);
+--size-script:clamp(2.3rem,4.6vw,3.9rem);
+--size-lede:clamp(1.05rem,1.5vw,1.25rem);
+--size-body:17px;
+--size-small:14px;
+--size-button:14px;
+--size-eyebrow:11.5px;
+
+--lh-tight:1.03;
+--lh-head:1.12;
+--lh-body:1.65;
+
+--track-eyebrow:.18em;
+--track-button:.09em;
+--track-nav:.05em;
+
+/* Breakpoints — documented; CSS media queries cannot read custom properties */
+--bp-sm:375px; --bp-md:768px; --bp-lg:1024px; --bp-xl:1440px;
+
+/* Gradients — atmospheric and translucent, never neon */
+--grad-amber-rose:linear-gradient(135deg,var(--amber-brown) 0%,var(--deep-rose) 55%,var(--rose-pink) 100%);
+--grad-cream-sage:linear-gradient(160deg,var(--warm-ivory) 0%,#EDF1EA 100%);
+--grad-cream-lav:linear-gradient(160deg,var(--warm-ivory) 0%,#F1EAF7 100%);
+--grad-rose-lav:linear-gradient(135deg,var(--rose-pink) 0%,var(--lavender-glow) 100%);
+--grad-deep:linear-gradient(150deg,var(--deep-rose) 0%,#8A4A45 55%,var(--deep-amber) 100%);
+
+
+/* ---------------------------------------------------------------------------
+   LAYER 2 — SEMANTICS
+   --------------------------------------------------------------------------- */
+
+/* Text — only these four may sit on a light surface at body size */
+--text-primary:var(--espresso);
+--text-muted:var(--warm-gray);
+--text-accent:var(--deep-amber);
+--text-link:var(--deep-rose);
+--text-on-fill:var(--warm-ivory);
+
+/* Surface */
+--surface-page:var(--warm-ivory);
+--surface-raised:var(--white);
+--surface-warm:var(--soft-cream);
+--surface-editorial:var(--grad-cream-sage);
+--surface-mission:var(--grad-cream-lav);
+--surface-deep:var(--grad-deep);
+
+/* Border */
+--border-hairline:var(--border-soft);
+--border-accent:var(--deep-amber);
+--border-focus:var(--deep-rose);
+
+/* Action */
+--action-primary-bg:var(--deep-rose);
+--action-primary-bg-hover:#8E4A5E;
+--action-primary-fg:var(--warm-ivory);
+--action-secondary-fg:var(--deep-amber);
+--action-secondary-border:var(--deep-amber);
+--action-disabled-opacity:.55;
+
+/* Feedback */
+--feedback-error:#B3261E;      /* 6.26 on ivory · AA */
+--feedback-success:#4F6B3F;    /* 5.73 on ivory · AA */
+
+/* Spacing roles */
+--space-section-y:var(--sp-24);
+--space-section-y-sm:var(--sp-16);
+--space-block-y:var(--sp-12);
+--space-card-pad:var(--sp-6);
+--space-page-x:20px;
+--space-page-x-md:40px;
+--space-page-x-lg:72px;
+
+
+/* ---------------------------------------------------------------------------
+   LAYER 3 — COMPONENTS
+   --------------------------------------------------------------------------- */
+
+--button-primary-bg:var(--action-primary-bg);
+--button-primary-fg:var(--action-primary-fg);
+--button-primary-bg-hover:var(--action-primary-bg-hover);
+--button-secondary-fg:var(--action-secondary-fg);
+--button-secondary-border:var(--action-secondary-border);
+--button-radius:var(--radius-pill);
+--button-h-sm:36px;
+--button-h-md:44px;
+--button-h-lg:52px;
+
+--pill-active-bg:var(--deep-rose);
+--pill-active-fg:var(--warm-ivory);
+--pill-idle-bg:var(--soft-cream);
+--pill-idle-fg:var(--espresso);
+--pill-border:var(--border-soft);
+
+--card-bg:var(--surface-raised);
+--card-border:var(--border-soft);
+--card-radius:var(--radius-card);
+--card-shadow:var(--shadow-none);
+--card-shadow-hover:var(--shadow-lift);
+
+--field-h:50px;
+--field-bg:var(--surface-raised);
+--field-border:var(--border-soft);
+--field-border-focus:var(--border-focus);
+
+--focus-ring-width:2px;
+--focus-ring-offset:2px;
+--focus-ring-color:var(--border-focus);
+
+--icon-stroke:1.1px;
+--icon-color:var(--deep-amber);
+--star-color:var(--amber-brown);
+}
+
+/* ==========================================================================
+   THE CONTRAST LAW — do not edit a colour without re-running these
+   ==========================================================================
+
+   ON --warm-ivory #FFF9F3
+     espresso       14.36  AAA   body text
+     deep-amber      8.30  AAA   accent text, eyebrows
+     warm-gray       5.39  AA    muted text
+     deep-rose       4.66  AA    links, primary fill        ← clears by 0.16
+     amber-brown     3.44  ---   large text >=24px only
+     rose-pink       2.19  FAIL  never text
+     sage-mist       1.99  FAIL  never text
+     lavender-glow   1.53  FAIL  never text
+
+   BUTTON FILLS, warm-ivory label
+     deep-rose    4.66  AA    PRIMARY
+     deep-amber   8.30  AAA   secondary / high-contrast
+     amber-brown  3.44  large text only
+     rose-pink    2.19  FAIL
+
+   THREE RULES
+     1. rose-pink, sage-mist, lavender-glow and amber-brown are surfaces,
+        borders, gradients and icons >=24px. Never behind body text.
+     2. deep-rose clears AA by 0.16. Do not lighten it, tint it, or drop it
+        below 100% opacity behind a label.
+     3. Focus rings are 2px deep-rose at 2px offset, on every interactive
+        element, always.
+   ========================================================================== */

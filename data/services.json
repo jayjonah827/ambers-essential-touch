@@ -1,0 +1,60 @@
+{
+  "$comment": "Canonical five from AET_FINAL_SPEC §3 (Amber's flyer, rank 1). Prices reconciled against her own published menu at ambersessentialtouch.net/services. Where the flyer names a service her menu does not price, price.verified is false and D-7 blocks it.",
+  "canonical": [
+    { "id": "customized-facials", "name": "Customized Facials",
+      "description": { "value": "Relax, reset and reveal your glow with a facial made just for your skin.", "verified": true, "source": "flyer" },
+      "tiers": [
+        { "name": "Basic Facial", "price": 85, "duration": "70 min", "verified": true, "source": "net-menu" },
+        { "name": "Customized Facial", "price": 150, "duration": "80–90 min", "verified": true, "source": "net-menu", "includes": "Basic plus chemical peel, ultrasound, or LED therapy" },
+        { "name": "Teen Facial", "price": 65, "duration": null, "ages": "9–19", "verified": true, "source": "net-menu" }
+      ] },
+    { "id": "chemical-peels", "name": "Chemical Peels",
+      "description": { "value": "Improve tone, texture and clarity with professional peels for real results.", "verified": true, "source": "flyer" },
+      "tiers": [ { "name": "Chemical Peel", "price": null, "verified": false, "blockedBy": "D-7", "note": "Priced only as part of the $150 Customized Facial on her menu. Standalone price unknown." } ] },
+    { "id": "full-body-waxing", "name": "Full Body Waxing",
+      "description": { "value": "Smooth, confidence-boosting results. Brazilian specialist.", "verified": true, "source": "flyer" },
+      "priceFloor": { "value": 10, "verified": true, "source": "net-menu", "note": "Hands and feet. Not $25 — that figure was placeholder and was live until 2026-08-06." },
+      "tiers": [
+        { "name": "Brow Wax", "price": 20, "verified": true }, { "name": "Brow Sculpting", "price": 25, "verified": true },
+        { "name": "Lip Wax", "price": 15, "verified": true }, { "name": "Chin Wax", "price": 15, "from": true, "verified": true },
+        { "name": "Under Arms", "price": 15, "verified": true }, { "name": "Full Arm (incl. hands)", "price": 45, "verified": true },
+        { "name": "Half Arm", "price": 25, "verified": true }, { "name": "Hands", "price": 10, "verified": true },
+        { "name": "Feet", "price": 10, "verified": true }, { "name": "Full Leg", "price": 65, "verified": true },
+        { "name": "Half Leg", "price": 35, "verified": true, "note": "Includes knee or foot, not both" },
+        { "name": "Back Wax (women)", "price": 35, "verified": true }, { "name": "Back Wax (men)", "price": 40, "from": true, "verified": true },
+        { "name": "Chest Wax (women)", "price": 15, "verified": true }, { "name": "Chest Wax (men)", "price": 25, "from": true, "verified": true },
+        { "name": "Abdomen (women)", "price": 10, "verified": true }, { "name": "Abdomen (men)", "price": 20, "from": true, "verified": true },
+        { "name": "Shoulders", "price": 15, "verified": true }, { "name": "Hair line / sideburns", "priceRange": [15, 25], "verified": true },
+        { "name": "Bikini (women)", "price": 45, "verified": true }, { "name": "Bikini (men)", "price": 55, "verified": true },
+        { "name": "V Line", "price": 60, "verified": true },
+        { "name": "Brazilian 1st time (women)", "price": 90, "from": true, "verified": true },
+        { "name": "Brazilian 1st time (men)", "price": 95, "from": true, "verified": true },
+        { "name": "Brazilian maintenance (women)", "price": 65, "verified": true },
+        { "name": "Brazilian maintenance (men)", "price": 75, "verified": true }
+      ] },
+    { "id": "wispy-lashes", "name": "Individual Wispy Lashes",
+      "description": { "value": "Enhance your natural beauty with soft, fluffy, custom lash sets.", "verified": true, "source": "flyer" },
+      "tiers": [ { "name": "Fan Cluster Lashes, D Curl", "price": 60, "verified": true, "source": "IG", "note": "Intro/promotional price — confirm whether still current." } ] },
+    { "id": "led-light-therapy", "name": "LED Light Therapy",
+      "description": { "value": "Heal, calm and rejuvenate your skin with LED technology.", "verified": true, "source": "flyer" },
+      "tiers": [ { "name": "LED Facial", "price": 50, "duration": "30 min", "verified": true, "source": "net-menu", "note": "Face cleanse, gel + LED mask with moisture" } ] }
+  ],
+  "alsoOffered": [
+    { "id": "radio-frequency-facial", "name": "Radio Frequency Facial", "price": null, "verified": false, "blockedBy": "D-7", "source": "flyer" }
+  ],
+  "consultation": { "name": "Consult", "price": 25, "duration": "20 min", "verified": true, "source": "net-menu",
+    "warning": "NOT free. The live site claimed 'INCLUDED WITH EVERY VISIT' until 2026-08-06." },
+  "bundles": [
+    { "name": "Brazilian, Full Arm & Full Leg", "price": 165, "value": 195, "verified": true },
+    { "name": "Bikini, Full Arm & Full Leg", "price": 135, "value": 155, "verified": true },
+    { "name": "Back, Brazilian, Full Arm, Full Leg", "price": 180, "value": 215, "verified": true },
+    { "name": "Buy 6 Brazilian waxes, get 1 free", "price": 325, "value": 390, "verified": true },
+    { "name": "Buy 6 Bikini waxes, get 1 free (women)", "price": 225, "value": 270, "verified": true },
+    { "name": "Buy 6 Bikini waxes, get 1 free (men)", "price": 275, "value": 330, "verified": true }
+  ],
+  "removed": [
+    { "name": "Manicure", "why": "Not a current service — absent from Amber's own list. AET_FINAL_SPEC §2." },
+    { "name": "Monthly Ritual Plan", "why": "Invented by the design file. No counterpart on her menu." },
+    { "name": "Acne-Focused Treatment", "why": "No standalone counterpart on her menu; acne is addressed inside a Customized Facial." }
+  ]
+}

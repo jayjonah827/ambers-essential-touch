@@ -1,0 +1,114 @@
+{
+  "$comment": "Provenance ledger. Authority hierarchy from AET_FINAL_SPEC.md §1. A lower rank may fill a gap, never overwrite a higher rank.",
+  "version": "1.0.0",
+  "generated": "2026-08-26",
+  "authority": [
+    {
+      "rank": 1,
+      "source": "Amber's own flyer + Instagram @ambersessential",
+      "governs": "Every business fact, service list, tagline, credential"
+    },
+    {
+      "rank": 2,
+      "source": "Visual Language System board (2026)",
+      "governs": "Palette, typography roles, component look, brand essence"
+    },
+    {
+      "rank": 3,
+      "source": "amber_cultural_intelligence_full_reference_metadata.xlsx",
+      "governs": "Asset provenance, canonical-path ruling, risk flags"
+    },
+    {
+      "rank": 4,
+      "source": "Claude Design project 69d0ee60-7498-49af-8860-2132fb484601",
+      "governs": "Page order, section copy, interaction spec"
+    },
+    {
+      "rank": 5,
+      "source": "Drive build-out bundle 01-07",
+      "governs": "Stack decisions, phase triggers, pricing"
+    }
+  ],
+  "harvested": [
+    {
+      "id": "net-menu",
+      "what": "Itemised price menu",
+      "from": "https://ambersessentialtouch.net/services",
+      "date": "2026-08-05",
+      "trust": "high — Amber's own published site"
+    },
+    {
+      "id": "net-about",
+      "what": "Bio + two named testimonials",
+      "from": "https://ambersessentialtouch.net/about",
+      "date": "2026-08-05",
+      "trust": "high — Amber's own published site"
+    },
+    {
+      "id": "final-spec",
+      "what": "Tokens, corrections, open decisions",
+      "from": "spec/AET_FINAL_SPEC.md",
+      "date": "2026-08-26",
+      "trust": "authoritative — supersedes all prior specs"
+    },
+    {
+      "id": "dc-project",
+      "what": "15-section page order, section copy",
+      "from": "Claude Design 69d0ee60",
+      "date": "2026-08-06",
+      "trust": "rank 4 — page structure only, its pricing data was placeholder"
+    }
+  ],
+  "retired": [
+    {
+      "fact": "Tagline 'Where Skin Care Becomes Ritual'",
+      "replaced_by": "Where Skin Meets Soul",
+      "why": "Amber's flyer is rank 1"
+    },
+    {
+      "fact": "18 years licensed",
+      "replaced_by": "19 years licensed, 16 years owner",
+      "why": "Amber's flyer is rank 1"
+    },
+    {
+      "fact": "Domain ambersessentialtouch.com",
+      "replaced_by": "ambersessentialtouch.net",
+      "why": "Flyer + IG both cite .net"
+    },
+    {
+      "fact": "Address 123 Serenity Lane, Oakland",
+      "replaced_by": null,
+      "why": "FABRICATED — VLS board placeholder. Never publish."
+    },
+    {
+      "fact": "Phone (510) 228-4437",
+      "replaced_by": "(510) 228-6657",
+      "why": "FABRICATED — VLS board placeholder."
+    },
+    {
+      "fact": "Email hello@amberessentialtouch.com",
+      "replaced_by": "ambersessentialtouch@gmail.com",
+      "why": "FABRICATED — VLS board placeholder."
+    },
+    {
+      "fact": "Manicure service",
+      "replaced_by": null,
+      "why": "Not a current service. Absent from Amber's own list."
+    },
+    {
+      "fact": "Monthly Ritual Plan $180/mo",
+      "replaced_by": null,
+      "why": "Invented by the design file. No counterpart on her menu."
+    },
+    {
+      "fact": "Skin Consultation 'included with every visit'",
+      "replaced_by": "Consult $25 / 20 min",
+      "why": "She charges for it. Was live and wrong until 2026-08-06."
+    },
+    {
+      "fact": "amber-brown #B8734A and #B87D4B",
+      "replaced_by": "#B37A5A",
+      "why": "VLS board wins. All three fail AA for body text anyway."
+    }
+  ]
+}

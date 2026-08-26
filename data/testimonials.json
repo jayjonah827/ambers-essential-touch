@@ -1,0 +1,16 @@
+{
+  "$comment": "Per AET_FINAL_SPEC D-5, testimonials need Amber's approval or documented permission. Only entries with verified:true may render as real quotes.",
+  "approved": [
+    { "id": "jamiah-p", "name": "Jamiah P.", "verified": true, "source": "net-about — Amber's own published site",
+      "meta": "Client of more than ten years",
+      "quote": "I've been a client of Amber's for over a decade. Her dedication to the quality of her work and genuine care to ensure a relaxing experience has been consistent and unwavering. Amber welcomes you into her space which can only be described as a pristine, warm source of rejuvenation with a full menu of services inclusive of everyone." },
+    { "id": "benjamin-j", "name": "Benjamin J.", "verified": true, "source": "net-about — Amber's own published site",
+      "meta": "Client", "quote": "Amber is an amazing person, and skilled at her trade." }
+  ],
+  "unverified": [
+    { "id": "cinthia-z", "name": "Cinthia Z.", "verified": false, "blockedBy": "D-5",
+      "quote": "Amber transformed my skin and my self-confidence. I finally feel seen.",
+      "source": "VLS board", "warning": "AET_FINAL_SPEC §2 lists this as unverified board filler. It was live on the Render site as a real testimonial until 2026-08-26. Do not republish without permission." }
+  ],
+  "aggregate": { "rating": "4.9", "count": "25", "platform": "Birdeye", "verified": true }
+}

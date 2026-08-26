@@ -1,0 +1,137 @@
+{
+  "$comment": "Open decisions from AET_FINAL_SPEC §13. Launch gate: no page ships while it still contains a fabricated fact.",
+  "decisions": [
+    {
+      "id": "D-1",
+      "question": "Which logo is the production mark — original illustrative/script, or simplified lotus/A?",
+      "owner": "Amber",
+      "blocks": [
+        "header",
+        "favicon",
+        "print"
+      ],
+      "status": "open",
+      "note": "Recommendation in spec §10: simplified for digital, original for print/signage."
+    },
+    {
+      "id": "D-2",
+      "question": "Publish a street address, or 'Pinole, CA — address on booking'?",
+      "owner": "Amber",
+      "status": "resolved",
+      "severity": "resolved",
+      "note": "The spec inferred a home business from the flyer and the #homebusinesses hashtag and recommended withholding. That inference was wrong. The address was briefly stripped from contact.html and js/data.js on 2026-08-26 and restored the same session.",
+      "resolution": "Publish the street address. 1622 Michael Dr, Pinole, CA 94564 is the shop's address.",
+      "resolvedBy": "Jonah",
+      "resolvedOn": "2026-08-26"
+    },
+    {
+      "id": "D-3",
+      "question": "Confirm 19 years licensed / 16 years owner; supply licence number",
+      "owner": "Amber",
+      "blocks": [
+        "about page"
+      ],
+      "status": "partial",
+      "note": "Years corrected from 18 to 19/16 on 2026-08-26. Licence number still missing."
+    },
+    {
+      "id": "D-4",
+      "question": "Confirm real opening hours — VLS board and Drive bundle conflict",
+      "owner": "Amber",
+      "blocks": [
+        "visit page",
+        "booking"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "D-5",
+      "question": "Approve 3 testimonials with names, or pull from Google with permission",
+      "owner": "Amber",
+      "blocks": [
+        "testimonials"
+      ],
+      "status": "partial",
+      "note": "Two are now sourced from her own about page (Jamiah P., Benjamin J.). Cinthia Z. remains unverified board filler."
+    },
+    {
+      "id": "D-6",
+      "question": "Commercial rights for Firefly/Gemini imagery",
+      "owner": "Jonah",
+      "blocks": [
+        "any public launch"
+      ],
+      "status": "open"
+    },
+    {
+      "id": "D-7",
+      "question": "Prices for peels, lashes, LED, RF facial",
+      "owner": "Amber",
+      "blocks": [
+        "services"
+      ],
+      "status": "partial",
+      "note": "LED ($50) and lashes ($60 intro) now sourced. Standalone peel and RF facial still unpriced."
+    },
+    {
+      "id": "D-8",
+      "question": "Booking provider — Square, Calendly, Acuity, or Wix",
+      "owner": "Jonah",
+      "blocks": [
+        "/book"
+      ],
+      "status": "open",
+      "note": "Swap point is sendRequest() in js/booking.js."
+    },
+    {
+      "id": "D-9",
+      "question": "Is æve a sub-line of AET or a separate brand?",
+      "owner": "Amber + Jonah",
+      "blocks": [
+        "shop architecture"
+      ],
+      "status": "open",
+      "note": "Spec recommends a distinct token set; do not merge palettes."
+    },
+    {
+      "id": "D-10",
+      "question": "Before/after images plus written client consent",
+      "owner": "Amber",
+      "blocks": [
+        "results"
+      ],
+      "status": "open"
+    }
+  ],
+  "infrastructure": [
+    {
+      "id": "I-1",
+      "question": "Point ambersessentialtouch.com at Render",
+      "owner": "Jonah",
+      "status": "open",
+      "note": "Domain registered 2026-08-06 via Google Workspace signup; partner registrar Squarespace. DNS is managed at Squarespace (credentials via Google Admin > Account > Domains > Manage Domains > View Details). Apex A records and the www CNAME still point at Squarespace 'Coming Soon'. Render CLI has no domain command — dashboard only."
+    },
+    {
+      "id": "I-2",
+      "question": "Which domain is canonical — .com or .net?",
+      "owner": "Amber + Jonah",
+      "status": "open",
+      "severity": "high",
+      "note": "AET_FINAL_SPEC §2 says .net, because Amber's flyer and IG both print it. The .com was bought later and the site's canonical tag currently points at the Render origin. A live Squarespace site also sits on .net."
+    },
+    {
+      "id": "I-3",
+      "question": "Retire the Squarespace site on .net?",
+      "owner": "Jonah",
+      "status": "open",
+      "note": "Audited 2026-08-05: 6 pages, real price menu, two real testimonials, empty store, no booking widget, no MX. Its menu is the source for data/services.json."
+    },
+    {
+      "id": "I-4",
+      "question": "Authorise the Drive connector for the ambersessentialtouch.com Workspace account",
+      "owner": "Jonah",
+      "status": "open",
+      "note": "Amber's Workspace Drive is unreachable from the jayjouna@gmail.com connector. Blocks any folder consolidation."
+    }
+  ]
+}
