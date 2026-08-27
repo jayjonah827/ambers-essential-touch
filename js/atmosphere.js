@@ -35,8 +35,11 @@
      element far off-screen can already carry a large offset the instant it
      scrolls into view — that's what was driving foreground cards up into the
      static heading above them. Clamping the input (not the 2x/.5x relationship
-     itself) keeps every element reachable and never overlapping its neighbors. */
-  var localInputClamp = 30;
+     itself) keeps every element reachable and never overlapping its neighbors.
+     30 (±60px) still collided with book.html's 40px policies margin — the
+     site's tightest observed gap is ~32-40px, so the clamp has to fit under
+     that everywhere, not just on the homepage instance that got checked first. */
+  var localInputClamp = 16;
 
   function measure() {
     foreground.forEach(function (element) {
