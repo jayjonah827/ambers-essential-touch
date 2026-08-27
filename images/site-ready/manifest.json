@@ -1,0 +1,112 @@
+{
+  "version": "2026-08-26-editorial-v4",
+  "active_directory": "images/site-ready/editorial",
+  "generator": "OpenAI built-in image generation",
+  "mode": "style-transfer over the original photorealistic-natural service set",
+  "export": {
+    "format": "WebP",
+    "dimensions": "1536x1024",
+    "quality": 88,
+    "master_format": "PNG"
+  },
+  "editorial_direction": "One intimate skincare campaign universe: a continuous dark-walnut and soft-sage environmental base, houseplant shadow texture, warm mineral plaster, oat linen, a restrained dusty-plum plane, directional late-afternoon side light, soft sculptural shadows, lower saturation, 35mm film character, gentle grain, honest skin texture, and editorial rather than instructional crops.",
+  "style_anchor": "editorial/service-custom-facial.webp",
+  "identity_boundary": "Generated people are fictional generalized commercial models and are not Amber or Amber's clients. Amber's supplied real photographs are used for homepage hero and About/founder identity surfaces; they remain still and are excluded from parallax.",
+  "evidence_boundary": "Generated imagery is presentation photography only. It is not client-result evidence and is not used as a before-and-after claim.",
+  "product_boundary": "Product imagery represents use, texture, and ingredients. It does not invent Amber's bottle, jar, label, box, or retail packaging. The product set uses sparse evening primrose, coconut, muted hibiscus, and greenery with softened industrial accents in warm brushed metal and ribbed or smoked glass.",
+  "background_boundary": "The walnut-and-sage environment is generated presentation texture inspired by the supplied wood-flow reference. Sparkle is rendered separately in CSS so motion can be reduced or disabled for accessibility.",
+  "legacy_set": "The original mixed-environment JPEGs remain one directory above for comparison and rollback. Lossless editorial PNG masters remain beside the optimized WebP files consumed by the site.",
+  "assets": [
+    {
+      "file": "editorial/walnut-sage-background-v1.webp",
+      "slot": "Continuous site background",
+      "source_generation": "exec-1b38599b-5baf-4f88-bff1-052a79b49ad8.png",
+      "sha256": "d88fd7517eebd68c8c3b43f6d4aee02cc157d0b04e0050b5eaf044e56d0a4ff5"
+    },
+    {
+      "file": "editorial/hero-booking.webp",
+      "slot": "Retired generated homepage hero",
+      "status": "retired in favor of Amber's supplied photograph",
+      "source_generation": "exec-1facd2c2-1fb4-472e-b0cf-05f9710e391d.png",
+      "sha256": "d82275532bd7cf4c785cd88002f91b30f9cd752b7562fed7b5caacb270f59b20"
+    },
+    {
+      "file": "editorial/service-custom-facial.webp",
+      "slot": "Customized Facials",
+      "source_generation": "exec-3123fa52-0d8f-499e-8482-6805f37d924c.png",
+      "sha256": "16c5569b74e3e78a13cd483ca9a2e4e4b5ba861833aa7abaca7c8f0c742f6edf"
+    },
+    {
+      "file": "editorial/service-chemical-peel.webp",
+      "slot": "Chemical Peels",
+      "source_generation": "exec-1c3829a4-7782-4b33-81c2-8e3b0e55d297.png",
+      "sha256": "39edfd1ad2afa4635e247cc87deb65edbb249c5a08d86a5dc8e4df58a1f504a6"
+    },
+    {
+      "file": "editorial/service-body-waxing.webp",
+      "slot": "Full Body Waxing",
+      "source_generation": "exec-589915dc-6989-416c-a813-908927c5453e.png",
+      "sha256": "198913aac491881c081a830332c3c7c80b193df3240cbcbcd85dff59f07df3db"
+    },
+    {
+      "file": "editorial/service-wispy-lashes.webp",
+      "slot": "Individual Wispy Lashes",
+      "source_generation": "exec-8c7394d2-5601-4b80-8167-9dee1d294d26.png",
+      "sha256": "5edcd2906f0633d60012e44e381e40ff34e9e49600c914c4df82d8d4a5c73006"
+    },
+    {
+      "file": "editorial/service-led-therapy.webp",
+      "slot": "LED Light Therapy",
+      "source_generation": "exec-df3244cd-7c28-4932-af24-06bd61520980.png",
+      "sha256": "d5d98952dc187897d96fae021d27f0b1f7feaafcd7a22b4ff18e5c751b821929"
+    },
+    {
+      "file": "editorial/service-radio-frequency.webp",
+      "slot": "Radio Frequency Facial",
+      "source_generation": "exec-be707caf-76d7-4a04-b6e2-3d2783e1d135.png",
+      "sha256": "339c5c5ada1844f26441823b2855d867b7006a8f842c310c9f34e3ad8f975ddc"
+    },
+    {
+      "file": "editorial/journal-melanin.webp",
+      "slot": "Melanin and Skincare article",
+      "source_generation": "exec-ca59fd81-8ba3-45bb-b537-641d758cf870.png",
+      "sha256": "2aa02ac4420f6dfef6f8b68b925ba4ed58097c8c5512795d5960517ffd7f062b"
+    },
+    {
+      "file": "editorial/journal-aftercare.webp",
+      "slot": "Aftercare article",
+      "source_generation": "exec-3ba08dcb-c1d7-44a9-b278-ec1a95747efb.png",
+      "sha256": "a77aadddac0e18453b957c79a109bb7060b8d6535b97b174097a85204586aa80"
+    },
+    {
+      "file": "editorial/journal-botanical-oil.webp",
+      "slot": "Botanical oils article",
+      "source_generation": "exec-9c8c726a-54de-43d3-a4d6-a099a945fbf9.png",
+      "sha256": "c30f9d5fb89a66a23c744d4307ee0ec247ef437a92b08a4db31f8b9e28550c39"
+    },
+    {
+      "file": "editorial/product-virgin-oil-botanical-v2.webp",
+      "slot": "Purely Essential Virgin Oil",
+      "source_generation": "exec-af847905-68ae-406e-8f89-00442c87999d.png",
+      "sha256": "17db268a1e8a23cf9a6877e7cbf63703f04337b2deb49036bb8a38edbfde11f7"
+    },
+    {
+      "file": "editorial/product-body-butter-botanical-v2.webp",
+      "slot": "Whipped Body Butter",
+      "source_generation": "exec-e635ffb6-2cfc-489e-b020-94ed53b3e7c8.png",
+      "sha256": "6eae248661ad2794dd85e1280a8419e31e31385e43c50b6ce2aabb331fa03550"
+    },
+    {
+      "file": "editorial/product-crystal-blend-botanical-v2.webp",
+      "slot": "Crystal-Infused Blends",
+      "source_generation": "exec-919a6c0c-c77c-4cb8-babe-e221ebf0ce9f.png",
+      "sha256": "394e1cee93648b94bed713917a9d12cf85fb44463a9cafbd29d7d819ae03bb81"
+    },
+    {
+      "file": "editorial/product-starter-ritual-botanical-v2.webp",
+      "slot": "Starter Ritual Kit",
+      "source_generation": "exec-29198dd4-3f9f-4d79-bcc1-cd5cef507d6f.png",
+      "sha256": "179c7a45bf417c3a86d05854a083a601c44dcebdbbb7699bdae3804f0be13a54"
+    }
+  ]
+}

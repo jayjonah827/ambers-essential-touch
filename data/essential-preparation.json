@@ -1,0 +1,20 @@
+{
+  "$comment": "Machine-readable rendering of the user-supplied Essential Preparation form. Wording is preserved; the browser form opens an email and does not silently store sensitive answers.",
+  "version": "1.0.0",
+  "source": "reference/source-inputs/essential-preparation.md",
+  "title": "Essential Preparation",
+  "fields": [
+    { "id": "name", "label": "Name", "type": "text", "required": true },
+    { "id": "email", "label": "Email", "type": "email", "required": true },
+    { "id": "preferredContact", "label": "Preferred contact", "type": "radio", "required": true, "options": ["Email", "Text"] },
+    { "id": "spirit", "label": "What's on your spirit?", "type": "checkbox", "required": true, "minSelections": 1, "maxSelections": 2, "options": ["Stress/anxiety", "Sleep", "Focus/clarity", "Emotional grounding", "Spiritual/ritual work", "General guidance"] },
+    { "id": "heart", "label": "What's on your heart?", "type": "radio", "required": true, "options": ["Overwhelmed", "Low energy", "Unfocused", "Emotionally heavy", "Stable but wants support"] },
+    { "id": "teenSenior", "label": "Are you a Teen or a Senior?", "type": "radio", "required": true, "options": ["Yes", "No"] },
+    { "id": "familiar", "label": "Are you familiar with Amber's proprietary oil blend?", "type": "radio", "required": true, "options": ["Yes", "No"] },
+    { "id": "aroma", "label": "Aromatic preferences?", "type": "checkbox", "options": ["Warm / amber", "Floral", "Citrus", "Earthy/woody", "Sweet", "Not sure"] },
+    { "id": "mind", "label": "What's on your mind?", "type": "textarea", "required": false },
+    { "id": "lookingFor", "label": "Are you looking for:", "type": "radio", "required": true, "options": ["A consultation", "Product recommendations", "Both"] },
+    { "id": "notes", "label": "Anything Amber should know before working with you?", "type": "textarea", "required": false },
+    { "id": "updates", "label": "I'd like to receive updates, rituals, and product drops", "type": "checkbox", "required": false }
+  ]
+}

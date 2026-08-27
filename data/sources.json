@@ -57,6 +57,48 @@
       "from": "Claude Design 69d0ee60",
       "date": "2026-08-06",
       "trust": "rank 4 — page structure only, its pricing data was placeholder"
+    },
+    {
+      "id": "voice-guide-2026-08",
+      "what": "Voice, rhythm, vocabulary, and medical-claim boundaries",
+      "from": "reference/source-inputs/amber-voice-guide.md",
+      "date": "2026-08-26",
+      "trust": "user-supplied tone reference — does not override verified business facts"
+    },
+    {
+      "id": "essential-preparation-2026-08",
+      "what": "Consultation and product-guidance preparation form",
+      "from": "reference/source-inputs/essential-preparation.md",
+      "date": "2026-08-26",
+      "trust": "user-supplied form wording — rendered directly in book.html"
+    },
+    {
+      "id": "essential-oils-structure-2026-08",
+      "what": "Product ingredients, uses, internal costing notes, marketing drafts, and label directions",
+      "from": "reference/source-inputs/essential-oils-structure.html",
+      "date": "2026-08-26",
+      "trust": "mixed user-supplied research and generated planning — product prices and claims require reconciliation before publication"
+    },
+    {
+      "id": "walnut-sparkle-reference-2026-08",
+      "what": "Walnut-flow and sparkle atmosphere reference",
+      "from": "reference/source-inputs/walnut-sparkle-reference.png",
+      "date": "2026-08-26",
+      "trust": "visual reference only — not a business-fact source"
+    },
+    {
+      "id": "birdeye-public-2026-08",
+      "what": "Current public rating, review count, and Pinole location",
+      "from": "https://reviews.birdeye.com/ambers-essential-touch-170035898795803",
+      "date": "2026-08-26",
+      "trust": "public profile observed at 4.9 across 26 reviews — link outward; do not republish unapproved review text"
+    },
+    {
+      "id": "yelp-public-profiles-2026-08",
+      "what": "Current Pinole and earlier Oakland public review surfaces",
+      "from": "reviews.html external profile links",
+      "date": "2026-08-26",
+      "trust": "reference links only — Yelp blocked automated page inspection; no Yelp review text was ingested"
     }
   ],
   "retired": [

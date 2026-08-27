@@ -4,11 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Book · Amber's Essential Touch · Pinole, CA</title>
-<meta name="description" content="Save your ritual. Pick the service that fits your skin this week — facials, waxing, acne care, manicures. New clients welcomed. By appointment in Pinole, CA.">
+<meta name="description" content="Request an appointment for customized facials, chemical peels, full body waxing, wispy lashes, LED therapy, radio frequency facials, or a skin consultation in Pinole, CA.">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<link rel="canonical" href="https://www.ambersessentialtouch.net/book">
+<meta property="og:title" content="Book a Ritual · Amber's Essential Touch · Pinole, CA">
+<meta property="og:description" content="Choose a service and preferred visit window. Amber confirms every appointment request directly.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ambersessentialtouch.net/book">
+<meta property="og:image" content="https://www.ambersessentialtouch.net/images/site-ready/editorial/service-custom-facial.webp">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Parisienne&family=Manrope:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/atmosphere.css">
 <link rel="icon" type="image/png" href="img/logo-badge.png">
 </head>
 <body>
@@ -21,7 +29,7 @@
       <img class="nav__logo" src="img/logo-badge.png" alt="Amber's Essential Touch — lotus monogram logo">
       <span class="nav__name">
         <span class="nav__name-main">Amber's Essential Touch</span>
-        <span class="nav__name-sub">PREMIUM BOTANICAL SKINCARE</span>
+        <span class="nav__name-sub">RITUAL-BASED SKIN PRACTICE</span>
       </span>
     </a>
     <div class="nav__links">
@@ -56,7 +64,7 @@
       <div class="hero__copy" style="flex: 1 1 100%">
         <p class="eyebrow eyebrow--rose">By Appointment Only</p>
         <h1 style="font-size: clamp(42px, 5.5vw, 76px)">Save your <em class="em-rose">ritual</em>.</h1>
-        <p class="lede" style="margin-bottom: 0">Pick the service that fits your skin this week. New clients welcomed. Every visit begins with a short consultation.</p>
+        <p class="lede" style="margin-bottom: 0">Choose a service and your preferred visit window. Amber confirms every request directly, so you always know who you are booking with.</p>
       </div>
     </div>
   </section>
@@ -75,7 +83,7 @@
         <!-- STEP 1 · SERVICE -->
         <div data-panel="1">
           <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Choose your treatment.</h2>
-          <p class="small" style="margin: 0 0 22px">Prices vary by skin, not by card on file. Not sure? Start with a consultation.</p>
+          <p class="small" style="margin: 0 0 22px">Choose from the current service menu. When a standalone price depends on consultation, the listing says so. Not sure? Start with a $25 skin consultation.</p>
           <div id="svc-list" style="display: flex; flex-direction: column; gap: 12px"></div>
           <div class="booking-nav">
             <span></span>
@@ -85,23 +93,21 @@
 
         <!-- STEP 2 · DAY & TIME -->
         <div data-panel="2" hidden>
-          <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Pick a day and time.</h2>
-          <p class="small" style="margin: 0 0 22px">Studio days: Wed–Fri 9:30a–7:30p · Sat 9:30a–5p · Sun 11a–2p. Requests need 24 hours' notice.</p>
-          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 24px">
-            <div class="cal">
-              <div class="cal__head">
-                <button class="cal__nav" id="cal-prev" aria-label="Previous month">‹</button>
-                <span class="cal__title" id="cal-title"></span>
-                <button class="cal__nav" id="cal-next" aria-label="Next month">›</button>
-              </div>
-              <div class="cal__grid" id="cal-grid">
-                <span class="cal__dow">S</span><span class="cal__dow">M</span><span class="cal__dow">T</span><span class="cal__dow">W</span><span class="cal__dow">T</span><span class="cal__dow">F</span><span class="cal__dow">S</span>
-              </div>
-            </div>
-            <div>
-              <p class="small" id="slot-label" style="margin: 0 0 14px">Pick an open day to see times.</p>
-              <div class="slot-grid" id="slot-grid"></div>
-            </div>
+          <h2 style="font-size: clamp(26px, 3vw, 38px); margin-bottom: 6px">Choose a preferred visit window.</h2>
+          <p class="small" style="margin: 0 0 22px">This is an appointment request, not a live availability calendar. Amber will confirm your date and time by text or email.</p>
+          <div class="form-grid">
+            <label class="field">Preferred date *
+              <input type="date" id="preferred-date" required>
+            </label>
+            <label class="field">Preferred time window *
+              <select id="preferred-time" required>
+                <option value="" selected disabled>Select…</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>No preference</option>
+              </select>
+            </label>
           </div>
           <div class="booking-nav">
             <button class="btn btn--ghost" id="back-1">BACK</button>
@@ -201,9 +207,8 @@
             <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 24px">
               <a class="btn btn--primary" id="send-sms" href="#">TEXT THE REQUEST TO AMBER</a>
               <a class="btn btn--ghost" id="send-email" href="#">EMAIL IT INSTEAD</a>
-              <a class="btn btn--ghost" id="send-ics" href="#">ADD TO MY CALENDAR</a>
             </div>
-            <p class="note-italic">Aftercare is part of the treatment. See you soon.</p>
+            <p class="note-italic">Add the visit to your calendar after Amber confirms the exact date and time.</p>
           </div>
         </div>
       </div>
@@ -217,7 +222,7 @@
         </details>
         <details class="policy">
           <summary>Lateness</summary>
-          <p>15-minute grace, then we reschedule so your treatment never gets rushed.</p>
+          <p>15-minute grace, then Amber reschedules so your treatment never gets rushed.</p>
         </details>
         <details class="policy">
           <summary>Patch test</summary>
@@ -236,6 +241,126 @@
     </div>
   </section>
 
+  <section class="section" id="essential-preparation">
+    <div class="wrap wrap--narrow">
+      <div class="prep-shell">
+        <div class="prep-intro">
+          <p class="eyebrow">Before Amber prepares your guidance</p>
+          <h2>Essential <em class="em-rose">Preparation</em>.</h2>
+          <p class="lede" style="margin-bottom:0">A few intentional questions help Amber understand what you want to carry into the consultation. Choose what feels true today.</p>
+        </div>
+
+        <form id="essential-preparation-form">
+          <div class="prep-grid">
+            <fieldset class="prep-group prep-group--wide">
+              <legend>Client information</legend>
+              <div class="form-grid">
+                <label class="field">Name *
+                  <input type="text" name="name" required autocomplete="name">
+                </label>
+                <label class="field">Email *
+                  <input type="email" name="email" required autocomplete="email">
+                </label>
+              </div>
+              <p class="prep-group__hint" style="margin-top:16px">Preferred contact</p>
+              <div class="prep-options prep-options--columns">
+                <label class="check"><input type="radio" name="preferredContact" value="Email" required> Email</label>
+                <label class="check"><input type="radio" name="preferredContact" value="Text"> Text</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group">
+              <legend>What's on your spirit?</legend>
+              <p class="prep-group__hint">Select one or two</p>
+              <div class="prep-options">
+                <label class="check"><input type="checkbox" name="spirit" value="Stress/anxiety"> Stress/anxiety</label>
+                <label class="check"><input type="checkbox" name="spirit" value="Sleep"> Sleep</label>
+                <label class="check"><input type="checkbox" name="spirit" value="Focus/clarity"> Focus/clarity</label>
+                <label class="check"><input type="checkbox" name="spirit" value="Emotional grounding"> Emotional grounding</label>
+                <label class="check"><input type="checkbox" name="spirit" value="Spiritual/ritual work"> Spiritual/ritual work</label>
+                <label class="check"><input type="checkbox" name="spirit" value="General guidance"> General guidance</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group">
+              <legend>What's on your heart?</legend>
+              <p class="prep-group__hint">Choose one</p>
+              <div class="prep-options">
+                <label class="check"><input type="radio" name="heart" value="Overwhelmed" required> Overwhelmed</label>
+                <label class="check"><input type="radio" name="heart" value="Low energy"> Low energy</label>
+                <label class="check"><input type="radio" name="heart" value="Unfocused"> Unfocused</label>
+                <label class="check"><input type="radio" name="heart" value="Emotionally heavy"> Emotionally heavy</label>
+                <label class="check"><input type="radio" name="heart" value="Stable but wants support"> Stable but wants support</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group">
+              <legend>Are you a teen or a senior?</legend>
+              <div class="prep-options prep-options--columns">
+                <label class="check"><input type="radio" name="teenSenior" value="Yes" required> Yes</label>
+                <label class="check"><input type="radio" name="teenSenior" value="No"> No</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group">
+              <legend>Familiar with Amber's oil blend?</legend>
+              <div class="prep-options prep-options--columns">
+                <label class="check"><input type="radio" name="familiar" value="Yes" required> Yes</label>
+                <label class="check"><input type="radio" name="familiar" value="No"> No</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group prep-group--wide">
+              <legend>Aromatic preferences?</legend>
+              <p class="prep-group__hint">Select any</p>
+              <div class="prep-options prep-options--columns">
+                <label class="check"><input type="checkbox" name="aroma" value="Warm / amber"> Warm / amber</label>
+                <label class="check"><input type="checkbox" name="aroma" value="Floral"> Floral</label>
+                <label class="check"><input type="checkbox" name="aroma" value="Citrus"> Citrus</label>
+                <label class="check"><input type="checkbox" name="aroma" value="Earthy/woody"> Earthy/woody</label>
+                <label class="check"><input type="checkbox" name="aroma" value="Sweet"> Sweet</label>
+                <label class="check"><input type="checkbox" name="aroma" value="Not sure"> Not sure</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group prep-group--wide">
+              <legend>What is on your mind?</legend>
+              <label class="field">Short answer
+                <textarea name="mind"></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset class="prep-group">
+              <legend>Are you looking for:</legend>
+              <div class="prep-options">
+                <label class="check"><input type="radio" name="lookingFor" value="A consultation" required> A consultation</label>
+                <label class="check"><input type="radio" name="lookingFor" value="Product recommendations"> Product recommendations</label>
+                <label class="check"><input type="radio" name="lookingFor" value="Both"> Both</label>
+              </div>
+            </fieldset>
+
+            <fieldset class="prep-group">
+              <legend>Anything Amber should know?</legend>
+              <label class="field">Optional
+                <textarea name="notes"></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset class="prep-group prep-group--wide">
+              <legend>Email updates</legend>
+              <label class="check"><input type="checkbox" name="updates" value="Yes"> I'd like to receive updates, rituals, and product drops.</label>
+            </fieldset>
+          </div>
+
+          <div class="prep-actions">
+            <button class="btn btn--primary" type="submit">SEND PREPARATION</button>
+            <p class="prep-status" id="prep-status" role="status">Your answers open in your email app. This preview does not silently store them.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer class="site-footer">
@@ -245,7 +370,7 @@
         <img src="img/logo-badge.png" alt="Amber's Essential Touch lotus monogram">
         <span>Amber's Essential Touch</span>
       </div>
-      <p class="footer__tag">Professional skincare.<br>Intentional care.<br>Preserved brilliance.</p>
+      <p class="footer__tag">Consultation-led.<br>Aftercare-first.<br>Intentional touch.</p>
       <p class="footer__loc">Pinole, CA · Black-woman owned and operated</p>
       <div class="footer__lockup">
         <img src="img/lotus-card.png" alt="Amber's Essential Touch — You'll FEEL the difference">
@@ -291,5 +416,7 @@
 <script src="js/data.js"></script>
 <script src="js/main.js"></script>
 <script src="js/booking.js"></script>
+<script src="js/preparation.js"></script>
+<script src="js/atmosphere.js"></script>
 </body>
 </html>

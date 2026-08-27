@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2100" viewBox="0 0 1600 2100" role="img" aria-labelledby="title desc">
+  <title id="title">Amber's Essential Touch booking homepage wireframe</title>
+  <desc id="desc">Minimal desktop and mobile wireframes showing a booking-first homepage structure, with reference markers tied to shipped beauty and wellness booking sites.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f6f1eb}.page{fill:#fff;stroke:#352b27;stroke-width:2}.line{stroke:#746963;stroke-width:2;fill:none}.soft{fill:#eee8e2}.image{fill:#ddd5ce;stroke:#746963;stroke-width:2}.ink{fill:#352b27}.muted{fill:#746963}.accent{fill:#a95870}.accentSoft{fill:#f2dfe4}.white{fill:#fff}.tag{fill:#6f3f2a}.txt{font-family:Arial,Helvetica,sans-serif}.h1{font-size:42px;font-weight:700}.h2{font-size:28px;font-weight:700}.h3{font-size:18px;font-weight:700}.body{font-size:15px}.small{font-size:12px}.micro{font-size:10px;letter-spacing:1px}.ref{font-size:12px;font-weight:700}.dash{stroke:#a95870;stroke-width:3;stroke-dasharray:8 7;fill:none}
+    </style>
+  </defs>
+
+  <rect class="bg" width="1600" height="2100"/>
+  <text class="txt h1 ink" x="70" y="64">AMBER'S ESSENTIAL TOUCH — BOOKING-FIRST WIREFRAME</text>
+  <text class="txt body muted" x="70" y="94">A structural reference for Claude Code. Apply Amber's existing tokens and finished imagery; do not copy competitor branding.</text>
+
+  <!-- DESKTOP -->
+  <rect class="page" x="70" y="125" width="1040" height="1900" rx="18"/>
+  <text class="txt micro muted" x="94" y="155">DESKTOP · 1440-CLASS LAYOUT</text>
+
+  <!-- header -->
+  <rect class="soft" x="90" y="175" width="1000" height="72" rx="10"/>
+  <circle class="accentSoft" cx="130" cy="211" r="22"/>
+  <text class="txt small ink" x="163" y="207">AMBER'S ESSENTIAL TOUCH</text>
+  <text class="txt micro muted" x="163" y="225">PINole · PROFESSIONAL SKINCARE</text>
+  <text class="txt small muted" x="555" y="216">Services   Concerns   About   Reviews   Shop</text>
+  <rect class="accent" x="940" y="192" width="128" height="38" rx="19"/>
+  <text class="txt small white" x="977" y="216">BOOK NOW</text>
+  <circle class="tag" cx="1074" cy="181" r="15"/><text class="txt ref white" x="1066" y="186">R1</text>
+
+  <!-- hero -->
+  <rect class="accentSoft" x="90" y="267" width="1000" height="390" rx="14"/>
+  <text class="txt micro muted" x="125" y="308">PROFESSIONAL SKINCARE SANCTUARY</text>
+  <text class="txt h1 ink" x="125" y="366">Where your skin is</text>
+  <text class="txt h1 accent" x="125" y="414">understood.</text>
+  <text class="txt body muted" x="125" y="455">Personalized treatments for every tone, age,</text>
+  <text class="txt body muted" x="125" y="478">and skin story. One clear path to booking.</text>
+  <rect class="accent" x="125" y="516" width="166" height="44" rx="22"/>
+  <text class="txt small white" x="163" y="543">BOOK APPOINTMENT</text>
+  <rect class="page" x="305" y="516" width="166" height="44" rx="22"/>
+  <text class="txt small ink" x="339" y="543">FIND A TREATMENT</text>
+  <rect class="image" x="598" y="292" width="457" height="340" rx="12"/>
+  <line class="line" x1="598" y1="292" x2="1055" y2="632"/>
+  <line class="line" x1="1055" y1="292" x2="598" y2="632"/>
+  <text class="txt small muted" x="744" y="471">GENERALIZED SERVICE HERO</text>
+  <circle class="tag" cx="1040" cy="307" r="15"/><text class="txt ref white" x="1032" y="312">R2</text>
+
+  <!-- proof strip -->
+  <rect class="soft" x="90" y="677" width="1000" height="88" rx="12"/>
+  <text class="txt h3 ink" x="132" y="714">4.9 ★</text><text class="txt small muted" x="132" y="739">25 verified reviews</text>
+  <text class="txt h3 ink" x="372" y="714">19 years</text><text class="txt small muted" x="372" y="739">licensed experience</text>
+  <text class="txt h3 ink" x="650" y="714">135+</text><text class="txt small muted" x="650" y="739">five-star visits</text>
+  <text class="txt h3 ink" x="870" y="714">Pinole</text><text class="txt small muted" x="870" y="739">local, personal care</text>
+
+  <!-- services -->
+  <text class="txt micro muted" x="90" y="812">TREATMENTS</text>
+  <text class="txt h2 ink" x="90" y="846">Choose by service—or start with your concern.</text>
+  <g transform="translate(90 875)">
+    <g><rect class="page" width="316" height="320" rx="12"/><rect class="image" width="316" height="170" rx="12"/><line class="line" x1="0" y1="0" x2="316" y2="170"/><text class="txt h3 ink" x="18" y="206">Customized Facial</text><text class="txt body muted" x="18" y="233">60–90 min · from $95</text><rect class="accent" x="18" y="260" width="104" height="38" rx="19"/><text class="txt small white" x="48" y="284">BOOK</text></g>
+    <g transform="translate(342 0)"><rect class="page" width="316" height="320" rx="12"/><rect class="image" width="316" height="170" rx="12"/><line class="line" x1="0" y1="170" x2="316" y2="0"/><text class="txt h3 ink" x="18" y="206">Chemical Peel</text><text class="txt body muted" x="18" y="233">time · verified price</text><rect class="accent" x="18" y="260" width="104" height="38" rx="19"/><text class="txt small white" x="48" y="284">BOOK</text></g>
+    <g transform="translate(684 0)"><rect class="page" width="316" height="320" rx="12"/><rect class="image" width="316" height="170" rx="12"/><line class="line" x1="0" y1="0" x2="316" y2="170"/><text class="txt h3 ink" x="18" y="206">Body Waxing</text><text class="txt body muted" x="18" y="233">15–90 min · from $25</text><rect class="accent" x="18" y="260" width="104" height="38" rx="19"/><text class="txt small white" x="48" y="284">BOOK</text></g>
+  </g>
+  <circle class="tag" cx="1066" cy="890" r="15"/><text class="txt ref white" x="1058" y="895">R3</text>
+
+  <!-- concern finder -->
+  <rect class="soft" x="90" y="1225" width="1000" height="210" rx="14"/>
+  <text class="txt micro muted" x="120" y="1260">NOT SURE WHERE TO START?</text>
+  <text class="txt h2 ink" x="120" y="1296">What brings you in?</text>
+  <rect class="page" x="120" y="1320" width="290" height="44" rx="8"/><text class="txt small ink" x="142" y="1347">Breakouts / acne</text><text class="txt h3 accent" x="382" y="1348">→</text>
+  <rect class="page" x="430" y="1320" width="290" height="44" rx="8"/><text class="txt small ink" x="452" y="1347">Dark spots / tone</text><text class="txt h3 accent" x="692" y="1348">→</text>
+  <rect class="page" x="740" y="1320" width="320" height="44" rx="8"/><text class="txt small ink" x="762" y="1347">Dryness / sensitivity</text><text class="txt h3 accent" x="1030" y="1348">→</text>
+  <rect class="page" x="120" y="1375" width="940" height="38" rx="8"/><text class="txt small ink" x="142" y="1399">I am not sure — guide me to consultation</text><text class="txt h3 accent" x="1030" y="1402">→</text>
+
+  <!-- expectation flow -->
+  <text class="txt micro muted" x="90" y="1487">HOW CARE BEGINS</text>
+  <text class="txt h2 ink" x="90" y="1521">Three steps. No mystery.</text>
+  <g transform="translate(90 1545)">
+    <rect class="page" width="316" height="130" rx="12"/><text class="txt h2 accent" x="20" y="42">01</text><text class="txt h3 ink" x="70" y="42">Consult</text><text class="txt small muted" x="20" y="78">Assess needs, routine, sensitivities.</text>
+    <g transform="translate(342 0)"><rect class="page" width="316" height="130" rx="12"/><text class="txt h2 accent" x="20" y="42">02</text><text class="txt h3 ink" x="70" y="42">Treat</text><text class="txt small muted" x="20" y="78">Customize techniques and products.</text></g>
+    <g transform="translate(684 0)"><rect class="page" width="316" height="130" rx="12"/><text class="txt h2 accent" x="20" y="42">03</text><text class="txt h3 ink" x="70" y="42">Preserve</text><text class="txt small muted" x="20" y="78">Leave with aftercare and next step.</text></g>
+  </g>
+  <circle class="tag" cx="1066" cy="1558" r="15"/><text class="txt ref white" x="1058" y="1563">R4</text>
+
+  <!-- founder/proof then conversion -->
+  <rect class="accentSoft" x="90" y="1710" width="1000" height="218" rx="14"/>
+  <rect class="image" x="115" y="1735" width="230" height="168" rx="10"/>
+  <text class="txt small muted" x="152" y="1823">REAL AMBER PHOTO</text>
+  <text class="txt micro muted" x="382" y="1758">THE WOMAN BEHIND THE TOUCH</text>
+  <text class="txt h2 ink" x="382" y="1795">Expert care, made personal.</text>
+  <text class="txt body muted" x="382" y="1830">Real founder identity lives here—not repeated</text>
+  <text class="txt body muted" x="382" y="1853">through generalized service photography.</text>
+  <rect class="accent" x="382" y="1872" width="132" height="38" rx="19"/><text class="txt small white" x="415" y="1896">MEET AMBER</text>
+  <circle class="tag" cx="1066" cy="1726" r="15"/><text class="txt ref white" x="1058" y="1731">R5</text>
+
+  <rect class="ink" x="90" y="1950" width="1000" height="54" rx="12"/>
+  <text class="txt h3 white" x="125" y="1984">Ready when you are.</text>
+  <rect class="accent" x="900" y="1959" width="168" height="36" rx="18"/><text class="txt small white" x="943" y="1982">BOOK NOW</text>
+
+  <!-- MOBILE -->
+  <text class="txt micro muted" x="1160" y="155">MOBILE · 390-CLASS LAYOUT</text>
+  <rect class="page" x="1160" y="175" width="360" height="930" rx="28"/>
+  <rect class="soft" x="1180" y="198" width="320" height="54" rx="10"/>
+  <circle class="accentSoft" cx="1208" cy="225" r="17"/><text class="txt small ink" x="1235" y="229">AMBER'S ESSENTIAL TOUCH</text><text class="txt h3 ink" x="1470" y="232">☰</text>
+  <text class="txt micro muted" x="1190" y="288">PROFESSIONAL SKINCARE</text>
+  <text class="txt h2 ink" x="1190" y="326">Where your skin is</text><text class="txt h2 accent" x="1190" y="360">understood.</text>
+  <rect class="image" x="1190" y="385" width="300" height="250" rx="12"/><line class="line" x1="1190" y1="385" x2="1490" y2="635"/><line class="line" x1="1490" y1="385" x2="1190" y2="635"/>
+  <rect class="accent" x="1190" y="655" width="300" height="48" rx="24"/><text class="txt small white" x="1290" y="685">BOOK APPOINTMENT</text>
+  <text class="txt micro muted" x="1190" y="744">POPULAR TREATMENTS</text>
+  <rect class="page" x="1190" y="760" width="300" height="96" rx="10"/><rect class="image" x="1204" y="774" width="90" height="68" rx="7"/><text class="txt h3 ink" x="1310" y="797">Facial</text><text class="txt small muted" x="1310" y="822">60–90 min · $95+</text><text class="txt small accent" x="1435" y="842">BOOK</text>
+  <rect class="page" x="1190" y="868" width="300" height="96" rx="10"/><rect class="image" x="1204" y="882" width="90" height="68" rx="7"/><text class="txt h3 ink" x="1310" y="905">Waxing</text><text class="txt small muted" x="1310" y="930">15–90 min · $25+</text><text class="txt small accent" x="1435" y="950">BOOK</text>
+  <rect class="ink" x="1180" y="1032" width="320" height="52" rx="20"/><text class="txt small white" x="1262" y="1063">STICKY BOOKING BAR</text>
+
+  <!-- REFERENCE LEGEND -->
+  <rect class="page" x="1160" y="1160" width="360" height="750" rx="18"/>
+  <text class="txt h2 ink" x="1190" y="1205">Reference key</text>
+  <text class="txt small muted" x="1190" y="1233">Borrow the convention, never the styling.</text>
+
+  <circle class="tag" cx="1207" cy="1280" r="17"/><text class="txt ref white" x="1198" y="1285">R1</text>
+  <text class="txt h3 ink" x="1238" y="1278">Glowbar</text><text class="txt small muted" x="1238" y="1300">One dominant booking action;</text><text class="txt small muted" x="1238" y="1320">clear member/non-member paths.</text>
+
+  <circle class="tag" cx="1207" cy="1375" r="17"/><text class="txt ref white" x="1198" y="1380">R2</text>
+  <text class="txt h3 ink" x="1238" y="1373">Skin Laundry</text><text class="txt small muted" x="1238" y="1395">Offer + Book in hero; treatment</text><text class="txt small muted" x="1238" y="1415">imagery is large and immediate.</text>
+
+  <circle class="tag" cx="1207" cy="1470" r="17"/><text class="txt ref white" x="1198" y="1475">R3</text>
+  <text class="txt h3 ink" x="1238" y="1468">European Wax Center</text><text class="txt small muted" x="1238" y="1490">Service cards expose starting</text><text class="txt small muted" x="1238" y="1510">price and direct booking per card.</text>
+
+  <circle class="tag" cx="1207" cy="1565" r="17"/><text class="txt ref white" x="1198" y="1570">R4</text>
+  <text class="txt h3 ink" x="1238" y="1563">Massage Envy</text><text class="txt small muted" x="1238" y="1585">Short “what to expect” sequence</text><text class="txt small muted" x="1238" y="1605">reduces first-visit uncertainty.</text>
+
+  <circle class="tag" cx="1207" cy="1660" r="17"/><text class="txt ref white" x="1198" y="1665">R5</text>
+  <text class="txt h3 ink" x="1238" y="1658">Heyday</text><text class="txt small muted" x="1238" y="1680">Personalization and esthetician</text><text class="txt small muted" x="1238" y="1700">expertise support the conversion.</text>
+
+  <line class="dash" x1="1190" y1="1740" x2="1490" y2="1740"/>
+  <text class="txt h3 ink" x="1190" y="1782">Amber implementation rule</text>
+  <text class="txt small muted" x="1190" y="1810">Use the generated site-ready photos for</text>
+  <text class="txt small muted" x="1190" y="1830">services/editorial/product texture. Use a</text>
+  <text class="txt small muted" x="1190" y="1850">real supplied Amber portrait only for About.</text>
+  <text class="txt small muted" x="1190" y="1880">No fake result photos. No bottle mockups.</text>
+
+  <text class="txt micro muted" x="1160" y="1955">SOURCE URLS AND EXACT FILE MAP LIVE IN ../CLAUDE.md</text>
+</svg>

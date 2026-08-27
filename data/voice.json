@@ -1,0 +1,26 @@
+{
+  "$comment": "Copy guidance extracted from the user-supplied voice guide. This governs tone, not business facts. Credentials, prices, service status, and contact details remain governed by data/sources.json and the canonical data files.",
+  "version": "1.0.0",
+  "source": "reference/source-inputs/amber-voice-guide.md",
+  "positioning": "A ritual-based skin practice, aftercare-first and consultation-driven, rooted in long-term licensed esthetic work in Pinole, CA.",
+  "tone": ["grounded", "intentional", "culturally aware", "personal but not chaotic", "ritual over transaction"],
+  "phrases": [
+    "You'll FEEL the difference.",
+    "Your Skin Has Memory.",
+    "This Is Not Fast Beauty.",
+    "Healing begins with how you're held.",
+    "Slow care lasts longer.",
+    "Aftercare is part of the treatment.",
+    "4 Ingredients. Infinite Possibilities.",
+    "Purely Essential.",
+    "Trusted by Skin.",
+    "Skin Is Not a Trend.",
+    "Intentional Touch Reduces Inflammation."
+  ],
+  "preferredWords": ["ritual", "practice", "intentional", "gentle", "aftercare", "consultation", "regimen", "patience", "held", "carry", "skin", "memory", "protect"],
+  "avoidWords": ["luxurious", "indulgent", "pampering", "treat yourself", "spa day", "affordable", "cheap", "deal", "discount", "learn more"],
+  "restrictedPhrases": ["Intentional Touch Reduces Inflammation."],
+  "claimsBoundary": "Use supports, calms, softens, or clears congestion. Do not publish medical or diagnostic claims. The restricted phrase is retained because it appears in the exact source guide, but it must not be published without documented substantiation.",
+  "soloVoice": "Use I on the About page. Use Amber's Essential Touch or the practice elsewhere. Do not use we for the solo practitioner.",
+  "cta": ["BOOK", "READ", "JOIN", "SUPPORT"]
+}

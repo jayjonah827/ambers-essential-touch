@@ -1,6 +1,6 @@
-/* AMBER'S ESSENTIAL TOUCH — shared content model
-   Extracted from the Claude Design home component (renderVals) +
-   03_SPECIFICATION.md. One place to edit services, products, hours. */
+/* AMBER'S ESSENTIAL TOUCH — shared content model.
+   Public service details below are limited to the current source-backed menu.
+   Appointment hours are intentionally not published until Amber confirms them. */
 
 const AET = {
   phone: '+15102286657',
@@ -10,64 +10,63 @@ const AET = {
   mapsUrl: 'https://maps.google.com/?q=1622+Michael+Dr,+Pinole,+CA+94564',
   facebook: 'https://www.facebook.com/aetouch/',
 
-  /* Studio hours per 03_SPECIFICATION.md (Wed–Fri 9:30–7:30, Sat 9:30–5, Sun 11–2).
-     day: 0=Sun … 6=Sat. Times are minutes from midnight. */
-  hours: {
-    0: { open: 11 * 60, close: 14 * 60 },        // Sun 11:00–2:00
-    3: { open: 9 * 60 + 30, close: 19 * 60 + 30 }, // Wed 9:30–7:30
-    4: { open: 9 * 60 + 30, close: 19 * 60 + 30 }, // Thu
-    5: { open: 9 * 60 + 30, close: 19 * 60 + 30 }, // Fri
-    6: { open: 9 * 60 + 30, close: 17 * 60 },      // Sat 9:30–5:00
-  },
-  hoursDisplay: 'Wed–Fri 9:30a–7:30p · Sat 9:30a–5p · Sun 11a–2p · By appointment',
+  hoursDisplay: 'By appointment · Amber confirms each request directly',
 
   services: [
     {
       id: 'facial',
-      name: 'Consultation Facial',
-      desc: 'Consultation-based facials. Extractions, peels, enzyme work — shaped to your skin on the day.',
-      meta: '60–90 MIN · FROM $95',
+      name: 'Customized Facials',
+      desc: 'A consultation-led facial shaped to your skin, with basic, customized, and teen options.',
+      meta: '70–90 MIN · FROM $85',
       duration: 90,
       gradient: 'linear-gradient(150deg, #F5EBE6, #EFDFE3)',
     },
     {
-      id: 'acne',
-      name: 'Acne-Focused Treatment',
-      desc: 'Protocol-based, multi-visit care that supports clearer skin. Aftercare included.',
-      meta: '60 MIN · FROM $110',
+      id: 'peel',
+      name: 'Chemical Peels',
+      desc: 'Professional peel care selected for your skin. A peel is included in the $150 customized facial when appropriate.',
+      meta: 'PRICE CONFIRMED AFTER CONSULTATION',
       duration: 60,
       gradient: 'linear-gradient(150deg, #EFDFE3, #D89BAA)',
     },
     {
       id: 'wax',
-      name: 'Body Waxing & Brow Care',
-      desc: 'Over a decade of precision. Full body, all skin types, unhurried.',
-      meta: '15–90 MIN · FROM $25',
+      name: 'Full Body Waxing',
+      desc: 'Precision waxing for face and body, with options starting at $10.',
+      meta: 'FROM $10',
       duration: 60,
       gradient: 'linear-gradient(150deg, #F7F1E8, #E8D9C8)',
     },
     {
-      id: 'manicure',
-      name: 'Manicure',
-      desc: 'Clean, unhurried, aftercare-forward hand care.',
-      meta: '45 MIN · FROM $45',
-      duration: 45,
+      id: 'lashes',
+      name: 'Individual Wispy Lashes',
+      desc: 'Fan-cluster D-curl lashes for a soft, wispy finish. Introductory offer; confirm current availability with Amber.',
+      meta: '$60 INTRODUCTORY OFFER',
+      duration: 90,
       gradient: 'linear-gradient(150deg, #EEF0EA, #CFDACB)',
     },
     {
-      id: 'ritual',
-      name: 'Monthly Ritual Plan',
-      desc: 'Build a regimen. Bi-monthly or quarterly visits, planned around your skin’s pace.',
-      meta: 'CUSTOM · FROM $180/MO',
-      duration: 90,
+      id: 'led',
+      name: 'LED Light Therapy',
+      desc: 'A focused 30-minute LED facial session selected for your skin goals.',
+      meta: '30 MIN · $50',
+      duration: 30,
       gradient: 'linear-gradient(150deg, #EDE7F0, #D7C6E6)',
+    },
+    {
+      id: 'rf',
+      name: 'Radio Frequency Facial',
+      desc: 'A consultation-led facial using radio frequency as part of a personalized treatment plan.',
+      meta: 'PRICE CONFIRMED AFTER CONSULTATION',
+      duration: 60,
+      gradient: 'linear-gradient(150deg, #F4E8E2, #D9B8B3)',
     },
     {
       id: 'consult',
       name: 'Skin Consultation',
       desc: 'Not sure where to begin? Start with a conversation and a plan.',
-      meta: 'INCLUDED WITH EVERY VISIT',
-      duration: 30,
+      meta: '20 MIN · $25',
+      duration: 20,
       gradient: 'linear-gradient(150deg, #EEF0EA, #A9B8A6)',
     },
   ],

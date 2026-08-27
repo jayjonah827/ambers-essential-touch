@@ -31,8 +31,11 @@
       "blocks": [
         "about page"
       ],
-      "status": "partial",
-      "note": "Years corrected from 18 to 19/16 on 2026-08-26. Licence number still missing."
+      "status": "resolved",
+      "severity": "resolved",
+      "note": "Years corrected from 18 to 19/16 on 2026-08-26. Licence number is not a launch gate: per Jonah 2026-08-26, no esthetician publishes their license number on their site — CA Board of Barbering & Cosmetology requires it displayed framed in the physical shop, not online. No page should ever add one.",
+      "resolvedBy": "Jonah",
+      "resolvedOn": "2026-08-26"
     },
     {
       "id": "D-4",
