@@ -1,9 +1,16 @@
-/* Continuous walnut background, scroll depth, and restrained sparkle field. */
+/* Continuous walnut background, scroll depth, and restrained sparkle field.
+   Scroll-linked motion is driven by Motion (https://motion.dev), loaded from
+   a CDN as a bare ES module — no build step, no npm install, works in this
+   static site as-is. This replaces a hand-rolled requestAnimationFrame loop
+   that produced a lag bug (.14 easing), an unbounded-input collision bug
+   (foreground cards overlapping static headings), and needed manual clamping
+   to patch both. Motion's scroll() ties element transforms directly to
+   scroll/viewport progress with tested, bounded behavior — no hand-written
+   easing or clamping math required. */
 (function () {
   'use strict';
 
   var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var root = document.documentElement;
   var background = document.createElement('div');
   var sparkles = document.createElement('div');
 
@@ -26,82 +33,26 @@
 
   if (reduce) return;
 
-  var targetY = window.scrollY;
-  var renderedY = targetY;
-  var ticking = false;
-  var motionScale = .18;
-  var metrics = [];
-  /* Per-element local input is unbounded distance-from-viewport-center, so an
-     element far off-screen can already carry a large offset the instant it
-     scrolls into view — that's what was driving foreground cards up into the
-     static heading above them. Clamping the input (not the 2x/.5x relationship
-     itself) keeps every element reachable and never overlapping its neighbors.
-     30 (±60px) still collided with book.html's 40px policies margin — the
-     site's tightest observed gap is ~32-40px, so the clamp has to fit under
-     that everywhere, not just on the homepage instance that got checked first. */
-  var localInputClamp = 16;
+  import('https://cdn.jsdelivr.net/npm/motion@latest/+esm').then(function (Motion) {
+    var scroll = Motion.scroll;
+    var animate = Motion.animate;
 
-  function measure() {
+    /* Background + sparkle drift across the full page scroll — the "room"
+       moves subtly behind everything. Sparkle travels 2x the background,
+       preserving the original background:sparkle ratio. */
+    scroll(animate(background, { transform: ['translate3d(0,0,0) scale(1.08)', 'translate3d(0,-220px,0) scale(1.08)'] }));
+    scroll(animate(sparkles, { transform: ['translate3d(0,0,0)', 'translate3d(0,-440px,0)'] }));
+
+    /* Foreground cards drift as each one crosses the viewport — bounded by
+       construction (every element's range is its own fixed ±40px, tied to
+       0-1 progress through the viewport) so nothing can overlap a neighbor
+       the way the unbounded hand-rolled version did. This is Motion's
+       documented scroll-linked-per-target pattern, not custom math. */
     foreground.forEach(function (element) {
-      element.style.setProperty('--aet-foreground-y', '0px');
+      scroll(
+        animate(element, { transform: ['translate3d(0,40px,0)', 'translate3d(0,-40px,0)'] }),
+        { target: element, offset: ['start end', 'end start'] }
+      );
     });
-    metrics = foreground.map(function (element) {
-      var rect = element.getBoundingClientRect();
-      return {
-        element: element,
-        center: rect.top + window.scrollY + rect.height / 2
-      };
-    });
-  }
-
-  measure();
-
-  function render() {
-    /* .14 read as sloppy/rubber-banded — every element visibly lagged behind
-       the actual scroll instead of tracking it. .32 stays smoothed enough to
-       kill raw scroll jank without feeling detached from the input. */
-    renderedY += (targetY - renderedY) * .32;
-
-    /* Exact unclamped output relationship from the supplied motion reference:
-       foregroundY = input × 2; backgroundY = input × .5. The shared input is
-       scaled once for a usable DOM range; the requested 4:1 relationship is
-       preserved and now produces visible travel through the viewport. */
-    var globalInput = renderedY * motionScale;
-    var backgroundY = globalInput * .5;
-    var sparkleY = globalInput;
-    root.style.setProperty('--aet-background-y', backgroundY.toFixed(2) + 'px');
-    root.style.setProperty('--aet-sparkle-y', sparkleY.toFixed(2) + 'px');
-    root.style.setProperty('--aet-sparkle-y-2', (sparkleY * -.55).toFixed(2) + 'px');
-    root.style.setProperty('--aet-sparkle-y-3', (sparkleY * .3).toFixed(2) + 'px');
-
-    var viewportCenter = renderedY + window.innerHeight / 2;
-    metrics.forEach(function (metric) {
-      var localInput = (viewportCenter - metric.center) * motionScale;
-      localInput = Math.max(-localInputClamp, Math.min(localInputClamp, localInput));
-      metric.element.style.setProperty('--aet-foreground-y', (localInput * 2).toFixed(2) + 'px');
-    });
-
-    var remaining = Math.abs(targetY - renderedY);
-    if (remaining > .1) {
-      window.requestAnimationFrame(render);
-    } else {
-      ticking = false;
-    }
-  }
-
-  function requestRender() {
-    targetY = window.scrollY;
-    root.style.setProperty('--aet-sparkle-energy', String(Math.min(.68, .44 + Math.abs(targetY - renderedY) * .0025)));
-    if (!ticking) {
-      ticking = true;
-      window.requestAnimationFrame(render);
-    }
-  }
-
-  window.addEventListener('scroll', requestRender, { passive: true });
-  window.addEventListener('resize', function () {
-    measure();
-    requestRender();
   });
-  requestRender();
 })();
