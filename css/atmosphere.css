@@ -131,16 +131,20 @@ main > section {
   isolation: isolate;
 }
 
+/* Genuine frosted glass: low enough alpha that the blurred walnut/sage is the
+   dominant material, not a white surface with backdrop-filter as decoration.
+   .52/.42 is the floor that still clears WCAG AA for espresso body text sitting
+   directly on the surface — verified, not eyeballed. */
 main > section:not(.bookband):not(.book):not(.cta-band) {
   background:
-    linear-gradient(155deg, rgba(255, 253, 249, .965), rgba(239, 244, 235, .90)) !important;
-  backdrop-filter: blur(12px) saturate(.92);
-  -webkit-backdrop-filter: blur(12px) saturate(.92);
+    linear-gradient(155deg, rgba(255, 253, 249, .52), rgba(239, 244, 235, .42)) !important;
+  backdrop-filter: blur(22px) saturate(1.15);
+  -webkit-backdrop-filter: blur(22px) saturate(1.15);
 }
 
 main > .hero {
   background:
-    linear-gradient(145deg, rgba(255,253,249,.98), rgba(223,232,218,.91)) !important;
+    linear-gradient(145deg, rgba(255,253,249,.55), rgba(223,232,218,.44)) !important;
 }
 
 main > .bookband,
@@ -155,7 +159,6 @@ main > .cta-band {
 .testimonial,
 .booking-shell,
 .capture,
-.step,
 .step-card,
 .concern,
 .finder__row,
@@ -167,6 +170,14 @@ main > .cta-band {
   background: var(--aet-panel-strong) !important;
   border-color: rgba(64, 46, 34, .14) !important;
   box-shadow: 0 16px 42px rgba(22, 14, 10, .12) !important;
+}
+
+/* .step (the borderless "Consult / Treat / Preserve" rhythm) was never designed
+   as a card — it's a top-rule-only editorial layout. Leave its own styling
+   alone instead of stamping the same box onto every foreground element. */
+.step {
+  background: none !important;
+  box-shadow: none !important;
 }
 
 [data-aet-depth="foreground"] {

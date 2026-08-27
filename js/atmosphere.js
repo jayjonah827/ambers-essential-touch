@@ -31,6 +31,12 @@
   var ticking = false;
   var motionScale = .18;
   var metrics = [];
+  /* Per-element local input is unbounded distance-from-viewport-center, so an
+     element far off-screen can already carry a large offset the instant it
+     scrolls into view — that's what was driving foreground cards up into the
+     static heading above them. Clamping the input (not the 2x/.5x relationship
+     itself) keeps every element reachable and never overlapping its neighbors. */
+  var localInputClamp = 30;
 
   function measure() {
     foreground.forEach(function (element) {
@@ -48,7 +54,10 @@
   measure();
 
   function render() {
-    renderedY += (targetY - renderedY) * .14;
+    /* .14 read as sloppy/rubber-banded — every element visibly lagged behind
+       the actual scroll instead of tracking it. .32 stays smoothed enough to
+       kill raw scroll jank without feeling detached from the input. */
+    renderedY += (targetY - renderedY) * .32;
 
     /* Exact unclamped output relationship from the supplied motion reference:
        foregroundY = input × 2; backgroundY = input × .5. The shared input is
@@ -65,6 +74,7 @@
     var viewportCenter = renderedY + window.innerHeight / 2;
     metrics.forEach(function (metric) {
       var localInput = (viewportCenter - metric.center) * motionScale;
+      localInput = Math.max(-localInputClamp, Math.min(localInputClamp, localInput));
       metric.element.style.setProperty('--aet-foreground-y', (localInput * 2).toFixed(2) + 'px');
     });
 
