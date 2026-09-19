@@ -1,0 +1,281 @@
+/* Stitch reference geometry. Existing palette, photography and copy remain
+   owned by the original pages, styles.css and atmosphere.css. */
+.sanctuary-layout { font-size: 16px; }
+.sanctuary-layout main > section {
+  width: min(100%, 1560px);
+  margin: 0 auto !important;
+  border-radius: 0;
+  border-width: 0 0 1px;
+  box-shadow: none;
+  overflow: visible;
+  padding-block: clamp(48px, 6vw, 88px);
+}
+.sanctuary-layout main { padding-block: 0; }
+.sanctuary-layout .wrap,
+.sanctuary-layout .hero__inner,
+.sanctuary-layout .footer__grid,
+.sanctuary-layout .footer__bar-inner {
+  width: 100%; max-width: 1280px; margin-inline: auto;
+  padding-inline: clamp(20px, 5vw, 64px);
+}
+.sanctuary-layout .wrap .wrap { padding-inline: 0; }
+.sanctuary-layout :is(h1,h2,h3,p,dd,a) { overflow-wrap: break-word; }
+.sanctuary-layout :is(.hero__grid,.hero__inner,.grid-3,.about__grid,.visit__grid,.form-grid) > * { min-width: 0; }
+.sanctuary-layout .h2,
+.sanctuary-layout h2 { font-size: clamp(30px, 3.3vw, 46px); }
+.sanctuary-layout .eyebrow { font-size: 12px; margin-bottom: 12px; }
+.sanctuary-layout .lede { font-size: clamp(16px, 1.5vw, 19px); }
+.sanctuary-layout .shead { margin-bottom: 32px; max-width: 720px; }
+.sanctuary-layout .btn { letter-spacing: .025em; padding: 12px 20px; min-height: 44px; }
+.sanctuary-layout .small { font-size: 14px; }
+.sanctuary-layout [id] { scroll-margin-top: 110px; }
+
+/* The reference uses a compact information ribbon over the main navigation. */
+.sanctuary-ribbon {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 8px 24px; padding: 9px max(20px, calc((100vw - 1152px) / 2));
+  background: var(--aet-panel); color: var(--espresso, var(--ink));
+  font-size: 12px; letter-spacing: .08em; text-transform: uppercase;
+}
+.sanctuary-ribbon a { color: inherit; text-underline-offset: 3px; }
+.sanctuary-layout .hdr,
+.sanctuary-layout .site-header { position: sticky !important; top: 0; z-index: 100 !important; }
+.sanctuary-layout .hdr__in,
+.sanctuary-layout .site-header > .nav { max-width: 1280px; min-height: 84px; gap: 18px; padding-inline: clamp(20px, 4vw, 48px); }
+.sanctuary-layout .brand,
+.sanctuary-layout .nav__brand { flex-shrink: 0; max-width: 240px; }
+.sanctuary-layout .brand__n,
+.sanctuary-layout .nav__name-main { font-size: 20px; line-height: 1.15; }
+.sanctuary-layout .brand__s,
+.sanctuary-layout .nav__name-sub { font-size: 10px; }
+.sanctuary-layout .hdr .nav,
+.sanctuary-layout .nav__links { gap: 14px; }
+.sanctuary-layout .hdr .nav a,
+.sanctuary-layout .nav__links a:not(.btn) { font-size: 13px; letter-spacing: 0; padding-block: 12px; }
+.sanctuary-layout .nav a[aria-current="page"] { text-decoration: underline; text-underline-offset: 7px; }
+.sanctuary-layout .hdr__cta { white-space: nowrap; }
+.sanctuary-layout .burger span,
+.sanctuary-layout .burger span::before,
+.sanctuary-layout .burger span::after { background: var(--warm-ivory); }
+.sanctuary-layout .sheet { overflow-y: auto; }
+.sanctuary-layout .sheet__nav a { font-size: 25px; padding-block: 8px; }
+
+/* Asymmetric hero with a tall photograph and inset location label. */
+.sanctuary-layout main > .hero { padding-block: clamp(40px, 5vw, 76px); }
+.sanctuary-layout .hero__inner { padding-block: 0 !important; }
+.sanctuary-index .hero__grid,
+.sanctuary-services .hero__inner,
+.sanctuary-about .hero__inner { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .9fr); align-items: center; gap: clamp(30px, 5vw, 72px); }
+.sanctuary-layout .hero h1,
+.sanctuary-index .display { font-size: clamp(40px, 4.6vw, 64px) !important; line-height: 1.06; }
+.sanctuary-layout .hero__copy { padding: 0; }
+.sanctuary-layout .hero__media { width: 100%; max-width: 460px; margin: 0 auto; }
+.sanctuary-layout .hero__media img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; border-radius: 44px 44px 24px 24px; display: block; }
+.sanctuary-layout .hero__media .media-frame { border-radius: 44px 44px 24px 24px; }
+.sanctuary-index .quote-card { position: static; max-width: none; margin: 16px 0 0; padding: 18px 22px; }
+.sanctuary-index .quote-card p { font-size: 19px; }
+.sanctuary-hero-frame { position: relative; }
+.sanctuary-location { position: absolute; left: 16px; right: 16px; top: auto; bottom: 16px; padding: 14px 18px; border-radius: 18px; background: var(--aet-panel); color: var(--text-primary); text-decoration: none; font-size: 14px; }
+.sanctuary-index .trust { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); border-radius: 20px; padding: 18px; gap: 10px 20px; background: var(--aet-panel-strong); }
+.sanctuary-index .trust .dot { display: none; }
+
+/* Reference card rhythm, retaining all five promises and six service photos. */
+.sanctuary-index .promise__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; margin-top: 28px; }
+.sanctuary-index .promise__grid > li { padding: 26px; border-radius: 26px; background: var(--aet-panel-strong); }
+.sanctuary-index .promise__grid > li:nth-child(4),
+.sanctuary-index .promise__grid > li:nth-child(5) { grid-column: auto; }
+.sanctuary-index .promise h3 { font-size: 24px; }
+.sanctuary-index .promise__i { width: 36px; height: 36px; }
+.sanctuary-index #services .grid-3 { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.sanctuary-index #services .card__img { aspect-ratio: 16 / 9; }
+.sanctuary-index .card__b { padding: 22px; }
+.sanctuary-index #about .about__grid { display: grid; grid-template-columns: minmax(0,1fr) minmax(0,1.1fr); gap: 48px; align-items: center; }
+.sanctuary-diptych { display: grid; grid-template-columns: 1fr 1fr; align-items: start; gap: 16px; }
+.sanctuary-diptych img { width: 100%; height: 350px; object-fit: cover; border-radius: 24px; }
+.sanctuary-diptych img:nth-child(2) { margin-top: 36px; }
+.sanctuary-index .creds { grid-template-columns: 1fr; margin-top: 24px; }
+.sanctuary-index .creds li { font-size: 14px; }
+.sanctuary-index .tsts .grid-3 { gap: 16px; }
+.sanctuary-index .tst { padding: 22px; border-radius: 24px; }
+.sanctuary-index .tst blockquote { font-size: 27px; }
+.sanctuary-reviews { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 24px; margin-top: 28px; }
+.sanctuary-reviews .testimonial { margin: 0; padding: 28px; border-radius: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+.sanctuary-reviews .testimonial p { font-family: var(--serif); font-size: 21px; line-height: 1.55; }
+.sanctuary-reviews footer { display: flex; flex-direction: column; gap: 6px; margin-top: 24px; font-size: 14px; }
+.sanctuary-reviews cite { font-style: normal; }
+.sanctuary-index .preserve__grid { grid-template-columns: minmax(0,.8fr) minmax(0,1.2fr); gap: 56px; }
+.sanctuary-index .preserve img { width: 100%; max-height: 420px; }
+.sanctuary-index .steps { gap: 28px; }
+.sanctuary-layout .step { padding: 24px 0; }
+.sanctuary-index .signup__in { max-width: 1280px; display: grid; grid-template-columns: minmax(0,1.1fr) minmax(0,1fr); text-align: left; column-gap: 48px; align-items: start; }
+.sanctuary-index .signup__in > :is(.eyebrow,h2,.lede) { grid-column: 1; margin-inline: 0 !important; }
+.sanctuary-index .signup .form { grid-column: 2; grid-row: 1 / span 3; margin: 0; width: 100%; }
+.sanctuary-index .signup .consent,
+.sanctuary-index .signup .formmsg { grid-column: 2; }
+.sanctuary-index .bookband { text-align: center; }
+.sanctuary-index .bookband .lede { margin-inline: auto; }
+.sanctuary-index .bookband__ctas { justify-content: center; }
+.sanctuary-layout .ftr__grid,
+.sanctuary-layout .footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 36px; }
+
+/* Embedded maps preserve the direct directions link as a loading fallback. */
+.sanctuary-map { position: relative; border-radius: 28px; overflow: hidden; background: var(--aet-panel-strong); min-width: 0; }
+.sanctuary-map iframe { display: block; width: 100%; min-height: 340px; height: 100%; border: 0; }
+.sanctuary-map > a { display: block; padding: 16px 20px; font-size: 14px; color: var(--deep-amber,var(--brown)); background: var(--aet-panel); }
+.sanctuary-index .visit__grid { display: grid; grid-template-columns: minmax(0,.9fr) minmax(0,1.2fr); gap: 48px; align-items: start; }
+.sanctuary-index .dl { background: var(--aet-panel-strong); padding: 24px; border-radius: 24px; }
+.sanctuary-index .dl dd { overflow-wrap: anywhere; }
+.sanctuary-index .visit__grid > div:nth-child(2) > .eyebrow { margin-top: 24px !important; }
+
+/* Service navigation and price tiles use existing menu data verbatim. */
+.sanctuary-tabs { display: flex; gap: 10px; overflow-x: auto; padding: 5px 0 20px; margin-bottom: 24px; }
+.sanctuary-tabs a { white-space: nowrap; border: 1px solid var(--line); border-radius: 999px; padding: 12px 18px; background: var(--aet-panel-strong); font-size: 14px; text-decoration: none; }
+.sanctuary-tabs a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.sanctuary-services .service-menu { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.sanctuary-services .service-entry { display: flex; flex-direction: column; }
+.sanctuary-services .service-entry__body { padding: 24px; display: flex; flex-direction: column; flex: 1; }
+.sanctuary-services .service-entry__body h2 { font-size: 29px; }
+.sanctuary-services .service-entry__actions { margin-top: auto; padding-top: 24px; }
+.sanctuary-services .pricebook__grid { grid-template-columns: 1fr; gap: 32px; }
+.sanctuary-services .pricebook__grid > .menu-panel { background: none !important; box-shadow: none !important; border: 0; padding: 0; backdrop-filter: none; }
+.sanctuary-services .price-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.sanctuary-services .price-list li { display: grid; grid-template-columns: minmax(0,1fr) auto; align-items: start; gap: 18px 12px; border: 0; background: var(--aet-panel-strong); border-radius: 22px; padding: 22px; }
+.sanctuary-services .price-list li small { display: block; }
+.sanctuary-services .price-columns { display: block; }
+.sanctuary-services .price-list strong { white-space: normal; }
+.sanctuary-price-book { grid-column: 1/-1; display: block; text-align: center; padding: 10px 12px; border: 1px solid var(--line); border-radius: 999px; font-size: 14px; text-decoration: none; }
+.sanctuary-services .menu-panel > summary { padding-block: 10px; }
+.sanctuary-services .menu-note { border-radius: 24px; padding: 32px; }
+
+/* Booking is led by a landscape ritual image, then a compact guided request. */
+.booking-hero { position: relative; min-height: clamp(420px, 58vw, 720px); display: grid; align-items: end; overflow: hidden; isolation: isolate; }
+.booking-hero::after { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(180deg, rgba(18,10,11,.08) 18%, rgba(20,10,12,.82) 100%); }
+.booking-hero__image { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center; }
+.booking-hero__copy { width: min(1180px, calc(100% - 40px)); margin: 0 auto; padding: clamp(70px, 12vw, 150px) 0 clamp(46px, 7vw, 84px); color: #fff8f0; }
+.booking-hero__copy h1, .booking-hero__copy .lede { color: inherit; max-width: 720px; }
+.booking-sparkle { position: absolute; z-index: 1; color: #f7d8a0; text-shadow: 0 0 16px rgba(255,224,168,.95); animation: booking-twinkle 2.8s ease-in-out infinite; pointer-events: none; }
+.booking-sparkle--one { top: 22%; left: 76%; font-size: 30px; }
+.booking-sparkle--two { top: 38%; left: 55%; font-size: 22px; animation-delay: .8s; }
+.booking-sparkle--three { top: 16%; left: 35%; font-size: 18px; animation-delay: 1.6s; }
+@keyframes booking-twinkle { 0%,100% { opacity:.25; transform:scale(.72) rotate(0); } 50% { opacity:1; transform:scale(1.18) rotate(18deg); } }
+.sanctuary-book .hero__copy { text-align: center; margin: auto; }
+.sanctuary-book .hero .lede { margin-inline: auto; }
+.sanctuary-book-grid { display: grid; grid-template-columns: minmax(0,1.9fr) minmax(0,1fr); gap: 28px; align-items: start; }
+.sanctuary-book-grid > .booking-shell { padding: 28px; border-radius: 28px; min-width: 0; }
+.sanctuary-book .booking-steps { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 8px; }
+.sanctuary-book .booking-steps li { font-size: 12px; padding: 10px 8px; text-align: center; }
+.sanctuary-book #svc-list { display: grid !important; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 14px !important; }
+.sanctuary-book .svc-option { align-items: start; border-radius: 22px; padding: 20px; min-height: 200px; gap: 10px; }
+.sanctuary-book .svc-option .tile__dot { width: 12px; height: 12px; min-width: 12px; margin-top: 8px; }
+.sanctuary-book .svc-option__name { font-size: 23px; }
+.sanctuary-book .svc-option__meta { font-size: 13px; margin-block: 12px; }
+.sanctuary-book .svc-option__desc { font-size: 14px; }
+.sanctuary-book-aside { display: grid; gap: 22px; }
+.sanctuary-aside-card { background: var(--aet-panel-strong); border-radius: 26px; overflow: hidden; }
+.sanctuary-aside-card > img { width: 100%; aspect-ratio: 4/3; display: block; object-fit: cover; }
+.sanctuary-aside-card > div,
+.sanctuary-aside-copy { padding: 24px; }
+.sanctuary-aside-card h2,
+.sanctuary-aside-card h3 { font-size: 26px; }
+.sanctuary-aside-card p { font-size: 15px; margin-block: 12px; }
+.sanctuary-book-aside .sanctuary-map iframe { min-height: 230px; }
+.sanctuary-policy-grid { grid-column: 1/-1; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; margin-top: 32px !important; }
+.sanctuary-policy-grid h2 { grid-column: 1/-1; text-align: center; }
+.sanctuary-policy-grid .policy { padding: 20px; margin: 0; border: 1px solid var(--line); border-radius: 22px; background: var(--aet-panel-strong); }
+.sanctuary-book .booking-nav { flex-wrap: wrap; gap: 14px; }
+.prep-support-card { background: linear-gradient(135deg, rgba(250,238,226,.96), rgba(225,234,218,.9)) !important; }
+.prep-options--sensory { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.prep-options--sensory .check { min-height: 64px; padding: 14px 16px; border: 1px solid rgba(111,63,42,.18); border-radius: 18px; background: rgba(255,253,249,.68); align-items: center; }
+
+/* Product surfaces use warm clear hot-glass edges, not diffuse frosting. */
+.sanctuary-index #shop .card { background: linear-gradient(145deg, rgba(255,251,244,.78), rgba(255,246,232,.38)) !important; border: 1px solid rgba(255,232,190,.9) !important; box-shadow: inset 0 1px 0 #fff, inset 0 -2px 10px rgba(166,75,39,.10), 0 18px 42px rgba(72,38,22,.16) !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+
+/* About and contact retain their copy, with editorial columns and visit cards. */
+.sanctuary-origin .wrap { display: grid; grid-template-columns: minmax(0,.85fr) minmax(0,1.3fr); gap: 0 56px; }
+.sanctuary-origin-photo { grid-column: 1; grid-row: 1 / span 4; align-self: center; width: 100%; border-radius: 26px; }
+.sanctuary-origin .wrap > :not(img) { grid-column: 2; }
+.sanctuary-about .pill-list { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 16px; }
+.sanctuary-about .pill-list li { display: block; padding: 24px; border-radius: 22px; font-size: 16px; background: var(--aet-panel-strong); }
+.sanctuary-about .pill-list li strong { display: block; margin-bottom: 10px; }
+.sanctuary-about .grid--steps { grid-template-columns: repeat(3,minmax(0,1fr)); }
+.sanctuary-layout .sanctuary-contact-grid { display: grid !important; grid-template-columns: minmax(0,.85fr) minmax(0,1.25fr); gap: 36px !important; align-items: start; }
+.sanctuary-contact-grid > div { min-width: 0 !important; }
+.sanctuary-studio-card { border-radius: 28px; padding: 28px; background: var(--aet-panel-strong); }
+.sanctuary-studio-card dd { overflow-wrap: anywhere; }
+.sanctuary-contact .booking-shell { border-radius: 28px; padding: 32px; }
+.sanctuary-location-grid { display: grid; grid-template-columns: minmax(0,1.45fr) minmax(0,1fr); gap: 30px; margin-top: 28px; align-items: stretch; }
+.sanctuary-location-grid .sanctuary-map { display: flex; flex-direction: column; }
+.sanctuary-location-grid .sanctuary-map iframe { flex: 1; }
+.sanctuary-layout [hidden] { display: none !important; }
+
+/* Grid placement remains stable while the original background motion runs. */
+.sanctuary-layout [data-aet-depth="foreground"] { transform: none !important; }
+@media (max-width: 1150px) {
+  .sanctuary-layout .hdr .nav,
+  .sanctuary-layout .nav__links { display: none; }
+  .sanctuary-layout .burger { display: grid; place-items: center; }
+  .sanctuary-layout .nav__mobile { display: flex; }
+  .sanctuary-layout .hdr__cta { margin-left: auto; }
+  .sanctuary-services .service-menu { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .sanctuary-book-grid { grid-template-columns: minmax(0,1.6fr) minmax(0,1fr); }
+  .sanctuary-book #svc-list { grid-template-columns: 1fr; }
+}
+@media (max-width: 760px) {
+  .sanctuary-ribbon { justify-content: center; gap: 4px 16px; text-align: center; font-size: 11px; }
+  .sanctuary-layout .hdr__in,
+  .sanctuary-layout .site-header > .nav { min-height: 76px; padding-inline: 16px; }
+  .sanctuary-layout .brand__n,
+  .sanctuary-layout .nav__name-main { font-size: 17px; }
+  .sanctuary-layout .hdr__cta { display: none; }
+  .sanctuary-layout .burger { margin-left: auto; }
+  .sanctuary-layout main > section { width: 100%; border-radius: 0; margin: 0 !important; padding-block: 44px; }
+  .sanctuary-index .hero__grid,
+  .sanctuary-services .hero__inner,
+  .sanctuary-about .hero__inner,
+  .sanctuary-index #about .about__grid,
+  .sanctuary-index .preserve__grid,
+  .sanctuary-index .visit__grid,
+  .sanctuary-layout .sanctuary-contact-grid,
+  .sanctuary-origin .wrap,
+  .sanctuary-book-grid,
+  .sanctuary-location-grid { grid-template-columns: minmax(0,1fr); gap: 28px !important; }
+  .sanctuary-layout .hero__media { max-width: 420px; }
+  .sanctuary-location { position: static; display: block; margin-top: 14px; }
+  .sanctuary-index .promise__grid,
+  .sanctuary-index #services .grid-3,
+  .sanctuary-about .pill-list,
+  .sanctuary-services .price-list,
+  .sanctuary-policy-grid,
+  .sanctuary-about .grid--steps { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .sanctuary-reviews { grid-template-columns: 1fr; }
+  .sanctuary-index .signup__in { display: block; }
+  .sanctuary-index .signup .form { margin-top: 28px; }
+  .sanctuary-layout .ftr__grid,
+  .sanctuary-layout .footer__grid { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 28px; }
+  .sanctuary-origin-photo { grid-column: auto; grid-row: auto; max-height: 360px; object-fit: cover; }
+  .sanctuary-origin .wrap > :not(img) { grid-column: auto; }
+  .sanctuary-book #svc-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .sanctuary-book-grid > .booking-shell { padding: 22px; }
+  .sanctuary-book-aside { grid-template-columns: 1fr; }
+  .prep-options--sensory { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .sanctuary-policy-grid { margin-top: 12px !important; }
+}
+@media (max-width: 480px) {
+  .sanctuary-index #services .grid-3,
+  .sanctuary-services .service-menu,
+  .sanctuary-services .price-list,
+  .sanctuary-index .promise__grid,
+  .sanctuary-about .pill-list,
+  .sanctuary-policy-grid,
+  .sanctuary-about .grid--steps,
+  .sanctuary-book #svc-list { grid-template-columns: minmax(0,1fr); }
+  .sanctuary-layout .hero h1 { font-size: 40px !important; }
+  .sanctuary-layout .btn { padding: 12px 16px; font-size: 13px; }
+  .sanctuary-book .booking-steps { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .sanctuary-diptych { gap: 12px; }
+  .sanctuary-diptych img { height: 260px; }
+  .sanctuary-map iframe { min-height: 280px; }
+  .sanctuary-book .booking-nav .btn { width: 100%; }
+  .prep-options--sensory { grid-template-columns: minmax(0,1fr); }
+}
+@media (prefers-reduced-motion: reduce) { .booking-sparkle { animation: none; opacity: .7; } }

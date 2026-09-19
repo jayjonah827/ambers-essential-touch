@@ -190,6 +190,15 @@
     $('#send-email').href = 'mailto:' + AET.email +
       '?subject=' + encodeURIComponent('Booking request — ' + state.details.name) +
       '&body=' + encodeURIComponent(body);
+    var calendarTitle = encodeURIComponent(state.service.name + ' · Amber\'s Essential Touch');
+    var calendarDetails = encodeURIComponent('Requested appointment. Amber will confirm the exact time.\n\n' + body);
+    var dateOnly = state.date.replace(/-/g, '');
+    var calendar = document.getElementById('add-google-calendar');
+    if (calendar) {
+      calendar.href = 'https://calendar.google.com/calendar/render?action=TEMPLATE&text=' + calendarTitle +
+        '&dates=' + dateOnly + '/' + dateOnly + '&details=' + calendarDetails +
+        '&location=' + encodeURIComponent('1622 Michael Dr, Pinole, CA 94564');
+    }
     $('#panel-review').hidden = true;
     $('#panel-confirm').hidden = false;
     $('#confirm-when').textContent = fmtDate(state.date) + ' · ' + state.time + ' — ' + state.service.name;

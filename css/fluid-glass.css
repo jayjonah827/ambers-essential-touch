@@ -1,0 +1,52 @@
+/* Shared glass finish over Amber's existing walnut/sage atmosphere.
+   Base blur remains usable without JavaScript or SVG backdrop support. */
+body.sanctuary-layout .aet-fluid-glass {
+  background: linear-gradient(135deg, rgba(255,253,249,.43), rgba(255,249,243,.20) 52%, rgba(234,240,228,.30)) !important;
+  border: 1px solid rgba(255,255,255,.54) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.8), inset 0 -1px 0 rgba(255,255,255,.2), 0 12px 32px rgba(31,20,15,.12) !important;
+  -webkit-backdrop-filter: blur(12px) saturate(1.14);
+  backdrop-filter: blur(12px) saturate(1.14);
+}
+/* Keep the editorial section geometry; let the existing texture remain visible. */
+body.sanctuary-layout main > section:not(.bookband):not(.book):not(.cta-band) {
+  -webkit-backdrop-filter: blur(9px) saturate(1.08);
+  backdrop-filter: blur(9px) saturate(1.08);
+}
+body.sanctuary-layout :is(.hdr,.site-header,.book-bar,.stickybook).aet-fluid-glass {
+  background: linear-gradient(115deg, rgba(36,23,15,.78), rgba(61,73,51,.69)) !important;
+  border-width: 0 0 1px !important;
+}
+body.sanctuary-layout .btn.aet-fluid-glass {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.76), inset 0 -2px 4px rgba(57,31,21,.08), 0 6px 18px rgba(31,20,15,.13) !important;
+}
+body.sanctuary-layout :is(.btn--primary,.btn-primary,.btn.primary).aet-fluid-glass {
+  background: linear-gradient(135deg, rgba(122,53,76,.94), rgba(94,43,59,.82)) !important;
+  color: #fff9f3 !important;
+  border-color: rgba(255,230,239,.55) !important;
+}
+body.sanctuary-layout .aet-fluid-glass:is(a,button):hover {
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 rgba(255,255,255,.35), 0 10px 28px rgba(31,20,15,.22) !important;
+}
+body.sanctuary-layout .aet-fluid-glass:focus-visible {
+  outline: 3px solid var(--deep-rose, #a95870);
+  outline-offset: 4px;
+}
+/* URL filters sample the rendered backdrop, never the foreground labels.
+   Engines without this syntax keep the frosted base material above. */
+@supports (backdrop-filter: url("#aet-fluid-refraction")) {
+  .aet-refraction-ready body.sanctuary-layout .aet-fluid-glass {
+    backdrop-filter: url("#aet-fluid-refraction") blur(7px) saturate(1.14);
+  }
+  .aet-refraction-ready body.sanctuary-layout .btn.aet-fluid-glass,
+  .aet-refraction-ready body.sanctuary-layout .sanctuary-location.aet-fluid-glass {
+    backdrop-filter: url("#aet-fluid-refraction") blur(3px) saturate(1.18);
+  }
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  body.sanctuary-layout .aet-fluid-glass { background-color: rgba(255,249,243,.94) !important; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  body.sanctuary-layout .aet-fluid-glass { background: #fff9f3 !important; backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  body.sanctuary-layout :is(.hdr,.site-header,.book-bar,.stickybook).aet-fluid-glass { background: #24170f !important; }
+  body.sanctuary-layout :is(.btn--primary,.btn-primary,.btn.primary).aet-fluid-glass { background: #6f3f2a !important; }
+}

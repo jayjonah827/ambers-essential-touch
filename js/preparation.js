@@ -7,14 +7,14 @@
   if (!form) return;
 
   var status = document.getElementById('prep-status');
-  var spiritChecks = Array.prototype.slice.call(form.querySelectorAll('input[name="spirit"]'));
+  var supportChecks = Array.prototype.slice.call(form.querySelectorAll('input[name="support"]'));
 
-  spiritChecks.forEach(function (check) {
+  supportChecks.forEach(function (check) {
     check.addEventListener('change', function () {
-      var selected = spiritChecks.filter(function (item) { return item.checked; });
+      var selected = supportChecks.filter(function (item) { return item.checked; });
       if (selected.length > 2) {
         check.checked = false;
-        status.textContent = 'Choose one or two items for what is on your spirit.';
+        status.textContent = 'Choose no more than two kinds of support.';
       } else {
         status.textContent = '';
       }
@@ -32,10 +32,10 @@
 
   form.addEventListener('submit', function (event) {
     event.preventDefault();
-    var selectedSpirit = spiritChecks.filter(function (item) { return item.checked; });
-    if (!selectedSpirit.length) {
-      status.textContent = 'Choose one or two items for what is on your spirit.';
-      spiritChecks[0].focus();
+    var selectedSupport = supportChecks.filter(function (item) { return item.checked; });
+    if (!selectedSupport.length) {
+      status.textContent = 'Choose one or two kinds of support.';
+      supportChecks[0].focus();
       return;
     }
     if (!form.reportValidity()) return;
@@ -49,13 +49,10 @@
       'Email: ' + one(data, 'email'),
       'Preferred contact: ' + one(data, 'preferredContact'),
       '',
-      "What's on your spirit: " + all(data, 'spirit'),
-      "What's on your heart: " + one(data, 'heart'),
+      'Support requested: ' + all(data, 'support'),
       'Teen or senior: ' + one(data, 'teenSenior'),
       "Familiar with Amber's proprietary oil blend: " + one(data, 'familiar'),
-      'Aromatic preferences: ' + all(data, 'aroma'),
       '',
-      "What's on your mind: " + one(data, 'mind'),
       'Looking for: ' + one(data, 'lookingFor'),
       'Anything Amber should know: ' + one(data, 'notes'),
       'Email updates: ' + (data.get('updates') ? 'Yes' : 'No')

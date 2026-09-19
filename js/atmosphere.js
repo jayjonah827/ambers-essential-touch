@@ -33,7 +33,7 @@
 
   if (reduce) return;
 
-  import('https://cdn.jsdelivr.net/npm/motion@latest/+esm').then(function (Motion) {
+  import('https://cdn.jsdelivr.net/npm/motion@12.39.0/+esm').then(function (Motion) {
     var scroll = Motion.scroll;
     var animate = Motion.animate;
 
@@ -54,5 +54,5 @@
         { target: element, offset: ['start end', 'end start'] }
       );
     });
-  });
+  }).catch(function () { /* CSS atmosphere remains if Motion cannot load. */ });
 })();
